@@ -1,0 +1,1710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.render.ImageGraphAsset">
+	<nodes>
+		<item type="traktor.render.ImgInput" version="traktor.render.Node:1">
+			<id>{C259DE6B-ECD3-544A-882C-CA6009AAE997}</id>
+			<comment/>
+			<position>
+				<first>251</first>
+				<second>756</second>
+			</position>
+			<textureId>InputColor</textureId>
+		</item>
+		<item type="traktor.render.ImgOutput" version="traktor.render.Node:1">
+			<id>{E7CF5B53-269B-AC42-AE1B-B0BB73114BA5}</id>
+			<comment/>
+			<position>
+				<first>3176</first>
+				<second>667</second>
+			</position>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{3B532373-8121-0B41-9AB4-35172E041C36}</id>
+			<comment/>
+			<position>
+				<first>2216</first>
+				<second>1051</second>
+			</position>
+			<name>Merge</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepSimple">
+					<shader>{232AE75A-9F28-3041-A568-A780E61B2D84}</shader>
+					<parameters>
+						<item>Input1</item>
+						<item>Input2</item>
+						<item>Input3</item>
+						<item>Input4</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{3073FC96-DD61-B942-BEC2-2FD47464E57D}</id>
+			<comment/>
+			<position>
+				<first>1682</first>
+				<second>1299</second>
+			</position>
+			<name>Blur Y</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepDirectionalBlur">
+					<blurType>BtGaussian</blurType>
+					<direction>0, 2</direction>
+					<taps>15</taps>
+					<shader>{D01376C0-C8AF-B749-B822-D45416C9CE4C}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{17D696BB-C8AA-5F4A-ABF0-D8C6DE8B6CCB}</id>
+			<comment/>
+			<position>
+				<first>1688</first>
+				<second>1151</second>
+			</position>
+			<name>Blur Y</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepDirectionalBlur">
+					<blurType>BtGaussian</blurType>
+					<direction>0, 2</direction>
+					<taps>15</taps>
+					<shader>{D01376C0-C8AF-B749-B822-D45416C9CE4C}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{0E310B26-552F-2245-AB62-332D617ABA91}</id>
+			<comment/>
+			<position>
+				<first>1682</first>
+				<second>1007</second>
+			</position>
+			<name>Blur Y</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepDirectionalBlur">
+					<blurType>BtGaussian</blurType>
+					<direction>0, 2</direction>
+					<taps>15</taps>
+					<shader>{D01376C0-C8AF-B749-B822-D45416C9CE4C}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{1E8B4214-0A6E-0D4D-9BE2-BA39186B7226}</id>
+			<comment/>
+			<position>
+				<first>1687</first>
+				<second>867</second>
+			</position>
+			<name>Blur Y</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepDirectionalBlur">
+					<blurType>BtGaussian</blurType>
+					<direction>0, 2</direction>
+					<taps>15</taps>
+					<shader>{D01376C0-C8AF-B749-B822-D45416C9CE4C}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{AC99EB9A-2BA3-DC46-BFEA-B2D83F439906}</id>
+			<comment/>
+			<position>
+				<first>1237</first>
+				<second>1307</second>
+			</position>
+			<name>Blur X</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepDirectionalBlur">
+					<blurType>BtGaussian</blurType>
+					<direction>2, 0</direction>
+					<taps>15</taps>
+					<shader>{D01376C0-C8AF-B749-B822-D45416C9CE4C}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{E55C1BDC-C5E8-A044-9ACE-270D2F50F328}</id>
+			<comment/>
+			<position>
+				<first>1240</first>
+				<second>1154</second>
+			</position>
+			<name>Blur X</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepDirectionalBlur">
+					<blurType>BtGaussian</blurType>
+					<direction>2, 0</direction>
+					<taps>15</taps>
+					<shader>{D01376C0-C8AF-B749-B822-D45416C9CE4C}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{6F47DF96-3FEB-184C-A863-058589B16609}</id>
+			<comment/>
+			<position>
+				<first>1240</first>
+				<second>1010</second>
+			</position>
+			<name>Blur X</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepDirectionalBlur">
+					<blurType>BtGaussian</blurType>
+					<direction>2, 0</direction>
+					<taps>15</taps>
+					<shader>{D01376C0-C8AF-B749-B822-D45416C9CE4C}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{2431E12C-522B-5A48-8840-D5C39B6588F5}</id>
+			<comment/>
+			<position>
+				<first>1237</first>
+				<second>861</second>
+			</position>
+			<name>Blur X</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepDirectionalBlur">
+					<blurType>BtGaussian</blurType>
+					<direction>2, 0</direction>
+					<taps>15</taps>
+					<shader>{D01376C0-C8AF-B749-B822-D45416C9CE4C}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{941C3200-93AB-6E4F-8E84-9F725E3EE0E6}</id>
+			<comment/>
+			<position>
+				<first>787</first>
+				<second>1240</second>
+			</position>
+			<name>Downsample N</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepSimple">
+					<shader>{CBC8D93D-4E3D-9B40-8D48-CCBA247F1BF0}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{8B48C158-282C-604F-8FB8-97749471FEDC}</id>
+			<comment/>
+			<position>
+				<first>780</first>
+				<second>1096</second>
+			</position>
+			<name>Downsample N</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepSimple">
+					<shader>{CBC8D93D-4E3D-9B40-8D48-CCBA247F1BF0}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{A780C0DB-3FD3-7249-9E88-9BD4D2696E4C}</id>
+			<comment/>
+			<position>
+				<first>784</first>
+				<second>959</second>
+			</position>
+			<name>Downsample N</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepSimple">
+					<shader>{CBC8D93D-4E3D-9B40-8D48-CCBA247F1BF0}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{39FB18FE-19F1-6B40-A0D7-3BE9C9B9683F}</id>
+			<comment/>
+			<position>
+				<first>782</first>
+				<second>836</second>
+			</position>
+			<name>Downsample 0</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepSimple">
+					<shader>{BC4BD33D-FDBF-AC41-8BDB-7FB27D502F10}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{77882781-F6FD-6744-87AB-A7802E1BE2A6}</id>
+			<comment/>
+			<position>
+				<first>1903</first>
+				<second>1308</second>
+			</position>
+			<targetSetId>Blur Y 4</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>16</screenWidthDenom>
+			<screenHeightDenom>16</screenHeightDenom>
+			<maxWidth>80</maxWidth>
+			<maxHeight>45</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{1969800C-02EF-B24E-BE30-22F2AF198CE0}</id>
+			<comment/>
+			<position>
+				<first>1478</first>
+				<second>1314</second>
+			</position>
+			<targetSetId>Blur X 4</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>16</screenWidthDenom>
+			<screenHeightDenom>16</screenHeightDenom>
+			<maxWidth>80</maxWidth>
+			<maxHeight>45</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{E298A980-F8BD-F04C-BB36-835597CDC042}</id>
+			<comment/>
+			<position>
+				<first>1015</first>
+				<second>1279</second>
+			</position>
+			<targetSetId>Down 4</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>16</screenWidthDenom>
+			<screenHeightDenom>16</screenHeightDenom>
+			<maxWidth>80</maxWidth>
+			<maxHeight>45</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{D9E2228B-E534-7D49-B190-4FD7F9E85466}</id>
+			<comment/>
+			<position>
+				<first>1902</first>
+				<second>1156</second>
+			</position>
+			<targetSetId>Blur Y 3</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>8</screenWidthDenom>
+			<screenHeightDenom>8</screenHeightDenom>
+			<maxWidth>160</maxWidth>
+			<maxHeight>90</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{03DCBE77-406B-694E-A131-876B914FCC54}</id>
+			<comment/>
+			<position>
+				<first>1477</first>
+				<second>1162</second>
+			</position>
+			<targetSetId>Blur X 3</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>8</screenWidthDenom>
+			<screenHeightDenom>8</screenHeightDenom>
+			<maxWidth>160</maxWidth>
+			<maxHeight>90</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{14598BA9-EDE5-1F49-8910-72B00AF00B96}</id>
+			<comment/>
+			<position>
+				<first>1015</first>
+				<second>1129</second>
+			</position>
+			<targetSetId>Down 3</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>8</screenWidthDenom>
+			<screenHeightDenom>8</screenHeightDenom>
+			<maxWidth>160</maxWidth>
+			<maxHeight>90</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{2FF01B3A-336F-784C-9A4B-3D3F8DE92E88}</id>
+			<comment/>
+			<position>
+				<first>1904</first>
+				<second>1015</second>
+			</position>
+			<targetSetId>Blur Y 2</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>4</screenWidthDenom>
+			<screenHeightDenom>4</screenHeightDenom>
+			<maxWidth>320</maxWidth>
+			<maxHeight>180</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{360CC183-1026-3D4F-BF98-F0F3618B2317}</id>
+			<comment/>
+			<position>
+				<first>1479</first>
+				<second>1021</second>
+			</position>
+			<targetSetId>Blur X 2</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>4</screenWidthDenom>
+			<screenHeightDenom>4</screenHeightDenom>
+			<maxWidth>320</maxWidth>
+			<maxHeight>180</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{8C6CA8BC-9898-CA40-B157-72970EF0C2C9}</id>
+			<comment/>
+			<position>
+				<first>1012</first>
+				<second>981</second>
+			</position>
+			<targetSetId>Down 2</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>4</screenWidthDenom>
+			<screenHeightDenom>4</screenHeightDenom>
+			<maxWidth>320</maxWidth>
+			<maxHeight>180</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{D7F70638-DA15-E44D-97E3-06DD3B6E99DE}</id>
+			<comment/>
+			<position>
+				<first>1901</first>
+				<second>875</second>
+			</position>
+			<targetSetId>Blur Y 1</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>2</screenWidthDenom>
+			<screenHeightDenom>2</screenHeightDenom>
+			<maxWidth>640</maxWidth>
+			<maxHeight>360</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{4D55E2C7-F243-FE4E-A549-35696694EF39}</id>
+			<comment/>
+			<position>
+				<first>1480</first>
+				<second>879</second>
+			</position>
+			<targetSetId>Blur X 1</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>2</screenWidthDenom>
+			<screenHeightDenom>2</screenHeightDenom>
+			<maxWidth>640</maxWidth>
+			<maxHeight>360</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{7A8B5D2A-1360-1545-84D3-2AE123FC5C18}</id>
+			<comment/>
+			<position>
+				<first>1006</first>
+				<second>847</second>
+			</position>
+			<targetSetId>Down 1</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>2</screenWidthDenom>
+			<screenHeightDenom>2</screenHeightDenom>
+			<maxWidth>640</maxWidth>
+			<maxHeight>360</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{FA1D9594-2D1B-B944-AA26-26D630451BCF}</id>
+			<comment/>
+			<position>
+				<first>2481</first>
+				<second>1079</second>
+			</position>
+			<targetSetId>Merged</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>1</screenWidthDenom>
+			<screenHeightDenom>1</screenHeightDenom>
+			<maxWidth>0</maxWidth>
+			<maxHeight>0</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{F3BC0661-B557-3F49-96D0-CA1A03FE5D2B}</id>
+			<comment/>
+			<position>
+				<first>2372</first>
+				<second>509</second>
+			</position>
+			<name>Blur Y</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepDirectionalBlur">
+					<blurType>BtGaussian</blurType>
+					<direction>0, 4</direction>
+					<taps>15</taps>
+					<shader>{D01376C0-C8AF-B749-B822-D45416C9CE4C}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{B905DB48-1662-8F4A-87D0-502DC4207212}</id>
+			<comment/>
+			<position>
+				<first>1922</first>
+				<second>503</second>
+			</position>
+			<name>Blur X</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepDirectionalBlur">
+					<blurType>BtGaussian</blurType>
+					<direction>4, 0</direction>
+					<taps>15</taps>
+					<shader>{D01376C0-C8AF-B749-B822-D45416C9CE4C}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{201155D6-D295-084B-BAE4-E883286AEDF6}</id>
+			<comment/>
+			<position>
+				<first>2586</first>
+				<second>517</second>
+			</position>
+			<targetSetId>Blur Y 1</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>3</screenWidthDenom>
+			<screenHeightDenom>3</screenHeightDenom>
+			<maxWidth>0</maxWidth>
+			<maxHeight>0</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{F489BCB7-9A06-8341-85C3-A38CA8594089}</id>
+			<comment/>
+			<position>
+				<first>2165</first>
+				<second>521</second>
+			</position>
+			<targetSetId>Blur X 1</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>3</screenWidthDenom>
+			<screenHeightDenom>3</screenHeightDenom>
+			<maxWidth>0</maxWidth>
+			<maxHeight>0</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{AAE2FA71-B4B2-D34F-AD06-0DD7A61182A1}</id>
+			<comment/>
+			<position>
+				<first>1103</first>
+				<second>498</second>
+			</position>
+			<targetSetId>Downsampled</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>3</screenWidthDenom>
+			<screenHeightDenom>3</screenHeightDenom>
+			<maxWidth>0</maxWidth>
+			<maxHeight>0</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR16G16B16A16F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{E0A5EE72-EB64-D542-9159-5FA29837297A}</id>
+			<comment/>
+			<position>
+				<first>1645</first>
+				<second>524</second>
+			</position>
+			<targetSetId>Intermediate</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>2</screenWidthDenom>
+			<screenHeightDenom>2</screenHeightDenom>
+			<maxWidth>0</maxWidth>
+			<maxHeight>0</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR16G16B16A16F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{B779DD80-983B-FF46-9161-1D8720A4D06B}</id>
+			<comment/>
+			<position>
+				<first>1387</first>
+				<second>516</second>
+			</position>
+			<name>Ghosts</name>
+			<clear>
+				<mask>
+					<Color>false</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepSimple">
+					<shader>{3911D7EC-D426-1343-B02C-C9DE0E95D990}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{CD74CAD6-73F1-8249-B169-DB742CF94099}</id>
+			<comment/>
+			<position>
+				<first>828</first>
+				<second>500</second>
+			</position>
+			<name>Downsample</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepSimple">
+					<shader>{18CF2B69-CC9D-1E41-9AD9-2FCF41514658}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{0B36EEF0-BA39-DA47-A264-D3E027B608E0}</id>
+			<comment/>
+			<position>
+				<first>2934</first>
+				<second>559</second>
+			</position>
+			<name>Overlay</name>
+			<clear>
+				<mask>
+					<Color>false</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepSimple">
+					<shader>{2BDFC787-43B7-FF43-AF86-2E159F57F09B}</shader>
+					<parameters>
+						<item>Source</item>
+						<item>Base</item>
+						<item>Blur</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{E1F53034-9299-7948-BBEC-F84BCB299506}</id>
+			<comment/>
+			<position>
+				<first>960</first>
+				<second>285</second>
+			</position>
+			<targetSetId>Blur X 1</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>3</screenWidthDenom>
+			<screenHeightDenom>3</screenHeightDenom>
+			<maxWidth>0</maxWidth>
+			<maxHeight>0</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgTargetSet" version="1,traktor.render.Node:1">
+			<id>{87B83382-3889-B94A-BA19-0528E18E9530}</id>
+			<comment/>
+			<position>
+				<first>1381</first>
+				<second>281</second>
+			</position>
+			<targetSetId>Blur Y 1</targetSetId>
+			<persistent>false</persistent>
+			<width>0</width>
+			<height>0</height>
+			<screenWidthDenom>3</screenWidthDenom>
+			<screenHeightDenom>3</screenHeightDenom>
+			<maxWidth>0</maxWidth>
+			<maxHeight>0</maxHeight>
+			<createDepthStencil>false</createDepthStencil>
+			<ignoreStencil>false</ignoreStencil>
+			<generateMips>false</generateMips>
+			<targets>
+				<item>
+					<textureId>Output</textureId>
+					<colorFormat>TfR11G11B10F</colorFormat>
+				</item>
+			</targets>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{2BAD89CF-07FF-E546-9F06-B4B4C73E0C10}</id>
+			<comment/>
+			<position>
+				<first>717</first>
+				<second>267</second>
+			</position>
+			<name>Blur X</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepDirectionalBlur">
+					<blurType>BtGaussian</blurType>
+					<direction>4, 0</direction>
+					<taps>15</taps>
+					<shader>{D01376C0-C8AF-B749-B822-D45416C9CE4C}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+		<item type="traktor.render.ImgPass" version="1,traktor.render.Node:1">
+			<id>{FD9CEA7B-7638-334F-849A-BC0CB5DA4335}</id>
+			<comment/>
+			<position>
+				<first>1167</first>
+				<second>273</second>
+			</position>
+			<name>Blur Y</name>
+			<clear>
+				<mask>
+					<Color>true</Color>
+					<Depth>false</Depth>
+					<Stencil>false</Stencil>
+				</mask>
+				<colors>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+					<item>0, 0, 0, 1</item>
+				</colors>
+				<depth>1</depth>
+				<stencil>0</stencil>
+			</clear>
+			<steps>
+				<item type="traktor.render.ImgStepDirectionalBlur">
+					<blurType>BtGaussian</blurType>
+					<direction>0, 4</direction>
+					<taps>15</taps>
+					<shader>{D01376C0-C8AF-B749-B822-D45416C9CE4C}</shader>
+					<parameters>
+						<item>Source</item>
+					</parameters>
+				</item>
+			</steps>
+		</item>
+	</nodes>
+	<edges>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[14]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[26]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[26]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[13]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[13]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[23]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[23]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[12]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[12]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[20]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[20]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[11]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[11]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[17]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[26]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[10]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[10]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[25]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[25]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[6]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[6]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[24]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[23]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[9]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[9]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[22]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[20]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[8]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[8]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[19]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[17]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[7]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[7]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[16]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[22]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[5]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[19]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[4]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[16]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[3]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[5]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[21]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[4]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[18]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[3]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[15]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[21]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{FDFF30DE-F467-419B-BC66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[24]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[18]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{FDFF30DE-F467-419B-BD66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[15]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{FDFF30DE-F467-419B-BE66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[27]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item"/>
+				<id>{CADCA675-68AF-45C9-8713-017957DE6968}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[14]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[34]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[33]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[35]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[32]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[33]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[29]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[29]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[31]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[31]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[28]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[28]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[30]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item"/>
+				<id>{CADCA675-68AF-45C9-8713-017957DE6968}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[35]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item"/>
+				<id>{CADCA675-68AF-45C9-8713-017957DE6968}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[36]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[27]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[36]"/>
+				<id>{FDFF30DE-F467-419B-BC66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[36]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[1]"/>
+				<id>{C603AA17-9EFC-42F9-9E12-41D08FB7AC4E}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[39]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[37]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[37]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[40]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[40]"/>
+				<id>{745CF81D-D35F-437A-96CA-DC1FCDB24CE6}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[38]"/>
+				<id>{E75F63FE-8CB0-4F01-B559-5B3BFB149271}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[32]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[39]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[32]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[34]"/>
+				<id>{FDFF30DE-F467-419B-BB66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[30]"/>
+				<id>{0102FF98-A386-435E-82C7-F1E360E1CC22}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[36]"/>
+				<id>{FDFF30DE-F467-419B-BD66-68AE2FE12FA1}</id>
+			</destination>
+		</item>
+	</edges>
+</object>

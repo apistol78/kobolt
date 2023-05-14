@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.runtime.Target" version="1">
+	<identifier/>
+	<version/>
+	<configurations>
+		<item type="traktor.runtime.TargetConfiguration" version="3">
+			<name>Win64</name>
+			<platform>{DC125AEC-2E6B-AF4D-A852-35731A782340}</platform>
+			<icon/>
+			<features>
+				<item>{63924543-241B-1743-8E9A-0A7E1968A779}</item>
+				<item>{080D94FE-74F2-C540-BF47-E9B844F07BA2}</item>
+				<item>{ED7D0946-D723-0A4A-8D9B-058AE2E20724}</item>
+				<item>{53F2B95D-52A1-FC41-B40A-8DD14A833EBC}</item>
+				<item>{83D5C349-EB3C-1A4E-A349-77D55674DA89}</item>
+				<item>{AD556440-A93A-A44E-9A1F-6C84F6099DA7}</item>
+				<item>{44DA7651-8D13-E54B-8564-ED92EE552376}</item>
+				<item>{FF7C0FF2-7C1A-2F4B-B587-A8869886A299}</item>
+				<item>{AE07939E-B6AD-1240-8C49-D5B968120992}</item>
+				<item>{79ED02B4-E797-8A4A-B000-03844DB4F511}</item>
+				<item>{D0B395AB-D9B1-F843-887C-096A952DD687}</item>
+				<item>{60E74182-039E-2849-85F9-448449CC1DE3}</item>
+				<item>{6AB9B70A-60FD-5D4E-A2C5-9501C7192957}</item>
+				<item>{BE242BB9-076B-894F-AB1C-F48A5571100F}</item>
+				<item>{EF8B95A6-8D0C-E34C-8E37-0D1A9212D92E}</item>
+				<item>{EF8AE953-B8A7-2449-9692-F0C32443DB38}</item>
+				<item>{77BE5437-D012-A54B-AEF9-320316BF9858}</item>
+				<item>{41028E53-49A7-4E4C-B078-10F4A63BDC01}</item>
+				<item>{FACBFA02-7221-E141-8E3A-76117063ED61}</item>
+				<item>{79C5C12E-E206-4B41-A061-FE2EE49CCE8A}</item>
+				<item>{59CEE1A2-22D5-6A4E-952C-93481138331C}</item>
+				<item>{77B9F3DD-A6A0-3C42-8707-EBC0B871463E}</item>
+				<item>{0AAFCC2E-FE57-9348-B842-B6991BEFEC30}</item>
+				<item>{8BAD2EAA-AEA0-784E-8F98-265DD1E02BF7}</item>
+				<item>{2367AF03-1A38-7F4E-BC60-63B6CB13299A}</item>
+				<item>{805454A8-73DC-BF43-990B-266E51956C47}</item>
+				<item>{F7AFCB02-ED1D-1540-A95E-999C52CF640C}</item>
+				<item>{14123F1B-A6ED-2A44-8C5E-A80035775E69}</item>
+				<item>{2C138503-5721-E742-9B5F-51F8AC2962B4}</item>
+			</features>
+			<root>{00000000-0000-0000-0000-000000000000}</root>
+			<startup>{DE6F1CC5-9EE4-E948-9432-28083D385E78}</startup>
+			<onlineConfig>{8731D6AA-BAA7-0D4D-BBE8-641A69599825}</onlineConfig>
+			<defaultInput>{4B85C96C-4A77-8A40-B1C4-4D072E082677}</defaultInput>
+		</item>
+	</configurations>
+</object>

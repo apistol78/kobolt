@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
+#using \{F266FE75-7BF7-BC4C-9616-06D2B5F5F6E8}
+
+import(traktor)
+
+Game = Game or class("Game", Stage)
+
+function Game:new(params, environment)
+	Stage.new(self, params, environment)
+
+	self._inputMapping = environment.input.inputMapping
+	self._lobbyManager = LobbyManager(environment)
+
+	environment.input.inputSystem:setExclusive(true)
+end
+
+function Game:update(info)
+
+	-- Update systems.
+	self._lobbyManager:update()
+
+	-- Use network time.
+	local t = self._lobbyManager._time
+	self.world.alternateTime = t
+
+	-- Get relevant entities.
+	local playerEntity = self.world:getEntity("Player")
+	local cameraEntity = self.world:getEntity("Camera")
+
+	-- Get player's character controller.
+	local characterComponent = playerEntity:getComponent(physics.CharacterComponent)
+
+	-- Read input state values.
+	local deltaHead = self._inputMapping:getStateValue("STATE_HEAD")
+	local deltaPitch = self._inputMapping:getStateValue("STATE_PITCH")
+	local moveZ = self._inputMapping:getStateValue("MOVE_Z")
+	local moveX = self._inputMapping:getStateValue("MOVE_X")
+
+	-- Issue movement of player character.
+	local Qhead = Quaternion.fromEulerAngles(characterComponent.headAngle, 0, 0)
+	local Vmove = Qhead:transform(Vector4(moveX, 0, moveZ, 0))
+
+	characterComponent.headAngle = characterComponent.headAngle + deltaHead * 0.01
+	characterComponent:move(Vmove, false)
+
+	-- Update camera transform to follow player.
+	local T = playerEntity.transform
+	cameraEntity.transform = T * Transform(
+		Vector4(0, 2, 0),
+		Quaternion.identity
+	)
+
+end
+
+	]]>
+	</text>
+</object>

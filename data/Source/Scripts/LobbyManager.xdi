@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+LobbyManager = LobbyManager or class("LobbyManager")
+
+function LobbyManager:new(environment)
+	self._sessionManager = environment.online.sessionManager
+	self._lobby = nil
+	self._state = LobbyManager.stateIssueFindLobbies
+	self._time = 0
+end
+
+function LobbyManager:update()
+	self:_state()
+end
+
+-----
+
+function LobbyManager:stateIdle()
+end
+
+function LobbyManager:stateIssueFindLobbies()
+	print("begin find lobbies...")
+	local filter = online.LobbyFilter()
+	self._result = self._sessionManager.matchMaking:findMatchingLobbies(filter)
+	self._state = LobbyManager.stateWaitFindLobbies
+end
+
+function LobbyManager:stateWaitFindLobbies()
+	if self._result.ready then
+		self._state = LobbyManager.stateIdle
+		local lobbies = self._result.lobbies
+		if not lobbies.empty then
+			print("found " .. lobbies.size .. " lobbies")
+			self._joinLobby = lobbies.back
+			self._state = LobbyManager.stateIssueJoinLobby
+		else
+			print("found no lobbies")
+			self._state = LobbyManager.stateIssueCreateLobby
+		end
+		self._result = nil
+	end
+
+end
+
+function LobbyManager:stateIssueCreateLobby()
+	self._result = self._sessionManager.matchMaking:createLobby(64, "public")
+	self._state = LobbyManager.stateWaitCreateLobby
+end
+
+function LobbyManager:stateWaitCreateLobby()
+	if self._result.ready then
+		if self._result.succeeded then
+			print("lobby created")
+			self._lobby = self._result.lobby
+			self._state = LobbyManager.stateSetupNetwork
+		else
+			print("failed to create lobby")
+			self._state = LobbyManager.stateIdle
+		end
+		self._result = nil
+	end
+end
+
+function LobbyManager:stateIssueJoinLobby()
+	self._result = self._joinLobby:join()
+	self._state = LobbyManager.stateWaitJoinLobby
+end
+
+function LobbyManager:stateWaitJoinLobby()
+	if self._result.ready then
+		if self._result.succeeded then
+			print("lobby joined")
+			self._lobby = self._joinLobby
+			self._state = LobbyManager.stateSetupNetwork
+		else
+			print("failed to join lobby")
+			self._state = LobbyManager.stateIdle
+		end
+		self._joinLobby = nil
+		self._result = nil
+	end
+end
+
+function LobbyManager:stateSetupNetwork()
+	self._provider = online.OnlinePeer2PeerProvider(self._sessionManager, self._lobby, false, false)
+	self._topology = net.Peer2PeerTopology(self._provider)
+
+	local cfg = net.ReplicatorConfiguration()
+
+	self._replicator = net.Replicator()
+	self._replicator:create(self._topology, cfg)
+
+	self._state = LobbyManager.stateUpdateNetwork
+end
+
+function LobbyManager:stateUpdateNetwork()
+	self._replicator:update()
+
+	self._time = self._replicator:getTime()
+end
+
+
+	]]>
+	</text>
+</object>

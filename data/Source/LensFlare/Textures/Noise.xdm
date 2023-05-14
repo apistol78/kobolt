@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.db.LocalInstanceMeta" version="2">
+	<guid>{B6859DAC-1202-DF4D-9BA2-FFA84D43520C}</guid>
+	<primaryType>traktor.render.TextureAsset</primaryType>
+	<blobs/>
+</object>

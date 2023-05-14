@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.db.LocalInstanceMeta" version="2">
+	<guid>{8731D6AA-BAA7-0D4D-BBE8-641A69599825}</guid>
+	<primaryType>traktor.online.LanGameConfiguration</primaryType>
+	<blobs/>
+</object>

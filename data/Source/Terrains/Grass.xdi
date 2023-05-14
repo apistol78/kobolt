@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
+	<nodes>
+		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+			<id>{CD654259-0161-A44C-A39B-9DCD486CF307}</id>
+			<comment/>
+			<position>
+				<first>734</first>
+				<second>504</second>
+			</position>
+			<fragmentGuid>{C49D9623-FD46-1D40-A9CD-D1AF89FCE8F9}</fragmentGuid>
+			<inputPins>
+				<item>
+					<id>{CEAD241F-4CC9-1E44-AACA-15BFD5015FDB}</id>
+					<name>DiffuseMap</name>
+					<optional>false</optional>
+				</item>
+				<item>
+					<id>{6D3FBFB2-BFA0-B34F-8F38-D0A00C6EF359}</id>
+					<name>NormalMap</name>
+					<optional>true</optional>
+				</item>
+			</inputPins>
+			<outputPins/>
+			<values>
+				<item>
+					<first>Aspect</first>
+					<second>2</second>
+				</item>
+				<item>
+					<first>Ground color influence</first>
+					<second>0.9</second>
+				</item>
+				<item>
+					<first>Ground normal influence</first>
+					<second>0.4</second>
+				</item>
+				<item>
+					<first>Random rotation</first>
+					<second>0.5</second>
+				</item>
+				<item>
+					<first>Wave amount</first>
+					<second>0.5</second>
+				</item>
+			</values>
+		</item>
+		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
+			<id>{407C3177-6563-ED43-BEC6-D679B625E37E}</id>
+			<comment/>
+			<position>
+				<first>426</first>
+				<second>419</second>
+			</position>
+			<external>{EE7B797B-79B4-824E-8117-B89885C4F7C3}</external>
+			<type>Texture2D</type>
+		</item>
+	</nodes>
+	<edges>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[1]"/>
+				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item"/>
+				<id>{CEAD241F-4CC9-1E44-AACA-15BFD5015FDB}</id>
+			</destination>
+		</item>
+	</edges>
+	<groups/>
+</object>
