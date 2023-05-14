@@ -236,8 +236,8 @@
 									<height>2</height>
 									<step>0.1</step>
 									<jumpImpulse>1</jumpImpulse>
-									<maxVelocity>10</maxVelocity>
-									<velocityDamping>0.95</velocityDamping>
+									<maxVelocity>15</maxVelocity>
+									<velocityDamping>0.2</velocityDamping>
 								</item>
 								<item type="traktor.world.PersistentIdComponentData">
 									<id>{66AC783B-1823-1B47-A599-E88A49E4FB76}</id>
