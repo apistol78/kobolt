@@ -263,25 +263,6 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{7204CE51-1FEA-4140-91CC-2AC43B9FEBF3}</id>
-							<name>Ocean</name>
-							<transform>
-								<translation>0, -387.373566, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components>
-								<item type="traktor.terrain.OceanComponentData" version="3">
-									<shaderWave>{3ABA4673-C5A5-404E-8563-CE8A6E043AC4}</shaderWave>
-									<shader>{FB9B7138-B7B2-E341-82EB-453BE2B558A8}</shader>
-									<reflectionTexture>{428137E6-E0BB-1645-BFFE-2B0E8A89F9CB}</reflectionTexture>
-									<shallowTint>0, 0, 0, 1</shallowTint>
-									<deepColor>0, 0, 0, 1</deepColor>
-									<opacity>1</opacity>
-									<elevation>0</elevation>
-								</item>
-							</components>
-						</item>
 					</entityData>
 				</item>
 			</components>

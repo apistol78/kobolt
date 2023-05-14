@@ -100,9 +100,8 @@ end
 function LobbyManager:stateUpdateNetwork()
 	self._replicator:update()
 
-	self._time = self._replicator:getTime()
+	self._time = self._replicator.time
 end
-
 
 	]]>
 	</text>
