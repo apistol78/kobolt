@@ -86,13 +86,19 @@ function LobbyManager:stateWaitJoinLobby()
 end
 
 function LobbyManager:stateSetupNetwork()
-	self._provider = online.OnlinePeer2PeerProvider(self._sessionManager, self._lobby, false, false)
-	self._topology = net.Peer2PeerTopology(self._provider)
+	self._provider = jungle.OnlinePeer2PeerProvider(self._sessionManager, self._lobby, false, false)
+	self._topology = jungle.Peer2PeerTopology(self._provider)
 
-	local cfg = net.ReplicatorConfiguration()
+	local cfg = jungle.ReplicatorConfiguration()
+	cfg.timeUntilTxStateNear = 0.01
 
-	self._replicator = net.Replicator()
+	self._replicator = jungle.Replicator()
 	self._replicator:create(self._topology, cfg)
+
+	local stateTemplate = jungle.StateTemplate()
+	stateTemplate:declare(jungle.TransformTemplate("Transform"))
+	self._replicator:setStateTemplate(stateTemplate)
+
 	self._replicator:addListener(function(replicator, eventTime, eventId, proxy, eventObject)
 		print("state listener notified")
 	end)

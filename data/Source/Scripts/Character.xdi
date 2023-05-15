@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+Character = Character or class("Character", world.ScriptComponent)
+
+function Character:new()
+	self._lastTransform = Transform()
+end
+
+function Character:setTransform(transform)
+end
+
+function Character:update(contextObject, totalTime, deltaTime)
+	local RunThreshold < const > = 2
+
+	local T = self.owner.transform
+
+	local offset = T.translation - self._lastTransform.translation
+	local velocity = offset / deltaTime
+
+	-- Into object space.
+	velocity = T.rotation:inverse():transform(velocity)
+
+	-- print("velocity " .. velocity:toString())
+
+	-- Determine animation state from velocity.
+	local skeletonComponent = self.owner:getComponent(animation.SkeletonComponent)
+	if skeletonComponent ~= nil then
+		skeletonComponent.poseController:setCondition(
+			"WalkForward",
+			velocity.z > 0.01 and velocity.z < RunThreshold,
+			true
+		)
+		skeletonComponent.poseController:setCondition(
+			"RunForward",
+			velocity.z >= RunThreshold,
+			true
+		)
+	end
+
+	self._lastTransform = T 
+
+end
+
+	]]>
+	</text>
+</object>

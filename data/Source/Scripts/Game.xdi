@@ -16,6 +16,13 @@ function Game:new(params, environment)
 	self._lobbyManager = LobbyManager(environment)
 
 	environment.input.inputSystem:setExclusive(true)
+
+
+	local timer = Timer()
+	while timer.elapsedTime < 1 do
+		--- wait a second
+	end
+
 end
 
 function Game:update(info)
@@ -50,10 +57,61 @@ function Game:update(info)
 	-- Update camera transform to follow player.
 	local T = playerEntity.transform
 	cameraEntity.transform = T * Transform(
-		Vector4(0, 2, 0),
+		Vector4(0, 2.12, 0),
 		Quaternion.identity
 	)
 
+
+	if self._lobbyManager._replicator ~= nil then
+
+		local replicator = self._lobbyManager._replicator
+
+		-- Use camera origin for replication origin.
+		replicator:setOrigin(cameraEntity.transform)
+		replicator:setSendState(true)
+
+		-- Pack player state.
+		local state = jungle.State()
+		state:packBegin()
+		state:pack(jungle.TransformValue(playerEntity.transform))
+		replicator.state = state
+
+
+		local ghostEntity = self.world:getEntity("Ghost")
+
+		if replicator.proxyCount >= 1 then
+			local proxy = replicator:getProxy(0)
+			if proxy.connected then
+
+				if not proxy.latencyReliable then
+					print("not reliable yet")
+				end
+
+				if proxy.stateTemplate == nil then
+					print("ghost template create")
+					local stateTemplate = jungle.StateTemplate()
+					stateTemplate:declare(jungle.TransformTemplate("Transform"))
+					proxy.stateTemplate = stateTemplate
+					proxy:setSendState(true)
+				else
+
+					local localState = jungle.State()
+					localState:packBegin()
+					localState:pack(jungle.TransformValue(ghostEntity.transform))
+
+					local state = proxy:getFilteredState(t, 0.2, localState, 0.7)
+					if state ~= nil then
+
+						state:unpackBegin()
+						local Tghost = state:unpack():get()
+						ghostEntity.transform = Tghost
+
+						proxy.origin = Tghost.translation
+					end
+				end
+			end
+		end
+	end
 end
 
 	]]>

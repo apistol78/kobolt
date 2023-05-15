@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{EE0510C6-0A33-2547-BDBC-75DE148791ED}</id>
+	<name>Character</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.animation.AnimatedMeshComponentData" version="3">
+			<mesh>{40EAD5AF-1A42-DF4D-9E1A-282109F529F6}</mesh>
+		</item>
+		<item type="traktor.animation.SkeletonComponentData">
+			<skeleton>{5C4E0290-51EA-AF42-92FE-92AC660B70E4}</skeleton>
+			<poseController type="traktor.animation.StatePoseControllerData" version="2">
+				<stateGraph>{776001F7-F53D-4F4F-8DCF-F61AEFDC729A}</stateGraph>
+				<randomTimeOffset>
+					<min>0</min>
+					<max>0</max>
+				</randomTimeOffset>
+				<transformTime type="traktor.animation.TimeFromLocomotionData">
+				</transformTime>
+			</poseController>
+		</item>
+	</components>
+</object>
