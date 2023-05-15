@@ -317,6 +317,27 @@
 								</item>
 							</components>
 						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{2F39CFDB-BFEA-43DD-8CBB-FED937A69EEA}</id>
+							<name>Sun</name>
+							<transform>
+								<translation>123.723045, -376.834198, -436.081421, 0</translation>
+								<rotation>0.075856, -0.313556, 0.025141, 0.946201</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.LightComponentData" version="11">
+									<lightType>Spot</lightType>
+									<color>1, 1, 1, 1</color>
+									<intensity>100</intensity>
+									<castShadow>true</castShadow>
+									<range>10</range>
+									<radius>1.047198</radius>
+									<flickerAmount>0</flickerAmount>
+									<flickerFilter>0</flickerFilter>
+									<bakeMode>LbmDisabled</bakeMode>
+								</item>
+							</components>
+						</item>
 					</entityData>
 				</item>
 			</components>
