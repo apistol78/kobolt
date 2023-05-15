@@ -2,7 +2,7 @@
 <object type="traktor.animation.SkeletonAsset" version="3">
 	<fileName>Meshes/Character/Character.fbx</fileName>
 	<offset>0, 0, 0, 1</offset>
-	<scale>0.015</scale>
+	<scale>0.0115</scale>
 	<radius>0.25</radius>
 	<invertX>false</invertX>
 	<invertZ>false</invertZ>

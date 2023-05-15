@@ -11,32 +11,30 @@ function Character:new()
 end
 
 function Character:setTransform(transform)
+	self._lastTransform = transform
 end
 
 function Character:update(contextObject, totalTime, deltaTime)
 	local RunThreshold < const > = 2
 
 	local T = self.owner.transform
-
 	local offset = T.translation - self._lastTransform.translation
 	local velocity = offset / deltaTime
 
 	-- Into object space.
 	velocity = T.rotation:inverse():transform(velocity)
 
-	-- print("velocity " .. velocity:toString())
-
 	-- Determine animation state from velocity.
 	local skeletonComponent = self.owner:getComponent(animation.SkeletonComponent)
 	if skeletonComponent ~= nil then
 		skeletonComponent.poseController:setCondition(
-			"WalkForward",
-			velocity.z > 0.01 and velocity.z < RunThreshold,
+			"RunForward",
+			velocity.z > 0.01,
 			true
 		)
 		skeletonComponent.poseController:setCondition(
-			"RunForward",
-			velocity.z >= RunThreshold,
+			"RunBackwards",
+			velocity.z < 0.01,
 			true
 		)
 	end

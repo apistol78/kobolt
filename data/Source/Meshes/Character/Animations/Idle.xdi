@@ -3,7 +3,7 @@
 	<fileName>Meshes/Character/Animations/Y Bot.fbx</fileName>
 	<skeleton>{5C4E0290-51EA-AF42-92FE-92AC660B70E4}</skeleton>
 	<take>mixamo.com</take>
-	<scale>0.015</scale>
+	<scale>0.0115</scale>
 	<translate>0, 0, 0, 0</translate>
 	<removeLocomotion>true</removeLocomotion>
 </object>

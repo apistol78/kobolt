@@ -57,7 +57,7 @@ function Game:update(info)
 	-- Update camera transform to follow player.
 	local T = playerEntity.transform
 	cameraEntity.transform = T * Transform(
-		Vector4(0, 2.12, 0),
+		Vector4(0, 1.85, 0),
 		Quaternion.identity
 	)
 
