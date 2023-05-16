@@ -15,7 +15,7 @@ function Game:new(params, environment)
 	self._inputMapping = environment.input.inputMapping
 	self._lobbyManager = LobbyManager(environment)
 
-	environment.input.inputSystem:setExclusive(true)
+--	environment.input.inputSystem:setExclusive(true)
 
 
 	local timer = Timer()
@@ -23,6 +23,9 @@ function Game:new(params, environment)
 		--- wait a second
 	end
 
+end
+
+function Game:postUpdate(info)
 end
 
 function Game:update(info)
@@ -63,7 +66,7 @@ function Game:update(info)
 	-- Update camera transform to follow player.
 	local T = playerEntity.transform
 	cameraEntity.transform = T * Transform(
-		Vector4(0, 1.85, 0),
+		Vector4(0, 1.85, 0.2),
 		Quaternion.identity
 	) * Transform(
 		Vector4(0, 0, 0),
