@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.animation.AnimationAsset" version="6">
-	<fileName>Meshes/Character/Animations/rifle aiming idle.fbx</fileName>
-	<skeleton>{5C4E0290-51EA-AF42-92FE-92AC660B70E4}</skeleton>
+	<fileName>Meshes/Character/Animations/jump forward.fbx</fileName>
+	<skeleton>{00000000-0000-0000-0000-000000000000}</skeleton>
 	<take>mixamo.com</take>
 	<scale>0.0115</scale>
 	<translate>0, 0, 0, 0</translate>

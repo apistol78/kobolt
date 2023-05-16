@@ -4,7 +4,7 @@
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>750</viewFarZ>
 		<exposureMode>EmFixed</exposureMode>
-		<exposure>0.2</exposure>
+		<exposure>0.4</exposure>
 		<shadowSettings>
 			<disabled>
 				<projection>SpUniform</projection>
@@ -67,8 +67,8 @@
 				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</ultra>
 		</shadowSettings>
-		<fogDistance>0</fogDistance>
-		<fogDensity>0.0025</fogDensity>
+		<fogDistance>20</fogDistance>
+		<fogDensity>0.001</fogDensity>
 		<fogColor>1, 1, 1, 1</fogColor>
 		<irradianceGrid>{BC071CFE-4E0E-8042-BE03-35B1FBAC7110}</irradianceGrid>
 		<imageProcess>
@@ -78,7 +78,7 @@
 			<high>{00000000-0000-0000-0000-000000000000}</high>
 			<ultra>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</ultra>
 		</imageProcess>
-		<colorGrading>{395C5B5B-BB3E-494C-9B40-24DE19EFA235}</colorGrading>
+		<colorGrading>{3DEEC673-EDF5-364A-B796-BAC7EF575258}</colorGrading>
 	</worldRenderSettings>
 	<layers>
 		<item type="traktor.world.LayerEntityData" version="3,traktor.world.EntityData:1">
@@ -122,7 +122,7 @@
 								<item type="traktor.world.LightComponentData" version="11">
 									<lightType>Directional</lightType>
 									<color>1, 0.717647, 0.717647, 1</color>
-									<intensity>4</intensity>
+									<intensity>2</intensity>
 									<castShadow>true</castShadow>
 									<range>100</range>
 									<radius>1.570796</radius>
@@ -235,8 +235,8 @@
 									<radius>0.75</radius>
 									<height>2</height>
 									<step>0.1</step>
-									<jumpImpulse>1</jumpImpulse>
-									<maxVelocity>10</maxVelocity>
+									<jumpImpulse>5</jumpImpulse>
+									<maxVelocity>8</maxVelocity>
 									<velocityDamping>0.2</velocityDamping>
 								</item>
 								<item type="traktor.world.PersistentIdComponentData">
@@ -272,7 +272,7 @@
 							<id>{1E97DC43-2004-244B-AC66-F3AFB5D7CED6}</id>
 							<name>Ghost</name>
 							<transform>
-								<translation>116.889885, -380.49231, -438.124115, 0</translation>
+								<translation>117.150536, -380.49231, -438.072784, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
@@ -288,8 +288,8 @@
 									<radius>0.75</radius>
 									<height>2</height>
 									<step>0.1</step>
-									<jumpImpulse>1</jumpImpulse>
-									<maxVelocity>10</maxVelocity>
+									<jumpImpulse>5</jumpImpulse>
+									<maxVelocity>8</maxVelocity>
 									<velocityDamping>0.2</velocityDamping>
 								</item>
 								<item type="traktor.world.PersistentIdComponentData">

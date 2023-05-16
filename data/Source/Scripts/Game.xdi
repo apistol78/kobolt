@@ -43,9 +43,10 @@ function Game:update(info)
 
 	-- Read input state values.
 	local deltaHead = self._inputMapping:getStateValue("STATE_HEAD")
-	local deltaPitch = self._inputMapping:getStateValue("STATE_PITCH")
+	local pitch = self._inputMapping:getStateValue("STATE_PITCH")
 	local moveZ = self._inputMapping:getStateValue("MOVE_Z")
 	local moveX = self._inputMapping:getStateValue("MOVE_X")
+	local jump = self._inputMapping:isStatePressed("STATE_JUMP")
 
 	-- Issue movement of player character.
 	local Qhead = Quaternion.fromEulerAngles(characterComponent.headAngle, 0, 0)
@@ -54,11 +55,19 @@ function Game:update(info)
 	characterComponent.headAngle = characterComponent.headAngle + deltaHead * 0.01
 	characterComponent:move(Vmove, false)
 
+	if jump then 
+		print("jump")
+		characterComponent:jump()
+	end
+
 	-- Update camera transform to follow player.
 	local T = playerEntity.transform
 	cameraEntity.transform = T * Transform(
 		Vector4(0, 1.85, 0),
 		Quaternion.identity
+	) * Transform(
+		Vector4(0, 0, 0),
+		Quaternion.fromEulerAngles(0, pitch, 0)
 	)
 
 

@@ -2,14 +2,6 @@
 <object type="traktor.animation.StateGraph">
 	<states>
 		<item type="traktor.animation.StateNodeAnimation" version="2">
-			<name>Walk Forward</name>
-			<position>
-				<first>-197</first>
-				<second>283</second>
-			</position>
-			<animation>{BFDBA03C-59F2-4344-8179-54CB8F02D110}</animation>
-		</item>
-		<item type="traktor.animation.StateNodeAnimation" version="2">
 			<name>Idle</name>
 			<position>
 				<first>163</first>
@@ -20,63 +12,115 @@
 		<item type="traktor.animation.StateNodeAnimation" version="2">
 			<name>Run Forward</name>
 			<position>
-				<first>493</first>
-				<second>275</second>
+				<first>426</first>
+				<second>266</second>
 			</position>
 			<animation>{BC688BD9-5FF0-0748-A6BE-8AC5CF24467D}</animation>
 		</item>
 		<item type="traktor.animation.StateNodeAnimation" version="2">
 			<name>Run Backward</name>
 			<position>
-				<first>132</first>
-				<second>482</second>
+				<first>66</first>
+				<second>385</second>
 			</position>
 			<animation>{0FF2E314-6860-514A-B506-233C73AA641B}</animation>
+		</item>
+		<item type="traktor.animation.StateNodeAnimation" version="2">
+			<name>Strafe Left</name>
+			<position>
+				<first>-144</first>
+				<second>212</second>
+			</position>
+			<animation>{91EF94FC-5BE4-E746-A21B-6244A2CE89B4}</animation>
+		</item>
+		<item type="traktor.animation.StateNodeAnimation" version="2">
+			<name>Jump Forward</name>
+			<position>
+				<first>-181</first>
+				<second>3</second>
+			</position>
+			<animation>{04299574-A27E-1B4B-9B50-B953C1AA4366}</animation>
+		</item>
+		<item type="traktor.animation.StateNodeAnimation" version="2">
+			<name>Strafe Right</name>
+			<position>
+				<first>-357</first>
+				<second>155</second>
+			</position>
+			<animation>{F3E4C3C9-D710-8240-827F-246C0B96886E}</animation>
 		</item>
 	</states>
 	<transitions>
 		<item type="traktor.animation.Transition" version="1">
 			<from ref="/object/states/item"/>
 			<to ref="/object/states/item[1]"/>
-			<duration>0.2</duration>
-			<moment>Immediatly</moment>
-			<condition>!WalkForward</condition>
-		</item>
-		<item type="traktor.animation.Transition" version="1">
-			<from ref="/object/states/item[2]"/>
-			<to ref="/object/states/item[1]"/>
-			<duration>0.2</duration>
-			<moment>Immediatly</moment>
-			<condition>!RunForward</condition>
-		</item>
-		<item type="traktor.animation.Transition" version="1">
-			<from ref="/object/states/item[3]"/>
-			<to ref="/object/states/item[1]"/>
-			<duration>0.2</duration>
-			<moment>Immediatly</moment>
-			<condition>!RunBackwards</condition>
-		</item>
-		<item type="traktor.animation.Transition" version="1">
-			<from ref="/object/states/item[1]"/>
-			<to ref="/object/states/item[3]"/>
-			<duration>0.2</duration>
-			<moment>Immediatly</moment>
-			<condition>RunBackwards</condition>
-		</item>
-		<item type="traktor.animation.Transition" version="1">
-			<from ref="/object/states/item[1]"/>
-			<to ref="/object/states/item[2]"/>
-			<duration>0.2</duration>
+			<duration>0.1</duration>
 			<moment>Immediatly</moment>
 			<condition>RunForward</condition>
 		</item>
 		<item type="traktor.animation.Transition" version="1">
 			<from ref="/object/states/item[1]"/>
 			<to ref="/object/states/item"/>
-			<duration>0.2</duration>
+			<duration>0.1</duration>
 			<moment>Immediatly</moment>
-			<condition>WalkForward</condition>
+			<condition>!RunForward</condition>
+		</item>
+		<item type="traktor.animation.Transition" version="1">
+			<from ref="/object/states/item"/>
+			<to ref="/object/states/item[2]"/>
+			<duration>0.1</duration>
+			<moment>Immediatly</moment>
+			<condition>RunBackwards</condition>
+		</item>
+		<item type="traktor.animation.Transition" version="1">
+			<from ref="/object/states/item[2]"/>
+			<to ref="/object/states/item"/>
+			<duration>0.1</duration>
+			<moment>Immediatly</moment>
+			<condition>!RunBackwards</condition>
+		</item>
+		<item type="traktor.animation.Transition" version="1">
+			<from ref="/object/states/item"/>
+			<to ref="/object/states/item[3]"/>
+			<duration>0.1</duration>
+			<moment>Immediatly</moment>
+			<condition>StrafeLeft</condition>
+		</item>
+		<item type="traktor.animation.Transition" version="1">
+			<from ref="/object/states/item[3]"/>
+			<to ref="/object/states/item"/>
+			<duration>0.1</duration>
+			<moment>Immediatly</moment>
+			<condition>!StrafeLeft</condition>
+		</item>
+		<item type="traktor.animation.Transition" version="1">
+			<from ref="/object/states/item"/>
+			<to ref="/object/states/item[4]"/>
+			<duration>0.1</duration>
+			<moment>Immediatly</moment>
+			<condition>JumpForward</condition>
+		</item>
+		<item type="traktor.animation.Transition" version="1">
+			<from ref="/object/states/item[4]"/>
+			<to ref="/object/states/item"/>
+			<duration>0.1</duration>
+			<moment>End</moment>
+			<condition/>
+		</item>
+		<item type="traktor.animation.Transition" version="1">
+			<from ref="/object/states/item"/>
+			<to ref="/object/states/item[5]"/>
+			<duration>0.1</duration>
+			<moment>Immediatly</moment>
+			<condition>StrafeRight</condition>
+		</item>
+		<item type="traktor.animation.Transition" version="1">
+			<from ref="/object/states/item[5]"/>
+			<to ref="/object/states/item"/>
+			<duration>0.1</duration>
+			<moment>Immediatly</moment>
+			<condition>!StrafeRight</condition>
 		</item>
 	</transitions>
-	<rootState ref="/object/states/item[1]"/>
+	<rootState ref="/object/states/item"/>
 </object>

@@ -11,7 +11,7 @@ function Character:new()
 end
 
 function Character:setTransform(transform)
-	self._lastTransform = transform
+	-- self._lastTransform = transform
 end
 
 function Character:update(contextObject, totalTime, deltaTime)
@@ -23,18 +23,43 @@ function Character:update(contextObject, totalTime, deltaTime)
 
 	-- Into object space.
 	velocity = T.rotation:inverse():transform(velocity)
+--	print(velocity:toString())
+
+	local strafeLeft = false
+	local strafeRight = false
+	local runForward = false
+	local runBackwards = false
+	local jumpForward = false
+
+	if math.abs(velocity.x) > math.abs(velocity.z) then
+		strafeLeft = (velocity.x < -0.1)
+		strafeRight = (velocity.x > 0.1)
+	else
+		runForward = (velocity.z > 0.01)
+		runBackwards = (velocity.z < -0.01)
+	end		
 
 	-- Determine animation state from velocity.
 	local skeletonComponent = self.owner:getComponent(animation.SkeletonComponent)
 	if skeletonComponent ~= nil then
 		skeletonComponent.poseController:setCondition(
+			"StrafeLeft",
+			strafeLeft,
+			true
+		)
+		skeletonComponent.poseController:setCondition(
+			"StrafeRight",
+			strafeRight,
+			true
+		)
+		skeletonComponent.poseController:setCondition(
 			"RunForward",
-			velocity.z > 0.01,
+			runForward,
 			true
 		)
 		skeletonComponent.poseController:setCondition(
 			"RunBackwards",
-			velocity.z < 0.01,
+			runBackwards,
 			true
 		)
 	end

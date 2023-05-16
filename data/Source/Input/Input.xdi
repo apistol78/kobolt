@@ -49,6 +49,34 @@
 		<item type="traktor.input.InReadValue">
 			<valueId>PITCH</valueId>
 		</item>
+		<item type="traktor.input.InCombine" version="1">
+			<entries>
+				<item>
+					<source type="traktor.input.InReadValue">
+						<valueId>STATE_PITCH</valueId>
+					</source>
+					<mul>1</mul>
+					<add>0</add>
+				</item>
+				<item>
+					<source ref="/object/inputNodes/item[7]"/>
+					<mul>0.01</mul>
+					<add>0</add>
+				</item>
+			</entries>
+			<operator>CoAdd</operator>
+		</item>
+		<item ref="/object/inputNodes/item[8]/entries/item/source"/>
+		<item type="traktor.input.InClamp">
+			<source ref="/object/inputNodes/item[8]"/>
+			<limit>
+				<item>-1</item>
+				<item>1</item>
+			</limit>
+		</item>
+		<item type="traktor.input.InReadValue">
+			<valueId>SPACE</valueId>
+		</item>
 	</inputNodes>
 	<positions>
 		<item>
@@ -139,17 +167,54 @@
 		<item>
 			<object ref="/object/inputNodes/item[7]"/>
 			<position>
-				<x>88</x>
-				<y>582</y>
+				<x>192</x>
+				<y>736</y>
 			</position>
 		</item>
 		<item>
 			<object type="traktor.input.InputStateData">
-				<source ref="/object/inputNodes/item[7]"/>
+				<source ref="/object/inputNodes/item[10]"/>
 			</object>
 			<position>
-				<x>464</x>
-				<y>529</y>
+				<x>842</x>
+				<y>666</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[8]"/>
+			<position>
+				<x>447</x>
+				<y>644</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[8]/entries/item/source"/>
+			<position>
+				<x>135</x>
+				<y>667</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[10]"/>
+			<position>
+				<x>630</x>
+				<y>666</y>
+			</position>
+		</item>
+		<item>
+			<object type="traktor.input.InputStateData">
+				<source ref="/object/inputNodes/item[11]"/>
+			</object>
+			<position>
+				<x>531</x>
+				<y>540</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[11]"/>
+			<position>
+				<x>187</x>
+				<y>575</y>
 			</position>
 		</item>
 	</positions>
@@ -200,6 +265,14 @@
 				</second>
 			</item>
 			<item>
+				<first>SPACE</first>
+				<second type="traktor.input.KeyboardInputSourceData">
+					<controlTypes>
+						<item>DtKeySpace</item>
+					</controlTypes>
+				</second>
+			</item>
+			<item>
 				<first>W</first>
 				<second type="traktor.input.KeyboardInputSourceData">
 					<controlTypes>
@@ -222,6 +295,10 @@
 			<item>
 				<first>STATE_HEAD</first>
 				<second ref="/object/positions/item[10]/object"/>
+			</item>
+			<item>
+				<first>STATE_JUMP</first>
+				<second ref="/object/positions/item[16]/object"/>
 			</item>
 			<item>
 				<first>STATE_PITCH</first>
