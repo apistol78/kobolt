@@ -78,7 +78,7 @@
 			<high>{00000000-0000-0000-0000-000000000000}</high>
 			<ultra>{664AD753-7DA8-3D49-8ED8-4CE4BD56ED6A}</ultra>
 		</imageProcess>
-		<colorGrading>{3DEEC673-EDF5-364A-B796-BAC7EF575258}</colorGrading>
+		<colorGrading>{395C5B5B-BB3E-494C-9B40-24DE19EFA235}</colorGrading>
 	</worldRenderSettings>
 	<layers>
 		<item type="traktor.world.LayerEntityData" version="3,traktor.world.EntityData:1">
@@ -216,72 +216,6 @@
 							<entityData>{C83F57E8-95AB-1F43-B940-4F6994E76FE2}</entityData>
 						</item>
 						<item type="traktor.world.EntityData" version="1">
-							<id>{0662AF4F-0045-EE4C-A782-3C02F68AB735}</id>
-							<name>Player</name>
-							<transform>
-								<translation>116.889885, -380.49231, -448.421021, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components>
-								<item type="traktor.physics.CharacterComponentData" version="3">
-									<collisionGroup>
-										<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
-									</collisionGroup>
-									<traceInclude>
-										<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
-										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
-									</traceInclude>
-									<traceIgnore/>
-									<radius>0.75</radius>
-									<height>2</height>
-									<step>0.1</step>
-									<jumpImpulse>5</jumpImpulse>
-									<maxVelocity>8</maxVelocity>
-									<velocityDamping>0.2</velocityDamping>
-								</item>
-								<item type="traktor.world.PersistentIdComponentData">
-									<id>{66AC783B-1823-1B47-A599-E88A49E4FB76}</id>
-								</item>
-								<item type="traktor.world.ScriptComponentData" version="2">
-									<class>{14B0C3A4-58EE-0B4A-A0B8-896D1C11E515}</class>
-									<properties/>
-									<editorSupport>false</editorSupport>
-								</item>
-								<item type="traktor.animation.SkeletonComponentData">
-									<skeleton>{5C4E0290-51EA-AF42-92FE-92AC660B70E4}</skeleton>
-									<poseController type="traktor.animation.StatePoseControllerData" version="2">
-										<stateGraph>{776001F7-F53D-4F4F-8DCF-F61AEFDC729A}</stateGraph>
-										<randomTimeOffset>
-											<min>0</min>
-											<max>0</max>
-										</randomTimeOffset>
-										<transformTime type="traktor.animation.TimeFromLocomotionData">
-										</transformTime>
-									</poseController>
-								</item>
-								<item type="traktor.animation.AnimatedMeshComponentData" version="3">
-									<mesh>{40EAD5AF-1A42-DF4D-9E1A-282109F529F6}</mesh>
-								</item>
-								<item type="traktor.animation.JointBindingComponentData">
-									<bindings>
-										<item>
-											<jointName>RightHand</jointName>
-											<entityData type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-												<id>{B294B99C-EDF7-44C7-A0F5-5E1F442FE8C9}</id>
-												<name>Weapon</name>
-												<transform>
-													<translation>117.315292, -378.802795, -437.852753, 0</translation>
-													<rotation>-0.024328, -0.047732, -0.740716, 0.669679</rotation>
-												</transform>
-												<components/>
-												<entityData>{37FB16F7-194F-408C-818D-04C92BCB1E51}</entityData>
-											</entityData>
-										</item>
-									</bindings>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
 							<id>{D3010E7E-30C1-8044-A694-14005EDDB2A8}</id>
 							<name>Camera</name>
 							<transform>
@@ -297,72 +231,6 @@
 								</item>
 								<item type="traktor.world.PersistentIdComponentData">
 									<id>{7529B732-4E46-9F4E-B7DF-9A9689E68EAE}</id>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{1E97DC43-2004-244B-AC66-F3AFB5D7CED6}</id>
-							<name>Ghost</name>
-							<transform>
-								<translation>117.150536, -380.49231, -438.072784, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components>
-								<item type="traktor.physics.CharacterComponentData" version="3">
-									<collisionGroup>
-										<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
-									</collisionGroup>
-									<traceInclude>
-										<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
-										<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
-									</traceInclude>
-									<traceIgnore/>
-									<radius>0.75</radius>
-									<height>2</height>
-									<step>0.1</step>
-									<jumpImpulse>5</jumpImpulse>
-									<maxVelocity>8</maxVelocity>
-									<velocityDamping>0.2</velocityDamping>
-								</item>
-								<item type="traktor.world.PersistentIdComponentData">
-									<id>{66AC783B-1823-1B47-A599-E88A49E4FB76}</id>
-								</item>
-								<item type="traktor.world.ScriptComponentData" version="2">
-									<class>{14B0C3A4-58EE-0B4A-A0B8-896D1C11E515}</class>
-									<properties/>
-									<editorSupport>false</editorSupport>
-								</item>
-								<item type="traktor.animation.SkeletonComponentData">
-									<skeleton>{5C4E0290-51EA-AF42-92FE-92AC660B70E4}</skeleton>
-									<poseController type="traktor.animation.StatePoseControllerData" version="2">
-										<stateGraph>{776001F7-F53D-4F4F-8DCF-F61AEFDC729A}</stateGraph>
-										<randomTimeOffset>
-											<min>0</min>
-											<max>0</max>
-										</randomTimeOffset>
-										<transformTime type="traktor.animation.TimeFromLocomotionData">
-										</transformTime>
-									</poseController>
-								</item>
-								<item type="traktor.animation.AnimatedMeshComponentData" version="3">
-									<mesh>{40EAD5AF-1A42-DF4D-9E1A-282109F529F6}</mesh>
-								</item>
-								<item type="traktor.animation.JointBindingComponentData">
-									<bindings>
-										<item>
-											<jointName>RightHand</jointName>
-											<entityData type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-												<id>{B294B99C-EDF7-44C7-A0F5-5E1F442FE8C9}</id>
-												<name>Weapon</name>
-												<transform>
-													<translation>117.315292, -378.802795, -437.852753, 0</translation>
-													<rotation>-0.024328, -0.047732, -0.740716, 0.669679</rotation>
-												</transform>
-												<components/>
-												<entityData>{37FB16F7-194F-408C-818D-04C92BCB1E51}</entityData>
-											</entityData>
-										</item>
-									</bindings>
 								</item>
 							</components>
 						</item>
@@ -386,6 +254,16 @@
 									<bakeMode>LbmDisabled</bakeMode>
 								</item>
 							</components>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{75350CDE-A34C-F142-A666-DBA6D1F85E71}</id>
+							<name>Player</name>
+							<transform>
+								<translation>119.303337, -383.86264, -447.607056, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{0176DFB1-8604-4648-ACBD-A46B1DE4472C}</entityData>
 						</item>
 					</entityData>
 				</item>

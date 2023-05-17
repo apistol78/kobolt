@@ -7,6 +7,8 @@
 
 import(traktor)
 
+local GhostEntityId = Guid("\{0176DFB1-8604-4648-ACBD-A46B1DE4472C}")
+
 Game = Game or class("Game", Stage)
 
 function Game:new(params, environment)
@@ -15,7 +17,7 @@ function Game:new(params, environment)
 	self._inputMapping = environment.input.inputMapping
 	self._lobbyManager = LobbyManager(environment)
 
---	environment.input.inputSystem:setExclusive(true)
+	environment.input.inputSystem:setExclusive(true)
 
 
 	local timer = Timer()
@@ -88,11 +90,8 @@ function Game:update(info)
 		state:pack(jungle.TransformValue(playerEntity.transform))
 		replicator.state = state
 
-
-		local ghostEntity = self.world:getEntity("Ghost")
-
-		if replicator.proxyCount >= 1 then
-			local proxy = replicator:getProxy(0)
+		for i = 0, replicator.proxyCount - 1 do
+			local proxy = replicator:getProxy(i)
 			if proxy.connected then
 
 				if not proxy.latencyReliable then
@@ -100,13 +99,26 @@ function Game:update(info)
 				end
 
 				if proxy.stateTemplate == nil then
-					print("ghost template create")
+					assert(proxy.object == nil)
+
+					-- Since proxy doesn't have a state template we assume
+					-- this is the first time proxy gets updated, thus
+					-- create a ghost entity.
+
+					local ghostEntity = self.world:createEntity(GhostEntityId)
+					self.world:addEntity(ghostEntity)
+
 					local stateTemplate = jungle.StateTemplate()
 					stateTemplate:declare(jungle.TransformTemplate("Transform"))
 					proxy.stateTemplate = stateTemplate
 					proxy:setSendState(true)
-				else
 
+					proxy.object = ghostEntity
+				else
+					local ghostEntity = proxy.object
+
+					-- Create local state of ghost; used to filter
+					-- new state.
 					local localState = jungle.State()
 					localState:packBegin()
 					localState:pack(jungle.TransformValue(ghostEntity.transform))

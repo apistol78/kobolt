@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{1E97DC43-2004-244B-AC66-F3AFB5D7CED6}</id>
+	<name>Ghost</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.physics.CharacterComponentData" version="3">
+			<collisionGroup>
+				<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+			</collisionGroup>
+			<traceInclude>
+				<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+				<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+			</traceInclude>
+			<traceIgnore/>
+			<radius>0.75</radius>
+			<height>2</height>
+			<step>0.1</step>
+			<jumpImpulse>5</jumpImpulse>
+			<maxVelocity>8</maxVelocity>
+			<velocityDamping>0.2</velocityDamping>
+		</item>
+		<item type="traktor.world.PersistentIdComponentData">
+			<id>{66AC783B-1823-1B47-A599-E88A49E4FB76}</id>
+		</item>
+		<item type="traktor.world.ScriptComponentData" version="2">
+			<class>{14B0C3A4-58EE-0B4A-A0B8-896D1C11E515}</class>
+			<properties/>
+			<editorSupport>false</editorSupport>
+		</item>
+		<item type="traktor.animation.SkeletonComponentData">
+			<skeleton>{5C4E0290-51EA-AF42-92FE-92AC660B70E4}</skeleton>
+			<poseController type="traktor.animation.StatePoseControllerData" version="2">
+				<stateGraph>{776001F7-F53D-4F4F-8DCF-F61AEFDC729A}</stateGraph>
+				<randomTimeOffset>
+					<min>0</min>
+					<max>0</max>
+				</randomTimeOffset>
+				<transformTime type="traktor.animation.TimeFromLocomotionData">
+				</transformTime>
+			</poseController>
+		</item>
+		<item type="traktor.animation.AnimatedMeshComponentData" version="3">
+			<mesh>{40EAD5AF-1A42-DF4D-9E1A-282109F529F6}</mesh>
+		</item>
+		<item type="traktor.animation.JointBindingComponentData">
+			<bindings>
+				<item>
+					<jointName>RightHand</jointName>
+					<entityData type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<id>{B3DAC7E3-31A5-E843-8157-1347B70D8B9C}</id>
+						<name>Weapon</name>
+						<transform>
+							<translation>0.150929, 1.658804, 0.239563, 0</translation>
+							<rotation>-0.018155, -0.055279, -0.066012, 0.996121</rotation>
+						</transform>
+						<components/>
+						<entityData>{37FB16F7-194F-408C-818D-04C92BCB1E51}</entityData>
+					</entityData>
+				</item>
+			</bindings>
+		</item>
+	</components>
+</object>
