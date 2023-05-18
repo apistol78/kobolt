@@ -10,10 +10,6 @@ function Character:new()
 	self._lastTransform = Transform()
 end
 
-function Character:setTransform(transform)
-	-- self._lastTransform = transform
-end
-
 function Character:update(contextObject, totalTime, deltaTime)
 	local RunThreshold < const > = 2
 
@@ -65,7 +61,29 @@ function Character:update(contextObject, totalTime, deltaTime)
 	end
 
 	self._lastTransform = T 
+end
 
+function Character.createStateTemplate()
+	local stateTemplate = jungle.StateTemplate()
+	stateTemplate:declare(jungle.TransformTemplate("Transform"))
+	stateTemplate:declare(jungle.VectorTemplate("Velocity"))
+	return stateTemplate
+end
+
+function Character:captureState()
+	local state = jungle.State()
+	state:packBegin()
+	state:pack(jungle.TransformValue(self.owner.transform))
+	state:pack(jungle.VectorValue(self.owner:getComponent(physics.CharacterComponent).velocity))
+	return state
+end
+
+function Character:applyState(state)
+	state:unpackBegin()
+	local transform = state:unpack():get()
+	local velocity = state:unpack():get()
+	self.owner.transform = transform
+	self.owner:getComponent(physics.CharacterComponent).velocity = velocity
 end
 
 	]]>

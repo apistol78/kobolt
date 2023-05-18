@@ -17,7 +17,7 @@ function Game:new(params, environment)
 	self._inputMapping = environment.input.inputMapping
 	self._lobbyManager = LobbyManager(environment)
 
-	environment.input.inputSystem:setExclusive(true)
+--	environment.input.inputSystem:setExclusive(true)
 
 
 	local timer = Timer()
@@ -85,10 +85,8 @@ function Game:update(info)
 		replicator:setSendState(true)
 
 		-- Pack player state.
-		local state = jungle.State()
-		state:packBegin()
-		state:pack(jungle.TransformValue(playerEntity.transform))
-		replicator.state = state
+		local playerScript = playerEntity:getComponent(world.ScriptComponent)
+		replicator.state = playerScript:captureState()
 
 		for i = 0, replicator.proxyCount - 1 do
 			local proxy = replicator:getProxy(i)
@@ -108,9 +106,7 @@ function Game:update(info)
 					local ghostEntity = self.world:createEntity(GhostEntityId)
 					self.world:addEntity(ghostEntity)
 
-					local stateTemplate = jungle.StateTemplate()
-					stateTemplate:declare(jungle.TransformTemplate("Transform"))
-					proxy.stateTemplate = stateTemplate
+					proxy.stateTemplate = Character.createStateTemplate()
 					proxy:setSendState(true)
 
 					proxy.object = ghostEntity
@@ -119,19 +115,15 @@ function Game:update(info)
 
 					-- Create local state of ghost; used to filter
 					-- new state.
-					local localState = jungle.State()
-					localState:packBegin()
-					localState:pack(jungle.TransformValue(ghostEntity.transform))
+					local ghostScript = ghostEntity:getComponent(world.ScriptComponent)
+					local localState = ghostScript:captureState()
 
 					local state = proxy:getFilteredState(t, 0.2, localState, 0.7)
 					if state ~= nil then
-
-						state:unpackBegin()
-						local Tghost = state:unpack():get()
-						ghostEntity.transform = Tghost
-
-						proxy.origin = Tghost.translation
+						ghostScript:applyState(state)
 					end
+
+					proxy.origin = ghostEntity.transform.translation
 				end
 			end
 		end

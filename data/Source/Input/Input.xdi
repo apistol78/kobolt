@@ -89,8 +89,8 @@
 		<item>
 			<object ref="/object/inputNodes/item[1]"/>
 			<position>
-				<x>156</x>
-				<y>382</y>
+				<x>157</x>
+				<y>359</y>
 			</position>
 		</item>
 		<item>
@@ -151,8 +151,8 @@
 		<item>
 			<object ref="/object/inputNodes/item[6]"/>
 			<position>
-				<x>104</x>
-				<y>492</y>
+				<x>209</x>
+				<y>513</y>
 			</position>
 		</item>
 		<item>
@@ -160,15 +160,15 @@
 				<source ref="/object/inputNodes/item[6]"/>
 			</object>
 			<position>
-				<x>525</x>
-				<y>457</y>
+				<x>529</x>
+				<y>479</y>
 			</position>
 		</item>
 		<item>
 			<object ref="/object/inputNodes/item[7]"/>
 			<position>
-				<x>192</x>
-				<y>736</y>
+				<x>188</x>
+				<y>729</y>
 			</position>
 		</item>
 		<item>
@@ -176,8 +176,8 @@
 				<source ref="/object/inputNodes/item[10]"/>
 			</object>
 			<position>
-				<x>842</x>
-				<y>666</y>
+				<x>855</x>
+				<y>667</y>
 			</position>
 		</item>
 		<item>
@@ -197,8 +197,8 @@
 		<item>
 			<object ref="/object/inputNodes/item[10]"/>
 			<position>
-				<x>630</x>
-				<y>666</y>
+				<x>660</x>
+				<y>657</y>
 			</position>
 		</item>
 		<item>
@@ -215,6 +215,25 @@
 			<position>
 				<x>187</x>
 				<y>575</y>
+			</position>
+		</item>
+		<item>
+			<object type="traktor.input.InputStateData">
+				<source/>
+			</object>
+			<position>
+				<x>799</x>
+				<y>365</y>
+			</position>
+		</item>
+		<item>
+			<object type="traktor.input.InCombine" version="1">
+				<entries/>
+				<operator>CoAdd</operator>
+			</object>
+			<position>
+				<x>837</x>
+				<y>384</y>
 			</position>
 		</item>
 	</positions>
