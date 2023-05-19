@@ -63,6 +63,19 @@ function Character:update(contextObject, totalTime, deltaTime)
 	self._lastTransform = T 
 end
 
+function Character:fire()
+	local jointBindingComponent = self.owner:getComponent(animation.JointBindingComponent)
+	local weaponEntity = jointBindingComponent:getEntity("Weapon", 0)
+
+	local Tp = self.owner.transform
+	local Tw = weaponEntity.transform
+
+	local offset = Transform(Vector4(0, 0, 1), Quaternion.identity) * Tp:inverse() * Tw
+
+	local eventSetComponent = self.owner:getComponent(world.EventSetComponent)
+	eventSetComponent:raise("Fire", offset)
+end
+
 function Character.createStateTemplate()
 	local stateTemplate = jungle.StateTemplate()
 	stateTemplate:declare(jungle.TransformTemplate("Transform"))

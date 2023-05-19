@@ -95,15 +95,7 @@ function LobbyManager:stateSetupNetwork()
 
 	self._replicator = jungle.Replicator()
 	self._replicator:create(self._topology, cfg)
-
 	self._replicator:setStateTemplate(Character.createStateTemplate())
-
---	self._replicator:addListener(function(replicator, eventTime, eventId, proxy, eventObject)
---		print("state listener notified")
---	end)
---	self._replicator:addEventListener(type, function(replicator, eventTime, fromProxy, eventObject)
---		print("event listener notified")
---	end)
 
 	self._state = LobbyManager.stateUpdateNetwork
 end

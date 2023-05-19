@@ -25,6 +25,11 @@ function Game:new(params, environment)
 		--- wait a second
 	end
 
+
+	local Tspawn = self:getSpawnLocation()
+	local playerEntity = self.world:getEntity("Player")
+	playerEntity.transform = Tspawn
+
 end
 
 function Game:postUpdate(info)
@@ -52,6 +57,7 @@ function Game:update(info)
 	local moveZ = self._inputMapping:getStateValue("MOVE_Z")
 	local moveX = self._inputMapping:getStateValue("MOVE_X")
 	local jump = self._inputMapping:isStatePressed("STATE_JUMP")
+	local fire = self._inputMapping:isStatePressed("STATE_FIRE")
 
 	-- Issue movement of player character.
 	local Qhead = Quaternion.fromEulerAngles(characterComponent.headAngle, 0, 0)
@@ -61,9 +67,16 @@ function Game:update(info)
 	characterComponent:move(Vmove, false)
 
 	if jump then 
-		print("jump")
 		characterComponent:jump()
 	end
+
+
+	if fire then
+		local playerScript = playerEntity:getComponent(world.ScriptComponent)
+		playerScript:fire()
+	end
+
+
 
 	-- Update camera transform to follow player.
 	local T = playerEntity.transform
@@ -81,21 +94,38 @@ function Game:update(info)
 		local replicator = self._lobbyManager._replicator
 
 		-- Use camera origin for replication origin.
-		replicator:setOrigin(cameraEntity.transform)
+		replicator.origin = cameraEntity.transform.translation
 		replicator:setSendState(true)
 
 		-- Pack player state.
 		local playerScript = playerEntity:getComponent(world.ScriptComponent)
 		replicator.state = playerScript:captureState()
 
+
+		-- Send fire event.
+		if fire then
+			local event = PropertyGroup()
+			event:setProperty("Fire", true)
+			replicator:broadcastEvent(event, false)
+		end
+
+
+		if self.__hack == nil then
+			replicator:addEventListener(PropertyGroup, function(replicator, eventTime, fromProxy, eventObject)
+				local ghostEntity = fromProxy.object
+				if ghostEntity ~= nil then
+					ghostEntity:getComponent(world.ScriptComponent):fire()
+				end
+				return true
+			end)
+
+			self.__hack = true
+		end
+
+
 		for i = 0, replicator.proxyCount - 1 do
 			local proxy = replicator:getProxy(i)
-			if proxy.connected then
-
-				if not proxy.latencyReliable then
-					print("not reliable yet")
-				end
-
+			if proxy.connected and proxy.latencyReliable then
 				if proxy.stateTemplate == nil then
 					assert(proxy.object == nil)
 
@@ -107,8 +137,7 @@ function Game:update(info)
 					self.world:addEntity(ghostEntity)
 
 					proxy.stateTemplate = Character.createStateTemplate()
-					proxy:setSendState(true)
-
+					proxy.sendState = true
 					proxy.object = ghostEntity
 				else
 					local ghostEntity = proxy.object
@@ -128,6 +157,13 @@ function Game:update(info)
 			end
 		end
 	end
+end
+
+function Game:getSpawnLocation()
+	local spawnEntities = self.world:getEntities("Spawn")
+	local idx = math.random(0, spawnEntities.size - 1)
+	local spawnEntity = spawnEntities:get(idx)
+	return spawnEntity.transform
 end
 
 	]]>

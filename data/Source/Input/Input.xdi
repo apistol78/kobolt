@@ -77,6 +77,9 @@
 		<item type="traktor.input.InReadValue">
 			<valueId>SPACE</valueId>
 		</item>
+		<item type="traktor.input.InReadValue">
+			<valueId>FIRE</valueId>
+		</item>
 	</inputNodes>
 	<positions>
 		<item>
@@ -236,6 +239,22 @@
 				<y>384</y>
 			</position>
 		</item>
+		<item>
+			<object ref="/object/inputNodes/item[12]"/>
+			<position>
+				<x>263</x>
+				<y>878</y>
+			</position>
+		</item>
+		<item>
+			<object type="traktor.input.InputStateData">
+				<source ref="/object/inputNodes/item[12]"/>
+			</object>
+			<position>
+				<x>605</x>
+				<y>844</y>
+			</position>
+		</item>
 	</positions>
 	<sourceData type="traktor.input.InputMappingSourceData">
 		<sourceData>
@@ -253,6 +272,16 @@
 					<controlTypes>
 						<item>DtKeyD</item>
 					</controlTypes>
+				</second>
+			</item>
+			<item>
+				<first>FIRE</first>
+				<second type="traktor.input.GenericInputSourceData" version="3">
+					<category>CtMouse</category>
+					<controlType>DtButton1</controlType>
+					<analogue>false</analogue>
+					<normalize>false</normalize>
+					<index>-1</index>
 				</second>
 			</item>
 			<item>
@@ -310,6 +339,10 @@
 			<item>
 				<first>MOVE_Z</first>
 				<second ref="/object/positions/item[8]/object"/>
+			</item>
+			<item>
+				<first>STATE_FIRE</first>
+				<second ref="/object/positions/item[21]/object"/>
 			</item>
 			<item>
 				<first>STATE_HEAD</first>
