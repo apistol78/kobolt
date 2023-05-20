@@ -66,8 +66,9 @@ function Game:update(info)
 	characterComponent.headAngle = characterComponent.headAngle + deltaHead * 0.01
 	characterComponent:move(Vmove, false)
 
-	if jump then 
-		characterComponent:jump()
+	if jump then
+		local playerScript = playerEntity:getComponent(world.ScriptComponent)
+		playerScript:jump()
 	end
 
 
@@ -76,15 +77,13 @@ function Game:update(info)
 		playerScript:fire()
 	end
 
+	-- Get transform of Camera binding.
+	local jointBindingComponent = playerEntity:getComponent(animation.JointBindingComponent)
+	local Thead = jointBindingComponent:getEntity("Camera", 0).transform
 
-
-	-- Update camera transform to follow player.
-	local T = playerEntity.transform
-	cameraEntity.transform = T * Transform(
-		Vector4(0, 1.85, 0.2),
-		Quaternion.identity
-	) * Transform(
-		Vector4(0, 0, 0),
+	-- Update camera transform to follow binding.
+	cameraEntity.transform = Thead * Transform(
+		Vector4.zero,
 		Quaternion.fromEulerAngles(0, pitch, 0)
 	)
 

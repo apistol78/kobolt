@@ -360,7 +360,7 @@
 								<item type="traktor.world.GroupComponentData">
 									<entityData>
 										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-											<id>{0331E0B0-F910-0B4A-862B-7103507C3B85}</id>
+											<id>{627D9E06-EB3C-4FA7-8C55-9A03AC52C9C4}</id>
 											<name>Player</name>
 											<transform>
 												<translation>163.248688, -379.07428, -428.889587, 0</translation>
@@ -394,7 +394,7 @@
 								<item type="traktor.world.GroupComponentData">
 									<entityData>
 										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-											<id>{F8F34368-21ED-0149-AFC2-4EC92703E5A1}</id>
+											<id>{06CFA449-21CF-4800-A497-254E8EB2CDD8}</id>
 											<name>Player</name>
 											<transform>
 												<translation>115.457558, -386.627289, -514.133789, 0</translation>

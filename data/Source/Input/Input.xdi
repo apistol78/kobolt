@@ -80,6 +80,20 @@
 		<item type="traktor.input.InReadValue">
 			<valueId>FIRE</valueId>
 		</item>
+		<item type="traktor.input.InLowPass">
+			<source ref="/object/inputNodes/item[6]"/>
+			<coeff type="traktor.input.InConst">
+				<value>0.2</value>
+			</coeff>
+		</item>
+		<item ref="/object/inputNodes/item[13]/coeff"/>
+		<item type="traktor.input.InLowPass">
+			<source ref="/object/inputNodes/item[10]"/>
+			<coeff type="traktor.input.InConst">
+				<value>0.2</value>
+			</coeff>
+		</item>
+		<item ref="/object/inputNodes/item[15]/coeff"/>
 	</inputNodes>
 	<positions>
 		<item>
@@ -154,17 +168,17 @@
 		<item>
 			<object ref="/object/inputNodes/item[6]"/>
 			<position>
-				<x>209</x>
-				<y>513</y>
+				<x>168</x>
+				<y>496</y>
 			</position>
 		</item>
 		<item>
 			<object type="traktor.input.InputStateData">
-				<source ref="/object/inputNodes/item[6]"/>
+				<source ref="/object/inputNodes/item[13]"/>
 			</object>
 			<position>
-				<x>529</x>
-				<y>479</y>
+				<x>627</x>
+				<y>400</y>
 			</position>
 		</item>
 		<item>
@@ -176,11 +190,11 @@
 		</item>
 		<item>
 			<object type="traktor.input.InputStateData">
-				<source ref="/object/inputNodes/item[10]"/>
+				<source ref="/object/inputNodes/item[15]"/>
 			</object>
 			<position>
-				<x>855</x>
-				<y>667</y>
+				<x>1029</x>
+				<y>653</y>
 			</position>
 		</item>
 		<item>
@@ -253,6 +267,34 @@
 			<position>
 				<x>605</x>
 				<y>844</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[13]"/>
+			<position>
+				<x>387</x>
+				<y>418</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[13]/coeff"/>
+			<position>
+				<x>198</x>
+				<y>441</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[15]"/>
+			<position>
+				<x>870</x>
+				<y>592</y>
+			</position>
+		</item>
+		<item>
+			<object ref="/object/inputNodes/item[15]/coeff"/>
+			<position>
+				<x>640</x>
+				<y>598</y>
 			</position>
 		</item>
 	</positions>
