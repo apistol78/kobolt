@@ -33,6 +33,21 @@ function Game:new(params, environment)
 end
 
 function Game:postUpdate(info)
+	local pitch = self._inputMapping:getStateValue("STATE_PITCH")
+
+	-- Get relevant entities.
+	local playerEntity = self.world:getEntity("Player")
+	local cameraEntity = self.world:getEntity("Camera")
+
+	-- Get transform of Camera binding.
+	local jointBindingComponent = playerEntity:getComponent(animation.JointBindingComponent)
+	local Thead = jointBindingComponent:getEntity("Camera", 0).transform
+
+	-- Update camera transform to follow binding.
+	cameraEntity.transform = Thead * Transform(
+		Vector4.zero,
+		Quaternion.fromEulerAngles(0, pitch, 0)
+	)
 end
 
 function Game:update(info)
@@ -77,15 +92,7 @@ function Game:update(info)
 		playerScript:fire()
 	end
 
-	-- Get transform of Camera binding.
-	local jointBindingComponent = playerEntity:getComponent(animation.JointBindingComponent)
-	local Thead = jointBindingComponent:getEntity("Camera", 0).transform
 
-	-- Update camera transform to follow binding.
-	cameraEntity.transform = Thead * Transform(
-		Vector4.zero,
-		Quaternion.fromEulerAngles(0, pitch, 0)
-	)
 
 
 	if self._lobbyManager._replicator ~= nil then

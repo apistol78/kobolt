@@ -55,7 +55,7 @@
 						<name>Weapon</name>
 						<transform>
 							<translation>0.150929, 1.658804, 0.239563, 0</translation>
-							<rotation>-0.018155, -0.055279, -0.066012, 0.996121</rotation>
+							<rotation>-0.020351, -0.054509, -0.026125, 0.997964</rotation>
 						</transform>
 						<components/>
 						<entityData>{37FB16F7-194F-408C-818D-04C92BCB1E51}</entityData>
@@ -64,11 +64,11 @@
 				<item>
 					<jointName>HeadTop_End</jointName>
 					<entityData type="traktor.world.EntityData" version="1">
-						<id>{00000000-0000-0000-0000-000000000000}</id>
+						<id>{2E4279DF-A3CA-7640-92A3-8E8DD12D1C8A}</id>
 						<name>Camera</name>
 						<transform>
-							<translation>0.170462, 1.831332, 0.285676, 0</translation>
-							<rotation>0, 0, 0, 1</rotation>
+							<translation>0.152811, 1.840849, 0.282726, 0</translation>
+							<rotation>0, -0.059964, 0, 0.998201</rotation>
 						</transform>
 						<components/>
 					</entityData>
