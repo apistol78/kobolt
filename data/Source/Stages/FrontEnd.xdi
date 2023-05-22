@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.runtime.StageData" version="11">
+	<name>stage</name>
+	<inherit>{00000000-0000-0000-0000-000000000000}</inherit>
+	<layers>
+		<item type="traktor.spark.SparkLayerData" version="1">
+			<name>spark</name>
+			<permitTransition>true</permitTransition>
+			<movie>{E7EB59C5-57F9-BE42-93A3-FE38268D507D}</movie>
+			<externalMovies/>
+			<clearBackground>true</clearBackground>
+			<enableSound>true</enableSound>
+		</item>
+	</layers>
+	<class>{0B75B606-9221-3C45-91D6-5A450C934A40}</class>
+	<shaderFade>{00000000-0000-0000-0000-000000000000}</shaderFade>
+	<fadeOutUpdate>false</fadeOutUpdate>
+	<fadeRate>1</fadeRate>
+	<transitions>
+		<item>
+			<first>GAME</first>
+			<second>{DE6F1CC5-9EE4-E948-9432-28083D385E78}</second>
+		</item>
+	</transitions>
+	<resourceBundle>{00000000-0000-0000-0000-000000000000}</resourceBundle>
+	<properties/>
+</object>

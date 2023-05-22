@@ -15,16 +15,9 @@ function Game:new(params, environment)
 	Stage.new(self, params, environment)
 
 	self._inputMapping = environment.input.inputMapping
-	self._lobbyManager = LobbyManager(environment)
+	self._lobbyManager = params
 
 --	environment.input.inputSystem:setExclusive(true)
-
-
-	local timer = Timer()
-	while timer.elapsedTime < 1 do
-		--- wait a second
-	end
-
 
 	local Tspawn = self:getSpawnLocation()
 	local playerEntity = self.world:getEntity("Player")
@@ -40,8 +33,8 @@ function Game:postUpdate(info)
 	local cameraEntity = self.world:getEntity("Camera")
 
 	-- Get transform of Camera binding.
-	local jointBindingComponent = playerEntity:getComponent(animation.JointBindingComponent)
-	local Thead = jointBindingComponent:getEntity("Camera", 0).transform
+	local groupComponent = playerEntity:getComponent(world.GroupComponent)
+	local Thead = groupComponent:getEntity("Camera", 0).transform
 
 	-- Update camera transform to follow binding.
 	cameraEntity.transform = Thead * Transform(
@@ -69,8 +62,8 @@ function Game:update(info)
 	-- Read input state values.
 	local deltaHead = self._inputMapping:getStateValue("STATE_HEAD")
 	local pitch = self._inputMapping:getStateValue("STATE_PITCH")
-	local moveZ = self._inputMapping:getStateValue("MOVE_Z")
-	local moveX = self._inputMapping:getStateValue("MOVE_X")
+	local moveZ = self._inputMapping:getStateValue("MOVE_Z") * 0.6
+	local moveX = self._inputMapping:getStateValue("MOVE_X") * 0.4
 	local jump = self._inputMapping:isStatePressed("STATE_JUMP")
 	local fire = self._inputMapping:isStatePressed("STATE_FIRE")
 
@@ -99,8 +92,8 @@ function Game:update(info)
 
 		local replicator = self._lobbyManager._replicator
 
-		-- Use camera origin for replication origin.
-		replicator.origin = cameraEntity.transform.translation
+		-- Set origin for replication origin.
+		replicator.origin = playerEntity.transform.translation
 		replicator:setSendState(true)
 
 		-- Pack player state.

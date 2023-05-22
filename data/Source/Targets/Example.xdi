@@ -38,9 +38,10 @@
 				<item>{26EF1516-3BC8-BA40-B6A6-030F6A2D89FA}</item>
 				<item>{EF8AE953-B8A7-2449-9692-F0C32443DB38}</item>
 				<item>{41028E53-49A7-4E4C-B078-10F4A63BDC01}</item>
+				<item>{EB30F688-CB36-074B-9F05-C12D5E90E231}</item>
 			</features>
 			<root>{00000000-0000-0000-0000-000000000000}</root>
-			<startup>{DE6F1CC5-9EE4-E948-9432-28083D385E78}</startup>
+			<startup>{ABEA754B-E0C3-3C48-BFBF-909E32BB0E85}</startup>
 			<onlineConfig>{8731D6AA-BAA7-0D4D-BBE8-641A69599825}</onlineConfig>
 			<defaultInput>{4B85C96C-4A77-8A40-B1C4-4D072E082677}</defaultInput>
 		</item>
@@ -78,9 +79,10 @@
 				<item>{26EF1516-3BC8-BA40-B6A6-030F6A2D89FA}</item>
 				<item>{F95489ED-C44C-CE41-95CB-32D8930F8FD0}</item>
 				<item>{C4DF7811-52E0-5E4B-81B4-7A350390229A}</item>
+				<item>{EB30F688-CB36-074B-9F05-C12D5E90E231}</item>
 			</features>
 			<root>{00000000-0000-0000-0000-000000000000}</root>
-			<startup>{DE6F1CC5-9EE4-E948-9432-28083D385E78}</startup>
+			<startup>{ABEA754B-E0C3-3C48-BFBF-909E32BB0E85}</startup>
 			<onlineConfig>{8731D6AA-BAA7-0D4D-BBE8-641A69599825}</onlineConfig>
 			<defaultInput>{4B85C96C-4A77-8A40-B1C4-4D072E082677}</defaultInput>
 		</item>

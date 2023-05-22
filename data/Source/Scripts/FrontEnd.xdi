@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+#using \{F266FE75-7BF7-BC4C-9616-06D2B5F5F6E8}
+
+import(traktor)
+
+FrontEnd = FrontEnd or class("FrontEnd", Stage)
+
+function FrontEnd:new(params, environment)
+	Stage.new(self, params, environment)
+
+	self._lobbyManager = LobbyManager(environment)
+	self._timer = Timer()
+
+	-- Initialize UiKit.
+	Widget.initialize(
+		environment.resource.resourceManager,
+		{ "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
+	)
+
+	-- Create test frame.
+	self._frame = Frame(
+		self.spark.root,
+		1280, 720,
+		FloodLayout(0, 0)
+	)
+	self._frame:update()
+
+	Static(self._frame, "Joining...")
+		:setTextSize(60)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	-- Setup "widget under test".
+--	self:setup(self._frame)
+
+	-- Ensure frame is properly layed out.
+	self._frame:layout()
+end
+
+function FrontEnd:update(info)
+
+	-- Wait a second so network discovery can get up and running.
+	if self._timer.elapsedTime < 1 then
+		return
+	end
+
+	self._lobbyManager:update()
+
+	if self._lobbyManager._replicator ~= nil then
+		local nxt = self:loadStage("GAME", self._lobbyManager)
+		self:gotoStage(nxt)
+	end
+end
+
+	]]>
+	</text>
+</object>

@@ -414,6 +414,74 @@
 								</item>
 							</components>
 						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{C100B316-5345-8E4E-B107-DC42B44A6FD0}</id>
+							<name>Spawn</name>
+							<transform>
+								<translation>130.754501, -374.900116, -438.720215, 0</translation>
+								<rotation>0, -0.66687, 0, 0.745174</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.PersistentIdComponentData">
+									<id>{EB816F16-1A9E-0E4B-9682-C45EAFFC42CD}</id>
+								</item>
+								<item type="traktor.world.GroupComponentData">
+									<entityData>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{06CFA449-21CF-4800-A497-254E8EB2CDD8}</id>
+											<name>Player</name>
+											<transform>
+												<translation>130.754501, -374.900116, -438.720215, 0</translation>
+												<rotation>0, -0.66687, 0, 0.745174</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.EditorAttributesComponentData">
+													<visible>true</visible>
+													<locked>true</locked>
+													<include>false</include>
+													<dynamic>true</dynamic>
+												</item>
+											</components>
+											<entityData>{0176DFB1-8604-4648-ACBD-A46B1DE4472C}</entityData>
+										</item>
+									</entityData>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{0949935C-5EE3-FD46-B437-4EA0BC8E312B}</id>
+							<name>Spawn</name>
+							<transform>
+								<translation>130.754501, -372.923676, -420.31134, 0</translation>
+								<rotation>0, -0.66687, 0, 0.745174</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.PersistentIdComponentData">
+									<id>{EB816F16-1A9E-0E4B-9682-C45EAFFC42CD}</id>
+								</item>
+								<item type="traktor.world.GroupComponentData">
+									<entityData>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{06CFA449-21CF-4800-A497-254E8EB2CDD8}</id>
+											<name>Player</name>
+											<transform>
+												<translation>130.754501, -372.923676, -420.31134, 0</translation>
+												<rotation>0, -0.66687, 0, 0.745174</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.EditorAttributesComponentData">
+													<visible>true</visible>
+													<locked>true</locked>
+													<include>false</include>
+													<dynamic>true</dynamic>
+												</item>
+											</components>
+											<entityData>{0176DFB1-8604-4648-ACBD-A46B1DE4472C}</entityData>
+										</item>
+									</entityData>
+								</item>
+							</components>
+						</item>
 					</entityData>
 				</item>
 			</components>

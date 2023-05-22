@@ -61,18 +61,6 @@
 						<entityData>{37FB16F7-194F-408C-818D-04C92BCB1E51}</entityData>
 					</entityData>
 				</item>
-				<item>
-					<jointName>HeadTop_End</jointName>
-					<entityData type="traktor.world.EntityData" version="1">
-						<id>{2E4279DF-A3CA-7640-92A3-8E8DD12D1C8A}</id>
-						<name>Camera</name>
-						<transform>
-							<translation>0.152811, 1.840849, 0.282726, 0</translation>
-							<rotation>0, -0.059964, 0, 0.998201</rotation>
-						</transform>
-						<components/>
-					</entityData>
-				</item>
 			</bindings>
 		</item>
 		<item type="traktor.world.EventSetComponentData">
@@ -90,6 +78,19 @@
 					</second>
 				</item>
 			</eventData>
+		</item>
+		<item type="traktor.world.GroupComponentData">
+			<entityData>
+				<item type="traktor.world.EntityData" version="1">
+					<id>{99D7939C-DC4B-5A4B-B423-252C19B3991C}</id>
+					<name>Camera</name>
+					<transform>
+						<translation>0.115965, 1.870783, 0.292981, 0</translation>
+						<rotation>0, -0.059964, 0, 0.998201</rotation>
+					</transform>
+					<components/>
+				</item>
+			</entityData>
 		</item>
 	</components>
 </object>
