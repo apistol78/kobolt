@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+
+ProjectileManager = ProjectileManager or class("ProjectileManager")
+
+function ProjectileManager:new()
+	self._projectiles = {}
+end
+
+function ProjectileManager:add(entity, position, velocity)
+	local projectile = {}
+	projectile.entity = entity
+	projectile.position = position
+	projectile.velocity = velocity
+	projectile.age = 0
+	table.insert(self._projectiles, projectile)
+end
+
+function ProjectileManager:update(info)
+
+	local dT = info.simulationDeltaTime
+
+	for _, projectile in ipairs(self._projectiles) do
+		local impulse = projectile.velocity * dT
+		projectile.position = projectile.position + impulse
+		projectile.age = projectile.age + dT
+
+		local T = Transform(projectile.position, Quaternion.identity)
+		projectile.entity.transform = T
+	end
+
+end
+
+
+	]]>
+	</text>
+</object>

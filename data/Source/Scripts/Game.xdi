@@ -4,10 +4,12 @@
 	<![CDATA[
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
 #using \{F266FE75-7BF7-BC4C-9616-06D2B5F5F6E8}
+#using \{A90BA121-008F-42FC-82B9-2595B8A933A2}
 
 import(traktor)
 
 local GhostEntityId = Guid("\{0176DFB1-8604-4648-ACBD-A46B1DE4472C}")
+local BulletEntityId = Guid("\{8B5EE76D-1800-4587-A4D8-3223FAC05AAF}")
 
 Game = Game or class("Game", Stage)
 
@@ -16,6 +18,8 @@ function Game:new(params, environment)
 
 	self._inputMapping = environment.input.inputMapping
 	self._lobbyManager = params
+
+	self._projectileManager = ProjectileManager()
 
 	local Tspawn = self:getSpawnLocation()
 	local playerEntity = self.world:getEntity("Player")
@@ -83,6 +87,18 @@ function Game:update(info)
 	if fire then
 		local playerScript = playerEntity:getComponent(world.ScriptComponent)
 		playerScript:fire()
+
+		local jointBindingComponent = playerEntity:getComponent(animation.JointBindingComponent)
+		local weaponEntity = jointBindingComponent:getEntity("Weapon", 0)
+
+		local projectileEntity = self.world:createEntity(BulletEntityId)
+		self.world:addEntity(projectileEntity)
+
+		self._projectileManager:add(
+			projectileEntity,
+			weaponEntity.transform.translation,
+			weaponEntity.transform.axisZ * 10
+		)
 	end
 
 
@@ -156,6 +172,8 @@ function Game:update(info)
 			end
 		end
 	end
+
+	self._projectileManager:update(info)
 end
 
 function Game:getSpawnLocation()
