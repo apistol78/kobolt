@@ -17,12 +17,12 @@ function Game:new(params, environment)
 	self._inputMapping = environment.input.inputMapping
 	self._lobbyManager = params
 
---	environment.input.inputSystem:setExclusive(true)
-
 	local Tspawn = self:getSpawnLocation()
 	local playerEntity = self.world:getEntity("Player")
 	playerEntity.transform = Tspawn
 
+--	environment.input.inputSystem:setExclusive(true)
+--	environment.control.simulationFrequency = 10
 end
 
 function Game:postUpdate(info)

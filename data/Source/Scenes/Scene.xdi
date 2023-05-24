@@ -57,9 +57,9 @@
 			<ultra>
 				<projection>SpUniform</projection>
 				<farZ>70</farZ>
-				<resolution>2048</resolution>
-				<bias>0.0008</bias>
-				<biasCoeff>0.2</biasCoeff>
+				<resolution>1024</resolution>
+				<bias>0.002</bias>
+				<biasCoeff>0.01</biasCoeff>
 				<cascadingSlices>4</cascadingSlices>
 				<cascadingLambda>1.9</cascadingLambda>
 				<quantizeProjection>true</quantizeProjection>
@@ -428,7 +428,7 @@
 								<item type="traktor.world.GroupComponentData">
 									<entityData>
 										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-											<id>{06CFA449-21CF-4800-A497-254E8EB2CDD8}</id>
+											<id>{F6E2B055-5CE1-3548-8847-A7A7814682D1}</id>
 											<name>Player</name>
 											<transform>
 												<translation>130.754501, -374.900116, -438.720215, 0</translation>
@@ -462,7 +462,7 @@
 								<item type="traktor.world.GroupComponentData">
 									<entityData>
 										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-											<id>{06CFA449-21CF-4800-A497-254E8EB2CDD8}</id>
+											<id>{E4BF4011-9229-0947-83CC-B298A0C83867}</id>
 											<name>Player</name>
 											<transform>
 												<translation>130.754501, -372.923676, -420.31134, 0</translation>
