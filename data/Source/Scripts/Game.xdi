@@ -61,7 +61,8 @@ function Game:update(info)
 	local cameraEntity = self.world:getEntity("Camera")
 
 	-- Get player's character controller.
-	local characterComponent = playerEntity:getComponent(physics.CharacterComponent)
+	local playerCharacter = playerEntity:getComponent(physics.CharacterComponent)
+	local playerScript = playerEntity:getComponent(world.ScriptComponent)
 
 	-- Read input state values.
 	local deltaHead = self._inputMapping:getStateValue("STATE_HEAD")
@@ -72,20 +73,17 @@ function Game:update(info)
 	local fire = self._inputMapping:isStatePressed("STATE_FIRE")
 
 	-- Issue movement of player character.
-	local Qhead = Quaternion.fromEulerAngles(characterComponent.headAngle, 0, 0)
+	local Qhead = Quaternion.fromEulerAngles(playerCharacter.headAngle, 0, 0)
 	local Vmove = Qhead:transform(Vector4(moveX, 0, moveZ, 0))
 
-	characterComponent.headAngle = characterComponent.headAngle + deltaHead * 0.01
-	characterComponent:move(Vmove, false)
+	playerCharacter.headAngle = playerCharacter.headAngle + deltaHead * 0.01
+	playerCharacter:move(Vmove, false)
 
 	if jump then
-		local playerScript = playerEntity:getComponent(world.ScriptComponent)
 		playerScript:jump()
 	end
 
-
 	if fire then
-		local playerScript = playerEntity:getComponent(world.ScriptComponent)
 		playerScript:fire()
 
 		local jointBindingComponent = playerEntity:getComponent(animation.JointBindingComponent)
@@ -113,7 +111,6 @@ function Game:update(info)
 		replicator:setSendState(true)
 
 		-- Pack player state.
-		local playerScript = playerEntity:getComponent(world.ScriptComponent)
 		replicator.state = playerScript:captureState()
 
 

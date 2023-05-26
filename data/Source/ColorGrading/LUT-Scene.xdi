@@ -3,7 +3,7 @@
 	<redCurve>
 		<item>
 			<first>0</first>
-			<second>0.076628</second>
+			<second>0.011494</second>
 		</item>
 		<item>
 			<first>0.719048</first>
@@ -17,7 +17,7 @@
 	<greenCurve>
 		<item>
 			<first>0</first>
-			<second>0.057471</second>
+			<second>0</second>
 		</item>
 		<item>
 			<first>0.371429</first>
@@ -42,7 +42,7 @@
 			<second>1</second>
 		</item>
 	</blueCurve>
-	<brightness>0.05</brightness>
-	<contrast>1.3</contrast>
-	<saturation>1.55</saturation>
+	<brightness>0.17</brightness>
+	<contrast>1.36</contrast>
+	<saturation>1.11</saturation>
 </object>

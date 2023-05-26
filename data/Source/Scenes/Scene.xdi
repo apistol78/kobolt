@@ -4,7 +4,7 @@
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>750</viewFarZ>
 		<exposureMode>EmFixed</exposureMode>
-		<exposure>0.4</exposure>
+		<exposure>-0.4</exposure>
 		<shadowSettings>
 			<disabled>
 				<projection>SpUniform</projection>
@@ -68,7 +68,7 @@
 			</ultra>
 		</shadowSettings>
 		<fogDistance>20</fogDistance>
-		<fogDensity>0.001</fogDensity>
+		<fogDensity>0</fogDensity>
 		<fogColor>1, 1, 1, 1</fogColor>
 		<irradianceGrid>{BC071CFE-4E0E-8042-BE03-35B1FBAC7110}</irradianceGrid>
 		<imageProcess>
@@ -479,6 +479,23 @@
 											<entityData>{0176DFB1-8604-4648-ACBD-A46B1DE4472C}</entityData>
 										</item>
 									</entityData>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{BAF216F5-DBC2-B24A-A151-DB275E73A661}</id>
+							<name/>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.VolumetricFogComponentData" version="1">
+									<shader>{FEDA90CE-25C6-BC4D-9767-EA4B45F4A043}</shader>
+									<maxDistance>50</maxDistance>
+									<sliceCount>128</sliceCount>
+									<mediumColor>1, 1, 1, 1</mediumColor>
+									<mediumDensity>1</mediumDensity>
 								</item>
 							</components>
 						</item>
