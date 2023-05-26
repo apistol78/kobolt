@@ -19,13 +19,15 @@ function Game:new(params, environment)
 	self._inputMapping = environment.input.inputMapping
 	self._lobbyManager = params
 
-	self._projectileManager = ProjectileManager()
+	self._projectileManager = ProjectileManager(
+		environment.physics.physicsManager
+	)
 
 	local Tspawn = self:getSpawnLocation()
 	local playerEntity = self.world:getEntity("Player")
 	playerEntity.transform = Tspawn
 
---	environment.input.inputSystem:setExclusive(true)
+	environment.input.inputSystem:setExclusive(true)
 --	environment.control.simulationFrequency = 10
 end
 

@@ -2,10 +2,10 @@
 <object type="traktor.script.Script" version="2">
 	<text>
 	<![CDATA[
-
 ProjectileManager = ProjectileManager or class("ProjectileManager")
 
-function ProjectileManager:new()
+function ProjectileManager:new(physicsManager)
+	self._physicsManager = physicsManager
 	self._projectiles = {}
 end
 
@@ -32,7 +32,6 @@ function ProjectileManager:update(info)
 	end
 
 end
-
 
 	]]>
 	</text>

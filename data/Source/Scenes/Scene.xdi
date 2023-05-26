@@ -418,7 +418,7 @@
 							<id>{C100B316-5345-8E4E-B107-DC42B44A6FD0}</id>
 							<name>Spawn</name>
 							<transform>
-								<translation>130.754501, -374.900116, -438.720215, 0</translation>
+								<translation>130.754501, -373.869049, -438.720215, 0</translation>
 								<rotation>0, -0.66687, 0, 0.745174</rotation>
 							</transform>
 							<components>
@@ -431,7 +431,7 @@
 											<id>{F6E2B055-5CE1-3548-8847-A7A7814682D1}</id>
 											<name>Player</name>
 											<transform>
-												<translation>130.754501, -374.900116, -438.720215, 0</translation>
+												<translation>130.754501, -373.869049, -438.720215, 0</translation>
 												<rotation>0, -0.66687, 0, 0.745174</rotation>
 											</transform>
 											<components>
@@ -479,23 +479,6 @@
 											<entityData>{0176DFB1-8604-4648-ACBD-A46B1DE4472C}</entityData>
 										</item>
 									</entityData>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{BAF216F5-DBC2-B24A-A151-DB275E73A661}</id>
-							<name/>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.VolumetricFogComponentData" version="1">
-									<shader>{FEDA90CE-25C6-BC4D-9767-EA4B45F4A043}</shader>
-									<maxDistance>50</maxDistance>
-									<sliceCount>128</sliceCount>
-									<mediumColor>1, 1, 1, 1</mediumColor>
-									<mediumDensity>1</mediumDensity>
 								</item>
 							</components>
 						</item>
