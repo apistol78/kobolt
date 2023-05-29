@@ -4,7 +4,7 @@
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>750</viewFarZ>
 		<exposureMode>EmFixed</exposureMode>
-		<exposure>-0.4</exposure>
+		<exposure>-0.05</exposure>
 		<shadowSettings>
 			<disabled>
 				<projection>SpUniform</projection>
@@ -98,41 +98,6 @@
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
 						<item type="traktor.world.EntityData" version="1">
-							<id>{0A8105AE-7497-E642-8FDB-1B6BFEB90823}</id>
-							<name>Sky</name>
-							<transform>
-								<translation>0, 2.639621, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components>
-								<item type="traktor.weather.SkyComponentData" version="3">
-									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
-									<texture>{0789F946-5DC0-6846-BFDA-14F70951F74E}</texture>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{EA14EDDF-9F72-5E44-83FC-59830E2D7B03}</id>
-							<name>Sun</name>
-							<transform>
-								<translation>-1.13559, 7.738311, 2.556878, 0</translation>
-								<rotation>0.520203, -0.263121, 0.17239, 0.794001</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.LightComponentData" version="11">
-									<lightType>Directional</lightType>
-									<color>1, 0.717647, 0.717647, 1</color>
-									<intensity>2</intensity>
-									<castShadow>true</castShadow>
-									<range>100</range>
-									<radius>1.570796</radius>
-									<flickerAmount>0</flickerAmount>
-									<flickerFilter>0</flickerFilter>
-									<bakeMode>LbmDisabled</bakeMode>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
 							<id>{7CF0F66F-A33E-1F40-B3D4-207129011D7E}</id>
 							<name>Reflection Probe</name>
 							<transform>
@@ -150,70 +115,6 @@
 									</volume>
 								</item>
 							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{6A123769-EE64-A743-AC60-FBC1D042E192}</id>
-							<name>Terrain</name>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components>
-								<item type="traktor.terrain.TerrainComponentData">
-									<terrain>{8FE24385-2BC8-F340-AFD2-7229642E27DB}</terrain>
-									<patchLodDistance>300</patchLodDistance>
-									<patchLodBias>0</patchLodBias>
-									<patchLodExponent>0.3</patchLodExponent>
-									<surfaceLodDistance>100</surfaceLodDistance>
-									<surfaceLodBias>0</surfaceLodBias>
-									<surfaceLodExponent>1</surfaceLodExponent>
-								</item>
-								<item type="traktor.terrain.UndergrowthComponentData" version="1">
-									<shader>{65A8BBFC-1029-5446-833A-DDCEFFA163A9}</shader>
-									<spreadDistance>100</spreadDistance>
-									<plants>
-										<item>
-											<attribute>0</attribute>
-											<density>800</density>
-											<plant>0</plant>
-											<scale>1</scale>
-										</item>
-									</plants>
-								</item>
-								<item type="traktor.physics.RigidBodyComponentData">
-									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
-										<shape type="traktor.physics.HeightfieldShapeDesc" version="6,traktor.physics.ShapeDesc:6">
-											<localTransform>
-												<translation>0, 0, 0, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
-											</localTransform>
-											<collisionGroup>
-												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
-											</collisionGroup>
-											<collisionMask>
-												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
-												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
-											</collisionMask>
-											<material>0</material>
-											<heightfield>{3601FF0B-D6B2-D24C-BB35-81CA1038EB0D}</heightfield>
-										</shape>
-										<friction>0.75</friction>
-										<restitution>0</restitution>
-										<kinematic>false</kinematic>
-									</bodyDesc>
-									<eventCollide/>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-							<id>{4D7DF187-934C-AF42-AE95-4C0FC2245206}</id>
-							<name>Level-Entity</name>
-							<transform>
-								<translation>114.749664, -389.450287, -448.106476, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-							<entityData>{C83F57E8-95AB-1F43-B940-4F6994E76FE2}</entityData>
 						</item>
 						<item type="traktor.world.EntityData" version="1">
 							<id>{D3010E7E-30C1-8044-A694-14005EDDB2A8}</id>
@@ -486,7 +387,163 @@
 				</item>
 			</components>
 		</item>
+		<item type="traktor.world.LayerEntityData" version="3,traktor.world.EntityData:1">
+			<id>{45083A51-86AA-A341-BB03-BBD011D317F2}</id>
+			<name>Static</name>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.EditorAttributesComponentData">
+					<visible>true</visible>
+					<locked>false</locked>
+					<include>true</include>
+					<dynamic>false</dynamic>
+				</item>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{265EA1DA-729D-FC44-8CCC-E048053FF1D9}</id>
+							<name>Sky</name>
+							<transform>
+								<translation>0, 2.639621, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.weather.SkyComponentData" version="3">
+									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
+									<texture>{0789F946-5DC0-6846-BFDA-14F70951F74E}</texture>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{876DE559-F472-214A-95A5-F9812AC58283}</id>
+							<name>Sun</name>
+							<transform>
+								<translation>-1.13559, 7.738311, 2.556878, 0</translation>
+								<rotation>0.520203, -0.263121, 0.17239, 0.794001</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.LightComponentData" version="11">
+									<lightType>Directional</lightType>
+									<color>1, 0.717647, 0.717647, 1</color>
+									<intensity>2</intensity>
+									<castShadow>true</castShadow>
+									<range>100</range>
+									<radius>1.570796</radius>
+									<flickerAmount>0</flickerAmount>
+									<flickerFilter>0</flickerFilter>
+									<bakeMode>LbmIndirect</bakeMode>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{8B8F41DF-E066-164C-AFAC-61328BECD639}</id>
+							<name>Terrain</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.terrain.TerrainComponentData">
+									<terrain>{8FE24385-2BC8-F340-AFD2-7229642E27DB}</terrain>
+									<patchLodDistance>300</patchLodDistance>
+									<patchLodBias>0</patchLodBias>
+									<patchLodExponent>0.3</patchLodExponent>
+									<surfaceLodDistance>100</surfaceLodDistance>
+									<surfaceLodBias>0</surfaceLodBias>
+									<surfaceLodExponent>1</surfaceLodExponent>
+								</item>
+								<item type="traktor.terrain.UndergrowthComponentData" version="1">
+									<shader>{65A8BBFC-1029-5446-833A-DDCEFFA163A9}</shader>
+									<spreadDistance>100</spreadDistance>
+									<plants>
+										<item>
+											<attribute>0</attribute>
+											<density>800</density>
+											<plant>0</plant>
+											<scale>1</scale>
+										</item>
+									</plants>
+								</item>
+								<item type="traktor.physics.RigidBodyComponentData">
+									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+										<shape type="traktor.physics.HeightfieldShapeDesc" version="6,traktor.physics.ShapeDesc:6">
+											<localTransform>
+												<translation>0, 0, 0, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</localTransform>
+											<collisionGroup>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionGroup>
+											<collisionMask>
+												<item>{09CB1141-1924-3349-934A-CEB9728D7A61}</item>
+												<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
+											</collisionMask>
+											<material>0</material>
+											<heightfield>{3601FF0B-D6B2-D24C-BB35-81CA1038EB0D}</heightfield>
+										</shape>
+										<friction>0.75</friction>
+										<restitution>0</restitution>
+										<kinematic>false</kinematic>
+									</bodyDesc>
+									<eventCollide/>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{953C3D9A-2D7B-7B46-A1B3-32FEBC8944FA}</id>
+							<name>Level-Entity</name>
+							<transform>
+								<translation>114.749664, -389.450287, -448.106476, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{C83F57E8-95AB-1F43-B940-4F6994E76FE2}</entityData>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{CE6B19A7-4DE1-9747-8267-440BF84A85F8}</id>
+							<name>Irradiance</name>
+							<transform>
+								<translation>114.749664, -389.450287, -448.106476, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.VolumeComponentData">
+									<volumes>
+										<item>
+											<mn>-100, -50, -100, 1</mn>
+											<mx>100, 50, 100, 1</mx>
+										</item>
+									</volumes>
+								</item>
+							</components>
+						</item>
+					</entityData>
+				</item>
+			</components>
+		</item>
 	</layers>
 	<controllerData/>
-	<operationData/>
+	<operationData>
+		<item type="traktor.shape.BakeConfiguration" version="28">
+			<enableLightmaps>false</enableLightmaps>
+			<primarySampleCount>100</primarySampleCount>
+			<secondarySampleCount>50</secondarySampleCount>
+			<shadowSampleCount>50</shadowSampleCount>
+			<maxPathDistance>10</maxPathDistance>
+			<pointLightShadowRadius>0.1</pointLightShadowRadius>
+			<lumelDensity>16</lumelDensity>
+			<irradianceGridDensity>0.15</irradianceGridDensity>
+			<minimumLightMapSize>16</minimumLightMapSize>
+			<maximumLightMapSize>1024</maximumLightMapSize>
+			<enableDenoise>true</enableDenoise>
+			<skyAttenuation>1</skyAttenuation>
+			<ambientOcclusionFactor>0.2</ambientOcclusionFactor>
+			<irradianceCache>false</irradianceCache>
+			<irradianceCacheMaxDistance>1</irradianceCacheMaxDistance>
+			<enableDirectionalMaps>false</enableDirectionalMaps>
+		</item>
+	</operationData>
 </object>
