@@ -493,8 +493,8 @@ else
 			<id>{8807B07A-6DAE-B549-86A6-F81A428AF9B9}</id>
 			<comment/>
 			<position>
-				<first>1263</first>
-				<second>-594</second>
+				<first>1361</first>
+				<second>-719</second>
 			</position>
 			<value>0, 0, 1, 0</value>
 		</item>
@@ -933,16 +933,6 @@ else
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
-				<node ref="/object/nodes/item[32]"/>
-				<id>{E666AE3F-B432-9543-B7AC-15DF393C600A}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[10]"/>
-				<id>{3BFF07B7-0B69-42D7-91D0-0F315B985C8E}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
 				<node ref="/object/nodes/item[26]"/>
 				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
 			</source>
@@ -999,6 +989,16 @@ else
 			<destination>
 				<node ref="/object/nodes/item[4]"/>
 				<id>{32EB5230-1F0D-40B8-93F6-9C8E5469454E}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[31]"/>
+				<id>{D51E6077-37E9-4B1C-86D2-92DA544DC613}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[10]"/>
+				<id>{3BFF07B7-0B69-42D7-91D0-0F315B985C8E}</id>
 			</destination>
 		</item>
 	</edges>

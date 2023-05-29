@@ -4,7 +4,7 @@
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>750</viewFarZ>
 		<exposureMode>EmFixed</exposureMode>
-		<exposure>-0.05</exposure>
+		<exposure>0.25</exposure>
 		<shadowSettings>
 			<disabled>
 				<projection>SpUniform</projection>
@@ -383,63 +383,8 @@
 								</item>
 							</components>
 						</item>
-					</entityData>
-				</item>
-			</components>
-		</item>
-		<item type="traktor.world.LayerEntityData" version="3,traktor.world.EntityData:1">
-			<id>{45083A51-86AA-A341-BB03-BBD011D317F2}</id>
-			<name>Static</name>
-			<transform>
-				<translation>0, 0, 0, 0</translation>
-				<rotation>0, 0, 0, 1</rotation>
-			</transform>
-			<components>
-				<item type="traktor.world.EditorAttributesComponentData">
-					<visible>true</visible>
-					<locked>false</locked>
-					<include>true</include>
-					<dynamic>false</dynamic>
-				</item>
-				<item type="traktor.world.GroupComponentData">
-					<entityData>
 						<item type="traktor.world.EntityData" version="1">
-							<id>{265EA1DA-729D-FC44-8CCC-E048053FF1D9}</id>
-							<name>Sky</name>
-							<transform>
-								<translation>0, 2.639621, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components>
-								<item type="traktor.weather.SkyComponentData" version="3">
-									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
-									<texture>{0789F946-5DC0-6846-BFDA-14F70951F74E}</texture>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{876DE559-F472-214A-95A5-F9812AC58283}</id>
-							<name>Sun</name>
-							<transform>
-								<translation>-1.13559, 7.738311, 2.556878, 0</translation>
-								<rotation>0.520203, -0.263121, 0.17239, 0.794001</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.LightComponentData" version="11">
-									<lightType>Directional</lightType>
-									<color>1, 0.717647, 0.717647, 1</color>
-									<intensity>2</intensity>
-									<castShadow>true</castShadow>
-									<range>100</range>
-									<radius>1.570796</radius>
-									<flickerAmount>0</flickerAmount>
-									<flickerFilter>0</flickerFilter>
-									<bakeMode>LbmIndirect</bakeMode>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{8B8F41DF-E066-164C-AFAC-61328BECD639}</id>
+							<id>{74BA2AA2-1EE0-4811-A57C-F37A75B265C6}</id>
 							<name>Terrain</name>
 							<transform>
 								<translation>0, 0, 0, 0</translation>
@@ -492,6 +437,61 @@
 								</item>
 							</components>
 						</item>
+					</entityData>
+				</item>
+			</components>
+		</item>
+		<item type="traktor.world.LayerEntityData" version="3,traktor.world.EntityData:1">
+			<id>{45083A51-86AA-A341-BB03-BBD011D317F2}</id>
+			<name>Static</name>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.EditorAttributesComponentData">
+					<visible>true</visible>
+					<locked>false</locked>
+					<include>true</include>
+					<dynamic>false</dynamic>
+				</item>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{265EA1DA-729D-FC44-8CCC-E048053FF1D9}</id>
+							<name>Sky</name>
+							<transform>
+								<translation>0, 2.639621, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.weather.SkyComponentData" version="3">
+									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
+									<texture>{0789F946-5DC0-6846-BFDA-14F70951F74E}</texture>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{876DE559-F472-214A-95A5-F9812AC58283}</id>
+							<name>Sun</name>
+							<transform>
+								<translation>119.303337, -383.86264, -447.607056, 0</translation>
+								<rotation>0.376786, -0.14726, 0.060809, 0.912496</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.LightComponentData" version="11">
+									<lightType>Directional</lightType>
+									<color>1, 1, 1, 1</color>
+									<intensity>2</intensity>
+									<castShadow>true</castShadow>
+									<range>100</range>
+									<radius>1.570796</radius>
+									<flickerAmount>0</flickerAmount>
+									<flickerFilter>0</flickerFilter>
+									<bakeMode>LbmIndirect</bakeMode>
+								</item>
+							</components>
+						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
 							<id>{953C3D9A-2D7B-7B46-A1B3-32FEBC8944FA}</id>
 							<name>Level-Entity</name>
@@ -513,8 +513,8 @@
 								<item type="traktor.world.VolumeComponentData">
 									<volumes>
 										<item>
-											<mn>-100, -50, -100, 1</mn>
-											<mx>100, 50, 100, 1</mx>
+											<mn>-50, -30, -50, 1</mn>
+											<mx>50, 30, 50, 1</mx>
 										</item>
 									</volumes>
 								</item>
@@ -527,22 +527,20 @@
 	</layers>
 	<controllerData/>
 	<operationData>
-		<item type="traktor.shape.BakeConfiguration" version="28">
+		<item type="traktor.shape.BakeConfiguration" version="29">
 			<enableLightmaps>false</enableLightmaps>
 			<primarySampleCount>100</primarySampleCount>
-			<secondarySampleCount>50</secondarySampleCount>
-			<shadowSampleCount>50</shadowSampleCount>
+			<secondarySampleCount>40</secondarySampleCount>
+			<shadowSampleCount>20</shadowSampleCount>
 			<maxPathDistance>10</maxPathDistance>
 			<pointLightShadowRadius>0.1</pointLightShadowRadius>
 			<lumelDensity>16</lumelDensity>
-			<irradianceGridDensity>0.15</irradianceGridDensity>
+			<irradianceGridDensity>0.26</irradianceGridDensity>
 			<minimumLightMapSize>16</minimumLightMapSize>
 			<maximumLightMapSize>1024</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
 			<skyAttenuation>1</skyAttenuation>
-			<ambientOcclusionFactor>0.2</ambientOcclusionFactor>
-			<irradianceCache>false</irradianceCache>
-			<irradianceCacheMaxDistance>1</irradianceCacheMaxDistance>
+			<ambientOcclusionFactor>0.35</ambientOcclusionFactor>
 			<enableDirectionalMaps>false</enableDirectionalMaps>
 		</item>
 	</operationData>
