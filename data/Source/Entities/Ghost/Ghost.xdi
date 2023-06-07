@@ -92,5 +92,34 @@
 				</item>
 			</entityData>
 		</item>
+		<item type="traktor.animation.ClothComponentData" version="1">
+			<shader>{472E1DE2-FEA2-DC41-AA84-56E0542D0696}</shader>
+			<resolutionX>10</resolutionX>
+			<resolutionY>20</resolutionY>
+			<scale>0.6</scale>
+			<jointRadius>0.15</jointRadius>
+			<anchors>
+				<item>
+					<jointName>LeftArm</jointName>
+					<jointOffset>0, 0, -0.12, 0</jointOffset>
+					<x>0</x>
+					<y>0</y>
+				</item>
+				<item>
+					<jointName>RightArm</jointName>
+					<jointOffset>0, 0, -0.12, 0</jointOffset>
+					<x>9</x>
+					<y>0</y>
+				</item>
+				<item>
+					<jointName>Neck</jointName>
+					<jointOffset>0, 0, -0.12, 0</jointOffset>
+					<x>5</x>
+					<y>0</y>
+				</item>
+			</anchors>
+			<solverIterations>4</solverIterations>
+			<damping>0.005</damping>
+		</item>
 	</components>
 </object>

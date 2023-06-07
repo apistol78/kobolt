@@ -3,8 +3,8 @@
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="37">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>750</viewFarZ>
-		<exposureMode>EmFixed</exposureMode>
-		<exposure>0.25</exposure>
+		<exposureMode>EmAdaptive</exposureMode>
+		<exposure>0.2</exposure>
 		<shadowSettings>
 			<disabled>
 				<projection>SpUniform</projection>
@@ -58,8 +58,8 @@
 				<projection>SpUniform</projection>
 				<farZ>70</farZ>
 				<resolution>1024</resolution>
-				<bias>0.002</bias>
-				<biasCoeff>0.01</biasCoeff>
+				<bias>0.004</bias>
+				<biasCoeff>0.06</biasCoeff>
 				<cascadingSlices>4</cascadingSlices>
 				<cascadingLambda>1.9</cascadingLambda>
 				<quantizeProjection>true</quantizeProjection>
