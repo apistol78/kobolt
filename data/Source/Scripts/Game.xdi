@@ -20,6 +20,7 @@ function Game:new(params, environment)
 	self._lobbyManager = params
 
 	self._projectileManager = ProjectileManager(
+		self.world,
 		environment.physics.physicsManager
 	)
 
@@ -91,11 +92,8 @@ function Game:update(info)
 		local jointBindingComponent = playerEntity:getComponent(animation.JointBindingComponent)
 		local weaponEntity = jointBindingComponent:getEntity("Weapon", 0)
 
-		local projectileEntity = self.world:createEntity(BulletEntityId)
-		self.world:addEntity(projectileEntity)
-
 		self._projectileManager:add(
-			projectileEntity,
+			BulletEntityId,
 			weaponEntity.transform.translation,
 			weaponEntity.transform.axisZ * 10
 		)

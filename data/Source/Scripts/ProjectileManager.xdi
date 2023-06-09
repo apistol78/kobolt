@@ -4,12 +4,17 @@
 	<![CDATA[
 ProjectileManager = ProjectileManager or class("ProjectileManager")
 
-function ProjectileManager:new(physicsManager)
+function ProjectileManager:new(world, physicsManager)
+	self._world = world
 	self._physicsManager = physicsManager
 	self._projectiles = {}
 end
 
-function ProjectileManager:add(entity, position, velocity)
+function ProjectileManager:add(entityId, position, velocity)
+
+	local entity = self._world:createEntity(entityId)
+	self._world:addEntity(entity)
+
 	local projectile = {}
 	projectile.entity = entity
 	projectile.position = position
@@ -19,13 +24,31 @@ function ProjectileManager:add(entity, position, velocity)
 end
 
 function ProjectileManager:update(info)
+	local dT < const > = info.simulationDeltaTime
 
-	local dT = info.simulationDeltaTime
+
+	local filter = physics.QueryFilter()
+
 
 	for _, projectile in ipairs(self._projectiles) do
 		local impulse = projectile.velocity * dT
-		projectile.position = projectile.position + impulse
-		projectile.age = projectile.age + dT
+
+		local from = projectile.position
+		local to = from + impulse
+
+		local result = self._physicsManager:queryRay(
+			from,
+			(to - from):normalized(),
+			(to - from).length,
+			filter,
+			false
+		)
+		if result == nil then
+			projectile.position = to
+			projectile.age = projectile.age + dT
+		else
+			print("HIT")
+		end
 
 		local T = Transform(projectile.position, Quaternion.identity)
 		projectile.entity.transform = T
