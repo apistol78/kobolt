@@ -145,7 +145,6 @@ else if ($Input.y > $Input.x && $Input.y > $Input.z)
 	$Output = 1;
 else
 	$Output = 2;
-
 			]]>
 			</script>
 		</item>
@@ -225,6 +224,16 @@ else
 			<mipBias>0</mipBias>
 			<ignoreMips>false</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
+		</item>
+		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
+			<id>{54E98C93-4AF9-DA4A-9DE9-5930F7141DBB}</id>
+			<comment/>
+			<position>
+				<first>830</first>
+				<second>508</second>
+			</position>
+			<external>{226CD7DB-8B57-8842-9991-8AF53FD6C561}</external>
+			<type>Texture2D</type>
 		</item>
 	</nodes>
 	<edges>
