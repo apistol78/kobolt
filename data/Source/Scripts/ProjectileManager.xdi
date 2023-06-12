@@ -25,35 +25,34 @@ end
 
 function ProjectileManager:update(info)
 	local dT < const > = info.simulationDeltaTime
-
-
 	local filter = physics.QueryFilter()
 
-
 	for _, projectile in ipairs(self._projectiles) do
-		local impulse = projectile.velocity * dT
+		if projectile.entity ~= nil then
 
-		local from = projectile.position
-		local to = from + impulse
-
-		local result = self._physicsManager:queryRay(
-			from,
-			(to - from):normalized(),
-			(to - from).length,
-			filter,
-			false
-		)
-		if result == nil then
-			projectile.position = to
-			projectile.age = projectile.age + dT
-		else
-			print("HIT")
+			local impulse = projectile.velocity * dT
+			local from = projectile.position
+			local to = from + impulse
+	
+			local result = self._physicsManager:queryRay(
+				from,
+				(to - from):normalized(),
+				(to - from).length,
+				filter,
+				false
+			)
+			if result == nil then
+				projectile.position = to
+				projectile.age = projectile.age + dT
+				local T = Transform(projectile.position, Quaternion.identity)
+				projectile.entity.transform = T
+			else
+				self._world:removeEntity(projectile.entity)
+				projectile.entity = nil
+			end
 		end
-
-		local T = Transform(projectile.position, Quaternion.identity)
-		projectile.entity.transform = T
 	end
-
+	
 end
 
 	]]>

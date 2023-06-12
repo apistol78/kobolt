@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{E3F5ECD2-BE41-C343-B77B-31442F773653}</id>
+	<name>Building 1</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData" version="1">
+			<mesh>{262D104E-419F-8D41-A723-5446B0A9325C}</mesh>
+		</item>
+		<item type="traktor.physics.RigidBodyComponentData">
+			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
+				<shape type="traktor.physics.MeshShapeDesc" version="6,traktor.physics.ShapeDesc:6">
+					<localTransform>
+						<translation>0, 0, 0, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</localTransform>
+					<collisionGroup/>
+					<collisionMask/>
+					<material>0</material>
+					<mesh>{5E703537-EEFC-5B4A-9F7E-0A46E4CA8801}</mesh>
+				</shape>
+				<friction>0.75</friction>
+				<restitution>0</restitution>
+				<kinematic>false</kinematic>
+			</bodyDesc>
+			<eventCollide/>
+		</item>
+	</components>
+</object>
