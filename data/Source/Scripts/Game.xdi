@@ -3,6 +3,7 @@
 	<text>
 	<![CDATA[
 #using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 #using \{F266FE75-7BF7-BC4C-9616-06D2B5F5F6E8}
 #using \{A90BA121-008F-42FC-82B9-2595B8A933A2}
 
@@ -29,7 +30,28 @@ function Game:new(params, environment)
 	playerEntity.transform = Tspawn
 
 	environment.input.inputSystem:setExclusive(true)
---	environment.control.simulationFrequency = 10
+
+	-- Initialize UiKit.
+	Widget.initialize(
+		environment.resource.resourceManager,
+		{ "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
+	)
+
+	-- Create test frame.
+	self._frame = Frame(
+		self.spark.root,
+		1280, 720,
+		FloodLayout(0, 0)
+	)
+	self._frame:update()
+
+	Static(self._frame, ".")
+		:setTextSize(60)
+		:setTextColor(Color4f(1, 1, 1, 1))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	self._frame:layout()
 end
 
 function Game:postUpdate(info)
@@ -95,7 +117,7 @@ function Game:update(info)
 		self._projectileManager:add(
 			BulletEntityId,
 			weaponEntity.transform.translation,
-			weaponEntity.transform.axisZ * 10
+			weaponEntity.transform.axisZ * 100
 		)
 	end
 

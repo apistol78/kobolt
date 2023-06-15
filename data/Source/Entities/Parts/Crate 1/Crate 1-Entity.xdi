@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.world.EntityData" version="1">
-	<id>{38F9A96D-E439-3742-92EB-88DA6DF1013E}</id>
-	<name>Concrete Wall</name>
+	<id>{FB0686E7-4D4C-0F40-A414-30EAAB7A91A9}</id>
+	<name>Crate 1</name>
 	<transform>
 		<translation>0, 0, 0, 0</translation>
 		<rotation>0, 0, 0, 1</rotation>
 	</transform>
 	<components>
 		<item type="traktor.mesh.MeshComponentData" version="1">
-			<mesh>{F1C50E04-1C9D-0149-A76C-EA0DD0A77FD6}</mesh>
+			<mesh>{94AC1085-AD15-204D-990D-6C3423A3916E}</mesh>
 		</item>
 		<item type="traktor.physics.RigidBodyComponentData">
 			<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
@@ -25,7 +25,7 @@
 						<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
 					</collisionMask>
 					<material>0</material>
-					<mesh>{A9604D1F-6ABC-DF49-98EC-23C149C632C6}</mesh>
+					<mesh>{628B6CC4-B572-F64D-843F-C3E993366860}</mesh>
 				</shape>
 				<friction>0.75</friction>
 				<restitution>0</restitution>

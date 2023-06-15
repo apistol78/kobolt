@@ -8,6 +8,14 @@
 			<permitTransition>true</permitTransition>
 			<scene>{24A7B72D-9EB5-C24B-9ED2-FD8EAFAE11B8}</scene>
 		</item>
+		<item type="traktor.spark.SparkLayerData" version="1">
+			<name>spark</name>
+			<permitTransition>false</permitTransition>
+			<movie>{E7EB59C5-57F9-BE42-93A3-FE38268D507D}</movie>
+			<externalMovies/>
+			<clearBackground>false</clearBackground>
+			<enableSound>false</enableSound>
+		</item>
 	</layers>
 	<class>{7BCB3498-87E1-614F-B03E-2335EE7556B3}</class>
 	<shaderFade>{00000000-0000-0000-0000-000000000000}</shaderFade>

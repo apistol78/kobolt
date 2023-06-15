@@ -55,7 +55,7 @@
 				<first>1183</first>
 				<second>474</second>
 			</position>
-			<value>0.8125</value>
+			<value>0.9</value>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
@@ -64,7 +64,7 @@
 				<first>1213</first>
 				<second>534</second>
 			</position>
-			<value>0.5</value>
+			<value>0</value>
 		</item>
 		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
 			<id>{06ABA840-55A9-1E4A-9A03-1F27ECBF8965}</id>

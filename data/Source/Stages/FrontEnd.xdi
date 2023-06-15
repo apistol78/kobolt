@@ -5,7 +5,7 @@
 	<layers>
 		<item type="traktor.spark.SparkLayerData" version="1">
 			<name>spark</name>
-			<permitTransition>true</permitTransition>
+			<permitTransition>false</permitTransition>
 			<movie>{E7EB59C5-57F9-BE42-93A3-FE38268D507D}</movie>
 			<externalMovies/>
 			<clearBackground>true</clearBackground>
