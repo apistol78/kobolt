@@ -5,6 +5,8 @@
 #using \{218D113A-66DC-9049-8424-701FF60F2BC4}
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 
+import(traktor)
+
 UI_Scaffolding = UI_Scaffolding or class("UI_Scaffolding", Scaffolding)
 
 function UI_Scaffolding:setup(frame)
@@ -17,7 +19,7 @@ function UI_Scaffolding:setup(frame)
 	PushButton(tb, "Button 1")
 
 	PushButton(ct, "Button 3")
-		:setStyle("background", traktor.Color4f(1, 0, 0, 1))
+		:setStyle("background", Color4f(1, 0, 0, 1))
 
 	ProgressBar(ct)
 
