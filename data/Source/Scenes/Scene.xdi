@@ -2,9 +2,9 @@
 <object type="traktor.scene.SceneAsset" version="9">
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="39">
 		<viewNearZ>0.1</viewNearZ>
-		<viewFarZ>750</viewFarZ>
+		<viewFarZ>1500</viewFarZ>
 		<exposureMode>Adaptive</exposureMode>
-		<exposure>0</exposure>
+		<exposure>1.55</exposure>
 		<shadowSettings>
 			<disabled>
 				<farZ>0</farZ>
@@ -49,18 +49,18 @@
 			<ultra>
 				<farZ>70</farZ>
 				<resolution>2048</resolution>
-				<bias>0.002</bias>
+				<bias>0.001</bias>
 				<cascadingSlices>4</cascadingSlices>
 				<cascadingLambda>1.9</cascadingLambda>
-				<quantizeProjection>true</quantizeProjection>
+				<quantizeProjection>false</quantizeProjection>
 				<maskDenominator>1</maskDenominator>
 				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</ultra>
 		</shadowSettings>
 		<fogDistance>8.45</fogDistance>
-		<fogDensity>0.02</fogDensity>
-		<fogDensityMax>0.25</fogDensityMax>
-		<fogColor>0.698039, 0.72549, 0.784314, 1</fogColor>
+		<fogDensity>0.004</fogDensity>
+		<fogDensityMax>1</fogDensityMax>
+		<fogColor>0.850981, 0.945098, 0.764706, 0.858824</fogColor>
 		<irradianceGrid>{BC071CFE-4E0E-8042-BE03-35B1FBAC7110}</irradianceGrid>
 		<imageProcess>
 			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
@@ -391,18 +391,6 @@
 									<surfaceLodBias>0</surfaceLodBias>
 									<surfaceLodExponent>1</surfaceLodExponent>
 								</item>
-								<item type="traktor.terrain.UndergrowthComponentData" version="1">
-									<shader>{65A8BBFC-1029-5446-833A-DDCEFFA163A9}</shader>
-									<spreadDistance>100</spreadDistance>
-									<plants>
-										<item>
-											<attribute>0</attribute>
-											<density>800</density>
-											<plant>0</plant>
-											<scale>1</scale>
-										</item>
-									</plants>
-								</item>
 								<item type="traktor.physics.RigidBodyComponentData">
 									<bodyDesc type="traktor.physics.StaticBodyDesc" version="5">
 										<shape type="traktor.physics.HeightfieldShapeDesc" version="6,traktor.physics.ShapeDesc:6">
@@ -595,8 +583,8 @@
 											<id>{8D8B54DA-8219-E44D-8633-4206D46DAC3F}</id>
 											<name>Concrete Wall-Entity</name>
 											<transform>
-												<translation>112.25, -384.25, -453.25, 0</translation>
-												<rotation>0, 0.069943, 0, 0.997551</rotation>
+												<translation>112.794968, -384.25, -452.800812, 0</translation>
+												<rotation>0, 0.20846, 0, 0.978031</rotation>
 											</transform>
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
@@ -1109,5 +1097,21 @@
 		</item>
 	</layers>
 	<controllerData/>
-	<operationData/>
+	<operationData>
+		<item type="traktor.shape.BakeConfiguration" version="30">
+			<enableLightmaps>true</enableLightmaps>
+			<primarySampleCount>100</primarySampleCount>
+			<secondarySampleCount>50</secondarySampleCount>
+			<shadowSampleCount>50</shadowSampleCount>
+			<maxPathDistance>4</maxPathDistance>
+			<pointLightShadowRadius>0.1</pointLightShadowRadius>
+			<lumelDensity>16</lumelDensity>
+			<irradianceGridDensity>0.1</irradianceGridDensity>
+			<minimumLightMapSize>16</minimumLightMapSize>
+			<maximumLightMapSize>1024</maximumLightMapSize>
+			<enableDenoise>true</enableDenoise>
+			<skyAttenuation>1</skyAttenuation>
+			<ambientOcclusionFactor>0.5</ambientOcclusionFactor>
+		</item>
+	</operationData>
 </object>
