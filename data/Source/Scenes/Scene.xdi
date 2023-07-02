@@ -57,7 +57,7 @@
 				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</ultra>
 		</shadowSettings>
-		<fogDistance>8.45</fogDistance>
+		<fogDistance>30</fogDistance>
 		<fogDensity>0.004</fogDensity>
 		<fogDensityMax>1</fogDensityMax>
 		<fogColor>0.850981, 0.945098, 0.764706, 0.858824</fogColor>
@@ -140,7 +140,7 @@
 							<id>{49DB0757-9EBA-8B43-B9EA-2CCAFA262A2A}</id>
 							<name>Spawn</name>
 							<transform>
-								<translation>107.07077, -386.627289, -478.544128, 0</translation>
+								<translation>115.325386, -386.627289, -494.388367, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
@@ -153,7 +153,7 @@
 											<id>{F8F34368-21ED-0149-AFC2-4EC92703E5A1}</id>
 											<name>Player</name>
 											<transform>
-												<translation>107.07077, -386.627289, -478.544128, 0</translation>
+												<translation>115.325386, -386.627289, -494.388367, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -475,15 +475,15 @@
 							<id>{CE6B19A7-4DE1-9747-8267-440BF84A85F8}</id>
 							<name>Irradiance</name>
 							<transform>
-								<translation>114.749664, -389.450287, -448.106476, 0</translation>
+								<translation>120.324387, -389.450287, -460.221985, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.VolumeComponentData">
 									<volumes>
 										<item>
-											<mn>-50, -30, -50, 1</mn>
-											<mx>50, 30, 50, 1</mx>
+											<mn>-50, -30, -70, 1</mn>
+											<mx>50, 30, 70, 1</mx>
 										</item>
 									</volumes>
 								</item>
@@ -1091,6 +1091,25 @@
 							<components/>
 							<entityData>{4CDA1C3C-059C-E043-83CF-B0C367B280FA}</entityData>
 						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{CF2157DE-AE8B-8C47-B01A-9E7B0706D873}</id>
+							<name>Camera</name>
+							<transform>
+								<translation>118.615845, -381.196808, -449.494263, 0</translation>
+								<rotation>0.06639, -0.91933, 0.176805, 0.345202</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.CameraComponentData">
+									<projection>Perspective</projection>
+									<fov>1.221731</fov>
+									<width>1</width>
+									<height>1</height>
+								</item>
+								<item type="traktor.world.PersistentIdComponentData">
+									<id>{7529B732-4E46-9F4E-B7DF-9A9689E68EAE}</id>
+								</item>
+							</components>
+						</item>
 					</entityData>
 				</item>
 			</components>
@@ -1100,18 +1119,18 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="30">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>100</primarySampleCount>
-			<secondarySampleCount>50</secondarySampleCount>
+			<primarySampleCount>60</primarySampleCount>
+			<secondarySampleCount>60</secondarySampleCount>
 			<shadowSampleCount>50</shadowSampleCount>
-			<maxPathDistance>4</maxPathDistance>
+			<maxPathDistance>30</maxPathDistance>
 			<pointLightShadowRadius>0.1</pointLightShadowRadius>
-			<lumelDensity>16</lumelDensity>
-			<irradianceGridDensity>0.1</irradianceGridDensity>
+			<lumelDensity>20</lumelDensity>
+			<irradianceGridDensity>0.5</irradianceGridDensity>
 			<minimumLightMapSize>16</minimumLightMapSize>
 			<maximumLightMapSize>1024</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
 			<skyAttenuation>1</skyAttenuation>
-			<ambientOcclusionFactor>0.5</ambientOcclusionFactor>
+			<ambientOcclusionFactor>0.25</ambientOcclusionFactor>
 		</item>
 	</operationData>
 </object>
