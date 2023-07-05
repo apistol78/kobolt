@@ -111,8 +111,8 @@
 							<id>{D3010E7E-30C1-8044-A694-14005EDDB2A8}</id>
 							<name>Camera</name>
 							<transform>
-								<translation>107.667725, -376.033661, -451.55896, 0</translation>
-								<rotation>0.184307, 0.214302, -0.041215, 0.958336</rotation>
+								<translation>153.582199, -368.486847, -446.683289, 0</translation>
+								<rotation>0.18471, -0.204709, 0.039369, 0.96043</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.CameraComponentData">
@@ -1057,6 +1057,36 @@
 											<components/>
 											<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
 										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{EB2F0AA9-9F6B-4100-9CFC-60EE26F1BF6A}</id>
+											<name>Crate 2-Entity</name>
+											<transform>
+												<translation>150.488342, -384.513458, -468.950256, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{D807C0F7-2C93-4DDA-8114-929C25763446}</id>
+											<name>Crate 2-Entity</name>
+											<transform>
+												<translation>150.184586, -384.513458, -478.059143, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{5356AD1B-5F18-4B85-9297-71ADD8E595B1}</id>
+											<name>Crate 1-Entity</name>
+											<transform>
+												<translation>115.12114, -382.530701, -457.446747, 0</translation>
+												<rotation>0, 0.079914, 0, 0.996802</rotation>
+											</transform>
+											<components/>
+											<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
+										</item>
 									</entityData>
 								</item>
 							</components>
@@ -1110,6 +1140,58 @@
 								</item>
 							</components>
 						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{4498B630-F6B5-41FC-A005-453A1AB5C924}</id>
+							<name>Light</name>
+							<transform>
+								<translation>149.525452, -374.692902, -437.250305, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.LightComponentData" version="11">
+									<lightType>Point</lightType>
+									<color>1, 1, 1, 0</color>
+									<intensity>10</intensity>
+									<castShadow>false</castShadow>
+									<range>10</range>
+									<radius>1.570796</radius>
+									<flickerAmount>0</flickerAmount>
+									<flickerFilter>0</flickerFilter>
+									<bakeMode>LbmAll</bakeMode>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{99CC29E2-4E9E-4E75-A6DA-3DF9BC38F8BC}</id>
+							<name>Facade Light-Entity</name>
+							<transform>
+								<translation>121.615623, -379.372986, -450.243378, 0</translation>
+								<rotation>0, -0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{5FC56D1A-971E-4C86-8BB6-409C78F00851}</entityData>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{FB836D1E-4F38-4DA1-9D16-2E81FC7EDFC8}</id>
+							<name>Light</name>
+							<transform>
+								<translation>120.292168, -379.471649, -450.243378, 0</translation>
+								<rotation>0, 0, -0.069943, 0.997551</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.LightComponentData" version="11">
+									<lightType>Spot</lightType>
+									<color>1, 1, 1, 0</color>
+									<intensity>30</intensity>
+									<castShadow>true</castShadow>
+									<range>10</range>
+									<radius>0.872665</radius>
+									<flickerAmount>0</flickerAmount>
+									<flickerFilter>0</flickerFilter>
+									<bakeMode>LbmIndirect</bakeMode>
+								</item>
+							</components>
+						</item>
 					</entityData>
 				</item>
 			</components>
@@ -1119,13 +1201,13 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="30">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>60</primarySampleCount>
-			<secondarySampleCount>60</secondarySampleCount>
+			<primarySampleCount>3</primarySampleCount>
+			<secondarySampleCount>50</secondarySampleCount>
 			<shadowSampleCount>50</shadowSampleCount>
 			<maxPathDistance>30</maxPathDistance>
 			<pointLightShadowRadius>0.1</pointLightShadowRadius>
-			<lumelDensity>20</lumelDensity>
-			<irradianceGridDensity>0.5</irradianceGridDensity>
+			<lumelDensity>10</lumelDensity>
+			<irradianceGridDensity>0.2</irradianceGridDensity>
 			<minimumLightMapSize>16</minimumLightMapSize>
 			<maximumLightMapSize>1024</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
