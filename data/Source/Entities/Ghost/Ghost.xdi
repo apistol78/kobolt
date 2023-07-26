@@ -33,8 +33,8 @@
 		</item>
 		<item type="traktor.animation.SkeletonComponentData">
 			<skeleton>{5C4E0290-51EA-AF42-92FE-92AC660B70E4}</skeleton>
-			<poseController type="traktor.animation.StatePoseControllerData" version="2">
-				<stateGraph>{776001F7-F53D-4F4F-8DCF-F61AEFDC729A}</stateGraph>
+			<poseController type="traktor.animation.AnimationGraphPoseControllerData" version="3">
+				<animationGraph>{776001F7-F53D-4F4F-8DCF-F61AEFDC729A}</animationGraph>
 				<randomTimeOffset>
 					<min>0</min>
 					<max>0</max>

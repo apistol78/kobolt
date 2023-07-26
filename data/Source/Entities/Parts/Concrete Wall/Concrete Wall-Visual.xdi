@@ -4,7 +4,12 @@
 	<importFilter/>
 	<meshType>MtStatic</meshType>
 	<materialTemplates/>
-	<materialShaders/>
+	<materialShaders>
+		<item>
+			<first>concrete</first>
+			<second>{9AB402E4-F439-C94E-AF56-47F1F7364EFA}</second>
+		</item>
+	</materialShaders>
 	<materialTextures/>
 	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
 	<scaleFactor>1</scaleFactor>
