@@ -894,7 +894,7 @@
 											<name>Concrete Wall-Entity</name>
 											<transform>
 												<translation>155.848816, -386.78009, -471.280762, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
@@ -1039,6 +1039,46 @@
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
 										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{1D7AA8B3-F773-4DE3-8C4F-3ED3EE89E663}</id>
+											<name>Concrete Wall-Entity</name>
+											<transform>
+												<translation>128.635986, -384.25, -460.25, 0</translation>
+												<rotation>0, -0.707107, 0, 0.707107</rotation>
+											</transform>
+											<components/>
+											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{1279BA36-109C-41A5-AB37-268B34091F83}</id>
+											<name>Concrete Wall-Entity</name>
+											<transform>
+												<translation>133.214905, -384.25, -460.25, 0</translation>
+												<rotation>0, -0.707107, 0, 0.707107</rotation>
+											</transform>
+											<components/>
+											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{0C208BA8-233A-4DF6-86DE-FEF1E7DBA0C8}</id>
+											<name>Concrete Wall-Entity</name>
+											<transform>
+												<translation>122.265266, -374.391266, -454.155121, 0</translation>
+												<rotation>0, -0.019999, 0, 0.9998</rotation>
+											</transform>
+											<components/>
+											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{E1B316CB-37D3-4636-AC63-FD3CC98045B8}</id>
+											<name>Concrete Wall-Entity</name>
+											<transform>
+												<translation>125.173996, -374.391266, -455.844299, 0</translation>
+												<rotation>0, 0.688921, 0, 0.724836</rotation>
+											</transform>
+											<components/>
+											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
+										</item>
 									</entityData>
 								</item>
 							</components>
@@ -1098,7 +1138,7 @@
 											<name>Building 1-Entity</name>
 											<transform>
 												<translation>154.428009, -378.206512, -422.041321, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0D487A58-4C2C-EC4F-A01C-2048674E529C}</entityData>
@@ -1875,7 +1915,7 @@
 							<id>{D817C492-54E5-407F-9335-D6D6358F4499}</id>
 							<name>Cover 1-Entity</name>
 							<transform>
-								<translation>129.11235, -386.930542, -469.989685, 0</translation>
+								<translation>129.11235, -386.930542, -470.390198, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -2085,11 +2125,31 @@
 							<id>{8C3B5D12-5279-4CF3-BD01-06CE6C33DA8B}</id>
 							<name>Ramp-Entity</name>
 							<transform>
-								<translation>125.002441, -388.523865, -464.035736, 0</translation>
+								<translation>124.207466, -388.031677, -464.393188, 0</translation>
 								<rotation>0, 0.707107, 0, 0.707107</rotation>
 							</transform>
 							<components/>
 							<entityData>{BFF0CCAF-AF7E-48EF-BECF-97D213951095}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{D2C16618-7E3D-4181-BF57-FBD38AA279C8}</id>
+							<name>Barrel-Entity</name>
+							<transform>
+								<translation>126.003906, -386.745911, -465.905029, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{7E433747-C27D-4C96-9086-632834187CB1}</id>
+							<name>Barrel-Entity</name>
+							<transform>
+								<translation>128.539413, -386.745911, -462.636719, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
 						</item>
 					</entityData>
 				</item>
@@ -2100,7 +2160,7 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="31">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>1</primarySampleCount>
+			<primarySampleCount>3</primarySampleCount>
 			<secondarySampleCount>100</secondarySampleCount>
 			<shadowSampleCount>50</shadowSampleCount>
 			<maxPathDistance>40</maxPathDistance>
