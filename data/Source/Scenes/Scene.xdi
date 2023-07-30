@@ -894,7 +894,7 @@
 											<name>Concrete Wall-Entity</name>
 											<transform>
 												<translation>155.848816, -386.78009, -471.280762, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
@@ -1098,7 +1098,7 @@
 											<name>Building 1-Entity</name>
 											<transform>
 												<translation>154.428009, -378.206512, -422.041321, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0D487A58-4C2C-EC4F-A01C-2048674E529C}</entityData>
@@ -1231,7 +1231,7 @@
 											<id>{EB2F0AA9-9F6B-4100-9CFC-60EE26F1BF6A}</id>
 											<name>Crate 2-Entity</name>
 											<transform>
-												<translation>150.488342, -384.513458, -468.950256, 0</translation>
+												<translation>150.488342, -384.513458, -469.288513, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -1241,7 +1241,7 @@
 											<id>{D807C0F7-2C93-4DDA-8114-929C25763446}</id>
 											<name>Crate 2-Entity</name>
 											<transform>
-												<translation>137.210602, -384.513458, -469.166016, 0</translation>
+												<translation>137.210602, -384.513458, -469.628296, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -1875,7 +1875,7 @@
 							<id>{D817C492-54E5-407F-9335-D6D6358F4499}</id>
 							<name>Cover 1-Entity</name>
 							<transform>
-								<translation>129.11235, -386.930542, -469.599579, 0</translation>
+								<translation>129.11235, -386.930542, -469.989685, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -2075,11 +2075,21 @@
 							<id>{8FC34E7E-A01B-47CB-B635-8405659724D2}</id>
 							<name>Level Ground 1-Entity</name>
 							<transform>
-								<translation>152.91864, -381.903565, -437.469482, 0</translation>
+								<translation>152.91864, -381.903565, -437.769653, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
 							<entityData>{10DC75EA-2F69-495D-A0F1-25F7EC4EA224}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{8C3B5D12-5279-4CF3-BD01-06CE6C33DA8B}</id>
+							<name>Ramp-Entity</name>
+							<transform>
+								<translation>125.002441, -388.523865, -464.035736, 0</translation>
+								<rotation>0, 0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{BFF0CCAF-AF7E-48EF-BECF-97D213951095}</entityData>
 						</item>
 					</entityData>
 				</item>
@@ -2090,7 +2100,7 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="31">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>14</primarySampleCount>
+			<primarySampleCount>1</primarySampleCount>
 			<secondarySampleCount>100</secondarySampleCount>
 			<shadowSampleCount>50</shadowSampleCount>
 			<maxPathDistance>40</maxPathDistance>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.mesh.MeshAsset" version="21">
+	<fileName>Meshes/Parts/Ramp.blend</fileName>
+	<importFilter/>
+	<meshType>MtStatic</meshType>
+	<materialTemplates/>
+	<materialShaders>
+		<item>
+			<first>Material</first>
+			<second>{9AB402E4-F439-C94E-AF56-47F1F7364EFA}</second>
+		</item>
+	</materialShaders>
+	<materialTextures/>
+	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
+	<scaleFactor>1</scaleFactor>
+	<offset>0, 0, 0, 0</offset>
+	<renormalize>false</renormalize>
+	<center>false</center>
+	<grounded>false</grounded>
+	<lodSteps>8</lodSteps>
+	<lodMaxDistance>100</lodMaxDistance>
+	<lodCullDistance>200</lodCullDistance>
+	<previewAngle>0</previewAngle>
+</object>
