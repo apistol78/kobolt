@@ -1063,7 +1063,7 @@
 											<id>{0C208BA8-233A-4DF6-86DE-FEF1E7DBA0C8}</id>
 											<name>Concrete Wall-Entity</name>
 											<transform>
-												<translation>122.265266, -374.391266, -454.155121, 0</translation>
+												<translation>122.265266, -374.480316, -454.155121, 0</translation>
 												<rotation>0, -0.019999, 0, 0.9998</rotation>
 											</transform>
 											<components/>
@@ -1073,8 +1073,18 @@
 											<id>{E1B316CB-37D3-4636-AC63-FD3CC98045B8}</id>
 											<name>Concrete Wall-Entity</name>
 											<transform>
-												<translation>125.173996, -374.391266, -455.844299, 0</translation>
+												<translation>125.173996, -374.481323, -455.844299, 0</translation>
 												<rotation>0, 0.688921, 0, 0.724836</rotation>
+											</transform>
+											<components/>
+											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{0F53AB14-6FC0-BD43-8FD3-EE16E1493D2E}</id>
+											<name>Concrete Wall-Entity</name>
+											<transform>
+												<translation>122.265266, -374.480316, -449.974609, 0</translation>
+												<rotation>0, 0.01, 0, 0.99995</rotation>
 											</transform>
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
@@ -1098,7 +1108,7 @@
 											<name>Building 1-Entity</name>
 											<transform>
 												<translation>109.115723, -386.044739, -517.176147, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0D487A58-4C2C-EC4F-A01C-2048674E529C}</entityData>
@@ -1107,8 +1117,8 @@
 											<id>{31B30935-AB0A-0242-A313-298C90C66879}</id>
 											<name>Building 1-Entity</name>
 											<transform>
-												<translation>110.916008, -386.044739, -493.903656, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>110.916008, -386.044739, -495.994934, 0</translation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0D487A58-4C2C-EC4F-A01C-2048674E529C}</entityData>
@@ -1191,7 +1201,7 @@
 											<id>{7AD28902-DB31-D444-A027-7163D3C709E6}</id>
 											<name>Crate 1-Entity</name>
 											<transform>
-												<translation>104.14492, -385.084961, -484.661255, 0</translation>
+												<translation>153.049438, -381.690949, -479.750244, 0</translation>
 												<rotation>0, 0.21823, 0, 0.975897</rotation>
 											</transform>
 											<components/>
@@ -1221,7 +1231,7 @@
 											<id>{23C07F85-D88A-5D40-B92E-F796A421362F}</id>
 											<name>Crate 1-Entity</name>
 											<transform>
-												<translation>98.919334, -385.084961, -507.748932, 0</translation>
+												<translation>98.919334, -385.084961, -508.794281, 0</translation>
 												<rotation>0, -0.285952, 0, 0.958244</rotation>
 											</transform>
 											<components/>
@@ -1326,6 +1336,16 @@
 											</transform>
 											<components/>
 											<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{30650619-96DA-5A4E-8255-A11D0A27A8EC}</id>
+											<name>Crate 2-Entity</name>
+											<transform>
+												<translation>106.912346, -384.513458, -485.952423, 0</translation>
+												<rotation>0, -0.999893, 0, 0.014601</rotation>
+											</transform>
+											<components/>
+											<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
 										</item>
 									</entityData>
 								</item>
@@ -1461,7 +1481,7 @@
 											<name>Control</name>
 											<transform>
 												<translation>103.951942, -374.139832, -450.243378, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>0, 0, -0.257081, 0.96639</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1474,7 +1494,7 @@
 											<name>Control</name>
 											<transform>
 												<translation>97.817093, -368.032867, -450.243378, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<rotation>0, 0, -0.380188, 0.924909</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1488,7 +1508,7 @@
 									<meshStart>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshStart>
 									<meshRepeat>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshRepeat>
 									<meshEnd>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshEnd>
-									<automaticOrientation>true</automaticOrientation>
+									<automaticOrientation>false</automaticOrientation>
 									<detail>1</detail>
 								</item>
 							</components>
@@ -1542,8 +1562,8 @@
 											<id>{E3F6ADDB-3860-42FD-B727-E06F0B447FD2}</id>
 											<name>Control</name>
 											<transform>
-												<translation>104.860985, -374.674774, -435.229858, 0</translation>
-												<rotation>0, 0.159318, 0, 0.987227</rotation>
+												<translation>104.86097, -374.674774, -435.229858, 0</translation>
+												<rotation>-0.034768, 0.155478, -0.215442, 0.963433</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1555,8 +1575,8 @@
 											<id>{E9A86A7E-B904-4F25-8755-301F51C1FE47}</id>
 											<name>Control</name>
 											<transform>
-												<translation>95.549324, -368.142365, -432.017609, 0</translation>
-												<rotation>0, 0.159318, 0, 0.987227</rotation>
+												<translation>95.549423, -368.142365, -432.017456, 0</translation>
+												<rotation>-0.064964, 0.145472, -0.402552, 0.901426</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1570,7 +1590,7 @@
 									<meshStart>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshStart>
 									<meshRepeat>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshRepeat>
 									<meshEnd>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshEnd>
-									<automaticOrientation>true</automaticOrientation>
+									<automaticOrientation>false</automaticOrientation>
 									<detail>1</detail>
 								</item>
 							</components>
@@ -1625,7 +1645,7 @@
 											<name>Control</name>
 											<transform>
 												<translation>115.306152, -374.564819, -488.814514, 0</translation>
-												<rotation>0, -0.581035, 0, 0.813879</rotation>
+												<rotation>0.121122, -0.56827, -0.169661, 0.795999</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1639,7 +1659,7 @@
 									<meshStart>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshStart>
 									<meshRepeat>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshRepeat>
 									<meshEnd>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshEnd>
-									<automaticOrientation>true</automaticOrientation>
+									<automaticOrientation>false</automaticOrientation>
 									<detail>1</detail>
 								</item>
 							</components>
@@ -1668,7 +1688,7 @@
 											<name>Control</name>
 											<transform>
 												<translation>139.197907, -378.514374, -487.93219, 0</translation>
-												<rotation>-0.026628, -0.265398, 0.096216, 0.958956</rotation>
+												<rotation>0.002668, -0.266717, -0.009638, 0.963723</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1680,8 +1700,8 @@
 											<id>{669D5510-5EB2-45AB-9022-250180B327FA}</id>
 											<name>Control</name>
 											<transform>
-												<translation>128.989502, -377.420136, -493.546265, 0</translation>
-												<rotation>0, -0.266731, 0, 0.963771</rotation>
+												<translation>128.989502, -377.420136, -493.546295, 0</translation>
+												<rotation>0.018656, -0.266078, -0.067409, 0.961411</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1694,7 +1714,7 @@
 											<name>Control</name>
 											<transform>
 												<translation>122.122757, -374.564545, -497.574402, 0</translation>
-												<rotation>0, -0.266731, 0, 0.963771</rotation>
+												<rotation>0.060809, -0.259707, -0.219718, 0.938391</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1708,7 +1728,7 @@
 									<meshStart>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshStart>
 									<meshRepeat>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshRepeat>
 									<meshEnd>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshEnd>
-									<automaticOrientation>true</automaticOrientation>
+									<automaticOrientation>false</automaticOrientation>
 									<detail>1</detail>
 								</item>
 							</components>
@@ -1750,7 +1770,7 @@
 											<name>Control</name>
 											<transform>
 												<translation>139.634003, -368.437164, -446.039948, 0</translation>
-												<rotation>0, -0.099833, 0, 0.995004</rotation>
+												<rotation>-0.012942, -0.098991, 0.128986, 0.986608</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1763,7 +1783,7 @@
 											<name>Control</name>
 											<transform>
 												<translation>129.227264, -370.274841, -447.470032, 0</translation>
-												<rotation>0, -0.099833, 0, 0.995004</rotation>
+												<rotation>-0.007978, -0.099514, 0.079515, 0.991822</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1777,7 +1797,7 @@
 									<meshStart>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshStart>
 									<meshRepeat>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshRepeat>
 									<meshEnd>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshEnd>
-									<automaticOrientation>true</automaticOrientation>
+									<automaticOrientation>false</automaticOrientation>
 									<detail>1</detail>
 								</item>
 							</components>
@@ -1805,8 +1825,8 @@
 											<id>{3CB4121A-D3B3-4C0F-8C07-B2AC5327456C}</id>
 											<name>Control</name>
 											<transform>
-												<translation>139.547791, -380.394836, -503.477875, 0</translation>
-												<rotation>0.031405, 0.312996, 0.094765, 0.944493</rotation>
+												<translation>139.547836, -380.394836, -503.477844, 0</translation>
+												<rotation>-0.00629, 0.314505, -0.018984, 0.949045</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1818,8 +1838,8 @@
 											<id>{356E202B-F043-42F6-A976-112174F5625B}</id>
 											<name>Control</name>
 											<transform>
-												<translation>130.468292, -379.299896, -496.177856, 0</translation>
-												<rotation>0, 0.314567, 0, 0.949235</rotation>
+												<translation>130.468369, -379.299774, -496.177795, 0</translation>
+												<rotation>-0.028273, 0.313294, -0.085316, 0.945393</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1831,8 +1851,8 @@
 											<id>{AA2EEF4F-636E-42D4-A9E0-BA8B3403942D}</id>
 											<name>Control</name>
 											<transform>
-												<translation>122.042175, -376.444366, -490.10318, 0</translation>
-												<rotation>0, 0.314567, 0, 0.949235</rotation>
+												<translation>122.042297, -376.444244, -490.103088, 0</translation>
+												<rotation>-0.034533, 0.312666, -0.104205, 0.943498</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -1846,7 +1866,7 @@
 									<meshStart>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshStart>
 									<meshRepeat>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshRepeat>
 									<meshEnd>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshEnd>
-									<automaticOrientation>true</automaticOrientation>
+									<automaticOrientation>false</automaticOrientation>
 									<detail>1</detail>
 								</item>
 							</components>
@@ -1865,7 +1885,7 @@
 							<id>{7128A8B5-D118-45EE-8FC2-7B195255A9A2}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>143.276535, -386.745911, -481.125916, 0</translation>
+								<translation>143.076813, -386.775421, -481.503876, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -2205,7 +2225,7 @@
 							<id>{68A2C99D-5592-E942-847F-AC9089A4F33A}</id>
 							<name>AC-Entity</name>
 							<transform>
-								<translation>144.913086, -379.060486, -482.077759, 0</translation>
+								<translation>144.820679, -379.008057, -482.077759, 0</translation>
 								<rotation>0, 1, 0, 0</rotation>
 							</transform>
 							<components/>
@@ -2267,8 +2287,8 @@
 											<id>{2B89666C-C1BB-5647-95FD-8DB5E3CEF529}</id>
 											<name>Control</name>
 											<transform>
-												<translation>125.869919, -376.521118, -429.878967, 0</translation>
-												<rotation>0, 0.852108, 0, 0.523366</rotation>
+												<translation>125.7901, -376.521118, -429.836884, 0</translation>
+												<rotation>0, 0.247404, 0, 0.968912</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -2280,8 +2300,8 @@
 											<id>{A1F2AE7E-7780-2D46-A17F-E4FFF6C6F0DD}</id>
 											<name>Control</name>
 											<transform>
-												<translation>127.933754, -375.182739, -425.966187, 0</translation>
-												<rotation>0, 0.852108, 0, 0.523366</rotation>
+												<translation>127.933655, -375.182739, -425.966217, 0</translation>
+												<rotation>-0.127337, 0.84254, -0.078211, 0.517489</rotation>
 											</transform>
 											<components>
 												<item type="traktor.shape.ControlPointComponentData">
@@ -2295,10 +2315,40 @@
 									<meshStart>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshStart>
 									<meshRepeat>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshRepeat>
 									<meshEnd>{FCB498A4-C43B-4550-AC71-42BE22FA57E5}</meshEnd>
-									<automaticOrientation>true</automaticOrientation>
+									<automaticOrientation>false</automaticOrientation>
 									<detail>1</detail>
 								</item>
 							</components>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{AEEB9F66-F81A-9443-90B2-EAF0007BD84E}</id>
+							<name>Barrel-Entity</name>
+							<transform>
+								<translation>120.712921, -384.168762, -447.050873, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{60648304-2FAC-3240-B83A-6CDDBD145255}</id>
+							<name>Barrel-Entity</name>
+							<transform>
+								<translation>113.771149, -384.168762, -408.781433, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{2293D469-7DC5-4E40-B527-221A0E7C1B91}</id>
+							<name>Barrel-Entity</name>
+							<transform>
+								<translation>126.192429, -384.168762, -432.218719, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
 						</item>
 					</entityData>
 				</item>
@@ -2320,7 +2370,7 @@
 			<maximumLightMapSize>2048</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
 			<skyAttenuation>1</skyAttenuation>
-			<ambientOcclusionFactor>0.25</ambientOcclusionFactor>
+			<ambientOcclusionFactor>0.5</ambientOcclusionFactor>
 		</item>
 	</operationData>
 </object>
