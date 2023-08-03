@@ -92,7 +92,7 @@
 							<id>{7CF0F66F-A33E-1F40-B3D4-207129011D7E}</id>
 							<name>Reflection Probe</name>
 							<transform>
-								<translation>-0.338778, -148.889267, -2.02693, 0</translation>
+								<translation>113.818939, -382.007996, -471.728516, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
@@ -1631,7 +1631,7 @@
 											<id>{2EDE6EA4-5E04-411F-BC9B-E585BE66D0D9}</id>
 											<name>Control</name>
 											<transform>
-												<translation>118.468407, -377.420044, -474.119659, 0</translation>
+												<translation>118.468407, -377.238892, -474.119659, 0</translation>
 												<rotation>0, -0.581035, 0, 0.813879</rotation>
 											</transform>
 											<components>
@@ -1885,7 +1885,7 @@
 							<id>{7128A8B5-D118-45EE-8FC2-7B195255A9A2}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>143.076813, -386.775421, -481.503876, 0</translation>
+								<translation>143.076813, -386.775421, -481.440308, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -2185,7 +2185,7 @@
 							<id>{20CBEC2A-8C71-0C4D-A3BD-E35C086FAE68}</id>
 							<name>AC-Entity</name>
 							<transform>
-								<translation>121.080917, -382.4758, -443.75293, 0</translation>
+								<translation>121.080917, -382.395996, -443.731812, 0</translation>
 								<rotation>0, 0.707107, 0, 0.707107</rotation>
 							</transform>
 							<components/>
@@ -2216,7 +2216,7 @@
 							<name>AC-Entity</name>
 							<transform>
 								<translation>113.467094, -379.060486, -488.270233, 0</translation>
-								<rotation>0, 1, 0, 0</rotation>
+								<rotation>0, -1, 0, 0</rotation>
 							</transform>
 							<components/>
 							<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2226,7 +2226,7 @@
 							<name>AC-Entity</name>
 							<transform>
 								<translation>144.820679, -379.008057, -482.077759, 0</translation>
-								<rotation>0, 1, 0, 0</rotation>
+								<rotation>0, -1, 0, 0</rotation>
 							</transform>
 							<components/>
 							<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2359,7 +2359,7 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="31">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>3</primarySampleCount>
+			<primarySampleCount>9</primarySampleCount>
 			<secondarySampleCount>100</secondarySampleCount>
 			<shadowSampleCount>50</shadowSampleCount>
 			<maxPathDistance>40</maxPathDistance>

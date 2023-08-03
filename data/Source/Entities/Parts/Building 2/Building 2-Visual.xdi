@@ -7,7 +7,7 @@
 	<materialShaders>
 		<item>
 			<first>m_bricks</first>
-			<second>{6C1764C8-2E4E-40A1-8A8D-B6129BC66565}</second>
+			<second>{E38FD494-95D9-A74A-984A-9689C4DA3A99}</second>
 		</item>
 		<item>
 			<first>m_concrete</first>
@@ -24,5 +24,5 @@
 	<lodSteps>8</lodSteps>
 	<lodMaxDistance>100</lodMaxDistance>
 	<lodCullDistance>200</lodCullDistance>
-	<previewAngle>1.193805</previewAngle>
+	<previewAngle>1.130973</previewAngle>
 </object>
