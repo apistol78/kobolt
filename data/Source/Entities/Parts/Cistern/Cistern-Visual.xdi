@@ -4,7 +4,12 @@
 	<importFilter/>
 	<meshType>MtStatic</meshType>
 	<materialTemplates/>
-	<materialShaders/>
+	<materialShaders>
+		<item>
+			<first>mat_cistern</first>
+			<second>{BA1D982A-37B1-594D-A77B-E8631D7E8F1E}</second>
+		</item>
+	</materialShaders>
 	<materialTextures/>
 	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
 	<scaleFactor>1</scaleFactor>

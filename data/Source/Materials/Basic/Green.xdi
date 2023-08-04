@@ -55,7 +55,7 @@
 				<first>1243</first>
 				<second>434</second>
 			</position>
-			<value>0.9</value>
+			<value>0.5</value>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{E1DFD760-A4C8-7244-AAD8-DF20204D4A9D}</id>
