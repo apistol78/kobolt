@@ -10,21 +10,16 @@ import(traktor)
 UI_Scaffolding = UI_Scaffolding or class("UI_Scaffolding", Scaffolding)
 
 function UI_Scaffolding:setup(frame)
-	local ct = Container(frame, TableLayout({100}, {0, 0}, 16, 16, 0, 16))
+	local ct = Container(frame, TableLayout({0}, {0, 0}, 16, 16, 0, 16))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
 
-	local tb = ToolBar(ct)
-	PushButton(tb, "Button 1")
-	PushButton(tb, "Button 1")
-	PushButton(tb, "Button 1")
-	PushButton(tb, "Button 1")
+	Static(ct, "Kobalt")
+		:setTextSize(60)
 
-	PushButton(ct, "Button 3")
-		:setStyle("background", Color4f(1, 0, 0, 1))
+	PushButton(ct, "Play")
+	PushButton(ct, "Exit")
 
-	ProgressBar(ct)
-
-	DropDown(ct, { "A", "B", "C" })
-	
 	Tween(0, 1, 2, function(alpha)
 		ct:setAlpha(alpha)
 	end)

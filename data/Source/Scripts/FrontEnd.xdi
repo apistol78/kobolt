@@ -14,7 +14,7 @@ function FrontEnd:new(params, environment)
 	Stage.new(self, params, environment)
 
 	self._lobbyManager = LobbyManager(environment)
-	self._timer = Timer()
+	self._clicked = false
 
 	-- Initialize UiKit.
 	Widget.initialize(
@@ -30,10 +30,21 @@ function FrontEnd:new(params, environment)
 	)
 	self._frame:update()
 
-	Static(self._frame, "Joining...")
-		:setTextSize(60)
+	local ct = Container(self._frame, TableLayout({0}, {0, 0}, 16, 16, 0, 16))
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
+
+	Static(ct, "KOBALT")
+		:setTextColor(Color4f(1, 1, 1, 1))
+		:setTextSize(60)
+
+	PushButton(ct, "Play")
+		:setOnClick(function() self._clicked = true end)
+	PushButton(ct, "Exit")
+
+	Tween(0, 1, 1, function(alpha)
+		ct:setAlpha(alpha)
+	end)
 
 	-- Ensure frame is properly layed out.
 	self._frame:layout()
@@ -42,16 +53,18 @@ end
 function FrontEnd:update(info)
 
 	-- Wait a second so network discovery can get up and running.
-	if self._timer.elapsedTime < 1 then
+	if info.stateTime < 1 then
 		return
 	end
 
 	self._lobbyManager:update()
 
-	if self._lobbyManager._replicator ~= nil then
-		local nxt = self:loadStage("GAME", self._lobbyManager)
+	if self._lobbyManager._replicator ~= nil and self._clicked then
+		local nxt = self:loadStage("LOADING", self._lobbyManager)
 		self:gotoStage(nxt)
 	end
+
+	Tween.update(info.simulationDeltaTime)
 end
 
 	]]>

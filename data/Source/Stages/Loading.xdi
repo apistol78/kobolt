@@ -3,28 +3,23 @@
 	<name>stage</name>
 	<inherit>{00000000-0000-0000-0000-000000000000}</inherit>
 	<layers>
-		<item type="traktor.runtime.WorldLayerData">
-			<name>world</name>
-			<permitTransition>false</permitTransition>
-			<scene>{4A4E4046-27DF-FB4A-8045-D33724EB2F26}</scene>
-		</item>
 		<item type="traktor.spark.SparkLayerData" version="1">
 			<name>spark</name>
 			<permitTransition>false</permitTransition>
 			<movie>{E7EB59C5-57F9-BE42-93A3-FE38268D507D}</movie>
 			<externalMovies/>
-			<clearBackground>false</clearBackground>
+			<clearBackground>true</clearBackground>
 			<enableSound>true</enableSound>
 		</item>
 	</layers>
-	<class>{0B75B606-9221-3C45-91D6-5A450C934A40}</class>
+	<class>{A7369A11-75AB-014F-AC40-8289341360FF}</class>
 	<shaderFade>{00000000-0000-0000-0000-000000000000}</shaderFade>
 	<fadeOutUpdate>false</fadeOutUpdate>
 	<fadeRate>1</fadeRate>
 	<transitions>
 		<item>
-			<first>LOADING</first>
-			<second>{C82655AC-6261-A34C-BE2C-BE16E24D13B8}</second>
+			<first>GAME</first>
+			<second>{DE6F1CC5-9EE4-E948-9432-28083D385E78}</second>
 		</item>
 	</transitions>
 	<resourceBundle>{00000000-0000-0000-0000-000000000000}</resourceBundle>
