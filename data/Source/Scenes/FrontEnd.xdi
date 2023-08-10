@@ -3,7 +3,7 @@
 	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="39">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>50</viewFarZ>
-		<exposureMode>Fixed</exposureMode>
+		<exposureMode>Adaptive</exposureMode>
 		<exposure>1</exposure>
 		<shadowSettings>
 			<disabled>
@@ -61,7 +61,7 @@
 		<fogDensity>0</fogDensity>
 		<fogDensityMax>1</fogDensityMax>
 		<fogColor>1, 1, 1, 1</fogColor>
-		<irradianceGrid>{00000000-0000-0000-0000-000000000000}</irradianceGrid>
+		<irradianceGrid>{FD86AE60-E6D1-134F-9FA6-75E2A738B86B}</irradianceGrid>
 		<imageProcess>
 			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
 			<low>{00000000-0000-0000-0000-000000000000}</low>
@@ -244,7 +244,7 @@
 							<components>
 								<item type="traktor.weather.SkyComponentData" version="3">
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
-									<texture>{0789F946-5DC0-6846-BFDA-14F70951F74E}</texture>
+									<texture>{93E6996B-8903-4AD0-811A-C8C03C8E38C6}</texture>
 								</item>
 							</components>
 						</item>
@@ -252,14 +252,14 @@
 							<id>{5632CA7C-BA86-2C4F-BC41-0A57F975E7AD}</id>
 							<name>Sun</name>
 							<transform>
-								<translation>119.303337, -383.86264, -447.45108, 0</translation>
-								<rotation>0.376786, -0.14726, 0.060809, 0.912496</rotation>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0.189901, -0.801762, 0.331064, 0.459905</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.LightComponentData" version="11">
 									<lightType>Directional</lightType>
 									<color>1, 1, 1, 1</color>
-									<intensity>2</intensity>
+									<intensity>0.5</intensity>
 									<castShadow>true</castShadow>
 									<range>100</range>
 									<radius>1.570796</radius>
@@ -268,6 +268,16 @@
 									<bakeMode>LbmIndirect</bakeMode>
 								</item>
 							</components>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{04E39BBC-5D34-6F4C-9090-631A7815ADC5}</id>
+							<name>Barrel-Entity</name>
+							<transform>
+								<translation>2.855917, -0.018897, -2.064549, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
 						</item>
 					</entityData>
 				</item>
