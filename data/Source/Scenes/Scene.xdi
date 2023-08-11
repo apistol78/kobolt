@@ -57,9 +57,9 @@
 				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</ultra>
 		</shadowSettings>
-		<fogDistance>30</fogDistance>
-		<fogDensity>1</fogDensity>
-		<fogDensityMax>1</fogDensityMax>
+		<fogDistance>0</fogDistance>
+		<fogDensity>0</fogDensity>
+		<fogDensityMax>0</fogDensityMax>
 		<fogColor>0.850981, 0.945098, 0.764706, 0.858824</fogColor>
 		<irradianceGrid>{BC071CFE-4E0E-8042-BE03-35B1FBAC7110}</irradianceGrid>
 		<imageProcess>
@@ -418,18 +418,19 @@
 						</item>
 						<item type="traktor.world.EntityData" version="1">
 							<id>{ECAFF8D7-8E80-DF46-BB88-C443E4B36590}</id>
-							<name/>
+							<name>Volumetric fog</name>
 							<transform>
 								<translation>0, 0, 0, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
-								<item type="traktor.world.VolumetricFogComponentData" version="1">
+								<item type="traktor.world.VolumetricFogComponentData" version="2">
 									<shader>{FEDA90CE-25C6-BC4D-9767-EA4B45F4A043}</shader>
-									<maxDistance>50</maxDistance>
-									<sliceCount>256</sliceCount>
-									<mediumColor>0.309804, 0.309804, 0.309804, 0.372549</mediumColor>
-									<mediumDensity>0.04</mediumDensity>
+									<maxDistance>30</maxDistance>
+									<maxScattering>10</maxScattering>
+									<sliceCount>128</sliceCount>
+									<mediumColor>0.960784, 0.913726, 0.701961, 0.858824</mediumColor>
+									<mediumDensity>0.5</mediumDensity>
 								</item>
 							</components>
 						</item>
