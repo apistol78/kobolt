@@ -18,9 +18,9 @@
 		</item>
 	</layers>
 	<class>{0B75B606-9221-3C45-91D6-5A450C934A40}</class>
-	<shaderFade>{00000000-0000-0000-0000-000000000000}</shaderFade>
+	<shaderFade>{DC104971-11AE-5743-9AB1-53B830F74391}</shaderFade>
 	<fadeOutUpdate>false</fadeOutUpdate>
-	<fadeRate>1</fadeRate>
+	<fadeRate>5</fadeRate>
 	<transitions>
 		<item>
 			<first>LOADING</first>

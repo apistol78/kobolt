@@ -7,6 +7,7 @@ import(traktor)
 Character = Character or class("Character", world.ScriptComponent)
 
 function Character:new()
+	self._jumped = false
 	self._lastTransform = Transform()
 end
 
@@ -40,27 +41,28 @@ function Character:update(contextObject, totalTime, deltaTime)
 	-- Expose conditions in state pose controller.
 	local skeletonComponent = self.owner:getComponent(animation.SkeletonComponent)
 	if skeletonComponent ~= nil then
-		skeletonComponent.poseController:setCondition(
+		local poseController = skeletonComponent.poseController
+		poseController:setCondition(
 			"StrafeLeft",
 			strafeLeft,
 			true
 		)
-		skeletonComponent.poseController:setCondition(
+		poseController:setCondition(
 			"StrafeRight",
 			strafeRight,
 			true
 		)
-		skeletonComponent.poseController:setCondition(
+		poseController:setCondition(
 			"RunForward",
 			runForward,
 			true
 		)
-		skeletonComponent.poseController:setCondition(
+		poseController:setCondition(
 			"RunBackwards",
 			runBackwards,
 			true
 		)
-		skeletonComponent.poseController:setCondition(
+		poseController:setCondition(
 			"JumpForward",
 			jumpForward,
 			true

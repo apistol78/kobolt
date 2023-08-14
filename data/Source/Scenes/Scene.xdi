@@ -430,7 +430,7 @@
 									<maxScattering>10</maxScattering>
 									<sliceCount>128</sliceCount>
 									<mediumColor>0.960784, 0.913726, 0.701961, 0.858824</mediumColor>
-									<mediumDensity>0.5</mediumDensity>
+									<mediumDensity>0.7</mediumDensity>
 								</item>
 							</components>
 						</item>
@@ -2381,7 +2381,7 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="31">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>7</primarySampleCount>
+			<primarySampleCount>2</primarySampleCount>
 			<secondarySampleCount>100</secondarySampleCount>
 			<shadowSampleCount>50</shadowSampleCount>
 			<maxPathDistance>40</maxPathDistance>

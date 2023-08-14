@@ -59,7 +59,7 @@
 		</shadowSettings>
 		<fogDistance>90</fogDistance>
 		<fogDensity>0</fogDensity>
-		<fogDensityMax>1</fogDensityMax>
+		<fogDensityMax>0</fogDensityMax>
 		<fogColor>1, 1, 1, 1</fogColor>
 		<irradianceGrid>{FD86AE60-E6D1-134F-9FA6-75E2A738B86B}</irradianceGrid>
 		<imageProcess>
@@ -154,6 +154,24 @@
 								</item>
 							</components>
 						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{32137394-ECFF-3D4C-8136-42A525D9DF62}</id>
+							<name>Volumetric fog</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.VolumetricFogComponentData" version="2">
+									<shader>{FEDA90CE-25C6-BC4D-9767-EA4B45F4A043}</shader>
+									<maxDistance>30</maxDistance>
+									<maxScattering>10</maxScattering>
+									<sliceCount>128</sliceCount>
+									<mediumColor>0.960784, 0.913726, 0.701961, 0.858824</mediumColor>
+									<mediumDensity>0.7</mediumDensity>
+								</item>
+							</components>
+						</item>
 					</entityData>
 				</item>
 			</components>
@@ -234,8 +252,18 @@
 							<components/>
 							<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
 						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{04E39BBC-5D34-6F4C-9090-631A7815ADC5}</id>
+							<name>Barrel-Entity</name>
+							<transform>
+								<translation>2.855917, -0.018897, -2.064549, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
+						</item>
 						<item type="traktor.world.EntityData" version="1">
-							<id>{C4C49179-4EFC-BA49-85E5-4DA207ADCD44}</id>
+							<id>{8F5DD43E-EA26-9546-A2BE-367CBC17DBAF}</id>
 							<name>Sky</name>
 							<transform>
 								<translation>0, 2.639621, 0, 0</translation>
@@ -249,7 +277,7 @@
 							</components>
 						</item>
 						<item type="traktor.world.EntityData" version="1">
-							<id>{5632CA7C-BA86-2C4F-BC41-0A57F975E7AD}</id>
+							<id>{E7501722-6983-0C40-8433-EC3BF43AAD59}</id>
 							<name>Sun</name>
 							<transform>
 								<translation>0, 0, 0, 0</translation>
@@ -268,16 +296,6 @@
 									<bakeMode>LbmIndirect</bakeMode>
 								</item>
 							</components>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-							<id>{04E39BBC-5D34-6F4C-9090-631A7815ADC5}</id>
-							<name>Barrel-Entity</name>
-							<transform>
-								<translation>2.855917, -0.018897, -2.064549, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
 						</item>
 					</entityData>
 				</item>

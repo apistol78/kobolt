@@ -18,9 +18,9 @@
 		</item>
 	</layers>
 	<class>{7BCB3498-87E1-614F-B03E-2335EE7556B3}</class>
-	<shaderFade>{00000000-0000-0000-0000-000000000000}</shaderFade>
+	<shaderFade>{DC104971-11AE-5743-9AB1-53B830F74391}</shaderFade>
 	<fadeOutUpdate>false</fadeOutUpdate>
-	<fadeRate>1</fadeRate>
+	<fadeRate>5</fadeRate>
 	<transitions/>
 	<resourceBundle>{00000000-0000-0000-0000-000000000000}</resourceBundle>
 	<properties/>

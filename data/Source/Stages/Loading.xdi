@@ -13,9 +13,9 @@
 		</item>
 	</layers>
 	<class>{A7369A11-75AB-014F-AC40-8289341360FF}</class>
-	<shaderFade>{00000000-0000-0000-0000-000000000000}</shaderFade>
+	<shaderFade>{DC104971-11AE-5743-9AB1-53B830F74391}</shaderFade>
 	<fadeOutUpdate>false</fadeOutUpdate>
-	<fadeRate>1</fadeRate>
+	<fadeRate>5</fadeRate>
 	<transitions>
 		<item>
 			<first>GAME</first>
