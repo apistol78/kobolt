@@ -465,6 +465,14 @@ else
 			</position>
 			<value>-1, 1, 0, 0</value>
 		</item>
+		<item type="traktor.render.PreviewOutput" version="traktor.render.Node:1">
+			<id>{3BB16D93-F6F9-8B4B-BD7A-E7C05A36BF2F}</id>
+			<comment/>
+			<position>
+				<first>592</first>
+				<second>-116</second>
+			</position>
+		</item>
 	</nodes>
 	<edges>
 		<item type="traktor.render.Edge" version="1">
@@ -925,6 +933,16 @@ else
 			<destination>
 				<node ref="/object/nodes/item[18]"/>
 				<id>{D2D716D6-C4A1-471F-894A-D718515F6281}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[17]"/>
+				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[31]"/>
+				<id>{BDB32F7B-599C-42C8-A2CE-2B1BD0738E8B}</id>
 			</destination>
 		</item>
 	</edges>
