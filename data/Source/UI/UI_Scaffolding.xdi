@@ -18,12 +18,12 @@ function UI_Scaffolding:setup(frame)
 		:setTextSize(60)
 
 	PushButton(ct, "Play")
+	PushButton(ct, "Options")
 	PushButton(ct, "Exit")
 
-	Tween(0, 1, 2, function(alpha)
+	Tween(0, 1, 1.0, function(alpha)
 		ct:setAlpha(alpha)
 	end)
-
 end
 
 	]]>

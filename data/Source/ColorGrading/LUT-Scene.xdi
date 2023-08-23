@@ -3,11 +3,11 @@
 	<redCurve>
 		<item>
 			<first>0</first>
-			<second>0.011494</second>
+			<second>0.07197</second>
 		</item>
 		<item>
-			<first>0.466667</first>
-			<second>0.547893</second>
+			<first>0.365854</first>
+			<second>0.545455</second>
 		</item>
 		<item>
 			<first>1</first>
@@ -17,11 +17,11 @@
 	<greenCurve>
 		<item>
 			<first>0</first>
-			<second>0</second>
+			<second>0.041667</second>
 		</item>
 		<item>
-			<first>0.371429</first>
-			<second>0.436782</second>
+			<first>0.366492</first>
+			<second>0.436893</second>
 		</item>
 		<item>
 			<first>1</first>
@@ -31,22 +31,22 @@
 	<blueCurve>
 		<item>
 			<first>0</first>
-			<second>0</second>
+			<second>0.007576</second>
 		</item>
 		<item>
-			<first>0.276191</first>
-			<second>0.272031</second>
+			<first>0.235602</first>
+			<second>0.334951</second>
 		</item>
 		<item>
-			<first>0.747619</first>
-			<second>0.804598</second>
+			<first>0.696335</first>
+			<second>0.68932</second>
 		</item>
 		<item>
 			<first>1</first>
 			<second>1</second>
 		</item>
 	</blueCurve>
-	<brightness>0.17</brightness>
-	<contrast>1.36</contrast>
-	<saturation>1.11</saturation>
+	<brightness>0.1</brightness>
+	<contrast>1.41</contrast>
+	<saturation>1.29</saturation>
 </object>

@@ -34,13 +34,12 @@ function FrontEnd:new(params, environment)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 
-	Static(ct, "KOBALT")
-		:setTextColor(Color4f(1, 1, 1, 1))
-		:setTextSize(60)
-
 	PushButton(ct, "Play")
 		:setOnClick(function() self._clicked = true end)
+	PushButton(ct, "Options")
+		:setEnable(false)
 	PushButton(ct, "Exit")
+		:setEnable(false)
 
 	Tween(0, 1, 1, function(alpha)
 		ct:setAlpha(alpha)
