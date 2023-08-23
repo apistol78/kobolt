@@ -61,7 +61,7 @@
 		<fogDensity>0.05</fogDensity>
 		<fogDensityMax>0.1</fogDensityMax>
 		<fogColor>0.850981, 0.945098, 0.764706, 0.858824</fogColor>
-		<irradianceGrid>{BC071CFE-4E0E-8042-BE03-35B1FBAC7110}</irradianceGrid>
+		<irradianceGrid>{FD86AE60-E6D1-134F-9FA6-75E2A738B86B}</irradianceGrid>
 		<imageProcess>
 			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
 			<low>{00000000-0000-0000-0000-000000000000}</low>
@@ -932,7 +932,7 @@
 											<name>Concrete Wall-Entity</name>
 											<transform>
 												<translation>155.848816, -386.78009, -471.280762, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
@@ -1286,7 +1286,7 @@
 											<name>Building 1-Entity</name>
 											<transform>
 												<translation>109.115723, -386.044739, -517.176147, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0D487A58-4C2C-EC4F-A01C-2048674E529C}</entityData>
@@ -1296,7 +1296,7 @@
 											<name>Building 1-Entity</name>
 											<transform>
 												<translation>110.916008, -386.044739, -495.994934, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0D487A58-4C2C-EC4F-A01C-2048674E529C}</entityData>
@@ -1326,7 +1326,7 @@
 											<name>Building 1-Entity</name>
 											<transform>
 												<translation>154.428009, -378.206512, -422.041321, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0D487A58-4C2C-EC4F-A01C-2048674E529C}</entityData>
@@ -1406,7 +1406,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>113.312439, -379.060486, -488.401764, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -1416,7 +1416,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>144.820679, -379.008057, -482.044556, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -1456,7 +1456,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>118.309288, -379.060486, -488.382568, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -1496,7 +1496,7 @@
 											<name>AC duct-Entity</name>
 											<transform>
 												<translation>144.924103, -378.881195, -482.048126, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{084CEE9D-36A4-D045-8C26-6E3F431264F1}</entityData>
@@ -1823,7 +1823,7 @@
 							<id>{AEEB9F66-F81A-9443-90B2-EAF0007BD84E}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>120.754967, -384.168762, -445.812775, 0</translation>
+								<translation>120.754967, -384.168762, -446.425537, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -1843,7 +1843,7 @@
 							<id>{2293D469-7DC5-4E40-B527-221A0E7C1B91}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>126.192429, -384.168762, -432.218719, 0</translation>
+								<translation>126.084648, -384.168762, -432.218719, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>

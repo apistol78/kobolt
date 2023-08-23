@@ -22,7 +22,7 @@
 	<enableNormalMapCompression>true</enableNormalMapCompression>
 	<encodeAsRGBM>false</encodeAsRGBM>
 	<inverseNormalMapX>false</inverseNormalMapX>
-	<inverseNormalMapY>false</inverseNormalMapY>
+	<inverseNormalMapY>true</inverseNormalMapY>
 	<scaleNormalMap>1</scaleNormalMap>
 	<linearGamma>true</linearGamma>
 	<generateSphereMap>false</generateSphereMap>
