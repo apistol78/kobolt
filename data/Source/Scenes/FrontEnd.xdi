@@ -58,9 +58,9 @@
 			</ultra>
 		</shadowSettings>
 		<fogDistance>0</fogDistance>
-		<fogDensity>0.05</fogDensity>
-		<fogDensityMax>0.25</fogDensityMax>
-		<fogColor>0.662745, 0.623529, 0.521569, 1</fogColor>
+		<fogDensity>0.1</fogDensity>
+		<fogDensityMax>0.5</fogDensityMax>
+		<fogColor>0.258824, 0.247059, 0.227451, 1</fogColor>
 		<irradianceGrid>{FD86AE60-E6D1-134F-9FA6-75E2A738B86B}</irradianceGrid>
 		<imageProcess>
 			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>

@@ -30,11 +30,10 @@ function ProjectileManager:update(info)
 	for _, projectile in ipairs(self._projectiles) do
 		if projectile.entity ~= nil then
 
-			local impulse = projectile.velocity * dT
-			local from = projectile.position
-			local to = from + impulse
+			local from < const > = projectile.position
+			local to < const > = from + impulse
 	
-			local result = self._physicsManager:queryRay(
+			local result < const > = self._physicsManager:queryRay(
 				from,
 				(to - from):normalized(),
 				(to - from).length,
@@ -44,9 +43,18 @@ function ProjectileManager:update(info)
 			if result == nil then
 				projectile.position = to
 				projectile.age = projectile.age + dT
-				local T = Transform(projectile.position, Quaternion.identity)
-				projectile.entity.transform = T
+				projectile.entity.transform = Transform(projectile.position, Quaternion.identity)
 			else
+
+				if result.body ~= nil then
+					local impulse = projectile.velocity
+					result.body:addImpulse(
+						result.position,
+						impulse,
+						false
+					)
+				end
+
 				self._world:removeEntity(projectile.entity)
 				projectile.entity = nil
 			end

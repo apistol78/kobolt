@@ -71,8 +71,8 @@
 			<id>{5D2B8CC7-ADA6-4072-BAFC-DE4CDBB8982D}</id>
 			<comment/>
 			<position>
-				<first>-314</first>
-				<second>-690</second>
+				<first>-348</first>
+				<second>-840</second>
 			</position>
 			<external>{EF90381F-1101-4225-821B-7C68D37D464F}</external>
 			<type>Texture2D</type>
@@ -81,8 +81,8 @@
 			<id>{B21C932D-847E-4238-A137-ADA9002CB21A}</id>
 			<comment/>
 			<position>
-				<first>-315</first>
-				<second>-836</second>
+				<first>-349</first>
+				<second>-986</second>
 			</position>
 			<external>{D586AD97-5FB3-4A56-BA19-A998C17EA575}</external>
 			<type>Texture2D</type>
@@ -111,6 +111,11 @@
 					<name>VertexAttributes</name>
 					<optional>false</optional>
 				</item>
+				<item>
+					<id>{8917A043-2D22-B946-A537-1A9FF9689E41}</id>
+					<name>Height</name>
+					<optional>true</optional>
+				</item>
 			</inputPins>
 			<outputPins>
 				<item>
@@ -119,6 +124,16 @@
 				</item>
 			</outputPins>
 			<values/>
+		</item>
+		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
+			<id>{20387812-8BDE-CA4F-8E03-A81EE86D038C}</id>
+			<comment/>
+			<position>
+				<first>-344</first>
+				<second>-690</second>
+			</position>
+			<external>{1116E112-6CF7-419D-B53F-D544090F2A22}</external>
+			<type>Texture2D</type>
 		</item>
 	</nodes>
 	<edges>
@@ -200,6 +215,16 @@
 			<destination>
 				<node ref="/object/nodes/item[2]"/>
 				<id>{FFD72AB8-3ECF-4EBE-AF54-041F18540D4D}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[9]"/>
+				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[8]"/>
+				<id>{8917A043-2D22-B946-A537-1A9FF9689E41}</id>
 			</destination>
 		</item>
 	</edges>

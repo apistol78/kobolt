@@ -1743,7 +1743,7 @@
 							<id>{4E2DF8DD-5CF4-42A2-8062-E31D7D5F390F}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>138.322739, -384.546417, -459.631104, 0</translation>
+								<translation>138.322739, -383.986176, -459.631104, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
