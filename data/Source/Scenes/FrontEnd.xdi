@@ -237,7 +237,7 @@
 							<id>{04E39BBC-5D34-6F4C-9090-631A7815ADC5}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>2.374736, -0.018896, -2.418611, 0</translation>
+								<translation>2.374736, -0.018896, -2.293513, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -320,7 +320,7 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="31">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>7</primarySampleCount>
+			<primarySampleCount>10</primarySampleCount>
 			<secondarySampleCount>100</secondarySampleCount>
 			<shadowSampleCount>50</shadowSampleCount>
 			<maxPathDistance>40</maxPathDistance>
@@ -331,7 +331,7 @@
 			<maximumLightMapSize>2048</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
 			<skyAttenuation>1</skyAttenuation>
-			<ambientOcclusionFactor>0.5</ambientOcclusionFactor>
+			<ambientOcclusionFactor>0</ambientOcclusionFactor>
 		</item>
 	</operationData>
 </object>

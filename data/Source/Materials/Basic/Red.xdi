@@ -77,23 +77,34 @@
 			<linear>false</linear>
 		</item>
 		<item type="traktor.render.BundleSplit" version="traktor.render.Node:1">
-			<id>{1D8BA486-4422-C14F-910D-F8B3FCFD73B0}</id>
+			<id>{9389BD2B-00EC-D149-89BE-7C4029876391}</id>
 			<comment/>
 			<position>
-				<first>1172</first>
-				<second>553</second>
+				<first>1310</first>
+				<second>540</second>
 			</position>
 			<names>
-				<item>ViewVelocity</item>
-				<item>ViewBinormal</item>
-				<item>ViewNormal</item>
-				<item>ViewPosition</item>
-				<item>ViewTangent</item>
-				<item>WorldPosition</item>
+				<item>Position</item>
+				<item>Normal</item>
+				<item>Tangent</item>
+				<item>Binormal</item>
+				<item>Velocity</item>
+			</names>
+		</item>
+		<item type="traktor.render.BundleSplit" version="traktor.render.Node:1">
+			<id>{A052E847-ACF2-FE4B-9A43-DF47F2AADE5D}</id>
+			<comment/>
+			<position>
+				<first>1085</first>
+				<second>525</second>
+			</position>
+			<names>
+				<item>Object</item>
+				<item>World</item>
+				<item>View</item>
 				<item>TexCoord0</item>
 				<item>TexCoord1</item>
 				<item>VertexColor</item>
-				<item>TexCoord</item>
 			</names>
 		</item>
 	</nodes>
@@ -150,8 +161,8 @@
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
-				<node ref="/object/nodes/item"/>
-				<id>{9AE16BB1-EB68-45A0-A878-8D01C210082B}</id>
+				<node ref="/object/nodes/item[8]"/>
+				<id>{D596E4E4-1A78-4D80-BF6B-6DEEF934EDEC}</id>
 			</source>
 			<destination>
 				<node ref="/object/nodes/item[7]"/>
@@ -160,8 +171,18 @@
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
+				<node ref="/object/nodes/item"/>
+				<id>{9AE16BB1-EB68-45A0-A878-8D01C210082B}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[8]"/>
+				<id>{D596E4E4-1A78-4D80-BC6B-6DEEF934EDEC}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
 				<node ref="/object/nodes/item[7]"/>
-				<id>{D596E4E4-1A78-4D80-BF6B-6DEEF934EDEC}</id>
+				<id>{D596E4E4-1A78-4D80-BE6B-6DEEF934EDEC}</id>
 			</source>
 			<destination>
 				<node ref="/object/nodes/item[2]"/>
