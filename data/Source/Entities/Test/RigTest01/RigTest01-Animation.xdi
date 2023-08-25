@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.animation.AnimationAsset" version="6">
+	<fileName>Meshes/Test/RigTest01/RigTest01.blend</fileName>
+	<skeleton>{00000000-0000-0000-0000-000000000000}</skeleton>
+	<take>Final</take>
+	<scale>2</scale>
+	<translate>0, 0, 0, 0</translate>
+	<removeLocomotion>true</removeLocomotion>
+</object>
