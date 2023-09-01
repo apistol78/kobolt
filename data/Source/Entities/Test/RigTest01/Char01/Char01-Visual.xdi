@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.mesh.MeshAsset" version="21">
+	<fileName>Meshes/Test/RigTest01/Char01/Char01.blend</fileName>
+	<importFilter/>
+	<meshType>MtSkinned</meshType>
+	<materialTemplates/>
+	<materialShaders/>
+	<materialTextures/>
+	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
+	<scaleFactor>2</scaleFactor>
+	<offset>0, 0, 0, 0</offset>
+	<renormalize>false</renormalize>
+	<center>false</center>
+	<grounded>false</grounded>
+	<lodSteps>8</lodSteps>
+	<lodMaxDistance>100</lodMaxDistance>
+	<lodCullDistance>200</lodCullDistance>
+	<previewAngle>0</previewAngle>
+</object>

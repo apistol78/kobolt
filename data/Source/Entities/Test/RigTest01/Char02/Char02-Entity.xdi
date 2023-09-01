@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{6D36ADC0-1E50-3649-9994-1ACEC3EA089E}</id>
+	<name>Char02</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.animation.SkeletonComponentData">
+			<skeleton>{BDAD8435-4EC5-574B-B804-1C014D30CD0A}</skeleton>
+			<poseController type="traktor.animation.SimpleAnimationControllerData" version="2">
+				<animation>{D6EBEE52-0555-0B47-9E0A-5306060D7BB6}</animation>
+				<transformTime/>
+			</poseController>
+		</item>
+		<item type="traktor.animation.AnimatedMeshComponentData" version="3">
+			<mesh>{3D65E9B1-D088-2748-941B-ACDBC516F00E}</mesh>
+		</item>
+	</components>
+</object>
