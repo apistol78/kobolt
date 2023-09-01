@@ -55,7 +55,7 @@
 				<first>606</first>
 				<second>1518</second>
 			</position>
-			<value>0.9</value>
+			<value>0.7</value>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
@@ -109,6 +109,11 @@
 					<id>{00C78DDC-7660-B549-9E0B-5E0847A3DEA5}</id>
 					<name>VertexAttributes</name>
 					<optional>false</optional>
+				</item>
+				<item>
+					<id>{8917A043-2D22-B946-A537-1A9FF9689E41}</id>
+					<name>Height</name>
+					<optional>true</optional>
 				</item>
 			</inputPins>
 			<outputPins>

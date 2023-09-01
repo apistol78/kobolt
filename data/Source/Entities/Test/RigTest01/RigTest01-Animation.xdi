@@ -5,5 +5,5 @@
 	<take>Final</take>
 	<scale>2</scale>
 	<translate>0, 0, 0, 0</translate>
-	<removeLocomotion>false</removeLocomotion>
+	<removeLocomotion>true</removeLocomotion>
 </object>

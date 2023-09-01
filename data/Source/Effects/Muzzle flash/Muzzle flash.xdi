@@ -1,72 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.spray.EffectData">
-	<duration>1</duration>
+	<duration>0.2</duration>
 	<loopStart>0</loopStart>
 	<loopEnd>0</loopEnd>
 	<layers>
-		<item type="traktor.spray.EffectLayerData" version="4">
-			<name>Flash</name>
-			<time>0</time>
-			<duration>0</duration>
-			<emitter type="traktor.spray.EmitterData" version="7">
-				<source type="traktor.spray.DirectionalPointSourceData">
-					<constantRate>4</constantRate>
-					<velocityRate>0</velocityRate>
-					<position>0, 0, 0, 1</position>
-					<direction>0, 0, 1, 0</direction>
-					<velocity>
-						<min>1</min>
-						<max>0.35</max>
-					</velocity>
-					<orientation>
-						<min>0</min>
-						<max>6.283185</max>
-					</orientation>
-					<angularVelocity>
-						<min>0</min>
-						<max>0</max>
-					</angularVelocity>
-					<age>
-						<min>0.1</min>
-						<max>0.1</max>
-					</age>
-					<mass>
-						<min>1</min>
-						<max>1</max>
-					</mass>
-					<size>
-						<min>0</min>
-						<max>0</max>
-					</size>
-				</source>
-				<modifiers>
-					<item type="traktor.spray.SizeModifierData">
-						<adjustRate>16</adjustRate>
-					</item>
-					<item type="traktor.spray.IntegrateModifierData" version="1">
-						<timeScale>1</timeScale>
-						<linear>true</linear>
-						<angular>true</angular>
-					</item>
-				</modifiers>
-				<shader>{F4DEC1AC-9FD6-5A48-B95A-AD0D99979EA5}</shader>
-				<mesh>{00000000-0000-0000-0000-000000000000}</mesh>
-				<effect/>
-				<middleAge>0</middleAge>
-				<cullNearDistance>0.25</cullNearDistance>
-				<cullMeshDistance>100</cullMeshDistance>
-				<fadeNearRange>1</fadeNearRange>
-				<viewOffset>0</viewOffset>
-				<warmUp>0</warmUp>
-				<sort>false</sort>
-				<worldSpace>true</worldSpace>
-				<meshOrientationFromVelocity>true</meshOrientationFromVelocity>
-			</emitter>
-			<trail/>
-			<sequence/>
-			<triggerEnable/>
-			<triggerDisable/>
-		</item>
 		<item type="traktor.spray.EffectLayerData" version="4">
 			<name>Nozzle</name>
 			<time>0</time>
@@ -90,16 +27,16 @@
 						<max>0</max>
 					</angularVelocity>
 					<age>
-						<min>0.1</min>
-						<max>0.2</max>
+						<min>0.01</min>
+						<max>0.02</max>
 					</age>
 					<mass>
 						<min>1</min>
 						<max>1</max>
 					</mass>
 					<size>
-						<min>0.5</min>
-						<max>0.6</max>
+						<min>0.8</min>
+						<max>1.25</max>
 					</size>
 				</source>
 				<modifiers>
@@ -115,7 +52,7 @@
 				<shader>{DBAD41A2-2FFA-D948-9CB6-4663349A1F2D}</shader>
 				<mesh>{00000000-0000-0000-0000-000000000000}</mesh>
 				<effect/>
-				<middleAge>0.2</middleAge>
+				<middleAge>0</middleAge>
 				<cullNearDistance>0.25</cullNearDistance>
 				<cullMeshDistance>100</cullMeshDistance>
 				<fadeNearRange>1</fadeNearRange>

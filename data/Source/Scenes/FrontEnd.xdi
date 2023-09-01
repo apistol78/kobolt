@@ -48,7 +48,7 @@
 			</high>
 			<ultra>
 				<farZ>25</farZ>
-				<resolution>1024</resolution>
+				<resolution>2048</resolution>
 				<bias>0.001</bias>
 				<cascadingSlices>4</cascadingSlices>
 				<cascadingLambda>1</cascadingLambda>
@@ -92,7 +92,7 @@
 							<id>{D4C3941F-C833-1D46-A3CC-C7F9C78EE318}</id>
 							<name>Reflection Probe</name>
 							<transform>
-								<translation>113.818939, -380.575867, -471.728516, 0</translation>
+								<translation>-5.428187, 1.755935, -2.249144, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
@@ -112,7 +112,7 @@
 							<name>Player</name>
 							<transform>
 								<translation>1.251506, 0.003049, 0.403127, 0</translation>
-								<rotation>0, -0.564642, 0, 0.825336</rotation>
+								<rotation>0, -0.757842, 0, 0.652438</rotation>
 							</transform>
 							<components/>
 							<entityData>{0176DFB1-8604-4648-ACBD-A46B1DE4472C}</entityData>
@@ -152,6 +152,16 @@
 									<mediumDensity>0.7</mediumDensity>
 								</item>
 							</components>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{E3C8CF90-5636-F340-B100-E2752653C296}</id>
+							<name>RigTest01-Entity</name>
+							<transform>
+								<translation>-2.967609, -0.015537, -1.431329, 0</translation>
+								<rotation>0, 0.847678, 0, -0.530511</rotation>
+							</transform>
+							<components/>
+							<entityData>{AADBBC77-0FF0-8045-B503-B24309B13F92}</entityData>
 						</item>
 					</entityData>
 				</item>
@@ -320,7 +330,7 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="31">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>10</primarySampleCount>
+			<primarySampleCount>1</primarySampleCount>
 			<secondarySampleCount>100</secondarySampleCount>
 			<shadowSampleCount>50</shadowSampleCount>
 			<maxPathDistance>40</maxPathDistance>

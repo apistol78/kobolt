@@ -29,7 +29,7 @@ function ProjectileManager:update(info)
 
 	for _, projectile in ipairs(self._projectiles) do
 		if projectile.entity ~= nil then
-
+			local impulse < const > = projectile.velocity
 			local from < const > = projectile.position
 			local to < const > = from + impulse
 	
@@ -47,7 +47,6 @@ function ProjectileManager:update(info)
 			else
 
 				if result.body ~= nil then
-					local impulse = projectile.velocity
 					result.body:addImpulse(
 						result.position,
 						impulse,

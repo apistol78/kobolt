@@ -5,8 +5,8 @@
 			<id>{B03475C1-F439-0741-946F-6979A4B15778}</id>
 			<comment/>
 			<position>
-				<first>597</first>
-				<second>247</second>
+				<first>707</first>
+				<second>245</second>
 			</position>
 			<fragmentGuid>{B5FCD4C3-8052-8140-A2B8-6EC35D4A1C00}</fragmentGuid>
 			<inputPins>
@@ -28,8 +28,8 @@
 			<id>{2221B846-6460-A844-A813-01D278603C05}</id>
 			<comment/>
 			<position>
-				<first>410</first>
-				<second>314</second>
+				<first>520</first>
+				<second>312</second>
 			</position>
 			<priority>
 				<setup>false</setup>
@@ -42,8 +42,8 @@
 			<cullMode>Never</cullMode>
 			<blendEnable>true</blendEnable>
 			<blendColorOperation>BoAdd</blendColorOperation>
-			<blendColorSource>BfSourceAlpha</blendColorSource>
-			<blendColorDestination>BfOneMinusSourceAlpha</blendColorDestination>
+			<blendColorSource>BfOne</blendColorSource>
+			<blendColorDestination>BfOne</blendColorDestination>
 			<blendAlphaOperation>BoAdd</blendAlphaOperation>
 			<blendAlphaSource>BfOne</blendAlphaSource>
 			<blendAlphaDestination>BfOne</blendAlphaDestination>
@@ -199,8 +199,8 @@
 			<id>{9A9B9840-FCAD-BC41-A1EE-910A09F56BE5}</id>
 			<comment/>
 			<position>
-				<first>442</first>
-				<second>21</second>
+				<first>471</first>
+				<second>148</second>
 			</position>
 		</item>
 	</nodes>

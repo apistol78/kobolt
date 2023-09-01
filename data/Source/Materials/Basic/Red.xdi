@@ -73,7 +73,7 @@
 				<first>1198</first>
 				<second>344</second>
 			</position>
-			<color>0.737255, 0.027451, 0.027451, 1</color>
+			<color>0.717647, 0.172549, 0.172549, 1</color>
 			<linear>false</linear>
 		</item>
 		<item type="traktor.render.BundleSplit" version="traktor.render.Node:1">
@@ -106,6 +106,14 @@
 				<item>TexCoord1</item>
 				<item>VertexColor</item>
 			</names>
+		</item>
+		<item type="traktor.render.PreviewOutput" version="traktor.render.Node:1">
+			<id>{EF4E1B66-0D83-7745-BD73-3B57F29EE0A2}</id>
+			<comment/>
+			<position>
+				<first>1502</first>
+				<second>275</second>
+			</position>
 		</item>
 	</nodes>
 	<edges>
@@ -187,6 +195,16 @@
 			<destination>
 				<node ref="/object/nodes/item[2]"/>
 				<id>{EEB495BD-DE7F-4DE8-983A-7E9B220B927F}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[6]"/>
+				<id>{4B2822D0-4D9A-4BBB-9956-A996493EE672}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[9]"/>
+				<id>{BDB32F7B-599C-42C8-A2CE-2B1BD0738E8B}</id>
 			</destination>
 		</item>
 	</edges>

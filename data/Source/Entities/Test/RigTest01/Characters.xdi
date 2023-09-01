@@ -58,7 +58,7 @@
 			</ultra>
 		</shadowSettings>
 		<fogDistance>0</fogDistance>
-		<fogDensity>0.1</fogDensity>
+		<fogDensity>0</fogDensity>
 		<fogDensityMax>0.5</fogDensityMax>
 		<fogColor>0.258824, 0.247059, 0.227451, 1</fogColor>
 		<irradianceGrid>{FD86AE60-E6D1-134F-9FA6-75E2A738B86B}</irradianceGrid>
@@ -164,6 +164,11 @@
 								<item type="traktor.animation.AnimatedMeshComponentData" version="3">
 									<mesh>{CAA05557-36BC-430E-A571-C2D454C9970B}</mesh>
 								</item>
+								<item type="traktor.world.ScriptComponentData" version="2">
+									<class>{FE4831F3-BBD6-4A46-A51B-A6066AED480F}</class>
+									<properties/>
+									<editorSupport>true</editorSupport>
+								</item>
 							</components>
 						</item>
 						<item type="traktor.world.EntityData" version="1">
@@ -187,6 +192,11 @@
 								<item type="traktor.animation.AnimatedMeshComponentData" version="3">
 									<mesh>{3D65E9B1-D088-2748-941B-ACDBC516F00E}</mesh>
 								</item>
+								<item type="traktor.world.ScriptComponentData" version="2">
+									<class>{FE4831F3-BBD6-4A46-A51B-A6066AED480F}</class>
+									<properties/>
+									<editorSupport>true</editorSupport>
+								</item>
 							</components>
 						</item>
 						<item type="traktor.world.EntityData" version="1">
@@ -209,6 +219,28 @@
 								</item>
 								<item type="traktor.animation.AnimatedMeshComponentData" version="3">
 									<mesh>{E7493E10-F1D8-774F-B117-A28E412CFC6F}</mesh>
+								</item>
+								<item type="traktor.world.ScriptComponentData" version="2">
+									<class>{FE4831F3-BBD6-4A46-A51B-A6066AED480F}</class>
+									<properties/>
+									<editorSupport>true</editorSupport>
+								</item>
+								<item type="traktor.animation.JointBindingComponentData">
+									<bindings>
+										<item>
+											<jointName>RightHand</jointName>
+											<entityData type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+												<id>{B3DAC7E3-31A5-E843-8157-1347B70D8B9C}</id>
+												<name>Weapon</name>
+												<transform>
+													<translation>-3.380449, 2.785697, 2.065814, 0</translation>
+													<rotation>0.030946, -0.810075, 0.000168, 0.585509</rotation>
+												</transform>
+												<components/>
+												<entityData>{37FB16F7-194F-408C-818D-04C92BCB1E51}</entityData>
+											</entityData>
+										</item>
+									</bindings>
 								</item>
 							</components>
 						</item>
@@ -341,8 +373,8 @@
 							<id>{17A032C9-4D6E-624F-8C17-30A4012E009F}</id>
 							<name>Camera</name>
 							<transform>
-								<translation>-0.570607, 1.739398, 2.745376, 0</translation>
-								<rotation>0.022905, 0.994217, -0.027825, 0.101158</rotation>
+								<translation>-6.683767, 0.982894, 0.836606, 0</translation>
+								<rotation>-0.081026, 0.66276, 0.059158, 0.742081</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.CameraComponentData">
