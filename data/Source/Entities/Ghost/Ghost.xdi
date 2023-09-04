@@ -16,8 +16,8 @@
 				<item>{F9805131-50C2-504C-9421-13C99E44616C}</item>
 			</traceInclude>
 			<traceIgnore/>
-			<radius>0.75</radius>
-			<height>2</height>
+			<radius>0.5</radius>
+			<height>1.85</height>
 			<step>0.1</step>
 			<jumpImpulse>5</jumpImpulse>
 			<maxVelocity>5</maxVelocity>
@@ -30,38 +30,6 @@
 			<class>{14B0C3A4-58EE-0B4A-A0B8-896D1C11E515}</class>
 			<properties/>
 			<editorSupport>false</editorSupport>
-		</item>
-		<item type="traktor.animation.SkeletonComponentData">
-			<skeleton>{5C4E0290-51EA-AF42-92FE-92AC660B70E4}</skeleton>
-			<poseController type="traktor.animation.AnimationGraphPoseControllerData" version="3">
-				<animationGraph>{776001F7-F53D-4F4F-8DCF-F61AEFDC729A}</animationGraph>
-				<randomTimeOffset>
-					<min>0</min>
-					<max>0</max>
-				</randomTimeOffset>
-				<transformTime type="traktor.animation.TimeFromLocomotionData">
-				</transformTime>
-			</poseController>
-		</item>
-		<item type="traktor.animation.AnimatedMeshComponentData" version="3">
-			<mesh>{40EAD5AF-1A42-DF4D-9E1A-282109F529F6}</mesh>
-		</item>
-		<item type="traktor.animation.JointBindingComponentData">
-			<bindings>
-				<item>
-					<jointName>RightHand</jointName>
-					<entityData type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-						<id>{B3DAC7E3-31A5-E843-8157-1347B70D8B9C}</id>
-						<name>Weapon</name>
-						<transform>
-							<translation>0.150929, 1.658804, 0.239563, 0</translation>
-							<rotation>-0.020351, -0.054509, -0.026125, 0.997964</rotation>
-						</transform>
-						<components/>
-						<entityData>{37FB16F7-194F-408C-818D-04C92BCB1E51}</entityData>
-					</entityData>
-				</item>
-			</bindings>
 		</item>
 		<item type="traktor.world.EventSetComponentData">
 			<eventData>
@@ -85,41 +53,29 @@
 					<id>{99D7939C-DC4B-5A4B-B423-252C19B3991C}</id>
 					<name>Camera</name>
 					<transform>
-						<translation>0.115965, 1.870783, 0.292981, 0</translation>
+						<translation>0.068017, 1.61226, 0.332204, 0</translation>
 						<rotation>0, -0.059964, 0, 0.998201</rotation>
 					</transform>
+					<components>
+						<item type="traktor.world.CameraComponentData">
+							<projection>Orthographic</projection>
+							<fov>1.221731</fov>
+							<width>1</width>
+							<height>1</height>
+						</item>
+					</components>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{F5BD1911-88C3-CA46-96BE-5B789546C728}</id>
+					<name>Skin</name>
+					<transform>
+						<translation>0, -0.041536, 0, 0</translation>
+						<rotation>0, -1, 0, 0</rotation>
+					</transform>
 					<components/>
+					<entityData>{1BA32468-AA3B-9446-9DDB-C1009C8A14C1}</entityData>
 				</item>
 			</entityData>
-		</item>
-		<item type="traktor.animation.ClothComponentData" version="1">
-			<shader>{472E1DE2-FEA2-DC41-AA84-56E0542D0696}</shader>
-			<resolutionX>10</resolutionX>
-			<resolutionY>20</resolutionY>
-			<scale>0.6</scale>
-			<jointRadius>0.15</jointRadius>
-			<anchors>
-				<item>
-					<jointName>LeftArm</jointName>
-					<jointOffset>0, 0, -0.12, 0</jointOffset>
-					<x>0</x>
-					<y>0</y>
-				</item>
-				<item>
-					<jointName>RightArm</jointName>
-					<jointOffset>0, 0, -0.12, 0</jointOffset>
-					<x>9</x>
-					<y>0</y>
-				</item>
-				<item>
-					<jointName>Neck</jointName>
-					<jointOffset>0, 0, -0.12, 0</jointOffset>
-					<x>5</x>
-					<y>0</y>
-				</item>
-			</anchors>
-			<solverIterations>4</solverIterations>
-			<damping>0.005</damping>
 		</item>
 	</components>
 </object>

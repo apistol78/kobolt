@@ -148,7 +148,7 @@
 							<name>Char01-Entity</name>
 							<transform>
 								<translation>-1.49807, 0, -2.709503, 0</translation>
-								<rotation>0, 0.707107, 0, 0.707107</rotation>
+								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
 								<item type="traktor.animation.SkeletonComponentData">
@@ -156,18 +156,13 @@
 									<poseController type="traktor.animation.RetargetPoseControllerData" version="2">
 										<animationSkeleton>{5900E120-54F3-4B46-9D0A-D05364ED05BE}</animationSkeleton>
 										<poseController type="traktor.animation.SimpleAnimationControllerData" version="2">
-											<animation>{D6EBEE52-0555-0B47-9E0A-5306060D7BB6}</animation>
+											<animation>{6C9FD4F5-7922-DC47-A515-66E203E88FC8}</animation>
 											<transformTime/>
 										</poseController>
 									</poseController>
 								</item>
 								<item type="traktor.animation.AnimatedMeshComponentData" version="3">
 									<mesh>{CAA05557-36BC-430E-A571-C2D454C9970B}</mesh>
-								</item>
-								<item type="traktor.world.ScriptComponentData" version="2">
-									<class>{FE4831F3-BBD6-4A46-A51B-A6066AED480F}</class>
-									<properties/>
-									<editorSupport>true</editorSupport>
 								</item>
 							</components>
 						</item>
@@ -176,7 +171,7 @@
 							<name>Char02-Entity</name>
 							<transform>
 								<translation>-2.874986, 0, 4.643794, 0</translation>
-								<rotation>0, 0.707107, 0, 0.707107</rotation>
+								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
 								<item type="traktor.animation.SkeletonComponentData">
@@ -184,7 +179,7 @@
 									<poseController type="traktor.animation.RetargetPoseControllerData" version="2">
 										<animationSkeleton>{5900E120-54F3-4B46-9D0A-D05364ED05BE}</animationSkeleton>
 										<poseController type="traktor.animation.SimpleAnimationControllerData" version="2">
-											<animation>{D6EBEE52-0555-0B47-9E0A-5306060D7BB6}</animation>
+											<animation>{A6CD2A42-D445-9F48-98F5-5E0C8F01963D}</animation>
 											<transformTime/>
 										</poseController>
 									</poseController>
@@ -204,7 +199,7 @@
 							<name>Char03-Entity</name>
 							<transform>
 								<translation>-2.681943, 0, 1.772452, 0</translation>
-								<rotation>0, 0.707107, 0, 0.707107</rotation>
+								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
 								<item type="traktor.animation.SkeletonComponentData">
@@ -212,7 +207,7 @@
 									<poseController type="traktor.animation.RetargetPoseControllerData" version="2">
 										<animationSkeleton>{5900E120-54F3-4B46-9D0A-D05364ED05BE}</animationSkeleton>
 										<poseController type="traktor.animation.SimpleAnimationControllerData" version="2">
-											<animation>{D6EBEE52-0555-0B47-9E0A-5306060D7BB6}</animation>
+											<animation>{5E138240-A908-6A49-9660-BC19FE4C10B4}</animation>
 											<transformTime/>
 										</poseController>
 									</poseController>

@@ -2,7 +2,7 @@
 <object type="traktor.animation.SkeletonAsset" version="3">
 	<fileName>Meshes/Test/RigTest01/Char01/Char01.blend</fileName>
 	<offset>0, 0, 0, 1</offset>
-	<scale>2</scale>
+	<scale>1</scale>
 	<radius>0.25</radius>
 	<invertX>false</invertX>
 	<invertZ>false</invertZ>

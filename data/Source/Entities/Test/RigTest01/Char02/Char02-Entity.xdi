@@ -9,13 +9,26 @@
 	<components>
 		<item type="traktor.animation.SkeletonComponentData">
 			<skeleton>{BDAD8435-4EC5-574B-B804-1C014D30CD0A}</skeleton>
-			<poseController type="traktor.animation.SimpleAnimationControllerData" version="2">
-				<animation>{D6EBEE52-0555-0B47-9E0A-5306060D7BB6}</animation>
-				<transformTime/>
+			<poseController type="traktor.animation.RetargetPoseControllerData" version="2">
+				<animationSkeleton>{5900E120-54F3-4B46-9D0A-D05364ED05BE}</animationSkeleton>
+				<poseController type="traktor.animation.AnimationGraphPoseControllerData" version="3">
+					<animationGraph>{D6821DC7-B395-E641-BEB8-0DEE2DEEFEE2}</animationGraph>
+					<randomTimeOffset>
+						<min>0</min>
+						<max>0</max>
+					</randomTimeOffset>
+					<transformTime type="traktor.animation.TimeFromLocomotionData">
+					</transformTime>
+				</poseController>
 			</poseController>
 		</item>
 		<item type="traktor.animation.AnimatedMeshComponentData" version="3">
 			<mesh>{3D65E9B1-D088-2748-941B-ACDBC516F00E}</mesh>
+		</item>
+		<item type="traktor.world.ScriptComponentData" version="2">
+			<class>{FE4831F3-BBD6-4A46-A51B-A6066AED480F}</class>
+			<properties/>
+			<editorSupport>true</editorSupport>
 		</item>
 	</components>
 </object>

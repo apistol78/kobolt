@@ -70,7 +70,7 @@ function Game:postUpdate(info)
 	cameraEntity.transform = Thead * Transform(
 		Vector4.zero,
 		Quaternion.fromEulerAngles(0, pitch, 0)
-	) * Toffset
+	)
 end
 
 function Game:update(info)
@@ -104,6 +104,7 @@ function Game:update(info)
 
 	playerCharacter.headAngle = playerCharacter.headAngle + deltaHead * 0.01
 	playerCharacter:move(Vmove, false)
+	playerScript._pitch = pitch
 
 	if jump then
 		playerScript:jump()
@@ -112,6 +113,7 @@ function Game:update(info)
 	if fire then
 		playerScript:fire()
 
+--[[
 		local jointBindingComponent = playerEntity:getComponent(animation.JointBindingComponent)
 		local weaponEntity = jointBindingComponent:getEntity("Weapon", 0)
 
@@ -120,6 +122,7 @@ function Game:update(info)
 			weaponEntity.transform.translation,
 			weaponEntity.transform.axisZ * 100
 		)
+]]
 	end
 
 

@@ -7,6 +7,7 @@ import(traktor)
 Character = Character or class("Character", world.ScriptComponent)
 
 function Character:new()
+	self._pitch = 0
 	self._jumped = false
 	self._lastTransform = Transform()
 end
@@ -38,10 +39,23 @@ function Character:update(contextObject, totalTime, deltaTime)
 		end		
 	end
 
+	local group = self.owner:getComponent(world.GroupComponent)
+	local skin = group:getEntity("Skin", 0)
+	
+	local aim = skin:getComponent(world.ScriptComponent)
+	if aim ~= nil then
+		aim:setAimAngles({
+			0,
+			self._pitch
+		})
+	end
+
 	-- Expose conditions in state pose controller.
-	local skeletonComponent = self.owner:getComponent(animation.SkeletonComponent)
+	local skeletonComponent = skin:getComponent(animation.SkeletonComponent)
 	if skeletonComponent ~= nil then
-		local poseController = skeletonComponent.poseController
+
+		-- hack, since all skeletons has a retarget controller first we need to fetch nested...
+		local poseController = skeletonComponent.poseController.controller
 		poseController:setCondition(
 			"StrafeLeft",
 			strafeLeft,
@@ -67,6 +81,7 @@ function Character:update(contextObject, totalTime, deltaTime)
 			jumpForward,
 			true
 		)
+
 	end
 
 	self._lastTransform = T 
@@ -80,6 +95,7 @@ function Character:jump()
 end
 
 function Character:fire()
+--[[
 	local jointBindingComponent = self.owner:getComponent(animation.JointBindingComponent)
 	local weaponEntity = jointBindingComponent:getEntity("Weapon", 0)
 
@@ -90,12 +106,14 @@ function Character:fire()
 
 	local eventSetComponent = self.owner:getComponent(world.EventSetComponent)
 	eventSetComponent:raise("Fire", offset)
+]]
 end
 
 function Character.createStateTemplate()
 	local stateTemplate = jungle.StateTemplate()
 	stateTemplate:declare(jungle.TransformTemplate("Transform"))
 	stateTemplate:declare(jungle.VectorTemplate("Velocity"))
+	stateTemplate:declare(jungle.FloatTemplate("Pitch"))
 	return stateTemplate
 end
 
@@ -104,6 +122,7 @@ function Character:captureState()
 	state:packBegin()
 	state:pack(jungle.TransformValue(self.owner.transform))
 	state:pack(jungle.VectorValue(self.owner:getComponent(physics.CharacterComponent).velocity))
+	state:pack(jungle.FloatValue(self._pitch))
 	return state
 end
 
@@ -111,8 +130,10 @@ function Character:applyState(state)
 	state:unpackBegin()
 	local transform = state:unpack():get()
 	local velocity = state:unpack():get()
+	local pitch = state:unpack():get()
 	self.owner.transform = transform
 	self.owner:getComponent(physics.CharacterComponent).velocity = velocity
+	self._pitch = pitch
 end
 
 	]]>

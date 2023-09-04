@@ -7,7 +7,7 @@
 	<generateMips>true</generateMips>
 	<keepZeroAlpha>false</keepZeroAlpha>
 	<textureType>Tt2D</textureType>
-	<hasAlpha>false</hasAlpha>
+	<hasAlpha>true</hasAlpha>
 	<generateAlpha>false</generateAlpha>
 	<invertAlpha>false</invertAlpha>
 	<ignoreAlpha>false</ignoreAlpha>

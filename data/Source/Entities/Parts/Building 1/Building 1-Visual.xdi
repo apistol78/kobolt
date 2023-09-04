@@ -7,11 +7,11 @@
 	<materialShaders>
 		<item>
 			<first>m_bricks</first>
-			<second>{E38FD494-95D9-A74A-984A-9689C4DA3A99}</second>
+			<second>{6C1764C8-2E4E-40A1-8A8D-B6129BC66565}</second>
 		</item>
 		<item>
 			<first>m_concrete</first>
-			<second>{B79361EA-1E4A-6F45-B0F0-38EBEB3B3C86}</second>
+			<second>{9AB402E4-F439-C94E-AF56-47F1F7364EFA}</second>
 		</item>
 	</materialShaders>
 	<materialTextures/>

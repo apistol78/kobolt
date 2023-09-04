@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.render.TextureAsset" version="18">
+<object type="traktor.render.TextureAsset" version="20">
 	<fileName>Textures/Brick/Brick_Nm.png</fileName>
 	<textureFormat>TfInvalid</textureFormat>
-	<generateNormalMap>false</generateNormalMap>
+	<normalMap>true</normalMap>
 	<scaleDepth>0</scaleDepth>
 	<generateMips>true</generateMips>
 	<keepZeroAlpha>false</keepZeroAlpha>
@@ -10,7 +10,7 @@
 	<hasAlpha>false</hasAlpha>
 	<generateAlpha>false</generateAlpha>
 	<invertAlpha>false</invertAlpha>
-	<ignoreAlpha>false</ignoreAlpha>
+	<ignoreAlpha>true</ignoreAlpha>
 	<premultiplyAlpha>false</premultiplyAlpha>
 	<dilateImage>false</dilateImage>
 	<scaleImage>false</scaleImage>
@@ -19,15 +19,14 @@
 	<flipX>false</flipX>
 	<flipY>false</flipY>
 	<enableCompression>true</enableCompression>
-	<enableNormalMapCompression>true</enableNormalMapCompression>
 	<encodeAsRGBM>false</encodeAsRGBM>
 	<inverseNormalMapX>false</inverseNormalMapX>
-	<inverseNormalMapY>true</inverseNormalMapY>
-	<scaleNormalMap>1</scaleNormalMap>
-	<linearGamma>true</linearGamma>
+	<inverseNormalMapY>false</inverseNormalMapY>
+	<scaleNormalMap>0</scaleNormalMap>
+	<assumeLinearGamma>false</assumeLinearGamma>
 	<generateSphereMap>false</generateSphereMap>
 	<preserveAlphaCoverage>false</preserveAlphaCoverage>
-	<alphaCoverageReference>0.5</alphaCoverageReference>
+	<alphaCoverageReference>0.1</alphaCoverageReference>
 	<sharpenRadius>0</sharpenRadius>
 	<sharpenStrength>0</sharpenStrength>
 	<noiseStrength>0</noiseStrength>

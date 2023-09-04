@@ -16,7 +16,7 @@
 	</materialShaders>
 	<materialTextures/>
 	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
-	<scaleFactor>2</scaleFactor>
+	<scaleFactor>1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
 	<renormalize>false</renormalize>
 	<center>false</center>

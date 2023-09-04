@@ -61,7 +61,7 @@
 		<fogDensity>0.1</fogDensity>
 		<fogDensityMax>0.5</fogDensityMax>
 		<fogColor>0.258824, 0.247059, 0.227451, 1</fogColor>
-		<irradianceGrid>{FD86AE60-E6D1-134F-9FA6-75E2A738B86B}</irradianceGrid>
+		<irradianceGrid>{0094ABBD-6A5A-014C-86D3-E8D967FE25EB}</irradianceGrid>
 		<imageProcess>
 			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
 			<low>{00000000-0000-0000-0000-000000000000}</low>
@@ -111,7 +111,7 @@
 							<id>{1C3E7490-5D46-D844-9122-6147C03953E0}</id>
 							<name>Player</name>
 							<transform>
-								<translation>1.251506, 0.003049, 0.403127, 0</translation>
+								<translation>1.165087, 0.003049, 0.493338, 0</translation>
 								<rotation>0, -0.757842, 0, 0.652438</rotation>
 							</transform>
 							<components/>
@@ -153,16 +153,6 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-							<id>{E3C8CF90-5636-F340-B100-E2752653C296}</id>
-							<name>RigTest01-Entity</name>
-							<transform>
-								<translation>-2.967609, -0.015537, -1.431329, 0</translation>
-								<rotation>0, 0.847678, 0, -0.530511</rotation>
-							</transform>
-							<components/>
-							<entityData>{AADBBC77-0FF0-8045-B503-B24309B13F92}</entityData>
-						</item>
 					</entityData>
 				</item>
 			</components>
@@ -187,7 +177,7 @@
 							<id>{6D6F8A66-35B5-A241-B0A1-EC708EBBAF39}</id>
 							<name>Level-Entity</name>
 							<transform>
-								<translation>0, -2.711433, 0, 0</translation>
+								<translation>-0.086419, -2.711433, 0.002373, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -197,7 +187,7 @@
 							<id>{CFB961AC-1560-FC4B-B1B3-6F4CC5292C4C}</id>
 							<name>Crate 2-Entity</name>
 							<transform>
-								<translation>6.089216, 2.154935, -2.250286, 0</translation>
+								<translation>4.765958, 1.31173, -1.864384, 0</translation>
 								<rotation>0, -0.488177, 0, 0.872745</rotation>
 							</transform>
 							<components/>
@@ -207,8 +197,8 @@
 							<id>{84055EA0-A8EF-034F-B7D0-29E5CE9F313D}</id>
 							<name>Crate 2-Entity</name>
 							<transform>
-								<translation>-0.549505, 2.133384, -11.453918, 0</translation>
-								<rotation>0, 0.119712, 0, 0.992809</rotation>
+								<translation>1.396945, 1.292127, -6.180329, 0</translation>
+								<rotation>0, 0.139543, 0, 0.990216</rotation>
 							</transform>
 							<components/>
 							<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
@@ -217,8 +207,8 @@
 							<id>{16A26624-528F-0E4D-82F8-33969D15F7EF}</id>
 							<name>Crate 2-Entity</name>
 							<transform>
-								<translation>-8.537455, 2.154655, -14.682102, 0</translation>
-								<rotation>0, 0.119712, 0, 0.992809</rotation>
+								<translation>-6.389328, 1.322713, -7.707062, 0</translation>
+								<rotation>0, -0.361616, 0, 0.932327</rotation>
 							</transform>
 							<components/>
 							<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
@@ -227,7 +217,7 @@
 							<id>{0D6CFDB2-ADE3-7349-A574-BFF1F45AEEF3}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>-2.773042, -0.018897, -8.201509, 0</translation>
+								<translation>-1.831187, -0.018897, -7.311841, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -237,7 +227,7 @@
 							<id>{CD59EE08-C3F0-6B4B-BE93-9C68AF98B28A}</id>
 							<name>Concrete Wall-Entity</name>
 							<transform>
-								<translation>4.159939, -0.078938, 0.416514, 0</translation>
+								<translation>3.651415, -0.078938, -0.817841, 0</translation>
 								<rotation>0, 0.276356, 0, 0.961055</rotation>
 							</transform>
 							<components/>
@@ -247,7 +237,7 @@
 							<id>{04E39BBC-5D34-6F4C-9090-631A7815ADC5}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>2.374736, -0.018896, -2.293513, 0</translation>
+								<translation>-1.10848, -0.018896, -0.514008, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -257,13 +247,13 @@
 							<id>{8F5DD43E-EA26-9546-A2BE-367CBC17DBAF}</id>
 							<name>Sky</name>
 							<transform>
-								<translation>0, 2.639621, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
+								<translation>-0.086419, 2.639621, 0.002373, 0</translation>
+								<rotation>0, 0.681639, 0, 0.731689</rotation>
 							</transform>
 							<components>
 								<item type="traktor.weather.SkyComponentData" version="3">
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
-									<texture>{93E6996B-8903-4AD0-811A-C8C03C8E38C6}</texture>
+									<texture>{A463D3D4-95CE-F64A-BFC7-7D6162F3B34F}</texture>
 								</item>
 							</components>
 						</item>
@@ -272,7 +262,7 @@
 							<name>Sun</name>
 							<transform>
 								<translation>0, 0, 0, 0</translation>
-								<rotation>0.189901, -0.801762, 0.331064, 0.459905</rotation>
+								<rotation>0.357195, -0.325609, 0.134453, 0.865051</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.LightComponentData" version="11">
@@ -321,6 +311,26 @@
 								</item>
 							</components>
 						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{7F329D61-92AC-4C4A-AA15-9B6C4543516C}</id>
+							<name>Crate 2-Entity</name>
+							<transform>
+								<translation>-4.236368, 1.322713, -10.407988, 0</translation>
+								<rotation>0, -0.361616, 0, 0.932327</rotation>
+							</transform>
+							<components/>
+							<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{EECF3BCD-AA17-EA45-B59C-E0DCCEBFACE0}</id>
+							<name>Barrel-Entity</name>
+							<transform>
+								<translation>2.33038, -0.018897, -4.731792, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
+						</item>
 					</entityData>
 				</item>
 			</components>
@@ -330,7 +340,7 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="31">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>1</primarySampleCount>
+			<primarySampleCount>10</primarySampleCount>
 			<secondarySampleCount>100</secondarySampleCount>
 			<shadowSampleCount>50</shadowSampleCount>
 			<maxPathDistance>40</maxPathDistance>

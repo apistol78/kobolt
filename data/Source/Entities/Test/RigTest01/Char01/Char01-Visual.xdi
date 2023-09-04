@@ -4,10 +4,19 @@
 	<importFilter/>
 	<meshType>MtSkinned</meshType>
 	<materialTemplates/>
-	<materialShaders/>
+	<materialShaders>
+		<item>
+			<first>Alpha_Body_MAT.001</first>
+			<second>{A165CD8E-00D2-FA45-8406-B67234A6B0F3}</second>
+		</item>
+		<item>
+			<first>Alpha_Joints_MAT.001</first>
+			<second>{45C57845-1CBA-D24A-9501-3A8EECA57C4B}</second>
+		</item>
+	</materialShaders>
 	<materialTextures/>
 	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
-	<scaleFactor>2</scaleFactor>
+	<scaleFactor>1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
 	<renormalize>false</renormalize>
 	<center>false</center>

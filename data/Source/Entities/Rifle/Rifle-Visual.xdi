@@ -4,10 +4,15 @@
 	<importFilter/>
 	<meshType>MtStatic</meshType>
 	<materialTemplates/>
-	<materialShaders/>
+	<materialShaders>
+		<item>
+			<first>m_weapon</first>
+			<second>{870B154A-9F1F-DB46-8D40-AB0E74CFAB9C}</second>
+		</item>
+	</materialShaders>
 	<materialTextures/>
 	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
-	<scaleFactor>1.5</scaleFactor>
+	<scaleFactor>1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
 	<renormalize>false</renormalize>
 	<center>false</center>
@@ -15,5 +20,5 @@
 	<lodSteps>8</lodSteps>
 	<lodMaxDistance>100</lodMaxDistance>
 	<lodCullDistance>200</lodCullDistance>
-	<previewAngle>0</previewAngle>
+	<previewAngle>1.068142</previewAngle>
 </object>

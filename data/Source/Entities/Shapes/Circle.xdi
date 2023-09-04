@@ -15,5 +15,5 @@
 	<lodSteps>8</lodSteps>
 	<lodMaxDistance>100</lodMaxDistance>
 	<lodCullDistance>200</lodCullDistance>
-	<previewAngle>0</previewAngle>
+	<previewAngle>1.00531</previewAngle>
 </object>

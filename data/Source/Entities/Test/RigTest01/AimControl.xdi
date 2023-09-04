@@ -6,16 +6,23 @@ import(traktor)
 
 AimControl = AimControl or class("AimControl", world.ScriptComponent)
 
+function AimControl:new()
+	self._aimAngles = { 0, 0 }
+end
+
 function AimControl:update(contextObject, totalTime, deltaTime)
 	local skeleton = self.owner:getComponent(animation.SkeletonComponent)
-	local aimAngle = math.sin(totalTime)
-	local headAngle = math.sin(totalTime * 1.3)
+
+	local headAngle = self._aimAngles[1] + math.abs(-self._aimAngles[2] * 0.2)
+	local pitchAngle = -self._aimAngles[2] * 0.7
+
+	local headOffset = 0 -- math.pi / 10
 
 	skeleton:concatenatePoseTransform("Spine1",
 		Transform(
 			Vector4.zero,
-			Quaternion.fromAxisAngle(Vector4(aimAngle / 2, 0, 0)) *
-			Quaternion.fromAxisAngle(Vector4(0, 0, headAngle / 2 + math.pi / 10))
+			Quaternion.fromAxisAngle(Vector4(pitchAngle / 2, 0, 0)) *
+			Quaternion.fromAxisAngle(Vector4(0, 0, headAngle / 2 + headOffset))
 		),
 		true
 	) 
@@ -23,8 +30,8 @@ function AimControl:update(contextObject, totalTime, deltaTime)
 	skeleton:concatenatePoseTransform("Spine2",
 		Transform(
 			Vector4.zero,
-			Quaternion.fromAxisAngle(Vector4(aimAngle / 2, 0, 0)) *
-			Quaternion.fromAxisAngle(Vector4(0, 0, headAngle / 2 + math.pi / 10))
+			Quaternion.fromAxisAngle(Vector4(pitchAngle / 2, 0, 0)) *
+			Quaternion.fromAxisAngle(Vector4(0, 0, headAngle / 2 + headOffset))
 		),
 		true
 	) 
@@ -32,10 +39,14 @@ function AimControl:update(contextObject, totalTime, deltaTime)
 	skeleton:concatenatePoseTransform("Neck",
 		Transform(
 			Vector4.zero,
-			Quaternion.fromAxisAngle(Vector4(-aimAngle / 6, 0, 0))
+			Quaternion.fromAxisAngle(Vector4(-pitchAngle / 6, 0, 0))
 		),
 		true
 	) 
+end
+
+function AimControl:setAimAngles(aimAngles)
+	self._aimAngles = aimAngles or { 0, 0 }
 end
 
 	]]>

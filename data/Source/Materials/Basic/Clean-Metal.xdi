@@ -70,10 +70,10 @@
 			<id>{97F8B363-400B-2841-B051-EA9ADDA356C5}</id>
 			<comment/>
 			<position>
-				<first>1199</first>
-				<second>345</second>
+				<first>1198</first>
+				<second>344</second>
 			</position>
-			<color>0.403922, 0.403922, 0.403922, 0</color>
+			<color>0.403922, 0.403922, 0.403922, 1</color>
 			<linear>false</linear>
 		</item>
 		<item type="traktor.render.PreviewOutput" version="traktor.render.Node:1">
