@@ -13,6 +13,10 @@
 			<first>m_concrete</first>
 			<second>{9AB402E4-F439-C94E-AF56-47F1F7364EFA}</second>
 		</item>
+		<item>
+			<first>m_window</first>
+			<second>{82557320-8FCA-764E-BEEC-7BBAE3353BD2}</second>
+		</item>
 	</materialShaders>
 	<materialTextures/>
 	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
