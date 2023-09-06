@@ -237,7 +237,7 @@
 							<id>{04E39BBC-5D34-6F4C-9090-631A7815ADC5}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>-1.10848, -0.018896, -0.514008, 0</translation>
+								<translation>2.364465, -0.018896, -2.020684, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -326,6 +326,16 @@
 							<name>Barrel-Entity</name>
 							<transform>
 								<translation>2.33038, -0.018897, -4.731792, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{33AE0D49-CFCA-3A4A-AAD4-4D9138561837}</id>
+							<name>Barrel-Entity</name>
+							<transform>
+								<translation>-2.745712, -0.018897, -6.755793, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
