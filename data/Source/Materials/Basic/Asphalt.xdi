@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
+	<nodes>
+		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+			<id>{5A25E4AC-0E4F-E146-902A-E05406181D42}</id>
+			<comment/>
+			<position>
+				<first>150</first>
+				<second>1439</second>
+			</position>
+			<name>VertexAttributes</name>
+			<connectable>true</connectable>
+			<optional>false</optional>
+			<haveDefaultValue>false</haveDefaultValue>
+			<defaultValue>0</defaultValue>
+		</item>
+		<item type="traktor.render.OutputPort" version="traktor.render.Node:1">
+			<id>{E7557279-835A-EB49-8DEB-544CCCF83FC1}</id>
+			<comment/>
+			<position>
+				<first>1003</first>
+				<second>1308</second>
+			</position>
+			<name>SurfaceAttributes</name>
+		</item>
+		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+			<id>{4FE63549-1AA4-794C-A7CF-92E66590F453}</id>
+			<comment/>
+			<position>
+				<first>545</first>
+				<second>1244</second>
+			</position>
+			<fragmentGuid>{213B6673-FE1E-784B-96A1-989D3042626B}</fragmentGuid>
+			<inputPins>
+				<item>
+					<id>{4904E794-697E-B047-90D3-AA17F52722CB}</id>
+					<name>Albedo</name>
+					<optional>false</optional>
+				</item>
+				<item>
+					<id>{B91FBB1C-B9A6-8A4B-B1E2-77D81A49164D}</id>
+					<name>Normal</name>
+					<optional>false</optional>
+				</item>
+				<item>
+					<id>{00C78DDC-7660-B549-9E0B-5E0847A3DEA5}</id>
+					<name>VertexAttributes</name>
+					<optional>false</optional>
+				</item>
+				<item>
+					<id>{8F83D239-8699-1748-B709-90AFD434FAA2}</id>
+					<name>Roughness</name>
+					<optional>true</optional>
+				</item>
+				<item>
+					<id>{6319343C-D7F6-6B42-944B-B3DAD264DB43}</id>
+					<name>Tiling</name>
+					<optional>true</optional>
+				</item>
+			</inputPins>
+			<outputPins>
+				<item>
+					<id>{A5132EC0-3F15-C048-9A63-A4C050044DC7}</id>
+					<name>SurfaceAttributes</name>
+				</item>
+			</outputPins>
+			<values>
+				<item>
+					<first>Tiling</first>
+					<second>0.7</second>
+				</item>
+			</values>
+		</item>
+		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
+			<id>{3256CA89-2AA2-D64B-A131-FC717E4BB5DC}</id>
+			<comment/>
+			<position>
+				<first>237</first>
+				<second>1004</second>
+			</position>
+			<external>{872BBD2E-A71C-734B-B985-27F54AD7FF2B}</external>
+			<type>Texture2D</type>
+		</item>
+		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
+			<id>{B73DA369-6326-AF4F-A68E-747931BF1C96}</id>
+			<comment/>
+			<position>
+				<first>237</first>
+				<second>1136</second>
+			</position>
+			<external>{7A0E0F02-4B74-9545-8C36-C780D1E3F625}</external>
+			<type>Texture2D</type>
+		</item>
+		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
+			<id>{23B5D459-FFFB-4B4E-84CD-AA6C7E78E6BD}</id>
+			<comment/>
+			<position>
+				<first>237</first>
+				<second>1268</second>
+			</position>
+			<external>{86EF8080-2BAA-C440-B2D7-D79F98F81B6E}</external>
+			<type>Texture2D</type>
+		</item>
+	</nodes>
+	<edges>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item"/>
+				<id>{9AE16BB1-EB68-45A0-A878-8D01C210082B}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{00C78DDC-7660-B549-9E0B-5E0847A3DEA5}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[4]"/>
+				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{B91FBB1C-B9A6-8A4B-B1E2-77D81A49164D}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[3]"/>
+				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{4904E794-697E-B047-90D3-AA17F52722CB}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[5]"/>
+				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{8F83D239-8699-1748-B709-90AFD434FAA2}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{A5132EC0-3F15-C048-9A63-A4C050044DC7}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[1]"/>
+				<id>{731844D4-AFDC-4EAA-8B41-C4BA2455898F}</id>
+			</destination>
+		</item>
+	</edges>
+	<groups/>
+</object>

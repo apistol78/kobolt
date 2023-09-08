@@ -74,7 +74,7 @@
 				<second>344</second>
 			</position>
 			<color>0.717647, 0.172549, 0.172549, 1</color>
-			<linear>false</linear>
+			<linear>true</linear>
 		</item>
 		<item type="traktor.render.BundleSplit" version="traktor.render.Node:1">
 			<id>{9389BD2B-00EC-D149-89BE-7C4029876391}</id>

@@ -74,7 +74,7 @@
 				<second>345</second>
 			</position>
 			<color>0.301961, 0.545098, 0.301961, 1</color>
-			<linear>false</linear>
+			<linear>true</linear>
 		</item>
 		<item type="traktor.render.PreviewOutput" version="traktor.render.Node:1">
 			<id>{35649E8A-1FAB-8742-8F54-64EC11A86B2E}</id>
