@@ -22,11 +22,14 @@ function FrontEnd:new(params, environment)
 		{ "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
 	)
 
+	PushButton:setStyle("background", traktor.Color4f(1.0, 1.0, 1.0, 1.0))
+	PushButton:setStyle("text", traktor.Color4f(0.0, 0.0, 0.0, 1.0))
+
 	-- Create test frame.
 	self._frame = Frame(
 		self.spark.root,
 		1280, 720,
-		FloodLayout(0, 0)
+		FloodLayout(16, 16)
 	)
 	self._frame:update()
 
@@ -41,9 +44,9 @@ function FrontEnd:new(params, environment)
 	PushButton(ct, "Exit")
 		:setEnable(false)
 
-	Tween(0, 1, 1, function(alpha)
-		ct:setAlpha(alpha)
-	end)
+	self._stLobby = Static(self._frame, "Connecting...")
+		:setHorizontalAlign(Widget.ALIGN_RIGHT)
+		:setVerticalAlign(Widget.ALIGN_BOTTOM)
 
 	-- Ensure frame is properly layed out.
 	self._frame:layout()
@@ -62,6 +65,12 @@ function FrontEnd:update(info)
 		local nxt = self:loadStage("LOADING", self._lobbyManager)
 		self:gotoStage(nxt)
 	end
+
+	if self._lobbyManager._lobby ~= nil then
+		self._stLobby:setText("Connected")
+	end
+
+	self._frame:layout()
 
 	Tween.update(info.simulationDeltaTime)
 end

@@ -1563,7 +1563,7 @@
 											<name>Concrete Wall-Entity</name>
 											<transform>
 												<translation>155.848816, -386.78009, -471.280762, 0</translation>
-												<rotation>0, 1, 0, -0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
@@ -2007,7 +2007,7 @@
 											<name>Building 1-Entity</name>
 											<transform>
 												<translation>110.916008, -386.044739, -495.994934, 0</translation>
-												<rotation>0, 1, 0, -0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0D487A58-4C2C-EC4F-A01C-2048674E529C}</entityData>
@@ -2037,7 +2037,7 @@
 											<name>Building 1-Entity</name>
 											<transform>
 												<translation>154.428009, -378.206512, -422.041321, 0</translation>
-												<rotation>0, 1, 0, -0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0D487A58-4C2C-EC4F-A01C-2048674E529C}</entityData>
@@ -2116,8 +2116,8 @@
 											<id>{E0058420-E7D1-F64E-9D1A-5A5B3BDE2990}</id>
 											<name>AC-Entity</name>
 											<transform>
-												<translation>113.312439, -378.980408, -488.470245, 0</translation>
-												<rotation>0, 1, 0, -0</rotation>
+												<translation>113.474892, -378.980408, -488.470245, 0</translation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2127,7 +2127,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>144.932846, -379.008057, -482.044556, 0</translation>
-												<rotation>0, 1, 0, -0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2166,8 +2166,8 @@
 											<id>{C69F27C4-7FBC-EB4D-931D-82D73EF5AB8A}</id>
 											<name>AC-Entity</name>
 											<transform>
-												<translation>118.309288, -378.980408, -488.45105, 0</translation>
-												<rotation>0, 1, 0, -0</rotation>
+												<translation>118.29332, -378.980408, -488.45105, 0</translation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2207,7 +2207,7 @@
 											<name>AC duct-Entity</name>
 											<transform>
 												<translation>144.924103, -378.881195, -482.048126, 0</translation>
-												<rotation>0, 1, 0, -0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{084CEE9D-36A4-D045-8C26-6E3F431264F1}</entityData>
@@ -2370,8 +2370,8 @@
 											<id>{30650619-96DA-5A4E-8255-A11D0A27A8EC}</id>
 											<name>Crate 2-Entity</name>
 											<transform>
-												<translation>103.833038, -385.426422, -483.164581, 0</translation>
-												<rotation>0, 0.707107, 0, 0.707107</rotation>
+												<translation>103.088379, -385.426422, -485.424652, 0</translation>
+												<rotation>0, 0.670882, 0, 0.741564</rotation>
 											</transform>
 											<components/>
 											<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
@@ -2524,7 +2524,7 @@
 							<id>{7E433747-C27D-4C96-9086-632834187CB1}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>124.234077, -386.745911, -467.845184, 0</translation>
+								<translation>124.34832, -386.745911, -467.735718, 0</translation>
 								<rotation>0, -0.75128, 0, 0.659983</rotation>
 							</transform>
 							<components/>

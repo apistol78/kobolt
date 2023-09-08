@@ -187,8 +187,8 @@
 							<id>{CFB961AC-1560-FC4B-B1B3-6F4CC5292C4C}</id>
 							<name>Crate 2-Entity</name>
 							<transform>
-								<translation>4.765958, 1.31173, -1.864384, 0</translation>
-								<rotation>0, -0.488177, 0, 0.872745</rotation>
+								<translation>4.076148, 1.31173, -1.269728, 0</translation>
+								<rotation>0, -0.434965, 0, 0.900447</rotation>
 							</transform>
 							<components/>
 							<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
@@ -197,7 +197,7 @@
 							<id>{84055EA0-A8EF-034F-B7D0-29E5CE9F313D}</id>
 							<name>Crate 2-Entity</name>
 							<transform>
-								<translation>1.396945, 1.292127, -6.180329, 0</translation>
+								<translation>0.552584, 1.292127, -4.981118, 0</translation>
 								<rotation>0, 0.139543, 0, 0.990216</rotation>
 							</transform>
 							<components/>
@@ -207,7 +207,7 @@
 							<id>{16A26624-528F-0E4D-82F8-33969D15F7EF}</id>
 							<name>Crate 2-Entity</name>
 							<transform>
-								<translation>-6.389328, 1.322713, -7.707062, 0</translation>
+								<translation>-5.501189, 1.322713, -6.769509, 0</translation>
 								<rotation>0, -0.361616, 0, 0.932327</rotation>
 							</transform>
 							<components/>
@@ -217,7 +217,7 @@
 							<id>{0D6CFDB2-ADE3-7349-A574-BFF1F45AEEF3}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>-1.831187, -0.018897, -7.311841, 0</translation>
+								<translation>-5.618663, -0.018897, -4.293422, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -227,7 +227,7 @@
 							<id>{CD59EE08-C3F0-6B4B-BE93-9C68AF98B28A}</id>
 							<name>Concrete Wall-Entity</name>
 							<transform>
-								<translation>3.651415, -0.078938, -0.817841, 0</translation>
+								<translation>2.835242, -0.078938, 0.822055, 0</translation>
 								<rotation>0, 0.276356, 0, 0.961055</rotation>
 							</transform>
 							<components/>
@@ -237,7 +237,7 @@
 							<id>{04E39BBC-5D34-6F4C-9090-631A7815ADC5}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>2.364465, -0.018896, -2.020684, 0</translation>
+								<translation>2.156314, -0.018896, -0.523782, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -282,7 +282,7 @@
 							<id>{CA6D0E95-71DC-3448-A2A3-7B6095F04BAC}</id>
 							<name>Kobalt-Entity</name>
 							<transform>
-								<translation>-0.188193, 3.017542, -1.507531, 0</translation>
+								<translation>0.61242, 3.070872, -2.512509, 0</translation>
 								<rotation>0, 0.981491, 0, 0.191509</rotation>
 							</transform>
 							<components/>
@@ -315,7 +315,7 @@
 							<id>{7F329D61-92AC-4C4A-AA15-9B6C4543516C}</id>
 							<name>Crate 2-Entity</name>
 							<transform>
-								<translation>-4.236368, 1.322713, -10.407988, 0</translation>
+								<translation>-3.018424, 2.778157, -9.212276, 0</translation>
 								<rotation>0, -0.361616, 0, 0.932327</rotation>
 							</transform>
 							<components/>
@@ -325,7 +325,7 @@
 							<id>{EECF3BCD-AA17-EA45-B59C-E0DCCEBFACE0}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>2.33038, -0.018897, -4.731792, 0</translation>
+								<translation>0.852195, -0.018897, -1.693649, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -335,7 +335,7 @@
 							<id>{33AE0D49-CFCA-3A4A-AAD4-4D9138561837}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>-2.745712, -0.018897, -6.755793, 0</translation>
+								<translation>-2.881492, -0.018897, -4.044976, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -350,7 +350,7 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="31">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>10</primarySampleCount>
+			<primarySampleCount>11</primarySampleCount>
 			<secondarySampleCount>100</secondarySampleCount>
 			<shadowSampleCount>50</shadowSampleCount>
 			<maxPathDistance>40</maxPathDistance>

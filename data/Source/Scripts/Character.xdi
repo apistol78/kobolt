@@ -42,6 +42,7 @@ function Character:update(contextObject, totalTime, deltaTime)
 	local group = self.owner:getComponent(world.GroupComponent)
 	local skin = group:getEntity("Skin", 0)
 	
+	-- Set aiming angles in the skin's aim controller.
 	local aim = skin:getComponent(world.ScriptComponent)
 	if aim ~= nil then
 		aim:setAimAngles({
