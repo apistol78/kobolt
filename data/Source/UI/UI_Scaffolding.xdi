@@ -15,7 +15,7 @@ function UI_Scaffolding:setup(frame)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 
 	Static(ct, "Kobalt")
-		:setTextSize(60)
+		:setTextSize(80)
 
 	PushButton(ct, "Play")
 	PushButton(ct, "Options")
@@ -24,6 +24,11 @@ function UI_Scaffolding:setup(frame)
 	Tween(0, 1, 1.0, function(alpha)
 		ct:setAlpha(alpha)
 	end)
+end
+
+function UI_Scaffolding:getResourceKits()
+	print("getResourceKits")
+	return { "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}"  }
 end
 
 	]]>
