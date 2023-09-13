@@ -41,6 +41,7 @@ function Character:update(contextObject, totalTime, deltaTime)
 
 	local group = self.owner:getComponent(world.GroupComponent)
 	local skin = group:getEntity("Skin", 0)
+	local weapon = group:getEntity("Weapon", 0)
 	
 	-- Set aiming angles in the skin's aim controller.
 	local aim = skin:getComponent(world.ScriptComponent)
@@ -82,7 +83,14 @@ function Character:update(contextObject, totalTime, deltaTime)
 			jumpForward,
 			true
 		)
+	end
 
+	-- Update weapon transform.
+	local jointBindingComponent = skin:getComponent(animation.JointBindingComponent)
+	if jointBindingComponent ~= nil and weapon ~= nil then
+		local anchorEntity = jointBindingComponent:getEntity("WeaponAnchor", 0)
+		local anchor = anchorEntity.transform
+		weapon.transform = anchor
 	end
 
 	self._lastTransform = T 

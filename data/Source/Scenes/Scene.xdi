@@ -2524,7 +2524,7 @@
 							<id>{D2C16618-7E3D-4181-BF57-FBD38AA279C8}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>123.213051, -386.745911, -467.857025, 0</translation>
+								<translation>123.097778, -386.745911, -467.828552, 0</translation>
 								<rotation>0, 0.998201, 0, 0.059964</rotation>
 							</transform>
 							<components/>
@@ -2544,7 +2544,7 @@
 							<id>{AEEB9F66-F81A-9443-90B2-EAF0007BD84E}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>120.754967, -384.168762, -446.425537, 0</translation>
+								<translation>120.878738, -384.168762, -446.425537, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -2975,7 +2975,7 @@
 															<name>Control</name>
 															<transform>
 																<translation>139.547836, -380.394836, -503.477844, 0</translation>
-																<rotation>-0.00629, 0.314505, -0.018984, 0.949045</rotation>
+																<rotation>-0.00629, 0.314506, -0.018984, 0.949045</rotation>
 															</transform>
 															<components>
 																<item type="traktor.shape.ControlPointComponentData">
@@ -3457,6 +3457,36 @@
 							<components/>
 							<entityData>{05D95751-5539-9A4E-804A-97C9BFB066E0}</entityData>
 						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{34FE3964-CB89-1B4F-BCFC-4637C3F3884E}</id>
+							<name>Manhole-Entity</name>
+							<transform>
+								<translation>104.365807, -386.81424, -503.603272, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{D313A1C2-6816-5448-90F8-24B40C23AF59}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{2B95473B-9B74-AF42-A7AE-7DCC7D030946}</id>
+							<name>Manhole-Entity</name>
+							<transform>
+								<translation>104.365807, -386.81424, -478.018219, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{D313A1C2-6816-5448-90F8-24B40C23AF59}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{B40D5CC2-BE18-D743-B79B-8CDE9B5AE262}</id>
+							<name>Manhole-Entity</name>
+							<transform>
+								<translation>133.171524, -386.81424, -477.73288, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{D313A1C2-6816-5448-90F8-24B40C23AF59}</entityData>
+						</item>
 					</entityData>
 				</item>
 			</components>
@@ -3464,7 +3494,7 @@
 	</layers>
 	<controllerData/>
 	<operationData>
-		<item type="traktor.shape.BakeConfiguration" version="31">
+		<item type="traktor.shape.BakeConfiguration" version="32">
 			<enableLightmaps>true</enableLightmaps>
 			<primarySampleCount>4</primarySampleCount>
 			<secondarySampleCount>80</secondarySampleCount>
@@ -3476,8 +3506,9 @@
 			<minimumLightMapSize>4</minimumLightMapSize>
 			<maximumLightMapSize>4096</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
-			<skyAttenuation>1</skyAttenuation>
-			<ambientOcclusionFactor>0.25</ambientOcclusionFactor>
+			<analyticalLightAttenuation>2</analyticalLightAttenuation>
+			<skyAttenuation>2</skyAttenuation>
+			<ambientOcclusionFactor>0.1</ambientOcclusionFactor>
 		</item>
 	</operationData>
 </object>

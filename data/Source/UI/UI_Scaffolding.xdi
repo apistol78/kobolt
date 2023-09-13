@@ -5,30 +5,39 @@
 #using \{218D113A-66DC-9049-8424-701FF60F2BC4}
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 
+#using \{21076EFA-565B-E044-8E13-BC01DB4BA31E}
+#using \{126D6B63-5192-104A-BAE3-F178A1229D8C}
+
 import(traktor)
 
 UI_Scaffolding = UI_Scaffolding or class("UI_Scaffolding", Scaffolding)
 
 function UI_Scaffolding:setup(frame)
-	local ct = Container(frame, TableLayout({0}, {0, 0}, 16, 16, 0, 16))
+
+	local fb = Flipboard(frame)
+
+	MainView(fb)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setOnOptions(function() fb:showPage("OPTIONS") end)
+		:setOnExit(function() 
+			local d = Dialog(frame, FloodLayout(16, 16))
+			Static(d, "Are you sure?")
+			d:show()
+		end)
 
-	Static(ct, "Kobalt")
-		:setTextSize(80)
+	OptionsView(fb)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setOnReturn(function() fb:showPage("MAIN") end)
 
-	PushButton(ct, "Play")
-	PushButton(ct, "Options")
-	PushButton(ct, "Exit")
+	fb:showPage("MAIN")
 
-	Tween(0, 1, 1.0, function(alpha)
-		ct:setAlpha(alpha)
-	end)
 end
 
 function UI_Scaffolding:getResourceKits()
-	print("getResourceKits")
 	return { "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}"  }
+--	return { "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}"  }
 end
 
 	]]>

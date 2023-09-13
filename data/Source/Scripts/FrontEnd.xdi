@@ -6,6 +6,9 @@
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
 #using \{F266FE75-7BF7-BC4C-9616-06D2B5F5F6E8}
 
+#using \{21076EFA-565B-E044-8E13-BC01DB4BA31E}
+#using \{126D6B63-5192-104A-BAE3-F178A1229D8C}
+
 import(traktor)
 
 FrontEnd = FrontEnd or class("FrontEnd", Stage)
@@ -19,34 +22,40 @@ function FrontEnd:new(params, environment)
 	-- Initialize UiKit.
 	Widget.initialize(
 		environment.resource.resourceManager,
-		{ "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
+		{ "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
 	)
 
 	PushButton:setStyle("background", traktor.Color4f(1.0, 1.0, 1.0, 1.0))
 	PushButton:setStyle("text", traktor.Color4f(0.0, 0.0, 0.0, 1.0))
+	PushButton:setStyle("textSize", 30)
 
 	-- Create test frame.
 	self._frame = Frame(
 		self.spark.root,
 		1280, 720,
-		FloodLayout(16, 16)
+		FloodLayout()
 	)
 	self._frame:update()
 
-	local ct = Container(self._frame, TableLayout({0}, {0, 0}, 16, 16, 0, 16))
+	local fb = Flipboard(self._frame)
+
+	MainView(fb)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setOnPlay(function() self._clicked = true end)
+		:setOnOptions(function() fb:showPage("OPTIONS") end)
+		:setOnExit(function() 
+			local d = Dialog(self._frame, FloodLayout(16, 16))
+			Static(d, "Are you sure?")
+			d:show()
+		end)
 
-	PushButton(ct, "Play")
-		:setOnClick(function() self._clicked = true end)
-	PushButton(ct, "Options")
-		:setEnable(false)
-	PushButton(ct, "Exit")
-		:setEnable(false)
+	OptionsView(fb)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setOnReturn(function() fb:showPage("MAIN") end)
 
-	self._stLobby = Static(self._frame, "Connecting...")
-		:setHorizontalAlign(Widget.ALIGN_RIGHT)
-		:setVerticalAlign(Widget.ALIGN_BOTTOM)
+	fb:showPage("MAIN")
 
 	-- Ensure frame is properly layed out.
 	self._frame:layout()
@@ -66,14 +75,10 @@ function FrontEnd:update(info)
 		self:gotoStage(nxt)
 	end
 
-	if self._lobbyManager._lobby ~= nil then
-		self._stLobby:setText("Connected")
-	end
-
-	self._frame:layout()
-
 	Tween.update(info.simulationDeltaTime)
 end
+
+-- private
 
 	]]>
 	</text>

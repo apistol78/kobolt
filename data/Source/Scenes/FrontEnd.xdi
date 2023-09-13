@@ -61,7 +61,7 @@
 		<fogDensity>0.1</fogDensity>
 		<fogDensityMax>0.5</fogDensityMax>
 		<fogColor>0.258824, 0.247059, 0.227451, 1</fogColor>
-		<irradianceGrid>{0094ABBD-6A5A-014C-86D3-E8D967FE25EB}</irradianceGrid>
+		<irradianceGrid>{8F500C87-6146-A44F-B102-01BFDE65F9B9}</irradianceGrid>
 		<imageProcess>
 			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
 			<low>{00000000-0000-0000-0000-000000000000}</low>
@@ -253,7 +253,7 @@
 							<components>
 								<item type="traktor.weather.SkyComponentData" version="3">
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
-									<texture>{A463D3D4-95CE-F64A-BFC7-7D6162F3B34F}</texture>
+									<texture>{25A95985-F006-4D43-AD9E-BDAA4E56C8DD}</texture>
 								</item>
 							</components>
 						</item>
@@ -325,7 +325,7 @@
 							<id>{EECF3BCD-AA17-EA45-B59C-E0DCCEBFACE0}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>0.852195, -0.018897, -1.693649, 0</translation>
+								<translation>0.777763, -0.018897, -1.995001, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -335,7 +335,7 @@
 							<id>{33AE0D49-CFCA-3A4A-AAD4-4D9138561837}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>-2.881492, -0.018897, -4.044976, 0</translation>
+								<translation>-2.881492, -0.018897, -4.006085, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -348,20 +348,21 @@
 	</layers>
 	<controllerData/>
 	<operationData>
-		<item type="traktor.shape.BakeConfiguration" version="31">
+		<item type="traktor.shape.BakeConfiguration" version="32">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>1</primarySampleCount>
-			<secondarySampleCount>100</secondarySampleCount>
-			<shadowSampleCount>50</shadowSampleCount>
-			<maxPathDistance>40</maxPathDistance>
-			<pointLightShadowRadius>0.1</pointLightShadowRadius>
+			<primarySampleCount>4</primarySampleCount>
+			<secondarySampleCount>80</secondarySampleCount>
+			<shadowSampleCount>30</shadowSampleCount>
+			<maxPathDistance>35</maxPathDistance>
+			<pointLightShadowRadius>0</pointLightShadowRadius>
 			<lumelDensity>10</lumelDensity>
 			<irradianceGridDensity>1, 0.3, 1, 0</irradianceGridDensity>
-			<minimumLightMapSize>16</minimumLightMapSize>
-			<maximumLightMapSize>2048</maximumLightMapSize>
+			<minimumLightMapSize>4</minimumLightMapSize>
+			<maximumLightMapSize>4096</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
-			<skyAttenuation>1</skyAttenuation>
-			<ambientOcclusionFactor>0</ambientOcclusionFactor>
+			<analyticalLightAttenuation>2</analyticalLightAttenuation>
+			<skyAttenuation>2</skyAttenuation>
+			<ambientOcclusionFactor>0.1</ambientOcclusionFactor>
 		</item>
 	</operationData>
 </object>

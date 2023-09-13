@@ -4,8 +4,8 @@
 		<item type="traktor.animation.StateNode" version="2">
 			<name>Idle</name>
 			<position>
-				<first>163</first>
-				<second>-70</second>
+				<first>152</first>
+				<second>-90</second>
 			</position>
 			<animation>{5E138240-A908-6A49-9660-BC19FE4C10B4}</animation>
 		</item>

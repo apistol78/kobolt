@@ -20,16 +20,16 @@
      borderopacity="0.25"
      inkscape:showpageshadow="false"
      inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
+     inkscape:pagecheckerboard="true"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="96.166522"
-     inkscape:cy="48.613591"
-     inkscape:window-width="2505"
-     inkscape:window-height="1080"
-     inkscape:window-x="98"
-     inkscape:window-y="116"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="234.75945"
+     inkscape:cy="270.11479"
+     inkscape:window-width="1917"
+     inkscape:window-height="1114"
+     inkscape:window-x="3935"
+     inkscape:window-y="109"
      inkscape:window-maximized="0"
      inkscape:current-layer="background_mc" />
   <defs
@@ -37,14 +37,14 @@
     <rect
        x="0"
        y="0"
-       width="500"
-       height="500"
+       width="188.75"
+       height="48.499997"
        id="rect2" />
     <rect
        x="0"
        y="0"
-       width="500"
-       height="500"
+       width="215"
+       height="48.375"
        id="rect3" />
   </defs>
   <g
@@ -53,7 +53,7 @@
      id="MC_Static"
      style="display:none;fill:#ff0000"
      traktor:sprite="1"
-     dummy="26"
+     dummy="43"
      sodipodi:insensitive="true">
     <text
        xml:space="preserve"
@@ -63,7 +63,7 @@
        inkscape:label="text_tb"><tspan
          x="0"
          y="36.030177"
-         id="tspan1">Hello world!</tspan></text>
+         id="tspan1">MC_Static</tspan></text>
   </g>
   <g
      inkscape:label="MC_PushButton"
@@ -75,7 +75,8 @@
     <g
        id="background_mc"
        traktor:sprite="1"
-       style="fill:#f9f9f9">
+       style="fill:#f9f9f9"
+       transform="scale(2.4795285,1)">
       <rect
          style="display:inline;fill:#ffffff;stroke-width:0.472413"
          id="rect4"
@@ -84,22 +85,15 @@
          x="-2.8421709e-14"
          y="0"
          inkscape:label="shape" />
-      <rect
-         style="fill:#ffcc00;stroke-width:0.75"
-         id="rect5"
-         width="77.163025"
-         height="28.37266"
-         x="3.9774759"
-         y="11.136931"
-         ry="0" />
     </g>
     <text
        xml:space="preserve"
        id="caption_tb"
-       style="font-size:40px;font-family:Arial;white-space:pre;shape-inside:url(#rect3);shape-padding:0;display:inline;fill:#1a1a1a"
-       inkscape:label="caption_tb"><tspan
+       style="font-size:20px;font-family:Arial;white-space:pre;shape-inside:url(#rect3);shape-padding:0;display:inline;fill:#784421"
+       inkscape:label="caption_tb"
+       transform="translate(33.559761,11.46538)"><tspan
          x="0"
-         y="36.030177"
-         id="tspan2">Hello world!</tspan></text>
+         y="18.015088"
+         id="tspan2">MC_PushButton</tspan></text>
   </g>
 </svg>

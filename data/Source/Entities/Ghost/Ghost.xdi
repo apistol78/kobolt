@@ -29,7 +29,7 @@
 		<item type="traktor.world.ScriptComponentData" version="2">
 			<class>{14B0C3A4-58EE-0B4A-A0B8-896D1C11E515}</class>
 			<properties/>
-			<editorSupport>false</editorSupport>
+			<editorSupport>true</editorSupport>
 		</item>
 		<item type="traktor.world.EventSetComponentData">
 			<eventData>
@@ -53,12 +53,12 @@
 					<id>{99D7939C-DC4B-5A4B-B423-252C19B3991C}</id>
 					<name>Camera</name>
 					<transform>
-						<translation>0.068017, 1.61226, 0.332204, 0</translation>
-						<rotation>0, -0.059964, 0, 0.998201</rotation>
+						<translation>0.421176, 1.809221, -0.990977, 0</translation>
+						<rotation>0, -0.049979, 0, 0.99875</rotation>
 					</transform>
 					<components>
 						<item type="traktor.world.CameraComponentData">
-							<projection>Orthographic</projection>
+							<projection>Perspective</projection>
 							<fov>1.221731</fov>
 							<width>1</width>
 							<height>1</height>
@@ -74,6 +74,16 @@
 					</transform>
 					<components/>
 					<entityData>{1BA32468-AA3B-9446-9DDB-C1009C8A14C1}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{92891AA3-2BCA-2540-8FCA-7BF064F89A7A}</id>
+					<name>Weapon</name>
+					<transform>
+						<translation>0.123555, 1.417326, 0.165461, 0</translation>
+						<rotation>0, -0.079915, 0, 0.996802</rotation>
+					</transform>
+					<components/>
+					<entityData>{37FB16F7-194F-408C-818D-04C92BCB1E51}</entityData>
 				</item>
 			</entityData>
 		</item>

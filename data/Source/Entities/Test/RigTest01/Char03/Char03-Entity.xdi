@@ -30,5 +30,21 @@
 			<properties/>
 			<editorSupport>true</editorSupport>
 		</item>
+		<item type="traktor.animation.JointBindingComponentData">
+			<bindings>
+				<item>
+					<jointName>RightHand</jointName>
+					<entityData type="traktor.world.EntityData" version="1">
+						<id>{47A8AB58-BB04-EE40-885B-F057B0237281}</id>
+						<name>WeaponAnchor</name>
+						<transform>
+							<translation>-0.132655, 1.415504, -0.118476, 0</translation>
+							<rotation>-0, 0.997495, -0, 0.070738</rotation>
+						</transform>
+						<components/>
+					</entityData>
+				</item>
+			</bindings>
+		</item>
 	</components>
 </object>

@@ -64,7 +64,6 @@ function Game:postUpdate(info)
 	-- Get transform of Camera binding.
 	local groupComponent = playerEntity:getComponent(world.GroupComponent)
 	local Thead = groupComponent:getEntity("Camera", 0).transform
-	local Toffset = Transform(Vector4(0, 0, 0.1, 0), Quaternion.identity)
 
 	-- Update camera transform to follow binding.
 	cameraEntity.transform = Thead * Transform(
