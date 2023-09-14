@@ -9,15 +9,13 @@ MainView = MainView or class("MainView", Container)
 MainView.__flipboardId = "MAIN"
 
 function MainView:new(parent)
-	Container.new(self, parent, FloodLayout())
+	Container.new(self, parent, TableLayout({0}, {0}, 16, 16, 0, 16))
 
-	local panel = Container(self, TableLayout({0}, {0}, 16, 16, 0, 16))
-
-	PushButton(panel, "Play")
+	PushButton(self, "Play")
 		:setOnClick(function() self._fnPlay() end)
-	PushButton(panel, "Options")
+	PushButton(self, "Options")
 		:setOnClick(function() self._fnOptions() end)
-	PushButton(panel, "Exit")
+	PushButton(self, "Exit")
 		:setOnClick(function() self._fnExit() end)
 
 	self._fnPlay = function() end
@@ -39,7 +37,6 @@ function MainView:setOnExit(fn)
 	self._fnExit = fn
 	return self
 end
-
 
 	]]>
 	</text>

@@ -325,21 +325,31 @@
 							<id>{EECF3BCD-AA17-EA45-B59C-E0DCCEBFACE0}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>0.777763, -0.018897, -1.995001, 0</translation>
+								<translation>0.877964, -0.018897, -1.848622, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
 							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-							<id>{33AE0D49-CFCA-3A4A-AAD4-4D9138561837}</id>
-							<name>Barrel-Entity</name>
+							<id>{C0526E06-7875-704D-93D4-BEE61453D04B}</id>
+							<name>Manhole-Entity</name>
 							<transform>
-								<translation>-2.881492, -0.018897, -4.006085, 0</translation>
+								<translation>-3.399051, -0.076996, -1.653616, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
-							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
+							<entityData>{D313A1C2-6816-5448-90F8-24B40C23AF59}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{B5F7944B-7AD0-634D-9395-BC7A36C42596}</id>
+							<name>AC-Entity</name>
+							<transform>
+								<translation>-0.652012, 0.583143, -2.976025, 0</translation>
+								<rotation>0.020735, -0.979207, 0.147993, 0.137196</rotation>
+							</transform>
+							<components/>
+							<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
 						</item>
 					</entityData>
 				</item>

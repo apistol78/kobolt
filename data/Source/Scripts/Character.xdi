@@ -50,6 +50,17 @@ function Character:update(contextObject, totalTime, deltaTime)
 			0,
 			self._pitch
 		})
+
+		local offset = 0
+		if velocity.length > 0.04 then
+			velocity = velocity:normalized()
+			if runForward then
+				offset = math.tan(velocity.x, velocity.z)
+			elseif runBackwards then
+				offset = -math.tan(velocity.x, velocity.z)
+			end
+		end
+		aim:setWalkOffset(offset)
 	end
 
 	-- Expose conditions in state pose controller.

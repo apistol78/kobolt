@@ -7,6 +7,10 @@
 #using \{F266FE75-7BF7-BC4C-9616-06D2B5F5F6E8}
 #using \{A90BA121-008F-42FC-82B9-2595B8A933A2}
 
+#using \{1DC37C6A-0C0C-A546-825E-B8F6E6088209}
+#using \{21076EFA-565B-E044-8E13-BC01DB4BA31E}
+#using \{126D6B63-5192-104A-BAE3-F178A1229D8C}
+
 import(traktor)
 
 local GhostEntityId = Guid("\{0176DFB1-8604-4648-ACBD-A46B1DE4472C}")
@@ -17,6 +21,7 @@ Game = Game or class("Game", Stage)
 function Game:new(params, environment)
 	Stage.new(self, params, environment)
 
+	self._environment = environment
 	self._inputMapping = environment.input.inputMapping
 	self._lobbyManager = params
 
@@ -29,47 +34,67 @@ function Game:new(params, environment)
 	local playerEntity = self.world:getEntity("Player")
 	playerEntity.transform = Tspawn
 
-	-- environment.input.inputSystem:setExclusive(true)
-
 	-- Initialize UiKit.
 	Widget.initialize(
 		environment.resource.resourceManager,
-		{ "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
+		{ "\{43489F5B-5785-1249-A7BA-CB5259C3F064}", "\{27DDC0FD-39DE-0946-BB1B-7D84A001C522}", "\{5ABEAE05-EB26-934F-932F-7F3C7C582383}" }
 	)
 
-	-- Create test frame.
+	-- Create frame.
 	self._frame = Frame(
 		self.spark.root,
 		1280, 720,
-		FloodLayout(0, 0)
+		FloodLayout()
 	)
 	self._frame:update()
 
-	Static(self._frame, ".")
-		:setTextSize(60)
-		:setTextColor(Color4f(1, 1, 1, 1))
+	self._flipBook = Flipboard(self._frame)
+
+	HudView(self._flipBook)
+
+	MainView(self._flipBook)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setOnPlay(function() self:resumePlay() end)
+		:setOnOptions(function() self._flipBook:showPage("OPTIONS") end)
+		:setOnExit(function() 
+			local d = Dialog(self._frame, FloodLayout(16, 16))
+			Static(d, "Are you sure?")
+			d:show()
+		end)
 
+	OptionsView(self._flipBook)
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+		:setOnReturn(function() self._flipBook:showPage("MAIN") end)
+
+	self._flipBook:showPage("HUD")
+
+	-- Ensure frame is properly layed out.
 	self._frame:layout()
+
+	self._updateFn = Game.updatePlaying
+	self._environment.input.inputSystem:setExclusive(true)
 end
 
 function Game:postUpdate(info)
-	local pitch = self._inputMapping:getStateValue("STATE_PITCH")
-
-	-- Get relevant entities.
-	local playerEntity = self.world:getEntity("Player")
-	local cameraEntity = self.world:getEntity("Camera")
-
-	-- Get transform of Camera binding.
-	local groupComponent = playerEntity:getComponent(world.GroupComponent)
-	local Thead = groupComponent:getEntity("Camera", 0).transform
-
-	-- Update camera transform to follow binding.
-	cameraEntity.transform = Thead * Transform(
-		Vector4.zero,
-		Quaternion.fromEulerAngles(0, pitch, 0)
-	)
+	if self._updateFn == Game.updatePlaying then
+		local pitch = self._inputMapping:getStateValue("STATE_PITCH")
+	
+		-- Get relevant entities.
+		local playerEntity = self.world:getEntity("Player")
+		local cameraEntity = self.world:getEntity("Camera")
+	
+		-- Get transform of Camera binding.
+		local groupComponent = playerEntity:getComponent(world.GroupComponent)
+		local Thead = groupComponent:getEntity("Camera", 0).transform
+	
+		-- Update camera transform to follow binding.
+		cameraEntity.transform = Thead * Transform(
+			Vector4.zero,
+			Quaternion.fromEulerAngles(0, pitch, 0)
+		)
+	end
 end
 
 function Game:update(info)
@@ -81,6 +106,39 @@ function Game:update(info)
 	local t = self._lobbyManager._time
 	self.world.alternateTime = t
 
+	-- Update state.
+	self:_updateFn(info)
+
+	Tween.update(info.simulationDeltaTime)
+end
+
+-- private
+
+function Game:getSpawnLocation()
+	local spawnEntities = self.world:getEntities("Spawn")
+	local idx = math.random(0, spawnEntities.size - 1)
+	local spawnEntity = spawnEntities:get(idx)
+	return spawnEntity.transform
+end
+
+function Game:updatePlaying(info)
+	-- Read input state values.
+	local escape = self._inputMapping:isStatePressed("STATE_ESCAPE")
+	local deltaHead = self._inputMapping:getStateValue("STATE_HEAD")
+	local pitch = self._inputMapping:getStateValue("STATE_PITCH")
+	local moveZ = self._inputMapping:getStateValue("MOVE_Z") * 0.6
+	local moveX = self._inputMapping:getStateValue("MOVE_X") * 0.4
+	local jump = self._inputMapping:isStatePressed("STATE_JUMP")
+	local fire = self._inputMapping:isStatePressed("STATE_FIRE")
+
+	-- Enter menu when application becomes inactive or escape.
+	if not self._environment.render.renderView.isActive or escape then
+		self._flipBook:showPage("MAIN")
+		self._updateFn = Game.updateMenu
+		self._environment.input.inputSystem:setExclusive(false)
+		return
+	end
+
 	-- Get relevant entities.
 	local playerEntity = self.world:getEntity("Player")
 	local cameraEntity = self.world:getEntity("Camera")
@@ -88,14 +146,6 @@ function Game:update(info)
 	-- Get player's character controller.
 	local playerCharacter = playerEntity:getComponent(physics.CharacterComponent)
 	local playerScript = playerEntity:getComponent(world.ScriptComponent)
-
-	-- Read input state values.
-	local deltaHead = self._inputMapping:getStateValue("STATE_HEAD")
-	local pitch = self._inputMapping:getStateValue("STATE_PITCH")
-	local moveZ = self._inputMapping:getStateValue("MOVE_Z") * 0.6
-	local moveX = self._inputMapping:getStateValue("MOVE_X") * 0.4
-	local jump = self._inputMapping:isStatePressed("STATE_JUMP")
-	local fire = self._inputMapping:isStatePressed("STATE_FIRE")
 
 	-- Issue movement of player character.
 	local Qhead = Quaternion.fromEulerAngles(playerCharacter.headAngle, 0, 0)
@@ -111,24 +161,9 @@ function Game:update(info)
 
 	if fire then
 		playerScript:fire()
-
---[[
-		local jointBindingComponent = playerEntity:getComponent(animation.JointBindingComponent)
-		local weaponEntity = jointBindingComponent:getEntity("Weapon", 0)
-
-		self._projectileManager:add(
-			BulletEntityId,
-			weaponEntity.transform.translation,
-			weaponEntity.transform.axisZ * 100
-		)
-]]
 	end
 
-
-
-
 	if self._lobbyManager._replicator ~= nil then
-
 		local replicator = self._lobbyManager._replicator
 
 		-- Set origin for replication origin.
@@ -138,14 +173,12 @@ function Game:update(info)
 		-- Pack player state.
 		replicator.state = playerScript:captureState()
 
-
 		-- Send fire event.
 		if fire then
 			local event = PropertyGroup()
 			event:setProperty("Fire", true)
 			replicator:broadcastEvent(event, false)
 		end
-
 
 		if self.__hack == nil then
 			replicator:addEventListener(PropertyGroup, function(replicator, eventTime, fromProxy, eventObject)
@@ -158,7 +191,6 @@ function Game:update(info)
 
 			self.__hack = true
 		end
-
 
 		for i = 0, replicator.proxyCount - 1 do
 			local proxy = replicator:getProxy(i)
@@ -198,11 +230,13 @@ function Game:update(info)
 	self._projectileManager:update(info)
 end
 
-function Game:getSpawnLocation()
-	local spawnEntities = self.world:getEntities("Spawn")
-	local idx = math.random(0, spawnEntities.size - 1)
-	local spawnEntity = spawnEntities:get(idx)
-	return spawnEntity.transform
+function Game:updateMenu()
+end
+
+function Game:resumePlay()
+	self._flipBook:showPage("HUD")
+	self._updateFn = Game.updatePlaying
+	self._environment.input.inputSystem:setExclusive(true)
 end
 
 	]]>

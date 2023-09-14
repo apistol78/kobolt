@@ -29,7 +29,7 @@ function FrontEnd:new(params, environment)
 	PushButton:setStyle("text", traktor.Color4f(0.0, 0.0, 0.0, 1.0))
 	PushButton:setStyle("textSize", 30)
 
-	-- Create test frame.
+	-- Create frame.
 	self._frame = Frame(
 		self.spark.root,
 		1280, 720,

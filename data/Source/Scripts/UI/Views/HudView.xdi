@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+#using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
+
+HudView = HudView or class("HudView", Container)
+
+HudView.__flipboardId = "HUD"
+
+function HudView:new(parent)
+	Container.new(self, parent, FloodLayout(16, 16))
+
+	Static(self, "Health 100%")
+		:setHorizontalAlign(Widget.ALIGN_LEFT)
+		:setVerticalAlign(Widget.ALIGN_TOP)
+
+	Static(self, "1 player")
+		:setHorizontalAlign(Widget.ALIGN_RIGHT)
+		:setVerticalAlign(Widget.ALIGN_TOP)
+
+	Image(self, "MC_CrossHair_1")
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+		:setVerticalAlign(Widget.ALIGN_CENTER)
+end
+
+	]]>
+	</text>
+</object>
