@@ -438,7 +438,7 @@
 							<id>{4FF395A9-B8D4-C048-A071-4F9FE3E32217}</id>
 							<name>Boids</name>
 							<transform>
-								<translation>115.12455, -358.81134, -476.969299, 0</translation>
+								<translation>123.704994, -349.258667, -450.131958, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
@@ -448,7 +448,7 @@
 											<id>{C9523E15-8074-E445-909D-031FA5891374}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>115.703941, -362.72403, -467.762207, 0</translation>
+												<translation>120.54773, -353.171356, -439.136902, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -458,7 +458,7 @@
 											<id>{D86120CF-B969-294F-82F4-1B3D7EC12A81}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>119.539772, -362.72403, -474.899902, 0</translation>
+												<translation>124.383575, -353.171356, -446.274597, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -468,7 +468,7 @@
 											<id>{0942FCF9-FBFB-3949-97AE-C371A7F0C62C}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>106.886231, -362.72403, -477.583344, 0</translation>
+												<translation>111.730011, -353.171356, -448.958008, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -478,7 +478,7 @@
 											<id>{5BB570F4-C28B-C541-9F70-CC9D34C5B3AE}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>103.343811, -362.72403, -467.371277, 0</translation>
+												<translation>108.187592, -353.171356, -438.745972, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -488,7 +488,7 @@
 											<id>{976F7065-D5C9-464D-9DB1-18878899379E}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>97.014038, -362.72403, -477.150513, 0</translation>
+												<translation>101.857819, -353.171356, -448.525208, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -498,7 +498,7 @@
 											<id>{72B87D21-4DC6-9B41-B3DC-5EBDF0B9CD54}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>100.764847, -362.72403, -489.319611, 0</translation>
+												<translation>105.608643, -353.171356, -460.694275, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -508,7 +508,7 @@
 											<id>{C08EF3D7-FA9A-F04E-8443-A04E0C1A8183}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>113.825684, -362.72403, -489.308716, 0</translation>
+												<translation>118.669464, -353.171356, -460.683411, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -518,7 +518,7 @@
 											<id>{C7796DB2-BAD5-D142-93DE-78E7A9B2C960}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>124.539787, -362.72403, -484.804657, 0</translation>
+												<translation>129.383575, -353.171356, -456.179321, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -528,7 +528,7 @@
 											<id>{12F5B490-7C38-8C49-95FD-320B187B778F}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>127.254028, -362.72403, -469.794952, 0</translation>
+												<translation>132.097778, -353.171356, -441.169617, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -538,7 +538,7 @@
 											<id>{2E5AC367-CB16-3141-BC4A-ABF69FC21177}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>116.616966, -359.106018, -473.884918, 0</translation>
+												<translation>121.460754, -349.553345, -445.259583, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -548,7 +548,7 @@
 											<id>{D4554547-518B-C747-A5B5-867290FFC79A}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>120.452797, -359.106018, -481.022614, 0</translation>
+												<translation>125.2966, -349.553345, -452.397278, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -558,7 +558,7 @@
 											<id>{821C836A-26DD-9742-871E-5183E755DB81}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>107.799255, -359.106018, -483.706055, 0</translation>
+												<translation>112.643036, -349.553345, -455.08075, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -568,7 +568,7 @@
 											<id>{CD6A9C15-95CF-3C44-8470-520DB2A66CDA}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>104.256836, -359.106018, -473.493988, 0</translation>
+												<translation>109.100616, -349.553345, -444.868652, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -578,7 +578,7 @@
 											<id>{FA9F6AE7-C5D8-3B46-932D-8D522FE6CB47}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>97.927063, -359.106018, -483.273224, 0</translation>
+												<translation>102.770844, -349.553345, -454.647888, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -588,7 +588,7 @@
 											<id>{21FD9CEF-7A84-C44B-99A0-1178A6AD9BA1}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>101.677872, -359.106018, -495.442322, 0</translation>
+												<translation>106.521668, -349.553345, -466.817017, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -598,7 +598,7 @@
 											<id>{EC5FEB5D-D697-2D41-87BC-E6C8C225902A}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>114.738709, -359.106018, -495.431427, 0</translation>
+												<translation>119.58252, -349.553345, -466.806091, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -608,7 +608,7 @@
 											<id>{3E240F85-7F20-F04B-AC82-6F0EC4E4D06D}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>125.452812, -359.106018, -490.927368, 0</translation>
+												<translation>130.2966, -349.553345, -462.302063, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -618,7 +618,7 @@
 											<id>{6D6628A9-F02A-1E4D-B12F-6966056FFAFB}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>128.167053, -359.106018, -475.917664, 0</translation>
+												<translation>133.010803, -349.553345, -447.292358, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -628,7 +628,7 @@
 											<id>{C99BFF8C-EB5D-6D41-8BD2-22D49648F824}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>115.703941, -358.727325, -467.762207, 0</translation>
+												<translation>120.54773, -349.174652, -439.136902, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -638,7 +638,7 @@
 											<id>{C11EAE6B-D3CE-9B44-B46C-5181EDB6D6A4}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>119.539772, -358.727325, -474.899902, 0</translation>
+												<translation>124.383575, -349.174652, -446.274597, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -648,7 +648,7 @@
 											<id>{F4FC45A3-3C54-DB4C-90B7-92870968D5F8}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>106.886231, -358.727325, -477.583344, 0</translation>
+												<translation>111.730011, -349.174652, -448.958008, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -658,7 +658,7 @@
 											<id>{F3B76911-3229-5F4D-89D3-327DCF36B0F0}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>103.343811, -358.727325, -467.371277, 0</translation>
+												<translation>108.187592, -349.174652, -438.745972, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -668,7 +668,7 @@
 											<id>{48F7B7F5-5B61-2C41-B70E-BDE74B2EC05B}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>97.014038, -358.727325, -477.150513, 0</translation>
+												<translation>101.857819, -349.174652, -448.525208, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -678,7 +678,7 @@
 											<id>{271E4AE6-1B3F-1342-B77E-30D6FE7F9A76}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>100.764847, -358.727325, -489.319611, 0</translation>
+												<translation>105.608643, -349.174652, -460.694275, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -688,7 +688,7 @@
 											<id>{7F93302A-C8F9-6049-BCC7-48A3F08A822D}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>113.825684, -358.727325, -489.308716, 0</translation>
+												<translation>118.669464, -349.174652, -460.683411, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -698,7 +698,7 @@
 											<id>{65542885-DCC0-1444-A673-90230F71CD37}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>124.539787, -358.727325, -484.804657, 0</translation>
+												<translation>129.383575, -349.174652, -456.179321, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -708,7 +708,7 @@
 											<id>{F7E9B35D-8E26-234B-9D0D-25ED17EC5527}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>127.254028, -358.727325, -469.794952, 0</translation>
+												<translation>132.097778, -349.174652, -441.169617, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -718,7 +718,7 @@
 											<id>{5D341C5F-9493-8746-BED8-BB8D29CA8AE5}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>116.616966, -355.109314, -473.884918, 0</translation>
+												<translation>121.460754, -345.556641, -445.259583, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -728,7 +728,7 @@
 											<id>{196A04BB-39EC-5941-9986-64416F6D5737}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>120.452797, -355.109314, -481.022614, 0</translation>
+												<translation>125.2966, -345.556641, -452.397278, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -738,7 +738,7 @@
 											<id>{C70B6EC9-E4E2-F047-9AA8-BAA29E5689BE}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>107.799255, -355.109314, -483.706055, 0</translation>
+												<translation>112.643036, -345.556641, -455.08075, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -748,7 +748,7 @@
 											<id>{AC0970ED-F1D0-7243-844D-4C8C58A8EDB9}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>104.256836, -355.109314, -473.493988, 0</translation>
+												<translation>109.100616, -345.556641, -444.868652, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -758,7 +758,7 @@
 											<id>{39CAA08C-5F7E-3647-8637-4ACF4E8E884D}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>97.927063, -355.109314, -483.273224, 0</translation>
+												<translation>102.770844, -345.556641, -454.647888, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -768,7 +768,7 @@
 											<id>{D1F29CD4-E6F9-8B4F-8FD8-566D53292278}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>101.677872, -355.109314, -495.442322, 0</translation>
+												<translation>106.521668, -345.556641, -466.817017, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -778,7 +778,7 @@
 											<id>{667BEE33-3394-2E44-BAC9-2DAF1B6FF64A}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>114.738709, -355.109314, -495.431427, 0</translation>
+												<translation>119.58252, -345.556641, -466.806091, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -788,7 +788,7 @@
 											<id>{2982906C-C3B1-4340-A0B3-A94BD8816CB0}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>125.452812, -355.109314, -490.927368, 0</translation>
+												<translation>130.2966, -345.556641, -462.302063, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -798,7 +798,7 @@
 											<id>{122441D5-CB6D-0243-BDF4-45DA72FAC71B}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>128.167053, -355.109314, -475.917664, 0</translation>
+												<translation>133.010803, -345.556641, -447.292358, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -808,7 +808,7 @@
 											<id>{4B9CC208-A51D-114F-8A0A-F6036CCD4BDF}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>115.703941, -352.939484, -467.762207, 0</translation>
+												<translation>120.54773, -343.38681, -439.136902, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -818,7 +818,7 @@
 											<id>{7CF6EDCC-E665-E14E-BFDC-068D43414250}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>119.539772, -352.939484, -474.899902, 0</translation>
+												<translation>124.383575, -343.38681, -446.274597, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -828,7 +828,7 @@
 											<id>{CF2C2D55-3B32-A04C-AB8B-1B62FE4CED14}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>106.886231, -352.939484, -477.583344, 0</translation>
+												<translation>111.730011, -343.38681, -448.958008, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -838,7 +838,7 @@
 											<id>{CE617755-AB6C-7342-9AA8-9EA0F1E2AF1D}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>103.343811, -352.939484, -467.371277, 0</translation>
+												<translation>108.187592, -343.38681, -438.745972, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -848,7 +848,7 @@
 											<id>{C2BB8E16-6D75-B044-A363-9E35D06EBB36}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>97.014038, -352.939484, -477.150513, 0</translation>
+												<translation>101.857819, -343.38681, -448.525208, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -858,7 +858,7 @@
 											<id>{B1A61A71-EA2B-3847-ADFB-3B2E0E1E8534}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>100.764847, -352.939484, -489.319611, 0</translation>
+												<translation>105.608643, -343.38681, -460.694275, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -868,7 +868,7 @@
 											<id>{FBCFC056-9A27-9646-B641-61A8BF32950E}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>113.825684, -352.939484, -489.308716, 0</translation>
+												<translation>118.669464, -343.38681, -460.683411, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -878,7 +878,7 @@
 											<id>{566F5BF8-1FBF-704E-94F5-720D44BE5D6D}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>124.539787, -352.939484, -484.804657, 0</translation>
+												<translation>129.383575, -343.38681, -456.179321, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -888,7 +888,7 @@
 											<id>{F9E39810-9085-BB43-8612-47F8DE278A3A}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>127.254028, -352.939484, -469.794952, 0</translation>
+												<translation>132.097778, -343.38681, -441.169617, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -898,7 +898,7 @@
 											<id>{8418A2F5-79A8-BA47-83AE-E8D8AD219DB2}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>116.616966, -349.321472, -473.884918, 0</translation>
+												<translation>121.460754, -339.768799, -445.259583, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -908,7 +908,7 @@
 											<id>{D86325B5-7BE7-594B-B206-F81A23226990}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>120.452797, -349.321472, -481.022614, 0</translation>
+												<translation>125.2966, -339.768799, -452.397278, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -918,7 +918,7 @@
 											<id>{037BAD80-4345-1742-A478-808CA4FD2C30}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>107.799255, -349.321472, -483.706055, 0</translation>
+												<translation>112.643036, -339.768799, -455.08075, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -928,7 +928,7 @@
 											<id>{D7113AC3-D19C-9D4F-B7F5-16341C183383}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>104.256836, -349.321472, -473.493988, 0</translation>
+												<translation>109.100616, -339.768799, -444.868652, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -938,7 +938,7 @@
 											<id>{74179C3A-5DDC-B348-807F-47C654DC8FE6}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>97.927063, -349.321472, -483.273224, 0</translation>
+												<translation>102.770844, -339.768799, -454.647888, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -948,7 +948,7 @@
 											<id>{CAE420E9-D400-354D-8050-B0F87B60BD0B}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>101.677872, -349.321472, -495.442322, 0</translation>
+												<translation>106.521668, -339.768799, -466.817017, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -958,7 +958,7 @@
 											<id>{41731868-49E8-7C40-B003-169755162EFE}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>114.738709, -349.321472, -495.431427, 0</translation>
+												<translation>119.58252, -339.768799, -466.806091, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -968,7 +968,7 @@
 											<id>{10D79D25-7D3E-B844-A922-4E350CA515D7}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>125.452812, -349.321472, -490.927368, 0</translation>
+												<translation>130.2966, -339.768799, -462.302063, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -978,7 +978,7 @@
 											<id>{B8C6C3F3-2F7C-DB4E-A17D-07B754C1EDAD}</id>
 											<name>Bird-Entity</name>
 											<transform>
-												<translation>128.167053, -349.321472, -475.917664, 0</translation>
+												<translation>133.010803, -339.768799, -447.292358, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -988,80 +988,18 @@
 								</item>
 								<item type="traktor.animation.BoidsComponentData">
 									<spawnVelocityDiagonal>1, 1, 1, 0</spawnVelocityDiagonal>
-									<constrain>1, 0.8, 1, 1</constrain>
+									<constrain>1, 1, 1, 1</constrain>
 									<followForce>0.001</followForce>
-									<repelDistance>5.5</repelDistance>
+									<repelDistance>2</repelDistance>
 									<repelForce>0.950001</repelForce>
 									<matchVelocityStrength>0</matchVelocityStrength>
-									<centerForce>0.002</centerForce>
+									<centerForce>0.004</centerForce>
 									<maxVelocity>34.5</maxVelocity>
 								</item>
-								<item type="traktor.animation.PathComponentData" version="1">
-									<path>
-										<keys>
-											<item>
-												<T>0</T>
-												<tcb>0, 0, 0, 0</tcb>
-												<position>0, 0, 0, 1</position>
-												<orientation>0, 0, 0, 0</orientation>
-												<values>
-													<item>0</item>
-													<item>0</item>
-													<item>0</item>
-													<item>0</item>
-												</values>
-											</item>
-											<item>
-												<T>2</T>
-												<tcb>0, 0, 0, 0</tcb>
-												<position>60, 0, 0, 1</position>
-												<orientation>0, 0, 0, 0</orientation>
-												<values>
-													<item>0</item>
-													<item>0</item>
-													<item>0</item>
-													<item>0</item>
-												</values>
-											</item>
-											<item>
-												<T>4</T>
-												<tcb>0, 0, 0, 0</tcb>
-												<position>60, -20, 100, 1</position>
-												<orientation>0, 0, 0, 0</orientation>
-												<values>
-													<item>0</item>
-													<item>0</item>
-													<item>0</item>
-													<item>0</item>
-												</values>
-											</item>
-											<item>
-												<T>6</T>
-												<tcb>0, 0, 0, 0</tcb>
-												<position>0, 50, 100, 1</position>
-												<orientation>0, 0, 0, 0</orientation>
-												<values>
-													<item>0</item>
-													<item>0</item>
-													<item>0</item>
-													<item>0</item>
-												</values>
-											</item>
-											<item>
-												<T>8</T>
-												<tcb>0, 0, 0, 0</tcb>
-												<position>0, 0, 0, 1</position>
-												<orientation>0, 0, 0, 0</orientation>
-												<values>
-													<item>0</item>
-													<item>0</item>
-													<item>0</item>
-													<item>0</item>
-												</values>
-											</item>
-										</keys>
-									</path>
-									<timeMode>Loop</timeMode>
+								<item type="traktor.world.ScriptComponentData" version="2">
+									<class>{5E9F8E0D-01F6-8145-B3C2-B6FBF2143EC3}</class>
+									<properties/>
+									<editorSupport>true</editorSupport>
 								</item>
 							</components>
 						</item>
@@ -2544,7 +2482,7 @@
 							<id>{AEEB9F66-F81A-9443-90B2-EAF0007BD84E}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>120.878738, -384.168762, -446.425537, 0</translation>
+								<translation>124.169838, -384.168762, -444.611359, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -3109,7 +3047,7 @@
 												<item type="traktor.world.GroupComponentData">
 													<entityData>
 														<item type="traktor.world.EntityData" version="1">
-															<id>{DF651773-3BB6-4D3E-BE6B-D3086F16268D}</id>
+															<id>{B3134BF8-0444-DB48-BF24-2201F44073A2}</id>
 															<name>Control</name>
 															<transform>
 																<translation>119.646561, -373.973267, -490.1138, 0</translation>
@@ -3122,11 +3060,11 @@
 															</components>
 														</item>
 														<item type="traktor.world.EntityData" version="1">
-															<id>{669D5510-5EB2-45AB-9022-250180B327FA}</id>
+															<id>{356028E0-E6F9-C846-87E6-C6E02984ADA6}</id>
 															<name>Control</name>
 															<transform>
 																<translation>109.826813, -376.987274, -488.1698, 0</translation>
-																<rotation>-0, 0.059964, -0.000001, 0.998201</rotation>
+																<rotation>0, 0.059964, -0.000001, 0.998201</rotation>
 															</transform>
 															<components>
 																<item type="traktor.shape.ControlPointComponentData">
@@ -3135,7 +3073,7 @@
 															</components>
 														</item>
 														<item type="traktor.world.EntityData" version="1">
-															<id>{488A01A6-1D3A-4EB9-B446-ABE93B7456E7}</id>
+															<id>{EE42D88F-FA41-CD4A-8539-9AC8B7E70F51}</id>
 															<name>Control</name>
 															<transform>
 																<translation>95.318047, -375.996979, -486.933899, 0</translation>

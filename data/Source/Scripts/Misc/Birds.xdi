@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.script.Script" version="2">
+	<text>
+	<![CDATA[
+import(traktor)
+
+Birds = Birds or class("Birds", world.ScriptComponent)
+
+function Birds:new()
+	self._until = 1
+end
+
+function Birds:update(contextObject, totalTime, deltaTime)
+
+	if deltaTime > 0 then
+
+		self._until = self._until - deltaTime
+		if self._until <= 0 then
+	
+			local center = self.owner.transform.translation.xyz1
+	
+			local w = 100
+			local h = 20
+			local d = 100
+	
+			local boids = self.owner:getComponent(animation.BoidsComponent)
+			boids.attractPosition = center + Vector4(math.random() * w - w / 2, math.random() * h - h / 2, math.random() * d - d / 2, 0)
+
+			self._until = 1
+		end
+
+	end
+end
+
+	]]>
+	</text>
+</object>
