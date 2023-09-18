@@ -44,11 +44,7 @@ function FrontEnd:new(params, environment)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 		:setOnPlay(function() self._clicked = true end)
 		:setOnOptions(function() fb:showPage("OPTIONS") end)
-		:setOnExit(function() 
-			local d = Dialog(self._frame, FloodLayout(16, 16))
-			Static(d, "Are you sure?")
-			d:show()
-		end)
+		:setOnExit(function() self:terminate() end)
 
 	OptionsView(fb)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
@@ -71,7 +67,7 @@ function FrontEnd:update(info)
 	self._lobbyManager:update()
 
 	if self._lobbyManager._replicator ~= nil and self._clicked then
-		local nxt = self:loadStage("LOADING", self._lobbyManager)
+		local nxt = self:loadStage("LOADING", { next = "GAME", lobbyManager = self._lobbyManager })
 		self:gotoStage(nxt)
 	end
 

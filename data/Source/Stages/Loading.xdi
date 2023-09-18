@@ -18,6 +18,10 @@
 	<fadeRate>5</fadeRate>
 	<transitions>
 		<item>
+			<first>FRONTEND</first>
+			<second>{ABEA754B-E0C3-3C48-BFBF-909E32BB0E85}</second>
+		</item>
+		<item>
 			<first>GAME</first>
 			<second>{DE6F1CC5-9EE4-E948-9432-28083D385E78}</second>
 		</item>

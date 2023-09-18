@@ -23,18 +23,14 @@ function UI_Scaffolding:setup(frame)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 		:setOnOptions(function() fb:showPage("OPTIONS") end)
-		:setOnExit(function() 
-			local d = Dialog(frame, FloodLayout(16, 16))
-			Static(d, "Are you sure?")
-			d:show()
-		end)
+		:setOnExit(function() fb:showPage("MAIN") end)
 
 	OptionsView(fb)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 		:setOnReturn(function() fb:showPage("MAIN") end)
 
-	fb:showPage("HUD")
+	fb:showPage("MAIN")
 
 end
 

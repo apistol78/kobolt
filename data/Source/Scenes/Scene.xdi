@@ -1003,6 +1003,126 @@
 								</item>
 							</components>
 						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{18DBEE5B-0071-634A-BF73-C0D891D2E7EE}</id>
+							<name>Ball-Entity</name>
+							<transform>
+								<translation>114.011971, -386.204987, -475.894959, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{C1C39731-7890-0B47-9EF5-ED3968FA60F6}</id>
+							<name>Ball-Entity</name>
+							<transform>
+								<translation>113.452904, -386.204987, -476.522186, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{030E1C93-08F6-084A-8AE9-F4B8A73B3F5A}</id>
+							<name>Ball-Entity</name>
+							<transform>
+								<translation>113.275513, -386.204987, -475.497986, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{B81F8E5F-1CBB-AA40-B0DA-C5B986CC9946}</id>
+							<name>Ball-Entity</name>
+							<transform>
+								<translation>114.136505, -386.204987, -474.688446, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{FC4E23F4-9062-E545-9113-639B57FD1694}</id>
+							<name>Ball-Entity</name>
+							<transform>
+								<translation>115.498215, -386.204987, -476.053162, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{91755B7A-76A9-8345-9C6B-2FC0E4E2AF5D}</id>
+							<name>Ball-Entity</name>
+							<transform>
+								<translation>114.939148, -386.204987, -476.680389, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{771E374F-1A57-2B40-8A51-C9C54A3A6203}</id>
+							<name>Ball-Entity</name>
+							<transform>
+								<translation>114.761757, -386.204987, -475.656189, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{A49F439B-CE99-A84A-B92C-8FE9732CD953}</id>
+							<name>Ball-Entity</name>
+							<transform>
+								<translation>115.622749, -386.204987, -474.846649, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{C500A851-8BD3-5A46-BD56-672B5E53B7D3}</id>
+							<name>Ball-Entity</name>
+							<transform>
+								<translation>116.96917, -386.204987, -476.113281, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{6FD26929-072D-124A-8F15-7FBCB143D8E6}</id>
+							<name>Ball-Entity</name>
+							<transform>
+								<translation>116.410103, -386.204987, -476.740509, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{6563F944-8E61-9944-A130-7D8B05083EFC}</id>
+							<name>Ball-Entity</name>
+							<transform>
+								<translation>116.232712, -386.204987, -475.716309, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{5BA4B376-6F75-A84C-9696-C721476A27CD}</id>
+							<name>Ball-Entity</name>
+							<transform>
+								<translation>117.093704, -386.204987, -474.906769, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
+						</item>
 					</entityData>
 				</item>
 			</components>

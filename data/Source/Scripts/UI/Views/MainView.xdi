@@ -16,7 +16,9 @@ function MainView:new(parent)
 	PushButton(self, "Options")
 		:setOnClick(function() self._fnOptions() end)
 	PushButton(self, "Exit")
-		:setOnClick(function() self._fnExit() end)
+		:setOnClick(function() self:_onExit() end)
+
+	self._dlgExit = nil
 
 	self._fnPlay = function() end
 	self._fnOptions = function() end
@@ -37,6 +39,29 @@ function MainView:setOnExit(fn)
 	self._fnExit = fn
 	return self
 end
+
+function MainView:_onExit()
+	self._dlgExit = Dialog(self:getAncestor(), TableLayout({0}, {100, 0}, 16, 16, 16, 16))
+	Static(self._dlgExit, "Are you sure?")
+
+	local ct = Container(self._dlgExit, TableLayout({0, 0}, {0}, 0, 0, 16, 16))
+		:setHorizontalAlign(Widget.ALIGN_CENTER)
+
+	PushButton(ct, "Yes")
+		:setOnClick(function()
+			self._dlgExit:remove()
+			self._dlgExit = nil
+			 self._fnExit()
+		end)
+	PushButton(ct, "No")
+		:setOnClick(function()
+			self._dlgExit:remove()
+			self._dlgExit = nil
+		end)
+
+	self._dlgExit:show()
+end
+
 
 	]]>
 	</text>

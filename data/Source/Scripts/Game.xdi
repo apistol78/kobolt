@@ -57,11 +57,7 @@ function Game:new(params, environment)
 		:setVerticalAlign(Widget.ALIGN_CENTER)
 		:setOnPlay(function() self:resumePlay() end)
 		:setOnOptions(function() self._flipBook:showPage("OPTIONS") end)
-		:setOnExit(function() 
-			local d = Dialog(self._frame, FloodLayout(16, 16))
-			Static(d, "Are you sure?")
-			d:show()
-		end)
+		:setOnExit(function() self:exitPlay() end)
 
 	OptionsView(self._flipBook)
 		:setHorizontalAlign(Widget.ALIGN_CENTER)
@@ -238,6 +234,12 @@ function Game:resumePlay()
 	self._updateFn = Game.updatePlaying
 	self._environment.input.inputSystem:setExclusive(true)
 end
+
+function Game:exitPlay()
+	local nxt = self:loadStage("LOADING", { next = "FRONTEND", lobbyManager = self._lobbyManager })
+	self:gotoStage(nxt)
+end
+
 
 	]]>
 	</text>
