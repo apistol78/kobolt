@@ -72,9 +72,9 @@
 		<colorGrading>{395C5B5B-BB3E-494C-9B40-24DE19EFA235}</colorGrading>
 	</worldRenderSettings>
 	<layers>
-		<item type="traktor.world.LayerEntityData" version="3,traktor.world.EntityData:1">
+		<item type="traktor.world.EntityData" version="1">
 			<id>{5F4E703E-1B0C-B747-B844-1B515434D6C5}</id>
-			<name>Default</name>
+			<name>Environment</name>
 			<transform>
 				<translation>0, 0, 0, 0</translation>
 				<rotation>0, 0, 0, 1</rotation>
@@ -106,16 +106,6 @@
 									</volume>
 								</item>
 							</components>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-							<id>{1C3E7490-5D46-D844-9122-6147C03953E0}</id>
-							<name>Player</name>
-							<transform>
-								<translation>1.165087, 0.003049, 0.493338, 0</translation>
-								<rotation>0, -0.757842, 0, 0.652438</rotation>
-							</transform>
-							<components/>
-							<entityData>{0176DFB1-8604-4648-ACBD-A46B1DE4472C}</entityData>
 						</item>
 						<item type="traktor.world.EntityData" version="1">
 							<id>{3E92A94E-4F79-734B-AA8D-632A8EFC273E}</id>
@@ -157,7 +147,7 @@
 				</item>
 			</components>
 		</item>
-		<item type="traktor.world.LayerEntityData" version="3,traktor.world.EntityData:1">
+		<item type="traktor.world.EntityData" version="1">
 			<id>{17613C39-7234-C041-AD99-5A00F18AF942}</id>
 			<name>Static</name>
 			<transform>
@@ -173,6 +163,41 @@
 				</item>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{8F5DD43E-EA26-9546-A2BE-367CBC17DBAF}</id>
+							<name>Sky</name>
+							<transform>
+								<translation>-0.086419, 2.639621, 0.002373, 0</translation>
+								<rotation>0, 0.681639, 0, 0.731689</rotation>
+							</transform>
+							<components>
+								<item type="traktor.weather.SkyComponentData" version="3">
+									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
+									<texture>{25A95985-F006-4D43-AD9E-BDAA4E56C8DD}</texture>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{E7501722-6983-0C40-8433-EC3BF43AAD59}</id>
+							<name>Sun</name>
+							<transform>
+								<translation>0, 0, 0, 0</translation>
+								<rotation>0.357195, -0.325609, 0.134453, 0.865051</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.LightComponentData" version="11">
+									<lightType>Directional</lightType>
+									<color>1, 1, 1, 1</color>
+									<intensity>0.5</intensity>
+									<castShadow>true</castShadow>
+									<range>100</range>
+									<radius>1.570796</radius>
+									<flickerAmount>0</flickerAmount>
+									<flickerFilter>0</flickerFilter>
+									<bakeMode>LbmIndirect</bakeMode>
+								</item>
+							</components>
+						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
 							<id>{6D6F8A66-35B5-A241-B0A1-EC708EBBAF39}</id>
 							<name>Level-Entity</name>
@@ -243,41 +268,6 @@
 							<components/>
 							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{8F5DD43E-EA26-9546-A2BE-367CBC17DBAF}</id>
-							<name>Sky</name>
-							<transform>
-								<translation>-0.086419, 2.639621, 0.002373, 0</translation>
-								<rotation>0, 0.681639, 0, 0.731689</rotation>
-							</transform>
-							<components>
-								<item type="traktor.weather.SkyComponentData" version="3">
-									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
-									<texture>{25A95985-F006-4D43-AD9E-BDAA4E56C8DD}</texture>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{E7501722-6983-0C40-8433-EC3BF43AAD59}</id>
-							<name>Sun</name>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0.357195, -0.325609, 0.134453, 0.865051</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.LightComponentData" version="11">
-									<lightType>Directional</lightType>
-									<color>1, 1, 1, 1</color>
-									<intensity>0.5</intensity>
-									<castShadow>true</castShadow>
-									<range>100</range>
-									<radius>1.570796</radius>
-									<flickerAmount>0</flickerAmount>
-									<flickerFilter>0</flickerFilter>
-									<bakeMode>LbmIndirect</bakeMode>
-								</item>
-							</components>
-						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
 							<id>{CA6D0E95-71DC-3448-A2A3-7B6095F04BAC}</id>
 							<name>Kobalt-Entity</name>
@@ -287,29 +277,6 @@
 							</transform>
 							<components/>
 							<entityData>{9BD7764A-BC67-AE48-A8B2-56AB7DD37F00}</entityData>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{5B9308D9-D30B-A24E-8DCF-D2F6C751C4FF}</id>
-							<name>Camera</name>
-							<transform>
-								<translation>-0.570607, 1.739398, 2.745376, 0</translation>
-								<rotation>0.022905, 0.994217, -0.027825, 0.101158</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.CameraComponentData">
-									<projection>Perspective</projection>
-									<fov>1.221731</fov>
-									<width>1</width>
-									<height>1</height>
-								</item>
-								<item type="traktor.world.PersistentIdComponentData">
-									<id>{7529B732-4E46-9F4E-B7DF-9A9689E68EAE}</id>
-								</item>
-								<item type="traktor.animation.WobbleComponentData">
-									<magnitude>0.2</magnitude>
-									<rate>0.4</rate>
-								</item>
-							</components>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
 							<id>{7F329D61-92AC-4C4A-AA15-9B6C4543516C}</id>
@@ -350,6 +317,59 @@
 							</transform>
 							<components/>
 							<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
+						</item>
+					</entityData>
+				</item>
+			</components>
+		</item>
+		<item type="traktor.world.EntityData" version="1">
+			<id>{87C06C49-A63D-5C47-8C3E-85D1DCD3C8C9}</id>
+			<name>Dynamic</name>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.EditorAttributesComponentData">
+					<visible>true</visible>
+					<locked>false</locked>
+					<include>true</include>
+					<dynamic>true</dynamic>
+				</item>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{A20C8A99-469E-1243-AAB5-E9615CF3807C}</id>
+							<name>Player</name>
+							<transform>
+								<translation>1.165087, 0.003049, 0.493338, 0</translation>
+								<rotation>0, -0.757842, 0, 0.652438</rotation>
+							</transform>
+							<components/>
+							<entityData>{0176DFB1-8604-4648-ACBD-A46B1DE4472C}</entityData>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{C0A1BD73-CA92-434D-A539-2A9D00419C68}</id>
+							<name>Camera</name>
+							<transform>
+								<translation>-0.570607, 1.739398, 2.745376, 0</translation>
+								<rotation>0.022905, 0.994217, -0.027825, 0.101158</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.CameraComponentData">
+									<projection>Perspective</projection>
+									<fov>1.221731</fov>
+									<width>1</width>
+									<height>1</height>
+								</item>
+								<item type="traktor.world.PersistentIdComponentData">
+									<id>{7529B732-4E46-9F4E-B7DF-9A9689E68EAE}</id>
+								</item>
+								<item type="traktor.animation.WobbleComponentData">
+									<magnitude>0.2</magnitude>
+									<rate>0.4</rate>
+								</item>
+							</components>
 						</item>
 					</entityData>
 				</item>
