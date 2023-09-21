@@ -20,26 +20,6 @@
 						<item type="traktor.world.GroupComponentData">
 							<entityData>
 								<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-									<id>{4D98DCEE-04D4-DB49-99CD-423124F549BC}</id>
-									<name>Wall 01 - Window-Entity</name>
-									<transform>
-										<translation>0, 0, -2.5, 0</translation>
-										<rotation>0, 0, 0, 1</rotation>
-									</transform>
-									<components/>
-									<entityData>{C329182D-F8BB-A344-8D6C-702A789EBB07}</entityData>
-								</item>
-								<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-									<id>{F3DAEEF7-4BB6-2D49-996C-46BE1E84E533}</id>
-									<name>Wall 01 - Window-Entity</name>
-									<transform>
-										<translation>3, 0, -2.5, 0</translation>
-										<rotation>0, 0, 0, 1</rotation>
-									</transform>
-									<components/>
-									<entityData>{C329182D-F8BB-A344-8D6C-702A789EBB07}</entityData>
-								</item>
-								<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
 									<id>{8574DD77-32F3-994D-9F7B-CC00719D66E3}</id>
 									<name>Wall 01 - Window-Entity</name>
 									<transform>
@@ -2162,6 +2142,16 @@
 							</entityData>
 						</item>
 					</components>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{608D61EF-19DF-A244-8DEE-10EC5013172C}</id>
+					<name>Entry 01 - Doors-Entity</name>
+					<transform>
+						<translation>0, 0, -2.5, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{C45484AA-5AC6-C64B-B901-A3FBC6DB8AC9}</entityData>
 				</item>
 			</entityData>
 		</item>

@@ -2214,8 +2214,8 @@
 											<id>{C73B2FF0-FBF8-DE48-A120-BF56EC4FE910}</id>
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
-												<translation>86.753975, -386.682037, -506.411652, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>89.708969, -386.682037, -498.021667, 0</translation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2224,8 +2224,8 @@
 											<id>{BE9A2706-CE2D-9541-9B98-D13536D044E0}</id>
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
-												<translation>86.753975, -386.682037, -488.134705, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>91.799225, -386.682037, -487.177124, 0</translation>
+												<rotation>0, -0.707107, 0, 0.707107</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2234,8 +2234,8 @@
 											<id>{BAEFAB7B-E95F-0A44-B7DE-291636C355C7}</id>
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
-												<translation>86.753975, -386.682037, -470.097809, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>91.813835, -386.682037, -468.875732, 0</translation>
+												<rotation>0, -0.707107, 0, 0.707107</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2244,8 +2244,8 @@
 											<id>{FED30706-2CB3-6C4D-A51D-1B87E73B630F}</id>
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
-												<translation>102.470696, -386.682037, -521.371277, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>106.706802, -386.682037, -514.453857, 0</translation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2254,8 +2254,8 @@
 											<id>{3158642B-21CA-CF41-92B6-7A751E818A1F}</id>
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
-												<translation>118.878479, -386.682037, -521.371277, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>122.187294, -386.682037, -514.497437, 0</translation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2264,8 +2264,8 @@
 											<id>{9A7D4583-81C6-D74E-BEB2-61AC5A30964A}</id>
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
-												<translation>136.533951, -386.682037, -521.371277, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>141.007126, -386.682037, -514.508972, 0</translation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2274,8 +2274,8 @@
 											<id>{93572920-5F29-6F45-A9DE-4DBA9C202BC9}</id>
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
-												<translation>144.446884, -386.682037, -498.713654, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>142.536972, -386.682037, -493.461761, 0</translation>
+												<rotation>0, 0.707107, 0, 0.707107</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2284,8 +2284,8 @@
 											<id>{80AD2CEF-D270-C14E-8144-0F92662AF889}</id>
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
-												<translation>151.824081, -379.44696, -453.105438, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>149.028656, -379.44696, -447.375732, 0</translation>
+												<rotation>0, 0.707107, 0, 0.707107</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2294,8 +2294,8 @@
 											<id>{F4E69BF8-B1DD-3348-BCA6-C3C8DCEF1227}</id>
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
-												<translation>151.616318, -379.44696, -431.966217, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>149.550049, -379.44696, -426.478088, 0</translation>
+												<rotation>0, 0.707107, 0, 0.707107</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2304,8 +2304,8 @@
 											<id>{0D3F04AB-87C8-F944-883D-D807F5AEC29D}</id>
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
-												<translation>126.739403, -384.376678, -453.105438, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>123.177338, -384.376678, -450.181854, 0</translation>
+												<rotation>0, -0.707107, 0, -0.707107</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2314,8 +2314,8 @@
 											<id>{874D526C-4B7F-8C47-8557-3A43640FB02E}</id>
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
-												<translation>126.739403, -384.376678, -419.211853, 0</translation>
-												<rotation>0, 0, 0, 1</rotation>
+												<translation>123.497696, -384.376678, -413.175476, 0</translation>
+												<rotation>0, -0.707107, 0, -0.707107</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
