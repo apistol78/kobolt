@@ -2153,6 +2153,166 @@
 					<components/>
 					<entityData>{C45484AA-5AC6-C64B-B901-A3FBC6DB8AC9}</entityData>
 				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{A8078C6C-1E34-994D-A5B6-8D8CEBC460E0}</id>
+					<name>Roof 01 - Tile-Entity</name>
+					<transform>
+						<translation>3, 21, 2, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{267B7590-7AB7-0B43-8ACF-D0142D8FF486}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{BE9AF064-ABA2-2A4E-A2EF-AE50F7611118}</id>
+					<name>Roof 01 - Tile-Entity</name>
+					<transform>
+						<translation>0, 21, 2, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{267B7590-7AB7-0B43-8ACF-D0142D8FF486}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{1875673F-4530-E04A-96F6-872BD373EC9A}</id>
+					<name>Roof 01 - Tile-Entity</name>
+					<transform>
+						<translation>3, 21, 5, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{267B7590-7AB7-0B43-8ACF-D0142D8FF486}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{F2CAAC18-E155-E440-A216-65A755F83A67}</id>
+					<name>Roof 01 - Tile-Entity</name>
+					<transform>
+						<translation>0, 21, 5, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{267B7590-7AB7-0B43-8ACF-D0142D8FF486}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{469D076F-F9A6-FC40-BB21-CF6DF317102C}</id>
+					<name>Roof 02 - Corner-Entity</name>
+					<transform>
+						<translation>-3, 21, -1, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{4314FB31-6FE3-024A-A17E-FE5999A11E8D}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{13F1759C-6215-6D44-BC10-6811D51FE316}</id>
+					<name>Roof 02 - Corner-Entity</name>
+					<transform>
+						<translation>-3, 21, 8, 0</translation>
+						<rotation>0, 0.707107, 0, 0.707107</rotation>
+					</transform>
+					<components/>
+					<entityData>{4314FB31-6FE3-024A-A17E-FE5999A11E8D}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{3C88D829-A61B-9A4E-85AA-DADD6068FED4}</id>
+					<name>Roof 02 - Corner-Entity</name>
+					<transform>
+						<translation>6, 21, 8, 0</translation>
+						<rotation>0, 1, 0, 0</rotation>
+					</transform>
+					<components/>
+					<entityData>{4314FB31-6FE3-024A-A17E-FE5999A11E8D}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{0868AEB8-F453-0740-8BE0-545784392FEB}</id>
+					<name>Roof 02 - Corner-Entity</name>
+					<transform>
+						<translation>6, 21, -1, 0</translation>
+						<rotation>0, -0.707107, 0, 0.707107</rotation>
+					</transform>
+					<components/>
+					<entityData>{4314FB31-6FE3-024A-A17E-FE5999A11E8D}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{126F6624-8260-4449-A405-5F9F6EDE2862}</id>
+					<name>Roof 03 - Edge-Entity</name>
+					<transform>
+						<translation>0, 21, -1, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{84A3B5BA-4B54-434C-8A70-43AA79194ABE}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{57528AC0-3CE4-8B4B-BD63-892BD3A2D165}</id>
+					<name>Roof 03 - Edge-Entity</name>
+					<transform>
+						<translation>3, 21, -1, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
+					</transform>
+					<components/>
+					<entityData>{84A3B5BA-4B54-434C-8A70-43AA79194ABE}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{76D25DCA-0A77-DB45-820E-42CDAC41E4A2}</id>
+					<name>Roof 03 - Edge-Entity</name>
+					<transform>
+						<translation>6, 21, 2, 0</translation>
+						<rotation>0, -0.707107, 0, 0.707107</rotation>
+					</transform>
+					<components/>
+					<entityData>{84A3B5BA-4B54-434C-8A70-43AA79194ABE}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{40FFAB85-1E86-D34D-8A08-EFE7E4C9BF8C}</id>
+					<name>Roof 03 - Edge-Entity</name>
+					<transform>
+						<translation>6, 21, 5, 0</translation>
+						<rotation>0, -0.707107, 0, 0.707107</rotation>
+					</transform>
+					<components/>
+					<entityData>{84A3B5BA-4B54-434C-8A70-43AA79194ABE}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{476B5198-0385-7841-906F-F7AF2D205018}</id>
+					<name>Roof 03 - Edge-Entity</name>
+					<transform>
+						<translation>3, 21, 8, 0</translation>
+						<rotation>0, -1, 0, 0</rotation>
+					</transform>
+					<components/>
+					<entityData>{84A3B5BA-4B54-434C-8A70-43AA79194ABE}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{D0BA3F19-E0B9-F44C-A0FD-B2EE0F09381A}</id>
+					<name>Roof 03 - Edge-Entity</name>
+					<transform>
+						<translation>0, 21, 8, 0</translation>
+						<rotation>0, -1, 0, 0</rotation>
+					</transform>
+					<components/>
+					<entityData>{84A3B5BA-4B54-434C-8A70-43AA79194ABE}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{7D76F7C0-2277-8648-8215-4B7CD42DFCF0}</id>
+					<name>Roof 03 - Edge-Entity</name>
+					<transform>
+						<translation>-3, 21, 5, 0</translation>
+						<rotation>0, -0.707107, 0, -0.707107</rotation>
+					</transform>
+					<components/>
+					<entityData>{84A3B5BA-4B54-434C-8A70-43AA79194ABE}</entityData>
+				</item>
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+					<id>{DDCBB639-5DA2-7340-ADB1-DBCF97902D24}</id>
+					<name>Roof 03 - Edge-Entity</name>
+					<transform>
+						<translation>-3, 21, 2, 0</translation>
+						<rotation>0, -0.707107, 0, -0.707107</rotation>
+					</transform>
+					<components/>
+					<entityData>{84A3B5BA-4B54-434C-8A70-43AA79194ABE}</entityData>
+				</item>
 			</entityData>
 		</item>
 		<item type="traktor.shape.PrefabComponentData" version="1">

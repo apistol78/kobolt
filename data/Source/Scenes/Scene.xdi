@@ -1199,7 +1199,7 @@
 											<name>Concrete Wall-Entity</name>
 											<transform>
 												<translation>155.848816, -386.78009, -469.839508, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
@@ -2061,7 +2061,7 @@
 											<name>Concrete Wall-Entity</name>
 											<transform>
 												<translation>155.848816, -386.78009, -472.922211, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
@@ -2115,7 +2115,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>116.485092, -381.592407, -511.594849, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2125,7 +2125,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>144.750412, -384.861542, -488.717926, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2165,7 +2165,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>119.950211, -381.619965, -511.593872, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2205,7 +2205,7 @@
 											<name>AC duct-Entity</name>
 											<transform>
 												<translation>143.950287, -384.469605, -488.921875, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{084CEE9D-36A4-D045-8C26-6E3F431264F1}</entityData>
@@ -2305,7 +2305,7 @@
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
 												<translation>123.177338, -384.376678, -450.181854, 0</translation>
-												<rotation>0, -0.707107, 0, -0.707107</rotation>
+												<rotation>0, 0.707107, 0, 0.707107</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2315,7 +2315,7 @@
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
 												<translation>123.497696, -384.376678, -413.175476, 0</translation>
-												<rotation>0, -0.707107, 0, -0.707107</rotation>
+												<rotation>0, 0.707107, 0, 0.707107</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -3224,7 +3224,7 @@
 															<name>Control</name>
 															<transform>
 																<translation>109.826813, -376.987274, -488.1698, 0</translation>
-																<rotation>0, 0.059964, -0.000001, 0.998201</rotation>
+																<rotation>-0, 0.059964, -0.000001, 0.998201</rotation>
 															</transform>
 															<components>
 																<item type="traktor.shape.ControlPointComponentData">
@@ -3365,7 +3365,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>137, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3375,7 +3375,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>141.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3385,7 +3385,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>146, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3395,7 +3395,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>150.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3405,7 +3405,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>132.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3415,7 +3415,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>128, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3425,7 +3425,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>123.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3435,7 +3435,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>119, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3445,7 +3445,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>114.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3455,7 +3455,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>110, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3465,7 +3465,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>105.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3475,7 +3475,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>101, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3485,7 +3485,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>96.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3666,7 +3666,7 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="32">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>4</primarySampleCount>
+			<primarySampleCount>6</primarySampleCount>
 			<secondarySampleCount>80</secondarySampleCount>
 			<shadowSampleCount>30</shadowSampleCount>
 			<maxPathDistance>35</maxPathDistance>
