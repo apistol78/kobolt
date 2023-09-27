@@ -1081,6 +1081,45 @@
 							<components/>
 							<entityData>{242FA3BE-57C9-874C-9108-8B8439AAB2E7}</entityData>
 						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{54C52FD7-1E3B-B04D-9DE9-D6A1D1BE5F4C}</id>
+							<name>Smoke</name>
+							<transform>
+								<translation>104.365807, -386.81424, -479.78653, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.spray.EffectComponentData">
+									<effect>{84F13EBA-2A06-4C56-AF50-C034A8569726}</effect>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{9DFFCE38-9562-8C4D-A079-38D237AE8328}</id>
+							<name>Smoke</name>
+							<transform>
+								<translation>104.365807, -386.81424, -503.603272, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.spray.EffectComponentData">
+									<effect>{84F13EBA-2A06-4C56-AF50-C034A8569726}</effect>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{6DB5E3FF-388F-A649-AFCC-4E07245236A4}</id>
+							<name>Smoke</name>
+							<transform>
+								<translation>132.217636, -386.81424, -477.73288, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components>
+								<item type="traktor.spray.EffectComponentData">
+									<effect>{84F13EBA-2A06-4C56-AF50-C034A8569726}</effect>
+								</item>
+							</components>
+						</item>
 					</entityData>
 				</item>
 			</components>
@@ -2154,8 +2193,8 @@
 											<id>{FD292606-2D1C-7F44-9240-4E7CFBA09082}</id>
 											<name>AC-Entity</name>
 											<transform>
-												<translation>94.508225, -381.493408, -478.195496, 0</translation>
-												<rotation>0, -0.707107, 0, 0.707107</rotation>
+												<translation>93.08532, -376.531738, -479.054016, 0</translation>
+												<rotation>0, -1, 0, -0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -3641,7 +3680,7 @@
 							<id>{2B95473B-9B74-AF42-A7AE-7DCC7D030946}</id>
 							<name>Manhole-Entity</name>
 							<transform>
-								<translation>104.365807, -386.81424, -478.018219, 0</translation>
+								<translation>104.365807, -386.81424, -479.78653, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -3651,7 +3690,7 @@
 							<id>{B40D5CC2-BE18-D743-B79B-8CDE9B5AE262}</id>
 							<name>Manhole-Entity</name>
 							<transform>
-								<translation>133.171524, -386.81424, -477.73288, 0</translation>
+								<translation>132.026718, -386.81424, -477.73288, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -3666,7 +3705,7 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="32">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>6</primarySampleCount>
+			<primarySampleCount>1</primarySampleCount>
 			<secondarySampleCount>80</secondarySampleCount>
 			<shadowSampleCount>30</shadowSampleCount>
 			<maxPathDistance>35</maxPathDistance>
