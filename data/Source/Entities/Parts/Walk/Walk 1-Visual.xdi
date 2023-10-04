@@ -6,7 +6,11 @@
 	<materialTemplates/>
 	<materialShaders>
 		<item>
-			<first>FBX_Default</first>
+			<first>m_cobble</first>
+			<second>{0BEF9410-9C37-7641-84B1-82FD7469B793}</second>
+		</item>
+		<item>
+			<first>m_concrete</first>
 			<second>{9AB402E4-F439-C94E-AF56-47F1F7364EFA}</second>
 		</item>
 	</materialShaders>

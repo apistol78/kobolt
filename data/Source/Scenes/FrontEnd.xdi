@@ -61,7 +61,7 @@
 		<fogDensity>0.1</fogDensity>
 		<fogDensityMax>0.5</fogDensityMax>
 		<fogColor>0.258824, 0.247059, 0.227451, 1</fogColor>
-		<irradianceGrid>{8F500C87-6146-A44F-B102-01BFDE65F9B9}</irradianceGrid>
+		<irradianceGrid>{5265F602-BF5E-0B4F-821C-35EACCAA81B1}</irradianceGrid>
 		<imageProcess>
 			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
 			<low>{00000000-0000-0000-0000-000000000000}</low>
@@ -173,7 +173,7 @@
 							<components>
 								<item type="traktor.weather.SkyComponentData" version="3">
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
-									<texture>{25A95985-F006-4D43-AD9E-BDAA4E56C8DD}</texture>
+									<texture>{A96BBB29-13EC-4B4B-9D3D-4B26E88E3A6B}</texture>
 								</item>
 							</components>
 						</item>
@@ -313,7 +313,7 @@
 							<name>AC-Entity</name>
 							<transform>
 								<translation>-0.652012, 0.583143, -2.976025, 0</translation>
-								<rotation>0.020735, -0.979207, 0.147993, 0.137196</rotation>
+								<rotation>0.020735, -0.979206, 0.147993, 0.137196</rotation>
 							</transform>
 							<components/>
 							<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>

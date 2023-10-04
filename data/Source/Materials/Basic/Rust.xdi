@@ -55,7 +55,7 @@
 				<first>1864</first>
 				<second>545</second>
 			</position>
-			<value>0.2</value>
+			<value>0.7</value>
 		</item>
 		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
 			<id>{05B7FCE5-470C-884C-8B69-3297C8786263}</id>

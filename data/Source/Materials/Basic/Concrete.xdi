@@ -18,8 +18,8 @@
 			<id>{E2B3610B-B9CB-704B-9922-2ED2D3788317}</id>
 			<comment/>
 			<position>
-				<first>1260</first>
-				<second>1360</second>
+				<first>1406</first>
+				<second>1395</second>
 			</position>
 			<name>SurfaceAttributes</name>
 		</item>
@@ -55,7 +55,7 @@
 				<first>622</first>
 				<second>1518</second>
 			</position>
-			<value>0.7</value>
+			<value>0.8</value>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{BB4E9854-6F1D-FF4F-B8F6-73BC566E81A4}</id>
@@ -64,7 +64,7 @@
 				<first>622</first>
 				<second>1560</second>
 			</position>
-			<value>0</value>
+			<value>0.4</value>
 		</item>
 		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
 			<id>{54E98C93-4AF9-DA4A-9DE9-5930F7141DBB}</id>
@@ -238,8 +238,8 @@
 			<id>{6FD4C302-23F8-0D43-AE3B-8A80A20E17A8}</id>
 			<comment/>
 			<position>
-				<first>1158</first>
-				<second>1352</second>
+				<first>766</first>
+				<second>932</second>
 			</position>
 			<value>0.025</value>
 		</item>
