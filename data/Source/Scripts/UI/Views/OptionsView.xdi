@@ -14,7 +14,16 @@ function OptionsView:new(parent)
 	local ct = Container(self, TableLayout({0, 100}, {0}, 0, 0, 16, 16))
 	
 	Static(ct, "Resolution")
-	DropDown(ct, { "A", "B", "C" })
+	DropDown(ct, { "320x200", "640x480", "1024x768" })
+
+	Static(ct, "AA quality")
+	DropDown(ct, { "Low", "Medium", "High", "Highest" })
+
+	Static(ct, "AO quality")
+	DropDown(ct, { "Low", "Medium", "High", "Highest" })
+
+	Static(ct, "Particle quality")
+	DropDown(ct, { "Low", "Medium", "High", "Highest" })
 
 	Static(ct, "Shadow quality")
 	DropDown(ct, { "Low", "Medium", "High", "Highest" })
@@ -29,7 +38,6 @@ function OptionsView:setOnReturn(fn)
 	self._fnReturn = fn
 	return self
 end
-
 
 	]]>
 	</text>

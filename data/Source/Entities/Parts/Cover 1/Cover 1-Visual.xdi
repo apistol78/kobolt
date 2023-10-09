@@ -6,8 +6,8 @@
 	<materialTemplates/>
 	<materialShaders>
 		<item>
-			<first>Material</first>
-			<second>{9AB402E4-F439-C94E-AF56-47F1F7364EFA}</second>
+			<first>m_wood</first>
+			<second>{B48FD02F-3706-484B-BCD4-A66B74EA003A}</second>
 		</item>
 	</materialShaders>
 	<materialTextures/>

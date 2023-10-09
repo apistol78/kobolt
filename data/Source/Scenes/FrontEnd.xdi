@@ -143,6 +143,25 @@
 								</item>
 							</components>
 						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{C6FA2939-8FA1-4549-89EF-BDD7B233BC5A}</id>
+							<name>Reflection Probe</name>
+							<transform>
+								<translation>0.394889, 1.11501, 0.981208, 0</translation>
+								<rotation>0, -0.40776, 0, 0.913089</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.ProbeComponentData">
+									<texture>{00000000-0000-0000-0000-000000000000}</texture>
+									<intensity>1</intensity>
+									<local>true</local>
+									<volume>
+										<mn>-2, -2, -2, 1</mn>
+										<mx>1, 1, 1, 1</mx>
+									</volume>
+								</item>
+							</components>
+						</item>
 					</entityData>
 				</item>
 			</components>
@@ -252,7 +271,7 @@
 							<id>{CD59EE08-C3F0-6B4B-BE93-9C68AF98B28A}</id>
 							<name>Concrete Wall-Entity</name>
 							<transform>
-								<translation>2.835242, -0.078938, 0.822055, 0</translation>
+								<translation>2.955615, -0.064342, 0.937706, 0</translation>
 								<rotation>0, 0.276356, 0, 0.961055</rotation>
 							</transform>
 							<components/>
@@ -381,18 +400,18 @@
 		<item type="traktor.shape.BakeConfiguration" version="32">
 			<enableLightmaps>true</enableLightmaps>
 			<primarySampleCount>4</primarySampleCount>
-			<secondarySampleCount>80</secondarySampleCount>
-			<shadowSampleCount>30</shadowSampleCount>
+			<secondarySampleCount>50</secondarySampleCount>
+			<shadowSampleCount>25</shadowSampleCount>
 			<maxPathDistance>35</maxPathDistance>
 			<pointLightShadowRadius>0</pointLightShadowRadius>
 			<lumelDensity>10</lumelDensity>
-			<irradianceGridDensity>1, 0.3, 1, 0</irradianceGridDensity>
+			<irradianceGridDensity>0.5, 0.3, 0.5, 0</irradianceGridDensity>
 			<minimumLightMapSize>4</minimumLightMapSize>
 			<maximumLightMapSize>4096</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
-			<analyticalLightAttenuation>2</analyticalLightAttenuation>
-			<skyAttenuation>2</skyAttenuation>
-			<ambientOcclusionFactor>0.1</ambientOcclusionFactor>
+			<analyticalLightAttenuation>1</analyticalLightAttenuation>
+			<skyAttenuation>1</skyAttenuation>
+			<ambientOcclusionFactor>0</ambientOcclusionFactor>
 		</item>
 	</operationData>
 </object>

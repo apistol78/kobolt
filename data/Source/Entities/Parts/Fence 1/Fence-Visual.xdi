@@ -4,7 +4,12 @@
 	<importFilter/>
 	<meshType>MtStatic</meshType>
 	<materialTemplates/>
-	<materialShaders/>
+	<materialShaders>
+		<item>
+			<first>m_fence</first>
+			<second>{B48FD02F-3706-484B-BCD4-A66B74EA003A}</second>
+		</item>
+	</materialShaders>
 	<materialTextures/>
 	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
 	<scaleFactor>1</scaleFactor>
