@@ -125,6 +125,14 @@
 			</outputPins>
 			<values/>
 		</item>
+		<item type="traktor.render.PreviewOutput" version="traktor.render.Node:1">
+			<id>{15A43389-DA2E-284F-8DC2-A948DCA85808}</id>
+			<comment/>
+			<position>
+				<first>-111</first>
+				<second>-959</second>
+			</position>
+		</item>
 	</nodes>
 	<edges>
 		<item type="traktor.render.Edge" version="1">
@@ -205,6 +213,16 @@
 			<destination>
 				<node ref="/object/nodes/item[8]"/>
 				<id>{B91FBB1C-B9A6-8A4B-B1E2-77D81A49164D}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[7]"/>
+				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[9]"/>
+				<id>{BDB32F7B-599C-42C8-A2CE-2B1BD0738E8B}</id>
 			</destination>
 		</item>
 	</edges>

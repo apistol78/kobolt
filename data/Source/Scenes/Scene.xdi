@@ -92,7 +92,7 @@
 							<id>{7CF0F66F-A33E-1F40-B3D4-207129011D7E}</id>
 							<name>Reflection Probe</name>
 							<transform>
-								<translation>105.886848, -376.697083, -468.21817, 0</translation>
+								<translation>105.886848, -376.884216, -468.21817, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
@@ -111,8 +111,8 @@
 							<id>{D3010E7E-30C1-8044-A694-14005EDDB2A8}</id>
 							<name>Camera</name>
 							<transform>
-								<translation>153.582199, -368.486847, -446.683289, 0</translation>
-								<rotation>0.18471, -0.204709, 0.039369, 0.96043</rotation>
+								<translation>109.757553, -380.850342, -456.19043, 0</translation>
+								<rotation>0.169227, 0.435958, -0.083844, 0.879928</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.CameraComponentData">
@@ -1160,33 +1160,25 @@
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
 						<item type="traktor.world.EntityData" version="1">
-							<id>{265EA1DA-729D-FC44-8CCC-E048053FF1D9}</id>
+							<id>{24517762-D110-294B-9C6C-B90D6D0F1DE7}</id>
 							<name>Sky</name>
 							<transform>
-								<translation>114.761757, -384.023499, -475.656189, 0</translation>
-								<rotation>0, -0.442518, 0, 0.89676</rotation>
+								<translation>-0.086419, 2.639621, 0.002373, 0</translation>
+								<rotation>0.360289, -0.220746, 0.088169, 0.902047</rotation>
 							</transform>
 							<components>
-								<item type="traktor.weather.SkyComponentData" version="3">
+								<item type="traktor.weather.SkyComponentData" version="4">
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
 									<texture>{A96BBB29-13EC-4B4B-9D3D-4B26E88E3A6B}</texture>
+									<intensity>0.9</intensity>
 								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{876DE559-F472-214A-95A5-F9812AC58283}</id>
-							<name>Sun</name>
-							<transform>
-								<translation>119.303337, -383.86264, -447.45108, 0</translation>
-								<rotation>0.180444, -0.667233, 0.171507, 0.702015</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.LightComponentData" version="11">
+								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Directional</lightType>
 									<color>1, 1, 1, 1</color>
 									<intensity>1</intensity>
 									<castShadow>true</castShadow>
-									<range>100</range>
+									<nearRange>0</nearRange>
+									<farRange>100</farRange>
 									<radius>1.570796</radius>
 									<flickerAmount>0</flickerAmount>
 									<flickerFilter>0</flickerFilter>
@@ -1287,7 +1279,7 @@
 											<name>Concrete Wall-Entity</name>
 											<transform>
 												<translation>155.848816, -386.78009, -469.839508, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
@@ -1376,7 +1368,7 @@
 															<id>{FB148FDB-7FBF-3540-BB2B-150E00E58FB0}</id>
 															<name>Concrete Wall-Entity</name>
 															<transform>
-																<translation>112.25, -384.25, -446.999298, 0</translation>
+																<translation>112.587662, -384.25, -447.266724, 0</translation>
 																<rotation>0, -0.019999, 0, 0.9998</rotation>
 															</transform>
 															<components/>
@@ -2019,7 +2011,7 @@
 											<name>Concrete Wall-Entity</name>
 											<transform>
 												<translation>155.848816, -386.78009, -472.922211, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
@@ -2150,7 +2142,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>125.445694, -377.077942, -445.10791, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2180,7 +2172,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>116.344635, -379.930176, -511.594849, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2190,7 +2182,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>144.750412, -384.861542, -488.717926, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2220,7 +2212,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>87.377754, -376.531738, -479.054016, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2230,7 +2222,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>119.430367, -382.611694, -511.593872, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2240,7 +2232,7 @@
 											<name>AC duct-Entity</name>
 											<transform>
 												<translation>125.158226, -376.555359, -445.416504, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{084CEE9D-36A4-D045-8C26-6E3F431264F1}</entityData>
@@ -2270,7 +2262,7 @@
 											<name>AC duct-Entity</name>
 											<transform>
 												<translation>143.950287, -384.469605, -488.921875, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{084CEE9D-36A4-D045-8C26-6E3F431264F1}</entityData>
@@ -2310,7 +2302,7 @@
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
 												<translation>106.706802, -386.682037, -514.453857, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2320,7 +2312,7 @@
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
 												<translation>122.187294, -386.682037, -514.497437, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2533,7 +2525,7 @@
 											<id>{23C07F85-D88A-5D40-B92E-F796A421362F}</id>
 											<name>Crate 1-Entity</name>
 											<transform>
-												<translation>103.950462, -385.649078, -498.675354, 0</translation>
+												<translation>104.78936, -385.649078, -498.675354, 0</translation>
 												<rotation>0, -0.285952, 0, 0.958244</rotation>
 											</transform>
 											<components/>
@@ -3320,7 +3312,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>146, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3330,7 +3322,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>150.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3357,7 +3349,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>137, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3367,7 +3359,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>141.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3377,7 +3369,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>146, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3387,7 +3379,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>150.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3397,7 +3389,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>132.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3407,7 +3399,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>128, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3417,7 +3409,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>123.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3427,7 +3419,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>119, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3437,7 +3429,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>114.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3447,7 +3439,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>110, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3457,7 +3449,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>105.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3467,7 +3459,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>101, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3477,7 +3469,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>96.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, -1, 0, 0</rotation>
+												<rotation>0, 1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3864,6 +3856,160 @@
 											<components/>
 											<entityData>{05D95751-5539-9A4E-804A-97C9BFB066E0}</entityData>
 										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{74127415-EB84-044E-BFCC-33B43F36FF11}</id>
+											<name>Sun</name>
+											<transform>
+												<translation>116.688484, -386.140167, -481.822327, 0</translation>
+												<rotation>-0.9492, 0.048409, -0.182551, -0.251697</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.LightComponentData" version="12">
+													<lightType>Spot</lightType>
+													<color>1, 1, 1, 1</color>
+													<intensity>100</intensity>
+													<castShadow>false</castShadow>
+													<nearRange>0.3</nearRange>
+													<farRange>19</farRange>
+													<radius>0.720796</radius>
+													<flickerAmount>0</flickerAmount>
+													<flickerFilter>0</flickerFilter>
+													<bakeMode>LbmIndirect</bakeMode>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{197B5011-AA16-9949-A079-BA291D7FFE59}</id>
+											<name>Sun</name>
+											<transform>
+												<translation>111.959801, -386.140167, -491.591827, 0</translation>
+												<rotation>-0.593259, 0.315375, -0.689105, -0.271508</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.LightComponentData" version="12">
+													<lightType>Spot</lightType>
+													<color>1, 1, 1, 1</color>
+													<intensity>100</intensity>
+													<castShadow>false</castShadow>
+													<nearRange>0.3</nearRange>
+													<farRange>19</farRange>
+													<radius>0.720796</radius>
+													<flickerAmount>0</flickerAmount>
+													<flickerFilter>0</flickerFilter>
+													<bakeMode>LbmIndirect</bakeMode>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{40140030-041D-0749-99AD-CCE789087F67}</id>
+											<name>Sun</name>
+											<transform>
+												<translation>117.823502, -386.140167, -498.313477, 0</translation>
+												<rotation>-0.149885, 0.346994, -0.924101, -0.056279</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.LightComponentData" version="12">
+													<lightType>Spot</lightType>
+													<color>1, 1, 1, 1</color>
+													<intensity>100</intensity>
+													<castShadow>false</castShadow>
+													<nearRange>0.3</nearRange>
+													<farRange>19</farRange>
+													<radius>0.720796</radius>
+													<flickerAmount>0</flickerAmount>
+													<flickerFilter>0</flickerFilter>
+													<bakeMode>LbmIndirect</bakeMode>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{BF4047CC-9CD0-5742-9E67-AAD1961EC22C}</id>
+											<name>Sun</name>
+											<transform>
+												<translation>123.531517, -386.140167, -498.171356, 0</translation>
+												<rotation>0.161405, 0.281116, -0.944783, 0.048028</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.LightComponentData" version="12">
+													<lightType>Spot</lightType>
+													<color>1, 1, 1, 1</color>
+													<intensity>100</intensity>
+													<castShadow>false</castShadow>
+													<nearRange>0.3</nearRange>
+													<farRange>19</farRange>
+													<radius>0.720796</radius>
+													<flickerAmount>0</flickerAmount>
+													<flickerFilter>0</flickerFilter>
+													<bakeMode>LbmIndirect</bakeMode>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{DDEA7963-937A-BB47-B27C-6FAE30361FD4}</id>
+											<name>Sun</name>
+											<transform>
+												<translation>128.552963, -386.140167, -494.196411, 0</translation>
+												<rotation>0.410805, 0.450792, -0.753396, 0.245805</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.LightComponentData" version="12">
+													<lightType>Spot</lightType>
+													<color>1, 1, 1, 1</color>
+													<intensity>100</intensity>
+													<castShadow>false</castShadow>
+													<nearRange>0.3</nearRange>
+													<farRange>19</farRange>
+													<radius>0.720796</radius>
+													<flickerAmount>0</flickerAmount>
+													<flickerFilter>0</flickerFilter>
+													<bakeMode>LbmIndirect</bakeMode>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{69318D9C-4230-0545-B631-2F7CC7200986}</id>
+											<name>Sun</name>
+											<transform>
+												<translation>128.900513, -386.140167, -487.059265, 0</translation>
+												<rotation>0.808472, 0.149084, -0.520022, 0.231784</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.LightComponentData" version="12">
+													<lightType>Spot</lightType>
+													<color>1, 1, 1, 1</color>
+													<intensity>100</intensity>
+													<castShadow>false</castShadow>
+													<nearRange>0.3</nearRange>
+													<farRange>19</farRange>
+													<radius>0.720796</radius>
+													<flickerAmount>0</flickerAmount>
+													<flickerFilter>0</flickerFilter>
+													<bakeMode>LbmIndirect</bakeMode>
+												</item>
+											</components>
+										</item>
+										<item type="traktor.world.EntityData" version="1">
+											<id>{3B8D9EC5-B978-F344-A5C4-16448306F190}</id>
+											<name>Sun</name>
+											<transform>
+												<translation>124.366844, -386.140167, -482.154724, 0</translation>
+												<rotation>0.883003, 0.063809, -0.125868, 0.447651</rotation>
+											</transform>
+											<components>
+												<item type="traktor.world.LightComponentData" version="12">
+													<lightType>Spot</lightType>
+													<color>1, 1, 1, 1</color>
+													<intensity>100</intensity>
+													<castShadow>false</castShadow>
+													<nearRange>0.3</nearRange>
+													<farRange>19</farRange>
+													<radius>0.720796</radius>
+													<flickerAmount>0</flickerAmount>
+													<flickerFilter>0</flickerFilter>
+													<bakeMode>LbmIndirect</bakeMode>
+												</item>
+											</components>
+										</item>
 									</entityData>
 								</item>
 							</components>
@@ -3902,6 +4048,25 @@
 								</item>
 							</components>
 						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{F8AD7078-9290-964A-B6CD-63D0FFEA8374}</id>
+							<name>Camera</name>
+							<transform>
+								<translation>109.757553, -380.850342, -456.19043, 0</translation>
+								<rotation>0.169227, 0.435958, -0.083844, 0.879928</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.CameraComponentData">
+									<projection>Perspective</projection>
+									<fov>1.221731</fov>
+									<width>1</width>
+									<height>1</height>
+								</item>
+								<item type="traktor.world.PersistentIdComponentData">
+									<id>{7529B732-4E46-9F4E-B7DF-9A9689E68EAE}</id>
+								</item>
+							</components>
+						</item>
 					</entityData>
 				</item>
 			</components>
@@ -3909,9 +4074,9 @@
 	</layers>
 	<controllerData/>
 	<operationData>
-		<item type="traktor.shape.BakeConfiguration" version="32">
+		<item type="traktor.shape.BakeConfiguration" version="33">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>3</primarySampleCount>
+			<primarySampleCount>1</primarySampleCount>
 			<secondarySampleCount>50</secondarySampleCount>
 			<shadowSampleCount>25</shadowSampleCount>
 			<maxPathDistance>35</maxPathDistance>
@@ -3922,7 +4087,6 @@
 			<maximumLightMapSize>1024</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
 			<analyticalLightAttenuation>1</analyticalLightAttenuation>
-			<skyAttenuation>1</skyAttenuation>
 			<ambientOcclusionFactor>0</ambientOcclusionFactor>
 		</item>
 	</operationData>

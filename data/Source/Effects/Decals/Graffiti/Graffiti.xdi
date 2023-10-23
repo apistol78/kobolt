@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
+	<nodes>
+		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+			<id>{80F1E1B2-50A7-D247-9F69-C3B26EA2592B}</id>
+			<comment/>
+			<position>
+				<first>415</first>
+				<second>175</second>
+			</position>
+			<fragmentGuid>{F27548F2-D866-7B4F-BF58-2BACEB4C06F3}</fragmentGuid>
+			<inputPins>
+				<item>
+					<id>{2ADCC346-DCCE-DB48-BB73-B90A1AD49550}</id>
+					<name>ColorMap</name>
+					<optional>false</optional>
+				</item>
+			</inputPins>
+			<outputPins/>
+			<values/>
+		</item>
+		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
+			<id>{05FAD9E8-4A6F-E54D-8353-67E76E7016BB}</id>
+			<comment/>
+			<position>
+				<first>141</first>
+				<second>140</second>
+			</position>
+			<external>{DE5B4604-2B1C-480A-A06F-A37727C5DC2C}</external>
+			<type>Texture2D</type>
+		</item>
+	</nodes>
+	<edges>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[1]"/>
+				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item"/>
+				<id>{2ADCC346-DCCE-DB48-BB73-B90A1AD49550}</id>
+			</destination>
+		</item>
+	</edges>
+	<groups/>
+</object>

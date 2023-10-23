@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{EFB41334-1CC1-9F4F-A256-4A61AD6B2020}</id>
+	<name>Graffiti</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.world.DecalComponentData">
+			<size>1.5</size>
+			<thickness>0.4</thickness>
+			<alpha>0.6</alpha>
+			<cullDistance>100</cullDistance>
+			<shader>{BD23655D-B9EB-1A43-BBC8-6184A6ACC57E}</shader>
+		</item>
+	</components>
+</object>

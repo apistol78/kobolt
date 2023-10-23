@@ -92,7 +92,7 @@
 							<id>{D4C3941F-C833-1D46-A3CC-C7F9C78EE318}</id>
 							<name>Reflection Probe</name>
 							<transform>
-								<translation>-5.428187, 1.755935, -2.249144, 0</translation>
+								<translation>-2.090337, 1.11501, 1.557553, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
@@ -147,7 +147,7 @@
 							<id>{C6FA2939-8FA1-4549-89EF-BDD7B233BC5A}</id>
 							<name>Reflection Probe</name>
 							<transform>
-								<translation>0.394889, 1.11501, 0.981208, 0</translation>
+								<translation>0.667998, 1.11501, 1.259239, 0</translation>
 								<rotation>0, -0.40776, 0, 0.913089</rotation>
 							</transform>
 							<components>
@@ -159,6 +159,14 @@
 										<mn>-2, -2, -2, 1</mn>
 										<mx>1, 1, 1, 1</mx>
 									</volume>
+								</item>
+								<item type="traktor.world.VolumeComponentData">
+									<volumes>
+										<item>
+											<mn>-2, -2, -2, 1</mn>
+											<mx>1, 1, 1, 1</mx>
+										</item>
+									</volumes>
 								</item>
 							</components>
 						</item>
@@ -187,33 +195,69 @@
 							<name>Sky</name>
 							<transform>
 								<translation>-0.086419, 2.639621, 0.002373, 0</translation>
-								<rotation>0, 0.681639, 0, 0.731689</rotation>
+								<rotation>0.360289, -0.220746, 0.088169, 0.902047</rotation>
 							</transform>
 							<components>
-								<item type="traktor.weather.SkyComponentData" version="3">
+								<item type="traktor.weather.SkyComponentData" version="4">
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
 									<texture>{A96BBB29-13EC-4B4B-9D3D-4B26E88E3A6B}</texture>
+									<intensity>0.9</intensity>
 								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{E7501722-6983-0C40-8433-EC3BF43AAD59}</id>
-							<name>Sun</name>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0.357195, -0.325609, 0.134453, 0.865051</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.LightComponentData" version="11">
+								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Directional</lightType>
 									<color>1, 1, 1, 1</color>
-									<intensity>0.5</intensity>
+									<intensity>1</intensity>
 									<castShadow>true</castShadow>
-									<range>100</range>
+									<nearRange>0</nearRange>
+									<farRange>100</farRange>
 									<radius>1.570796</radius>
 									<flickerAmount>0</flickerAmount>
 									<flickerFilter>0</flickerFilter>
 									<bakeMode>LbmIndirect</bakeMode>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{8A1AA0D3-3101-FF42-81FE-29976175CE3C}</id>
+							<name>Spot</name>
+							<transform>
+								<translation>3.643521, 0.475838, 3.712533, 0</translation>
+								<rotation>0.836274, 0.064516, -0.100836, 0.535085</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.LightComponentData" version="12">
+									<lightType>Spot</lightType>
+									<color>1, 1, 1, 1</color>
+									<intensity>8.55</intensity>
+									<castShadow>true</castShadow>
+									<nearRange>0.45</nearRange>
+									<farRange>14.4</farRange>
+									<radius>1.722665</radius>
+									<flickerAmount>0</flickerAmount>
+									<flickerFilter>0</flickerFilter>
+									<bakeMode>LbmAll</bakeMode>
+								</item>
+							</components>
+						</item>
+						<item type="traktor.world.EntityData" version="1">
+							<id>{F00F942E-8997-DD48-AD41-E4237CCF3A40}</id>
+							<name>Spot</name>
+							<transform>
+								<translation>-4.378595, 0.475838, -2.247029, 0</translation>
+								<rotation>-0.785492, 0.203165, -0.481588, -0.331359</rotation>
+							</transform>
+							<components>
+								<item type="traktor.world.LightComponentData" version="12">
+									<lightType>Spot</lightType>
+									<color>1, 1, 1, 1</color>
+									<intensity>8.55</intensity>
+									<castShadow>true</castShadow>
+									<nearRange>0.45</nearRange>
+									<farRange>8</farRange>
+									<radius>1.722665</radius>
+									<flickerAmount>0</flickerAmount>
+									<flickerFilter>0</flickerFilter>
+									<bakeMode>LbmAll</bakeMode>
 								</item>
 							</components>
 						</item>
@@ -271,7 +315,7 @@
 							<id>{CD59EE08-C3F0-6B4B-BE93-9C68AF98B28A}</id>
 							<name>Concrete Wall-Entity</name>
 							<transform>
-								<translation>2.955615, -0.064342, 0.937706, 0</translation>
+								<translation>2.923354, -0.064342, 1.031555, 0</translation>
 								<rotation>0, 0.276356, 0, 0.961055</rotation>
 							</transform>
 							<components/>
@@ -281,7 +325,7 @@
 							<id>{04E39BBC-5D34-6F4C-9090-631A7815ADC5}</id>
 							<name>Barrel-Entity</name>
 							<transform>
-								<translation>2.156314, -0.018896, -0.523782, 0</translation>
+								<translation>2.113559, -0.018896, -0.519825, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -336,6 +380,26 @@
 							</transform>
 							<components/>
 							<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{F4067167-D7B2-2345-99F0-892F857504D6}</id>
+							<name>Graffit - Entity</name>
+							<transform>
+								<translation>4.291022, 1.372757, 0.575052, 0</translation>
+								<rotation>0.229133, 0.229133, 0.668953, 0.668953</rotation>
+							</transform>
+							<components/>
+							<entityData>{CC60884D-8F8A-584F-A599-789C7618FC92}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{73F2F37B-2B0A-2D49-903F-0F1C27126E73}</id>
+							<name>Graffit - Entity</name>
+							<transform>
+								<translation>-0.847149, -0.082562, 1.437156, 0</translation>
+								<rotation>0, 0.324043, 0, 0.946042</rotation>
+							</transform>
+							<components/>
+							<entityData>{CC60884D-8F8A-584F-A599-789C7618FC92}</entityData>
 						</item>
 					</entityData>
 				</item>
@@ -397,9 +461,9 @@
 	</layers>
 	<controllerData/>
 	<operationData>
-		<item type="traktor.shape.BakeConfiguration" version="32">
+		<item type="traktor.shape.BakeConfiguration" version="33">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>4</primarySampleCount>
+			<primarySampleCount>2</primarySampleCount>
 			<secondarySampleCount>50</secondarySampleCount>
 			<shadowSampleCount>25</shadowSampleCount>
 			<maxPathDistance>35</maxPathDistance>
@@ -410,8 +474,7 @@
 			<maximumLightMapSize>4096</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
 			<analyticalLightAttenuation>1</analyticalLightAttenuation>
-			<skyAttenuation>1</skyAttenuation>
-			<ambientOcclusionFactor>0</ambientOcclusionFactor>
+			<ambientOcclusionFactor>0.25</ambientOcclusionFactor>
 		</item>
 	</operationData>
 </object>

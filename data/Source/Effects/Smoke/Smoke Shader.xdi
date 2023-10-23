@@ -134,8 +134,8 @@
 			<id>{60F7078F-B9D8-431A-9767-FCE163DE3FA7}</id>
 			<comment/>
 			<position>
-				<first>-246</first>
-				<second>186</second>
+				<first>-132</first>
+				<second>166</second>
 			</position>
 			<external>{DE5B4604-2B1C-480A-A06F-A37727C5DC2C}</external>
 			<type>Texture2D</type>
@@ -220,8 +220,8 @@
 			<id>{ADAB846C-B3D0-4F6C-A5F5-366B30DDF52A}</id>
 			<comment/>
 			<position>
-				<first>-351</first>
-				<second>150</second>
+				<first>-421</first>
+				<second>141</second>
 			</position>
 			<swizzle>111x</swizzle>
 		</item>
@@ -479,8 +479,8 @@
 			<id>{A3F5B8CE-015A-AB45-8316-837F765776B3}</id>
 			<comment/>
 			<position>
-				<first>-824</first>
-				<second>406</second>
+				<first>-1012</first>
+				<second>421</second>
 			</position>
 			<external>{514836A1-14F9-314E-A26A-C2AE5626A6E5}</external>
 			<type>Texture2D</type>
