@@ -6,12 +6,12 @@
 			<second>0</second>
 		</item>
 		<item>
-			<first>0.505495</first>
-			<second>0.349515</second>
+			<first>0.38806</first>
+			<second>0.337165</second>
 		</item>
 		<item>
-			<first>0.824176</first>
-			<second>0.820388</second>
+			<first>0.81592</first>
+			<second>0.770115</second>
 		</item>
 		<item>
 			<first>1</first>
@@ -24,12 +24,12 @@
 			<second>0.019417</second>
 		</item>
 		<item>
-			<first>0.351648</first>
-			<second>0.271845</second>
+			<first>0.328358</first>
+			<second>0.283525</second>
 		</item>
 		<item>
-			<first>0.664835</first>
-			<second>0.674757</second>
+			<first>0.666667</first>
+			<second>0.651341</second>
 		</item>
 		<item>
 			<first>1</first>
@@ -46,8 +46,8 @@
 			<second>0.271845</second>
 		</item>
 		<item>
-			<first>0.686813</first>
-			<second>0.519417</second>
+			<first>0.641791</first>
+			<second>0.586207</second>
 		</item>
 		<item>
 			<first>1</first>
@@ -55,6 +55,6 @@
 		</item>
 	</blueCurve>
 	<brightness>0</brightness>
-	<contrast>1.07</contrast>
-	<saturation>1.13</saturation>
+	<contrast>1.04</contrast>
+	<saturation>1.02</saturation>
 </object>

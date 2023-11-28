@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object type="traktor.world.EntityData" version="1">
+	<id>{DE79E556-0534-634D-8CC8-B2670644950C}</id>
+	<name>Soda Can</name>
+	<transform>
+		<translation>0, 0, 0, 0</translation>
+		<rotation>0, 0, 0, 1</rotation>
+	</transform>
+	<components>
+		<item type="traktor.mesh.MeshComponentData" version="1">
+			<mesh>{65DE5B7D-B896-AE45-86D4-0B4E0CB485B8}</mesh>
+		</item>
+	</components>
+</object>

@@ -61,7 +61,7 @@
 		<fogDensity>0.05</fogDensity>
 		<fogDensityMax>0.1</fogDensityMax>
 		<fogColor>0.850981, 0.945098, 0.764706, 0.858824</fogColor>
-		<irradianceGrid>{5265F602-BF5E-0B4F-821C-35EACCAA81B1}</irradianceGrid>
+		<irradianceGrid>{2D8C2976-00FC-7548-BBFC-3A4CBF1A15AB}</irradianceGrid>
 		<imageProcess>
 			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
 			<low>{00000000-0000-0000-0000-000000000000}</low>
@@ -1279,7 +1279,7 @@
 											<name>Concrete Wall-Entity</name>
 											<transform>
 												<translation>155.848816, -386.78009, -469.839508, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
@@ -2011,7 +2011,7 @@
 											<name>Concrete Wall-Entity</name>
 											<transform>
 												<translation>155.848816, -386.78009, -472.922211, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
@@ -2020,7 +2020,7 @@
 											<id>{4A0EE53D-0AD3-924E-9265-29E531ABE4CF}</id>
 											<name>Fences</name>
 											<transform>
-												<translation>0, 0, 0, 0</translation>
+												<translation>94.983887, -386.753784, -456.997437, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components>
@@ -2030,7 +2030,7 @@
 															<id>{CECF424D-095D-4245-ADFA-AD596790264A}</id>
 															<name>Fence-Entity</name>
 															<transform>
-																<translation>96.011261, -387, -456.997437, 0</translation>
+																<translation>94.983887, -386.753784, -456.997437, 0</translation>
 																<rotation>0, 0, 0, 1</rotation>
 															</transform>
 															<components/>
@@ -2040,78 +2040,28 @@
 															<id>{47EA2941-4DCF-1643-8199-E6BEFD059533}</id>
 															<name>Fence-Entity</name>
 															<transform>
-																<translation>100.957619, -387, -457, 0</translation>
+																<translation>101.435448, -386.757721, -457, 0</translation>
 																<rotation>0, -0.707107, 0, 0.707107</rotation>
 															</transform>
 															<components/>
 															<entityData>{04C7D6A1-BFFC-4CC4-9847-FA72CF31738E}</entityData>
 														</item>
 														<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-															<id>{FAE40630-D828-5446-BE8B-E2C929E8C154}</id>
+															<id>{28083A5A-D759-8F44-B2B6-85ACA64A7EF9}</id>
 															<name>Fence-Entity</name>
 															<transform>
-																<translation>101, -387, -452, 0</translation>
-																<rotation>0, -0.707107, 0, 0.707107</rotation>
+																<translation>96.971275, -386.753784, -456.997437, 0</translation>
+																<rotation>0, 0, 0, 1</rotation>
 															</transform>
 															<components/>
 															<entityData>{04C7D6A1-BFFC-4CC4-9847-FA72CF31738E}</entityData>
 														</item>
 														<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-															<id>{2AB17FD2-E84B-DD4C-8975-44AE44EFE7B0}</id>
+															<id>{1712BA3C-3E4D-6747-A6E9-505070BA946A}</id>
 															<name>Fence-Entity</name>
 															<transform>
-																<translation>101, -387, -447, 0</translation>
-																<rotation>0, -0.707107, 0, 0.707107</rotation>
-															</transform>
-															<components/>
-															<entityData>{04C7D6A1-BFFC-4CC4-9847-FA72CF31738E}</entityData>
-														</item>
-														<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-															<id>{3CBC5668-3C39-F544-B581-7542816E2B7D}</id>
-															<name>Fence-Entity</name>
-															<transform>
-																<translation>101, -387, -442, 0</translation>
-																<rotation>0, -0.707107, 0, 0.707107</rotation>
-															</transform>
-															<components/>
-															<entityData>{04C7D6A1-BFFC-4CC4-9847-FA72CF31738E}</entityData>
-														</item>
-														<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-															<id>{00A35AFB-A6D5-294C-A334-1EE9D1220850}</id>
-															<name>Fence-Entity</name>
-															<transform>
-																<translation>101, -387, -437, 0</translation>
-																<rotation>0, -0.707107, 0, 0.707107</rotation>
-															</transform>
-															<components/>
-															<entityData>{04C7D6A1-BFFC-4CC4-9847-FA72CF31738E}</entityData>
-														</item>
-														<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-															<id>{F0492DC7-516F-6C4E-AA51-A9D1B0B7B944}</id>
-															<name>Fence-Entity</name>
-															<transform>
-																<translation>101, -387, -432, 0</translation>
-																<rotation>0, -0.707107, 0, 0.707107</rotation>
-															</transform>
-															<components/>
-															<entityData>{04C7D6A1-BFFC-4CC4-9847-FA72CF31738E}</entityData>
-														</item>
-														<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-															<id>{DB26A1DE-E205-B94B-B3EA-350365210561}</id>
-															<name>Fence-Entity</name>
-															<transform>
-																<translation>101, -387, -427, 0</translation>
-																<rotation>0, -0.707107, 0, 0.707107</rotation>
-															</transform>
-															<components/>
-															<entityData>{04C7D6A1-BFFC-4CC4-9847-FA72CF31738E}</entityData>
-														</item>
-														<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-															<id>{A8C3B219-15F6-5A44-AA4D-6D6651431F0C}</id>
-															<name>Fence-Entity</name>
-															<transform>
-																<translation>101, -387, -422, 0</translation>
-																<rotation>0, -0.707107, 0, 0.707107</rotation>
+																<translation>98.996246, -386.564087, -456.989899, 0</translation>
+																<rotation>0, 0, 0, 1</rotation>
 															</transform>
 															<components/>
 															<entityData>{04C7D6A1-BFFC-4CC4-9847-FA72CF31738E}</entityData>
@@ -2142,7 +2092,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>125.445694, -377.077942, -445.10791, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2172,7 +2122,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>116.344635, -379.930176, -511.594849, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2182,7 +2132,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>144.750412, -384.861542, -488.717926, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2212,7 +2162,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>87.377754, -376.531738, -479.054016, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2222,7 +2172,7 @@
 											<name>AC-Entity</name>
 											<transform>
 												<translation>119.430367, -382.611694, -511.593872, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -2232,7 +2182,7 @@
 											<name>AC duct-Entity</name>
 											<transform>
 												<translation>125.158226, -376.555359, -445.416504, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{084CEE9D-36A4-D045-8C26-6E3F431264F1}</entityData>
@@ -2262,7 +2212,7 @@
 											<name>AC duct-Entity</name>
 											<transform>
 												<translation>143.950287, -384.469605, -488.921875, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{084CEE9D-36A4-D045-8C26-6E3F431264F1}</entityData>
@@ -2302,7 +2252,7 @@
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
 												<translation>106.706802, -386.682037, -514.453857, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2312,7 +2262,7 @@
 											<name>Building Type 1 - 4x4x6</name>
 											<transform>
 												<translation>122.187294, -386.682037, -514.497437, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
@@ -2477,6 +2427,66 @@
 											<components/>
 											<entityData>{EC5AAB4D-88AD-B947-883B-E1BA087D3997}</entityData>
 										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{34B68A47-2327-4346-8F73-4FC5B5714F71}</id>
+											<name>AC-Entity</name>
+											<transform>
+												<translation>103.967209, -372.900238, -511.460144, 0</translation>
+												<rotation>0, -1, 0, 0</rotation>
+											</transform>
+											<components/>
+											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{71C0BC88-1368-C949-A54C-8FA5F3D9F39A}</id>
+											<name>AC-Entity</name>
+											<transform>
+												<translation>110.080643, -376.390106, -511.45636, 0</translation>
+												<rotation>0, -1, 0, 0</rotation>
+											</transform>
+											<components/>
+											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{738C0626-53EE-E540-8C20-ECEE76A1CC94}</id>
+											<name>AC-Entity</name>
+											<transform>
+												<translation>110.036339, -369.467926, -511.45636, 0</translation>
+												<rotation>0, -1, 0, 0</rotation>
+											</transform>
+											<components/>
+											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{A8874BF3-6536-D047-A3E9-206059B4B3D9}</id>
+											<name>AC-Entity</name>
+											<transform>
+												<translation>122.494385, -374.872406, -511.497223, 0</translation>
+												<rotation>0, -1, 0, 0</rotation>
+											</transform>
+											<components/>
+											<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{262ABE9D-2808-3A46-BB98-9E45C4416905}</id>
+											<name>Satellite-Entity</name>
+											<transform>
+												<translation>104.795715, -363.530762, -514.020752, 0</translation>
+												<rotation>0, -0.982004, 0, 0.188859</rotation>
+											</transform>
+											<components/>
+											<entityData>{580AD673-5AEA-2747-9F93-F8D67D218D58}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{6D31190D-7966-9A4A-AB81-9999EAD4558E}</id>
+											<name>Satellite-Entity</name>
+											<transform>
+												<translation>118.800774, -363.530762, -514.020752, 0</translation>
+												<rotation>0, -0.9992, 0, 0.03999</rotation>
+											</transform>
+											<components/>
+											<entityData>{580AD673-5AEA-2747-9F93-F8D67D218D58}</entityData>
+										</item>
 									</entityData>
 								</item>
 							</components>
@@ -2497,76 +2507,6 @@
 											<transform>
 												<translation>153.049438, -383.089111, -479.750244, 0</translation>
 												<rotation>0, 0.21823, 0, 0.975897</rotation>
-											</transform>
-											<components/>
-											<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
-										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-											<id>{17859D49-B188-D344-8FA8-460FBB127083}</id>
-											<name>Crate 1-Entity</name>
-											<transform>
-												<translation>123.35479, -385.678803, -505.981995, 0</translation>
-												<rotation>0, 0.21823, 0, 0.975897</rotation>
-											</transform>
-											<components/>
-											<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
-										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-											<id>{473B8C0C-99AF-AE49-B924-845995029A38}</id>
-											<name>Crate 1-Entity</name>
-											<transform>
-												<translation>128.866104, -385.678803, -506.226501, 0</translation>
-												<rotation>0, -0.285952, 0, 0.958244</rotation>
-											</transform>
-											<components/>
-											<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
-										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-											<id>{23C07F85-D88A-5D40-B92E-F796A421362F}</id>
-											<name>Crate 1-Entity</name>
-											<transform>
-												<translation>104.78936, -385.649078, -498.675354, 0</translation>
-												<rotation>0, -0.285952, 0, 0.958244</rotation>
-											</transform>
-											<components/>
-											<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
-										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-											<id>{8F77DB8E-0D77-9547-8EEC-DC71A5F268F0}</id>
-											<name>Crate 1-Entity</name>
-											<transform>
-												<translation>98.526024, -385.529724, -494.975769, 0</translation>
-												<rotation>-0.009117, 0.227795, -0.038936, 0.972888</rotation>
-											</transform>
-											<components/>
-											<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
-										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-											<id>{5A64BB8E-373D-5948-B9D8-C90BAAC0473A}</id>
-											<name>Crate 1-Entity</name>
-											<transform>
-												<translation>119.975327, -383.089539, -437.812256, 0</translation>
-												<rotation>0, -0.079915, 0, 0.996802</rotation>
-											</transform>
-											<components/>
-											<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
-										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-											<id>{BBFB038C-7886-BD40-B1C7-FB67B0102197}</id>
-											<name>Crate 1-Entity</name>
-											<transform>
-												<translation>124.87777, -382.932709, -437.276672, 0</translation>
-												<rotation>0, 0.039989, 0, 0.9992</rotation>
-											</transform>
-											<components/>
-											<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
-										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-											<id>{3772EC8C-66AC-9243-8A3D-FCE6A39C8EB1}</id>
-											<name>Crate 1-Entity</name>
-											<transform>
-												<translation>122.832802, -383.039764, -406.172089, 0</translation>
-												<rotation>0, -0.01, 0, 0.99995</rotation>
 											</transform>
 											<components/>
 											<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
@@ -2620,16 +2560,6 @@
 											</transform>
 											<components/>
 											<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
-										</item>
-										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-											<id>{186589F7-33CC-F44E-A309-FA434D75241E}</id>
-											<name>Crate 1-Entity</name>
-											<transform>
-												<translation>114.44809, -383.091034, -405.77182, 0</translation>
-												<rotation>0, 0.089878, 0, 0.995953</rotation>
-											</transform>
-											<components/>
-											<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
 										</item>
 										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
 											<id>{30650619-96DA-5A4E-8255-A11D0A27A8EC}</id>
@@ -3312,7 +3242,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>146, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3322,7 +3252,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>150.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3349,7 +3279,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>137, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3359,7 +3289,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>141.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3369,7 +3299,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>146, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3379,7 +3309,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>150.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3389,7 +3319,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>132.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3399,7 +3329,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>128, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3409,7 +3339,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>123.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3419,7 +3349,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>119, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3429,7 +3359,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>114.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3439,7 +3369,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>110, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3449,7 +3379,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>105.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3459,7 +3389,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>101, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3469,7 +3399,7 @@
 											<name>Walk 1-Entity</name>
 											<transform>
 												<translation>96.5, -386.77182, -510.5, 0</translation>
-												<rotation>0, 1, 0, 0</rotation>
+												<rotation>0, -1, 0, 0</rotation>
 											</transform>
 											<components/>
 											<entityData>{3A6F846D-9C92-B24C-A391-4C55EA7DEDCD}</entityData>
@@ -3806,7 +3736,7 @@
 											<id>{18874574-FC6A-8847-87FE-98215C92898C}</id>
 											<name>Manhole-Entity</name>
 											<transform>
-												<translation>104.365807, -386.81424, -479.78653, 0</translation>
+												<translation>103.791763, -386.81424, -478.755249, 0</translation>
 												<rotation>0, 0, 0, 1</rotation>
 											</transform>
 											<components/>
@@ -4067,6 +3997,106 @@
 								</item>
 							</components>
 						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{C4174709-B15C-6148-A063-0650DEC2FF40}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>109.104797, -386.705292, -496.694397, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{83D5DE4E-5E55-624A-BBBD-0B0972FCFA68}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{ACAE7954-DAAB-E343-B2F6-44AF3B7B00C4}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>107.801407, -386.70343, -472.728272, 0</translation>
+								<rotation>0, -0.744643, 0, 0.667463</rotation>
+							</transform>
+							<components/>
+							<entityData>{83D5DE4E-5E55-624A-BBBD-0B0972FCFA68}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{4D2B21FA-4BA0-9840-B433-8F351D2E7780}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>144.916504, -386.749725, -478.260529, 0</translation>
+								<rotation>0, 0.795602, 0, 0.60582</rotation>
+							</transform>
+							<components/>
+							<entityData>{83D5DE4E-5E55-624A-BBBD-0B0972FCFA68}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{8268A862-80A0-FB4C-A393-2F74CDBF2B1B}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>159.307175, -379.325562, -461.836731, 0</translation>
+								<rotation>0, 0.119712, 0, 0.992809</rotation>
+							</transform>
+							<components/>
+							<entityData>{83D5DE4E-5E55-624A-BBBD-0B0972FCFA68}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{A1EFEB2D-9763-D54D-A255-FFCDF48A4A4B}</id>
+							<name>Tree 1-Entity</name>
+							<transform>
+								<translation>159.876587, -380.128418, -485.245728, 0</translation>
+								<rotation>0, 0.718465, 0, -0.695563</rotation>
+							</transform>
+							<components/>
+							<entityData>{83D5DE4E-5E55-624A-BBBD-0B0972FCFA68}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{6B0492BF-19F0-3941-80D9-5F602A4C3DD0}</id>
+							<name>Soda Can-Entity</name>
+							<transform>
+								<translation>119.812813, -384.919495, -486.924255, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{786B1283-48EF-0247-A5A3-84E698EA7C75}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{9C058BDF-107E-DF49-9F83-61927A7BC7BD}</id>
+							<name>Soda Can-Entity</name>
+							<transform>
+								<translation>119.694565, -384.919495, -487.002563, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{786B1283-48EF-0247-A5A3-84E698EA7C75}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{144F6715-5CDF-0F48-927A-1B1AD579DEED}</id>
+							<name>Soda Can-Entity</name>
+							<transform>
+								<translation>119.44606, -384.956909, -487.06546, 0</translation>
+								<rotation>-0.084649, 0.084649, -0.702022, 0.702022</rotation>
+							</transform>
+							<components/>
+							<entityData>{786B1283-48EF-0247-A5A3-84E698EA7C75}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{628AEFFF-0134-D443-8EB4-10D41084BFED}</id>
+							<name>Level Ground 1-Entity</name>
+							<transform>
+								<translation>145.08168, -382.752167, -538.379456, 0</translation>
+								<rotation>0, 0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{10DC75EA-2F69-495D-A0F1-25F7EC4EA224}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+							<id>{D66FFF0C-2FB7-974F-A52E-D28F6AEF9597}</id>
+							<name>Level Ground 1-Entity</name>
+							<transform>
+								<translation>86.149681, -382.752167, -539.192139, 0</translation>
+								<rotation>0, 0.707107, 0, 0.707107</rotation>
+							</transform>
+							<components/>
+							<entityData>{10DC75EA-2F69-495D-A0F1-25F7EC4EA224}</entityData>
+						</item>
 					</entityData>
 				</item>
 			</components>
@@ -4076,7 +4106,7 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="33">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>1</primarySampleCount>
+			<primarySampleCount>3</primarySampleCount>
 			<secondarySampleCount>50</secondarySampleCount>
 			<shadowSampleCount>25</shadowSampleCount>
 			<maxPathDistance>35</maxPathDistance>
