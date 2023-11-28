@@ -2487,6 +2487,16 @@
 											<components/>
 											<entityData>{580AD673-5AEA-2747-9F93-F8D67D218D58}</entityData>
 										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{E496536A-FAAE-4002-BA2B-40133BDB9A69}</id>
+											<name>Satellite-Entity</name>
+											<transform>
+												<translation>85.95446, -363.530762, -462.462677, 0</translation>
+												<rotation>0, -0.921061, 0, 0.389419</rotation>
+											</transform>
+											<components/>
+											<entityData>{580AD673-5AEA-2747-9F93-F8D67D218D58}</entityData>
+										</item>
 									</entityData>
 								</item>
 							</components>
