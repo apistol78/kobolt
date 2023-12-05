@@ -191,33 +191,11 @@
 							</components>
 						</item>
 						<item type="traktor.world.EntityData" version="1">
-							<id>{8A1AA0D3-3101-FF42-81FE-29976175CE3C}</id>
-							<name>Spot</name>
-							<transform>
-								<translation>3.643521, 0.475838, 3.712533, 0</translation>
-								<rotation>0.836274, 0.064516, -0.100836, 0.535085</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.LightComponentData" version="12">
-									<lightType>Spot</lightType>
-									<color>1, 1, 1, 1</color>
-									<intensity>8.55</intensity>
-									<castShadow>true</castShadow>
-									<nearRange>0.45</nearRange>
-									<farRange>14.4</farRange>
-									<radius>1.722665</radius>
-									<flickerAmount>0</flickerAmount>
-									<flickerFilter>0</flickerFilter>
-									<bakeMode>LbmAll</bakeMode>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
 							<id>{F00F942E-8997-DD48-AD41-E4237CCF3A40}</id>
 							<name>Spot</name>
 							<transform>
-								<translation>-4.378595, 0.475838, -2.247029, 0</translation>
-								<rotation>-0.785492, 0.203165, -0.481588, -0.331359</rotation>
+								<translation>-3.245978, 0.163643, 0.152133, 0</translation>
+								<rotation>-0.966845, 0.027206, -0.116579, -0.225566</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.LightComponentData" version="12">
@@ -226,7 +204,7 @@
 									<intensity>8.55</intensity>
 									<castShadow>true</castShadow>
 									<nearRange>0.45</nearRange>
-									<farRange>8</farRange>
+									<farRange>20.050001</farRange>
 									<radius>1.722665</radius>
 									<flickerAmount>0</flickerAmount>
 									<flickerFilter>0</flickerFilter>
@@ -285,16 +263,6 @@
 							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-							<id>{CD59EE08-C3F0-6B4B-BE93-9C68AF98B28A}</id>
-							<name>Concrete Wall-Entity</name>
-							<transform>
-								<translation>2.97337, -0.069937, 1.258526, 0</translation>
-								<rotation>0, 0.276356, 0, 0.961055</rotation>
-							</transform>
-							<components/>
-							<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
 							<id>{04E39BBC-5D34-6F4C-9090-631A7815ADC5}</id>
 							<name>Barrel-Entity</name>
 							<transform>
@@ -308,8 +276,8 @@
 							<id>{CA6D0E95-71DC-3448-A2A3-7B6095F04BAC}</id>
 							<name>Kobalt-Entity</name>
 							<transform>
-								<translation>-2.547522, 2.364442, -2.5, 0</translation>
-								<rotation>-0.70705, 0.70705, -0.00898, 0.00898</rotation>
+								<translation>-1.453265, 3.960872, -2.15855, 0</translation>
+								<rotation>-0.00363, 0.996112, 0.049847, 0.072545</rotation>
 							</transform>
 							<components/>
 							<entityData>{9BD7764A-BC67-AE48-A8B2-56AB7DD37F00}</entityData>
@@ -335,16 +303,6 @@
 							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
 						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-							<id>{C0526E06-7875-704D-93D4-BEE61453D04B}</id>
-							<name>Manhole-Entity</name>
-							<transform>
-								<translation>-3.399051, -0.076996, -1.653616, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components/>
-							<entityData>{D313A1C2-6816-5448-90F8-24B40C23AF59}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
 							<id>{B5F7944B-7AD0-634D-9395-BC7A36C42596}</id>
 							<name>AC-Entity</name>
 							<transform>
@@ -358,31 +316,11 @@
 							<id>{F4067167-D7B2-2345-99F0-892F857504D6}</id>
 							<name>Graffit - Entity</name>
 							<transform>
-								<translation>4.291022, 1.372757, 0.575052, 0</translation>
+								<translation>3.110318, 1.391027, -0.313155, 0</translation>
 								<rotation>0.229133, 0.229133, 0.668953, 0.668953</rotation>
 							</transform>
 							<components/>
 							<entityData>{CC60884D-8F8A-584F-A599-789C7618FC92}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-							<id>{9219F686-242F-AA46-B9D2-9CE9B4655607}</id>
-							<name>Concrete Wall-Entity</name>
-							<transform>
-								<translation>2.353893, -0.039998, 1.578503, 0</translation>
-								<rotation>0, 0.276356, 0, 0.961055</rotation>
-							</transform>
-							<components/>
-							<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
-						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-							<id>{D95C159E-D807-B84F-8AE0-2B38D22EC4B3}</id>
-							<name>Concrete Wall-Entity</name>
-							<transform>
-								<translation>2.773488, 0.924872, 1.455539, 0</translation>
-								<rotation>0, 0.46178, 0, 0.886995</rotation>
-							</transform>
-							<components/>
-							<entityData>{F535F25A-C3F8-E047-843E-54E4B5A7A485}</entityData>
 						</item>
 					</entityData>
 				</item>
@@ -418,13 +356,13 @@
 							<id>{C0A1BD73-CA92-434D-A539-2A9D00419C68}</id>
 							<name>Camera</name>
 							<transform>
-								<translation>-0.570607, 1.739398, 2.745376, 0</translation>
-								<rotation>0.022905, 0.994217, -0.027825, 0.101158</rotation>
+								<translation>-0.401905, 0.851023, 2.113742, 0</translation>
+								<rotation>0.015857, 0.99401, 0.04179, 0.09973</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.CameraComponentData">
 									<projection>Perspective</projection>
-									<fov>1.221731</fov>
+									<fov>1.471731</fov>
 									<width>1</width>
 									<height>1</height>
 								</item>
@@ -441,7 +379,7 @@
 							<id>{1B44ED9F-0CFA-F94C-B3B3-534DCB14F993}</id>
 							<name>Smoke Effect</name>
 							<transform>
-								<translation>-3.486316, 0.314381, -1.205827, 0</translation>
+								<translation>0.215187, 0.314381, -0.117008, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>

@@ -128,7 +128,7 @@ function Game:updatePlaying(info)
 	local fire = self._inputMapping:isStatePressed("STATE_FIRE")
 
 	-- Enter menu when application becomes inactive or escape.
-	if not self._environment.render.renderView.isActive or escape then
+	if escape then
 		self._flipBook:showPage("MAIN")
 		self._updateFn = Game.updateMenu
 		self._environment.input.inputSystem:setExclusive(false)
@@ -212,6 +212,7 @@ function Game:updatePlaying(info)
 					local ghostScript = ghostEntity:getComponent(world.ScriptComponent)
 					local localState = ghostScript:captureState()
 
+					local t = self._lobbyManager._time
 					local state = proxy:getFilteredState(t, 0.2, localState, 0.7)
 					if state ~= nil then
 						ghostScript:applyState(state)
@@ -239,7 +240,6 @@ function Game:exitPlay()
 	local nxt = self:loadStage("LOADING", { next = "FRONTEND", lobbyManager = self._lobbyManager })
 	self:gotoStage(nxt)
 end
-
 
 	]]>
 	</text>

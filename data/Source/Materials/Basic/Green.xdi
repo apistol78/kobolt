@@ -55,7 +55,7 @@
 				<first>1243</first>
 				<second>434</second>
 			</position>
-			<value>0.4</value>
+			<value>0.7</value>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{E1DFD760-A4C8-7244-AAD8-DF20204D4A9D}</id>
@@ -64,16 +64,16 @@
 				<first>1245</first>
 				<second>476</second>
 			</position>
-			<value>1</value>
+			<value>0.55</value>
 		</item>
 		<item type="traktor.render.Color" version="2,traktor.render.Node:1">
 			<id>{59C26506-01CE-C641-AB59-708448FB0D24}</id>
 			<comment/>
 			<position>
-				<first>1199</first>
-				<second>345</second>
+				<first>1198</first>
+				<second>344</second>
 			</position>
-			<color>0.301961, 0.545098, 0.301961, 1</color>
+			<color>0.113726, 0.164706, 0.058824, 1</color>
 			<linear>true</linear>
 		</item>
 		<item type="traktor.render.PreviewOutput" version="traktor.render.Node:1">

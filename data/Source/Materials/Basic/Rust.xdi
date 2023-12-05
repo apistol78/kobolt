@@ -84,7 +84,7 @@
 			</position>
 			<swizzle>zx</swizzle>
 		</item>
-		<item type="traktor.render.Script" version="4,traktor.render.Node:1">
+		<item type="traktor.render.Script" version="5,traktor.render.Node:1">
 			<id>{4CAE0F09-29E9-9C46-BD9E-7811DE9A695E}</id>
 			<comment/>
 			<position>
@@ -93,6 +93,7 @@
 			</position>
 			<name>Major</name>
 			<technique/>
+			<include/>
 			<inputPins>
 				<item>
 					<id>{206BAED3-BCF9-3840-A415-58A2343838C8}</id>
@@ -561,8 +562,8 @@ else
 			<id>{2233EF21-F1B5-0946-9C08-8B2D999EC7C4}</id>
 			<comment/>
 			<position>
-				<first>605</first>
-				<second>-99</second>
+				<first>509</first>
+				<second>-123</second>
 			</position>
 			<name>ZX</name>
 		</item>
@@ -833,6 +834,105 @@ else
 				<item>Binormal</item>
 				<item>Velocity</item>
 			</names>
+		</item>
+		<item type="traktor.render.Script" version="5,traktor.render.Node:1">
+			<id>{E08200B9-82A1-6C48-99E6-71BA4BAFEC05}</id>
+			<comment/>
+			<position>
+				<first>67</first>
+				<second>-169</second>
+			</position>
+			<name>Unnamed</name>
+			<technique/>
+			<include>
+				<item>{1F66B96D-C144-D142-B094-2541510CDFAD}</item>
+			</include>
+			<inputPins>
+				<item>
+					<id>{4AFF5D6C-1A23-3B44-9C92-C814BA7720C1}</id>
+					<name>TexCoord</name>
+				</item>
+				<item>
+					<id>{13DBAC59-07B6-AD4B-9432-10CBA14CEBB5}</id>
+					<name>HeightMap</name>
+				</item>
+				<item>
+					<id>{977EFF16-7EB6-0E42-BC98-F3B972CD5514}</id>
+					<name>HeightMapSampler</name>
+				</item>
+				<item>
+					<id>{1422A49B-FBAF-8E48-BC8F-A4FEBF6ABA59}</id>
+					<name>Normal</name>
+				</item>
+				<item>
+					<id>{FC2B5312-0E95-254E-BD38-128A683B029B}</id>
+					<name>Position</name>
+				</item>
+			</inputPins>
+			<outputPins>
+				<item>
+					<id>{DDFB2039-FECE-CF45-9A8E-D497C7BFFCD0}</id>
+					<name>Output</name>
+					<type>Vector</type>
+				</item>
+			</outputPins>
+			<script>
+			<![CDATA[
+
+
+const float height = texture(sampler2D($HeightMap, $HeightMapSampler), $TexCoord.xy).x;
+
+
+$Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz), 0.0f, 0.0f);
+
+			]]>
+			</script>
+		</item>
+		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
+			<id>{8BE19289-8D86-0D4C-AA71-6D2A7881B96D}</id>
+			<comment/>
+			<position>
+				<first>-175</first>
+				<second>-188</second>
+			</position>
+			<name>ZX</name>
+		</item>
+		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
+			<id>{81343219-240E-3441-9FDD-3F6B5B44974C}</id>
+			<comment/>
+			<position>
+				<first>-368</first>
+				<second>-239</second>
+			</position>
+			<external>{607BF1B7-C43F-DE48-B0F9-AEA0136C2150}</external>
+			<type>Texture2D</type>
+		</item>
+		<item type="traktor.render.TextureState" version="traktor.render.Node:1">
+			<id>{15BF7C76-5AD9-DD4C-AECE-5E7AD5DA509F}</id>
+			<comment/>
+			<position>
+				<first>-310</first>
+				<second>-99</second>
+			</position>
+			<minFilter>FtLinear</minFilter>
+			<mipFilter>FtLinear</mipFilter>
+			<magFilter>FtLinear</magFilter>
+			<addressU>AdWrap</addressU>
+			<addressV>AdWrap</addressV>
+			<addressW>AdWrap</addressW>
+			<compare>CfNone</compare>
+			<mipBias>0</mipBias>
+			<ignoreMips>false</ignoreMips>
+			<useAnisotropic>false</useAnisotropic>
+		</item>
+		<item type="traktor.render.Swizzle" version="traktor.render.Node:1">
+			<id>{DC2ECB8E-C274-7247-B192-96EAF31C626C}</id>
+			<comment/>
+			<position>
+				<first>446</first>
+				<second>-67</second>
+			</position>
+			<swizzle>xy</swizzle>
 		</item>
 	</nodes>
 	<edges>
@@ -1268,16 +1368,6 @@ else
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
-				<node ref="/object/nodes/item[39]"/>
-				<id>{84BF3C26-64A7-4032-B775-1D369052B243}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[31]"/>
-				<id>{6D5C5EFE-A35C-4748-B81E-B8EBACE433BC}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
 				<node ref="/object/nodes/item[10]"/>
 				<id>{ADB4FC1D-3726-4CC5-B4D5-1E2468274325}</id>
 			</source>
@@ -1594,6 +1684,76 @@ else
 			<destination>
 				<node ref="/object/nodes/item[25]"/>
 				<id>{A525106E-8E60-7B4D-9FA0-17718532C635}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[65]"/>
+				<id>{84BF3C26-64A7-4032-B775-1D369052B243}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[64]"/>
+				<id>{4AFF5D6C-1A23-3B44-9C92-C814BA7720C1}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[66]"/>
+				<id>{FFE19E4E-24A8-47A4-AE80-307495E31066}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[64]"/>
+				<id>{13DBAC59-07B6-AD4B-9432-10CBA14CEBB5}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[67]"/>
+				<id>{82C966B2-7B19-48B2-8FE0-B85FF4E3C504}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[64]"/>
+				<id>{977EFF16-7EB6-0E42-BC98-F3B972CD5514}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[61]"/>
+				<id>{D596E4E4-1A78-4D80-BE6B-6DEEF934EDEC}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[64]"/>
+				<id>{1422A49B-FBAF-8E48-BC8F-A4FEBF6ABA59}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[61]"/>
+				<id>{D596E4E4-1A78-4D80-BD6B-6DEEF934EDEC}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[64]"/>
+				<id>{FC2B5312-0E95-254E-BD38-128A683B029B}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[68]"/>
+				<id>{ADB4FC1D-3726-4CC5-B4D5-1E2468274325}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[31]"/>
+				<id>{6D5C5EFE-A35C-4748-B81E-B8EBACE433BC}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[65]"/>
+				<id>{84BF3C26-64A7-4032-B775-1D369052B243}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[68]"/>
+				<id>{F2E22CA6-DFF3-4B20-A70A-0D7A44EACD8C}</id>
 			</destination>
 		</item>
 	</edges>
