@@ -116,12 +116,7 @@
 							</transform>
 							<components>
 								<item type="traktor.world.VolumeComponentData">
-									<volumes>
-										<item>
-											<mn>-50, -30, -70, 1</mn>
-											<mx>50, 30, 70, 1</mx>
-										</item>
-									</volumes>
+									<size>-50, -30, -70</size>
 								</item>
 							</components>
 						</item>

@@ -1195,12 +1195,7 @@
 							</transform>
 							<components>
 								<item type="traktor.world.VolumeComponentData">
-									<volumes>
-										<item>
-											<mn>-50, -30, -70, 1</mn>
-											<mx>50, 30, 70, 1</mx>
-										</item>
-									</volumes>
+									<size>-50, -30, -70</size>
 								</item>
 							</components>
 						</item>
@@ -2486,6 +2481,16 @@
 											</transform>
 											<components/>
 											<entityData>{580AD673-5AEA-2747-9F93-F8D67D218D58}</entityData>
+										</item>
+										<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+											<id>{AD2BA651-2384-4EB0-89F2-C7C6F5D6D19E}</id>
+											<name>Roof Lamp-Entity</name>
+											<transform>
+												<translation>144.088379, -384.546845, -498.287231, 0</translation>
+												<rotation>0, 0, 0, 1</rotation>
+											</transform>
+											<components/>
+											<entityData>{3BDD36BA-3624-479C-ABDB-C4538D39EF11}</entityData>
 										</item>
 									</entityData>
 								</item>
