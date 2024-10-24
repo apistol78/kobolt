@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.scene.SceneAsset" version="9">
-	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="39">
+<object type="traktor.scene.SceneAsset" version="10">
+	<worldRenderSettings type="traktor.world.WorldRenderSettings" version="41">
 		<viewNearZ>0.1</viewNearZ>
 		<viewFarZ>1000</viewFarZ>
 		<exposureMode>Adaptive</exposureMode>
@@ -57,11 +57,6 @@
 				<maskProject>{00000000-0000-0000-0000-000000000000}</maskProject>
 			</ultra>
 		</shadowSettings>
-		<fogDistance>0</fogDistance>
-		<fogDensity>0</fogDensity>
-		<fogDensityMax>1</fogDensityMax>
-		<fogColor>0.258824, 0.247059, 0.227451, 1</fogColor>
-		<irradianceGrid>{2D8C2976-00FC-7548-BBFC-3A4CBF1A15AB}</irradianceGrid>
 		<imageProcess>
 			<disabled>{00000000-0000-0000-0000-000000000000}</disabled>
 			<low>{00000000-0000-0000-0000-000000000000}</low>
@@ -69,28 +64,33 @@
 			<high>{00000000-0000-0000-0000-000000000000}</high>
 			<ultra>{00000000-0000-0000-0000-000000000000}</ultra>
 		</imageProcess>
-		<colorGrading>{395C5B5B-BB3E-494C-9B40-24DE19EFA235}</colorGrading>
+		<colorGrading>{00000000-0000-0000-0000-000000000000}</colorGrading>
 	</worldRenderSettings>
+	<worldComponents/>
 	<layers>
-		<item type="traktor.world.EntityData" version="1">
+		<item type="traktor.world.EntityData" version="2">
 			<id>{5F4E703E-1B0C-B747-B844-1B515434D6C5}</id>
 			<name>Environment</name>
+			<state>
+				<visible>true</visible>
+				<dynamic>false</dynamic>
+				<locked>false</locked>
+			</state>
 			<transform>
 				<translation>0, 0, 0, 0</translation>
 				<rotation>0, 0, 0, 1</rotation>
 			</transform>
 			<components>
-				<item type="traktor.world.EditorAttributesComponentData">
-					<visible>true</visible>
-					<locked>false</locked>
-					<include>true</include>
-					<dynamic>true</dynamic>
-				</item>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{D4C3941F-C833-1D46-A3CC-C7F9C78EE318}</id>
 							<name>Reflection Probe</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-2.090337, 1.11501, 1.557553, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -107,74 +107,34 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{3E92A94E-4F79-734B-AA8D-632A8EFC273E}</id>
-							<name>Irradiance</name>
-							<transform>
-								<translation>120.324387, -389.450287, -460.221985, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.VolumeComponentData">
-									<size>-50, -30, -70</size>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{32137394-ECFF-3D4C-8136-42A525D9DF62}</id>
-							<name>Volumetric fog</name>
-							<transform>
-								<translation>0, 0, 0, 0</translation>
-								<rotation>0, 0, 0, 1</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.VolumetricFogComponentData" version="2">
-									<shader>{FEDA90CE-25C6-BC4D-9767-EA4B45F4A043}</shader>
-									<maxDistance>30</maxDistance>
-									<maxScattering>10</maxScattering>
-									<sliceCount>128</sliceCount>
-									<mediumColor>0.960784, 0.913726, 0.701961, 0.858824</mediumColor>
-									<mediumDensity>0.7</mediumDensity>
-								</item>
-							</components>
-						</item>
-					</entityData>
-				</item>
-			</components>
-		</item>
-		<item type="traktor.world.EntityData" version="1">
-			<id>{17613C39-7234-C041-AD99-5A00F18AF942}</id>
-			<name>Static</name>
-			<transform>
-				<translation>0, 0, 0, 0</translation>
-				<rotation>0, 0, 0, 1</rotation>
-			</transform>
-			<components>
-				<item type="traktor.world.EditorAttributesComponentData">
-					<visible>true</visible>
-					<locked>false</locked>
-					<include>true</include>
-					<dynamic>false</dynamic>
-				</item>
-				<item type="traktor.world.GroupComponentData">
-					<entityData>
-						<item type="traktor.world.EntityData" version="1">
-							<id>{8F5DD43E-EA26-9546-A2BE-367CBC17DBAF}</id>
+						<item type="traktor.world.EntityData" version="2">
+							<id>{9DB6E4E7-BEDE-4773-AD60-37A4FAEB4F27}</id>
 							<name>Sky</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-0.086419, 2.639621, 0.002373, 0</translation>
 								<rotation>0.371669, -0.411658, 0.188795, 0.810405</rotation>
 							</transform>
 							<components>
-								<item type="traktor.weather.SkyComponentData" version="4">
+								<item type="traktor.weather.SkyComponentData" version="8">
 									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
-									<texture>{A96BBB29-13EC-4B4B-9D3D-4B26E88E3A6B}</texture>
+									<texture>{00000000-0000-0000-0000-000000000000}</texture>
 									<intensity>0.9</intensity>
+									<saturation>1</saturation>
+									<skyOverHorizon>0.2, 0.5, 0.85, 1</skyOverHorizon>
+									<skyUnderHorizon>0.1, 0.1, 0.12, 1</skyUnderHorizon>
+									<clouds>true</clouds>
+									<cloudAmbientTop>0.99, 0.98, 1.18, 1</cloudAmbientTop>
+									<cloudAmbientBottom>0.23, 0.39, 0.51, 1</cloudAmbientBottom>
 								</item>
 								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Directional</lightType>
 									<color>1, 0.901961, 0.901961, 1</color>
-									<intensity>1</intensity>
+									<intensity>4</intensity>
 									<castShadow>true</castShadow>
 									<nearRange>0</nearRange>
 									<farRange>100</farRange>
@@ -185,9 +145,33 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
+					</entityData>
+				</item>
+			</components>
+		</item>
+		<item type="traktor.world.EntityData" version="2">
+			<id>{17613C39-7234-C041-AD99-5A00F18AF942}</id>
+			<name>Static</name>
+			<state>
+				<visible>true</visible>
+				<dynamic>false</dynamic>
+				<locked>false</locked>
+			</state>
+			<transform>
+				<translation>0, 0, 0, 0</translation>
+				<rotation>0, 0, 0, 1</rotation>
+			</transform>
+			<components>
+				<item type="traktor.world.GroupComponentData">
+					<entityData>
+						<item type="traktor.world.EntityData" version="2">
 							<id>{F00F942E-8997-DD48-AD41-E4237CCF3A40}</id>
 							<name>Spot</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-3.245978, 0.163643, 0.152133, 0</translation>
 								<rotation>-0.966845, 0.027206, -0.116579, -0.225566</rotation>
@@ -207,9 +191,14 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{6D6F8A66-35B5-A241-B0A1-EC708EBBAF39}</id>
 							<name>Level-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-0.086419, -2.711433, 0.002373, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -217,9 +206,14 @@
 							<components/>
 							<entityData>{C83F57E8-95AB-1F43-B940-4F6994E76FE2}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{CFB961AC-1560-FC4B-B1B3-6F4CC5292C4C}</id>
 							<name>Crate 2-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>4.076148, 1.31173, -1.269728, 0</translation>
 								<rotation>0, -0.434965, 0, 0.900447</rotation>
@@ -227,9 +221,14 @@
 							<components/>
 							<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{84055EA0-A8EF-034F-B7D0-29E5CE9F313D}</id>
 							<name>Crate 2-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0.552584, 1.292127, -4.981118, 0</translation>
 								<rotation>0, 0.139543, 0, 0.990216</rotation>
@@ -237,9 +236,14 @@
 							<components/>
 							<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{16A26624-528F-0E4D-82F8-33969D15F7EF}</id>
 							<name>Crate 2-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-5.501189, 1.322713, -6.769509, 0</translation>
 								<rotation>0, -0.361616, 0, 0.932327</rotation>
@@ -247,9 +251,14 @@
 							<components/>
 							<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{0D6CFDB2-ADE3-7349-A574-BFF1F45AEEF3}</id>
 							<name>Barrel-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-5.618663, -0.018897, -4.293422, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -257,9 +266,14 @@
 							<components/>
 							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{04E39BBC-5D34-6F4C-9090-631A7815ADC5}</id>
 							<name>Barrel-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-3.026301, -0.018896, -4.391983, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -267,9 +281,14 @@
 							<components/>
 							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{CA6D0E95-71DC-3448-A2A3-7B6095F04BAC}</id>
 							<name>Kobalt-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-1.453265, 3.960872, -2.15855, 0</translation>
 								<rotation>-0.00363, 0.996112, 0.049847, 0.072545</rotation>
@@ -277,9 +296,14 @@
 							<components/>
 							<entityData>{9BD7764A-BC67-AE48-A8B2-56AB7DD37F00}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{7F329D61-92AC-4C4A-AA15-9B6C4543516C}</id>
 							<name>Crate 2-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-3.018424, 2.778157, -9.212276, 0</translation>
 								<rotation>0, -0.361616, 0, 0.932327</rotation>
@@ -287,9 +311,14 @@
 							<components/>
 							<entityData>{FF8E4B99-5B18-4295-810F-E155FE39C027}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{EECF3BCD-AA17-EA45-B59C-E0DCCEBFACE0}</id>
 							<name>Barrel-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0.677198, -0.018897, -3.433298, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -297,19 +326,29 @@
 							<components/>
 							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{B5F7944B-7AD0-634D-9395-BC7A36C42596}</id>
 							<name>AC-Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-0.652012, 0.583143, -2.976025, 0</translation>
-								<rotation>0.020735, -0.979206, 0.147993, 0.137196</rotation>
+								<rotation>0.020735, -0.979207, 0.147993, 0.137196</rotation>
 							</transform>
 							<components/>
 							<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{F4067167-D7B2-2345-99F0-892F857504D6}</id>
 							<name>Graffit - Entity</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>3.110318, 1.391027, -0.313155, 0</translation>
 								<rotation>0.229133, 0.229133, 0.668953, 0.668953</rotation>
@@ -321,25 +360,29 @@
 				</item>
 			</components>
 		</item>
-		<item type="traktor.world.EntityData" version="1">
+		<item type="traktor.world.EntityData" version="2">
 			<id>{87C06C49-A63D-5C47-8C3E-85D1DCD3C8C9}</id>
 			<name>Dynamic</name>
+			<state>
+				<visible>true</visible>
+				<dynamic>false</dynamic>
+				<locked>false</locked>
+			</state>
 			<transform>
 				<translation>0, 0, 0, 0</translation>
 				<rotation>0, 0, 0, 1</rotation>
 			</transform>
 			<components>
-				<item type="traktor.world.EditorAttributesComponentData">
-					<visible>true</visible>
-					<locked>false</locked>
-					<include>true</include>
-					<dynamic>true</dynamic>
-				</item>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{A20C8A99-469E-1243-AAB5-E9615CF3807C}</id>
 							<name>Player</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0.922517, 0.003049, 0.588297, 0</translation>
 								<rotation>0, -0.488177, 0, 0.872745</rotation>
@@ -347,9 +390,14 @@
 							<components/>
 							<entityData>{0176DFB1-8604-4648-ACBD-A46B1DE4472C}</entityData>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{C0A1BD73-CA92-434D-A539-2A9D00419C68}</id>
 							<name>Camera</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-0.401905, 0.851023, 2.113742, 0</translation>
 								<rotation>0.015857, 0.99401, 0.04179, 0.09973</rotation>
@@ -370,9 +418,14 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.EntityData" version="1">
+						<item type="traktor.world.EntityData" version="2">
 							<id>{1B44ED9F-0CFA-F94C-B3B3-534DCB14F993}</id>
 							<name>Smoke Effect</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>0.215187, 0.314381, -0.117008, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
@@ -383,9 +436,14 @@
 								</item>
 							</components>
 						</item>
-						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{B3A4D100-5BB0-9149-815E-C2F7A5607B54}</id>
 							<name>Player</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
 							<transform>
 								<translation>-0.591067, 0.003049, -0.14501, 0</translation>
 								<rotation>0, -0.139543, 0, 0.990216</rotation>
@@ -398,7 +456,6 @@
 			</components>
 		</item>
 	</layers>
-	<controllerData/>
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="33">
 			<enableLightmaps>true</enableLightmaps>

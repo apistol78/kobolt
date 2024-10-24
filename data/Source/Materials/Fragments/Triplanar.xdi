@@ -67,7 +67,7 @@
 			</position>
 			<swizzle>zx</swizzle>
 		</item>
-		<item type="traktor.render.Script" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Script" version="6,traktor.render.Node:1">
 			<id>{9FF88520-5456-1B44-B34A-11CE13CDCB5B}</id>
 			<comment/>
 			<position>
@@ -76,6 +76,11 @@
 			</position>
 			<name>Major</name>
 			<technique/>
+			<localSize>
+				<X>1</X>
+				<Y>1</Y>
+				<Z>1</Z>
+			</localSize>
 			<include/>
 			<inputPins>
 				<item>
@@ -623,7 +628,7 @@ else
 			<ignoreMips>false</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
 		</item>
-		<item type="traktor.render.Script" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Script" version="6,traktor.render.Node:1">
 			<id>{D3D74235-AFA5-B649-8267-51FDD0FD5190}</id>
 			<comment/>
 			<position>
@@ -632,6 +637,11 @@ else
 			</position>
 			<name>Parallax</name>
 			<technique/>
+			<localSize>
+				<X>1</X>
+				<Y>1</Y>
+				<Z>1</Z>
+			</localSize>
 			<include>
 				<item>{1F66B96D-C144-D142-B094-2541510CDFAD}</item>
 			</include>
@@ -668,7 +678,6 @@ else
 			<![CDATA[
 const float height = (1.0f - texture(sampler2D($HeightMap, $HeightMapSampler), $TexCoord.xy).x) * 0.25f;
 $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz), 0.0f, 0.0f);
-
 			]]>
 			</script>
 		</item>
@@ -676,8 +685,8 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 			<id>{0A9CA294-BE4C-D541-AF05-393B5AE3AB2E}</id>
 			<comment/>
 			<position>
-				<first>299</first>
-				<second>-604</second>
+				<first>-118</first>
+				<second>-423</second>
 			</position>
 			<name>PrlxTexCoord</name>
 		</item>
@@ -725,8 +734,8 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 			<id>{AA2B75B1-29AA-9546-B177-52D431137A87}</id>
 			<comment/>
 			<position>
-				<first>93</first>
-				<second>-644</second>
+				<first>112</first>
+				<second>-546</second>
 			</position>
 		</item>
 	</nodes>
@@ -1343,16 +1352,6 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
-				<node ref="/object/nodes/item[58]"/>
-				<id>{DBDA59DC-83A0-4619-BB51-792A017346DF}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[53]"/>
-				<id>{11585EBC-914D-4E6D-A10D-D01694FF9840}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
 				<node ref="/object/nodes/item[57]"/>
 				<id>{9AE16BB1-EB68-45A0-A878-8D01C210082B}</id>
 			</source>
@@ -1363,22 +1362,22 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
-				<node ref="/object/nodes/item[8]"/>
-				<id>{3BFF07B7-0B69-42D7-90D0-0F315B985C8E}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[58]"/>
-				<id>{5539AA7E-F780-482E-82B8-1E817340D7C0}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
 				<node ref="/object/nodes/item[57]"/>
 				<id>{9AE16BB1-EB68-45A0-A878-8D01C210082B}</id>
 			</source>
 			<destination>
 				<node ref="/object/nodes/item[52]"/>
 				<id>{13DBAC59-07B6-AD4B-9432-10CBA14CEBB5}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[8]"/>
+				<id>{3BFF07B7-0B69-42D7-90D0-0F315B985C8E}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[53]"/>
+				<id>{11585EBC-914D-4E6D-A10D-D01694FF9840}</id>
 			</destination>
 		</item>
 	</edges>
