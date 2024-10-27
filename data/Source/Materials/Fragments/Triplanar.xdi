@@ -118,8 +118,8 @@ else
 			<id>{1711EB3F-70DC-3A42-A764-55634EFEA630}</id>
 			<comment/>
 			<position>
-				<first>-825</first>
-				<second>-319</second>
+				<first>-811</first>
+				<second>-296</second>
 			</position>
 			<branch>Dynamic</branch>
 			<width>1</width>
@@ -177,8 +177,8 @@ else
 			<id>{E425BCE8-9648-FC44-9F77-CEE2E4A0B9EE}</id>
 			<comment/>
 			<position>
-				<first>460</first>
-				<second>678</second>
+				<first>-2720</first>
+				<second>1176</second>
 			</position>
 			<minFilter>FtLinear</minFilter>
 			<mipFilter>FtLinear</mipFilter>
@@ -195,8 +195,8 @@ else
 			<id>{B6D03E00-6E5B-D542-B02C-1E7EBB9DBD2A}</id>
 			<comment/>
 			<position>
-				<first>733</first>
-				<second>652</second>
+				<first>-2447</first>
+				<second>1150</second>
 			</position>
 			<fragmentGuid>{1AD06988-0F76-3D4A-BE56-00F49B91863C}</fragmentGuid>
 			<inputPins>
@@ -218,8 +218,8 @@ else
 			<id>{1E06F1FE-4ABB-BE42-9ACF-583B1F790703}</id>
 			<comment/>
 			<position>
-				<first>1274</first>
-				<second>565</second>
+				<first>-1928</first>
+				<second>1028</second>
 			</position>
 			<fragmentGuid>{BD883566-EA6E-DD43-A15E-3873712F773C}</fragmentGuid>
 			<inputPins>
@@ -273,8 +273,8 @@ else
 			<id>{A2F20C85-CD49-664F-9958-919BCFD606CA}</id>
 			<comment/>
 			<position>
-				<first>-960</first>
-				<second>-322</second>
+				<first>-1048</first>
+				<second>-343</second>
 			</position>
 			<name>Major</name>
 		</item>
@@ -300,8 +300,8 @@ else
 			<id>{BE8B923C-4949-464C-B1EB-CE820822715F}</id>
 			<comment/>
 			<position>
-				<first>1859</first>
-				<second>586</second>
+				<first>-1236</first>
+				<second>1031</second>
 			</position>
 			<name>Normal</name>
 		</item>
@@ -363,8 +363,8 @@ else
 			<id>{B91FBB1C-B9A6-8A4B-B1E2-77D81A49164D}</id>
 			<comment/>
 			<position>
-				<first>207</first>
-				<second>676</second>
+				<first>-2973</first>
+				<second>1174</second>
 			</position>
 			<name>Normal</name>
 			<connectable>true</connectable>
@@ -491,8 +491,8 @@ else
 			<id>{5B2E5F17-7CA4-B145-967C-7346EF93574C}</id>
 			<comment/>
 			<position>
-				<first>1020</first>
-				<second>541</second>
+				<first>-2150</first>
+				<second>1016</second>
 			</position>
 			<name>Tangent</name>
 		</item>
@@ -500,8 +500,8 @@ else
 			<id>{4CDCC1BB-4000-4645-BE68-1FDE9A008437}</id>
 			<comment/>
 			<position>
-				<first>1026</first>
-				<second>482</second>
+				<first>-2154</first>
+				<second>980</second>
 			</position>
 			<name>Binormal</name>
 		</item>
@@ -509,8 +509,8 @@ else
 			<id>{B5DD0E0B-A0C9-CC45-99B6-ED351E829059}</id>
 			<comment/>
 			<position>
-				<first>1671</first>
-				<second>626</second>
+				<first>-1424</first>
+				<second>1071</second>
 			</position>
 			<swizzle>xyz</swizzle>
 		</item>
@@ -518,8 +518,8 @@ else
 			<id>{AC015272-C30F-524F-B6E0-8114FBC3187A}</id>
 			<comment/>
 			<position>
-				<first>961</first>
-				<second>643</second>
+				<first>-2219</first>
+				<second>1141</second>
 			</position>
 		</item>
 		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
@@ -610,83 +610,12 @@ else
 			</position>
 			<swizzle>x</swizzle>
 		</item>
-		<item type="traktor.render.TextureState" version="traktor.render.Node:1">
-			<id>{63DD6E32-F4C9-614B-BC70-7EBE3F9FDA79}</id>
-			<comment/>
-			<position>
-				<first>-559</first>
-				<second>-567</second>
-			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdWrap</addressU>
-			<addressV>AdWrap</addressV>
-			<addressW>AdWrap</addressW>
-			<compare>CfNone</compare>
-			<mipBias>0</mipBias>
-			<ignoreMips>false</ignoreMips>
-			<useAnisotropic>false</useAnisotropic>
-		</item>
-		<item type="traktor.render.Script" version="6,traktor.render.Node:1">
-			<id>{D3D74235-AFA5-B649-8267-51FDD0FD5190}</id>
-			<comment/>
-			<position>
-				<first>-277</first>
-				<second>-588</second>
-			</position>
-			<name>Parallax</name>
-			<technique/>
-			<localSize>
-				<X>1</X>
-				<Y>1</Y>
-				<Z>1</Z>
-			</localSize>
-			<include>
-				<item>{1F66B96D-C144-D142-B094-2541510CDFAD}</item>
-			</include>
-			<inputPins>
-				<item>
-					<id>{4AFF5D6C-1A23-3B44-9C92-C814BA7720C1}</id>
-					<name>TexCoord</name>
-				</item>
-				<item>
-					<id>{13DBAC59-07B6-AD4B-9432-10CBA14CEBB5}</id>
-					<name>HeightMap</name>
-				</item>
-				<item>
-					<id>{977EFF16-7EB6-0E42-BC98-F3B972CD5514}</id>
-					<name>HeightMapSampler</name>
-				</item>
-				<item>
-					<id>{1422A49B-FBAF-8E48-BC8F-A4FEBF6ABA59}</id>
-					<name>Normal</name>
-				</item>
-				<item>
-					<id>{FC2B5312-0E95-254E-BD38-128A683B029B}</id>
-					<name>Position</name>
-				</item>
-			</inputPins>
-			<outputPins>
-				<item>
-					<id>{DDFB2039-FECE-CF45-9A8E-D497C7BFFCD0}</id>
-					<name>Output</name>
-					<type>Vector</type>
-				</item>
-			</outputPins>
-			<script>
-			<![CDATA[
-const float height = (1.0f - texture(sampler2D($HeightMap, $HeightMapSampler), $TexCoord.xy).x) * 0.25f;
-$Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz), 0.0f, 0.0f);
-			]]>
-			</script>
-		</item>
 		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{0A9CA294-BE4C-D541-AF05-393B5AE3AB2E}</id>
 			<comment/>
 			<position>
-				<first>-118</first>
-				<second>-423</second>
+				<first>-447</first>
+				<second>-309</second>
 			</position>
 			<name>PrlxTexCoord</name>
 		</item>
@@ -712,8 +641,8 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 			<id>{4C5EEC97-ACC8-3841-873D-673E58F13BE8}</id>
 			<comment/>
 			<position>
-				<first>217</first>
-				<second>778</second>
+				<first>-2940</first>
+				<second>1232</second>
 			</position>
 			<name>PrlxTexCoord</name>
 		</item>
@@ -730,13 +659,14 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 			<haveDefaultValue>false</haveDefaultValue>
 			<defaultValue>0</defaultValue>
 		</item>
-		<item type="traktor.render.Connected" version="traktor.render.Node:1">
-			<id>{AA2B75B1-29AA-9546-B177-52D431137A87}</id>
+		<item type="traktor.render.Vector" version="traktor.render.Node:1">
+			<id>{97E85F60-FD60-4563-90F7-D20824358E87}</id>
 			<comment/>
 			<position>
-				<first>112</first>
-				<second>-546</second>
+				<first>-2275</first>
+				<second>1069</second>
 			</position>
+			<value>0, 0, 1, 0</value>
 		</item>
 	</nodes>
 	<edges>
@@ -848,16 +778,6 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 			<destination>
 				<node ref="/object/nodes/item[2]"/>
 				<id>{EEB495BD-DE7F-4DE8-943A-7E9B220B927F}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
-				<node ref="/object/nodes/item[22]"/>
-				<id>{84BF3C26-64A7-4032-B775-1D369052B243}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[2]"/>
-				<id>{EEB495BD-DE7F-4DE8-983A-7E9B220B927F}</id>
 			</destination>
 		</item>
 		<item type="traktor.render.Edge" version="1">
@@ -992,16 +912,6 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
-				<node ref="/object/nodes/item[31]"/>
-				<id>{D596E4E4-1A78-4D80-BE6B-6DEEF934EDEC}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[15]"/>
-				<id>{BD11E286-94D8-DE48-8C54-4825690E0774}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
 				<node ref="/object/nodes/item[32]"/>
 				<id>{84BF3C26-64A7-4032-B775-1D369052B243}</id>
 			</source>
@@ -1102,32 +1012,12 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
-				<node ref="/object/nodes/item[15]"/>
-				<id>{0071A575-37A9-1049-8E5B-F1647E3A4478}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[41]"/>
-				<id>{F2E22CA6-DFF3-4B20-A70A-0D7A44EACD8C}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
 				<node ref="/object/nodes/item[41]"/>
 				<id>{ADB4FC1D-3726-4CC5-B4D5-1E2468274325}</id>
 			</source>
 			<destination>
 				<node ref="/object/nodes/item[21]"/>
 				<id>{11585EBC-914D-4E6D-A10D-D01694FF9840}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
-				<node ref="/object/nodes/item[42]"/>
-				<id>{8591EE56-8A3E-41CF-8E98-8F8DB26AABDC}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[15]"/>
-				<id>{23915FA8-1C9E-AD47-89D0-3B96028FC6BD}</id>
 			</destination>
 		</item>
 		<item type="traktor.render.Edge" version="1">
@@ -1272,47 +1162,7 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
-				<node ref="/object/nodes/item[51]"/>
-				<id>{82C966B2-7B19-48B2-8FE0-B85FF4E3C504}</id>
-			</source>
-			<destination>
 				<node ref="/object/nodes/item[52]"/>
-				<id>{977EFF16-7EB6-0E42-BC98-F3B972CD5514}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
-				<node ref="/object/nodes/item[31]"/>
-				<id>{D596E4E4-1A78-4D80-BE6B-6DEEF934EDEC}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[52]"/>
-				<id>{1422A49B-FBAF-8E48-BC8F-A4FEBF6ABA59}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
-				<node ref="/object/nodes/item[31]"/>
-				<id>{D596E4E4-1A78-4D80-BD6B-6DEEF934EDEC}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[52]"/>
-				<id>{FC2B5312-0E95-254E-BD38-128A683B029B}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
-				<node ref="/object/nodes/item[8]"/>
-				<id>{3BFF07B7-0B69-42D7-90D0-0F315B985C8E}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[52]"/>
-				<id>{4AFF5D6C-1A23-3B44-9C92-C814BA7720C1}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
-				<node ref="/object/nodes/item[54]"/>
 				<id>{84BF3C26-64A7-4032-B775-1D369052B243}</id>
 			</source>
 			<destination>
@@ -1322,7 +1172,7 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
-				<node ref="/object/nodes/item[55]"/>
+				<node ref="/object/nodes/item[53]"/>
 				<id>{84BF3C26-64A7-4032-B775-1D369052B243}</id>
 			</source>
 			<destination>
@@ -1332,7 +1182,7 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
-				<node ref="/object/nodes/item[56]"/>
+				<node ref="/object/nodes/item[54]"/>
 				<id>{84BF3C26-64A7-4032-B775-1D369052B243}</id>
 			</source>
 			<destination>
@@ -1342,42 +1192,52 @@ $Output = vec4(ParallaxMapping($Position.xyz, $TexCoord.xy, height, $Normal.xyz)
 		</item>
 		<item type="traktor.render.Edge" version="1">
 			<source>
-				<node ref="/object/nodes/item[52]"/>
-				<id>{DDFB2039-FECE-CF45-9A8E-D497C7BFFCD0}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[58]"/>
-				<id>{3F36532A-8A98-4EE7-85ED-2DA35230BC3C}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
-				<node ref="/object/nodes/item[57]"/>
-				<id>{9AE16BB1-EB68-45A0-A878-8D01C210082B}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[58]"/>
-				<id>{197CC347-3580-4502-8AA1-976E476EA843}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
-				<node ref="/object/nodes/item[57]"/>
-				<id>{9AE16BB1-EB68-45A0-A878-8D01C210082B}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[52]"/>
-				<id>{13DBAC59-07B6-AD4B-9432-10CBA14CEBB5}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
 				<node ref="/object/nodes/item[8]"/>
 				<id>{3BFF07B7-0B69-42D7-90D0-0F315B985C8E}</id>
 			</source>
 			<destination>
-				<node ref="/object/nodes/item[53]"/>
+				<node ref="/object/nodes/item[51]"/>
 				<id>{11585EBC-914D-4E6D-A10D-D01694FF9840}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[31]"/>
+				<id>{D596E4E4-1A78-4D80-BE6B-6DEEF934EDEC}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[15]"/>
+				<id>{BD11E286-94D8-DE48-8C54-4825690E0774}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[15]"/>
+				<id>{0071A575-37A9-1049-8E5B-F1647E3A4478}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[41]"/>
+				<id>{F2E22CA6-DFF3-4B20-A70A-0D7A44EACD8C}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[22]"/>
+				<id>{84BF3C26-64A7-4032-B775-1D369052B243}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{EEB495BD-DE7F-4DE8-983A-7E9B220B927F}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[56]"/>
+				<id>{D51E6077-37E9-4B1C-86D2-92DA544DC613}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[15]"/>
+				<id>{23915FA8-1C9E-AD47-89D0-3B96028FC6BD}</id>
 			</destination>
 		</item>
 	</edges>
