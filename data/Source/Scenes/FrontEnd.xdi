@@ -73,7 +73,7 @@
 			<name>Environment</name>
 			<state>
 				<visible>true</visible>
-				<dynamic>true</dynamic>
+				<dynamic>false</dynamic>
 				<locked>false</locked>
 			</state>
 			<transform>
@@ -336,7 +336,7 @@
 							</state>
 							<transform>
 								<translation>-0.652012, 0.583143, -2.976025, 0</translation>
-								<rotation>0.020735, -0.979207, 0.147993, 0.137196</rotation>
+								<rotation>0.020735, -0.979206, 0.147993, 0.137196</rotation>
 							</transform>
 							<components/>
 							<entityData>{0423DCA9-54B1-6D4E-BEF3-285C606A3A8E}</entityData>
@@ -459,15 +459,15 @@
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="33">
 			<enableLightmaps>true</enableLightmaps>
-			<primarySampleCount>1</primarySampleCount>
+			<primarySampleCount>4</primarySampleCount>
 			<secondarySampleCount>50</secondarySampleCount>
 			<shadowSampleCount>25</shadowSampleCount>
 			<maxPathDistance>35</maxPathDistance>
 			<pointLightShadowRadius>0</pointLightShadowRadius>
 			<lumelDensity>10</lumelDensity>
-			<irradianceGridDensity>0.5, 0.3, 0.5, 0</irradianceGridDensity>
+			<irradianceGridDensity>0.2, 0.1, 0.2, 0</irradianceGridDensity>
 			<minimumLightMapSize>4</minimumLightMapSize>
-			<maximumLightMapSize>4096</maximumLightMapSize>
+			<maximumLightMapSize>1024</maximumLightMapSize>
 			<enableDenoise>true</enableDenoise>
 			<analyticalLightAttenuation>1</analyticalLightAttenuation>
 			<ambientOcclusionFactor>0.25</ambientOcclusionFactor>
