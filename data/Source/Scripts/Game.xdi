@@ -31,7 +31,7 @@ function Game:new(params, environment)
 	)
 
 	local Tspawn = self:getSpawnLocation()
-	local playerEntity = self.world:getEntity("Player")
+	local playerEntity = self.world.world:getEntity("Player")
 	playerEntity.transform = Tspawn
 
 	-- Initialize UiKit.
@@ -78,8 +78,8 @@ function Game:postUpdate(info)
 		local pitch = self._inputMapping:getStateValue("STATE_PITCH")
 	
 		-- Get relevant entities.
-		local playerEntity = self.world:getEntity("Player")
-		local cameraEntity = self.world:getEntity("Camera")
+		local playerEntity = self.world.world:getEntity("Player")
+		local cameraEntity = self.world.world:getEntity("Camera0")
 	
 		-- Get transform of Camera binding.
 		local groupComponent = playerEntity:getComponent(world.GroupComponent)
@@ -111,7 +111,7 @@ end
 -- private
 
 function Game:getSpawnLocation()
-	local spawnEntities = self.world:getEntities("Spawn")
+	local spawnEntities = self.world.world:getEntities("Spawn")
 	local idx = math.random(0, spawnEntities.size - 1)
 	local spawnEntity = spawnEntities:get(idx)
 	return spawnEntity.transform
@@ -136,8 +136,8 @@ function Game:updatePlaying(info)
 	end
 
 	-- Get relevant entities.
-	local playerEntity = self.world:getEntity("Player")
-	local cameraEntity = self.world:getEntity("Camera")
+	local playerEntity = self.world.world:getEntity("Player")
+	local cameraEntity = self.world.world:getEntity("Camera0")
 
 	-- Get player's character controller.
 	local playerCharacter = playerEntity:getComponent(physics.CharacterComponent)

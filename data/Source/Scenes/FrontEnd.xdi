@@ -73,7 +73,7 @@
 			<name>Environment</name>
 			<state>
 				<visible>true</visible>
-				<dynamic>false</dynamic>
+				<dynamic>true</dynamic>
 				<locked>false</locked>
 			</state>
 			<transform>
@@ -365,7 +365,7 @@
 			<name>Dynamic</name>
 			<state>
 				<visible>true</visible>
-				<dynamic>false</dynamic>
+				<dynamic>true</dynamic>
 				<locked>false</locked>
 			</state>
 			<transform>
@@ -392,7 +392,7 @@
 						</item>
 						<item type="traktor.world.EntityData" version="2">
 							<id>{C0A1BD73-CA92-434D-A539-2A9D00419C68}</id>
-							<name>Camera</name>
+							<name>Camera0</name>
 							<state>
 								<visible>true</visible>
 								<dynamic>false</dynamic>
