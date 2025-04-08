@@ -3,12 +3,7 @@
 	<fileName>Meshes/Buildings/Type 1/Wall 02 - Solid.blend</fileName>
 	<importFilter/>
 	<meshType>MtStatic</meshType>
-	<materialShaders>
-		<item>
-			<first>m_bricks</first>
-			<second>{6C1764C8-2E4E-40A1-8A8D-B6129BC66565}</second>
-		</item>
-	</materialShaders>
+	<materialShaders/>
 	<materialTextures/>
 	<scaleFactor>1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>

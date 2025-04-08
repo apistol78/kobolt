@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 import(traktor)
 
 Character = Character or class("Character", world.ScriptComponent)
@@ -65,35 +65,37 @@ function Character:update(contextObject, totalTime, deltaTime)
 
 	-- Expose conditions in state pose controller.
 	local skeletonComponent = skin:getComponent(animation.SkeletonComponent)
-	if skeletonComponent ~= nil then
+	if skeletonComponent ~= nil and skeletonComponent.poseController ~= nil then
 
 		-- hack, since all skeletons has a retarget controller first we need to fetch nested...
 		local poseController = skeletonComponent.poseController.controller
-		poseController:setCondition(
-			"StrafeLeft",
-			strafeLeft,
-			true
-		)
-		poseController:setCondition(
-			"StrafeRight",
-			strafeRight,
-			true
-		)
-		poseController:setCondition(
-			"RunForward",
-			runForward,
-			true
-		)
-		poseController:setCondition(
-			"RunBackwards",
-			runBackwards,
-			true
-		)
-		poseController:setCondition(
-			"JumpForward",
-			jumpForward,
-			true
-		)
+		if poseController ~= nil then
+			poseController:setCondition(
+				"StrafeLeft",
+				strafeLeft,
+				true
+			)
+			poseController:setCondition(
+				"StrafeRight",
+				strafeRight,
+				true
+			)
+			poseController:setCondition(
+				"RunForward",
+				runForward,
+				true
+			)
+			poseController:setCondition(
+				"RunBackwards",
+				runBackwards,
+				true
+			)
+			poseController:setCondition(
+				"JumpForward",
+				jumpForward,
+				true
+			)
+		end
 	end
 
 	-- Update weapon transform.
@@ -156,6 +158,6 @@ function Character:applyState(state)
 	self._pitch = pitch
 end
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

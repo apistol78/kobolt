@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.mesh.MeshAsset" version="21">
+<object type="traktor.mesh.MeshAsset" version="24">
 	<fileName>Meshes/Buildings/Type 1/Entry 01 - Doors.blend</fileName>
 	<importFilter/>
 	<meshType>MtStatic</meshType>
-	<materialTemplates/>
-	<materialShaders>
-		<item>
-			<first>m_bricks</first>
-			<second>{6C1764C8-2E4E-40A1-8A8D-B6129BC66565}</second>
-		</item>
-		<item>
-			<first>m_paint_metal</first>
-			<second>{3AF5AB27-6614-A849-9ECA-F0ACDCCC606A}</second>
-		</item>
-	</materialShaders>
+	<materialShaders/>
 	<materialTextures/>
-	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
 	<scaleFactor>1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
 	<renormalize>false</renormalize>
 	<center>false</center>
 	<grounded>false</grounded>
-	<lodSteps>8</lodSteps>
-	<lodMaxDistance>100</lodMaxDistance>
-	<lodCullDistance>200</lodCullDistance>
+	<decalResponse>true</decalResponse>
+	<reduce>1</reduce>
 	<previewAngle>0</previewAngle>
 </object>

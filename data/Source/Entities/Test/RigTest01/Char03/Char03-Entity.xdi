@@ -9,18 +9,7 @@
 	<components>
 		<item type="traktor.animation.SkeletonComponentData">
 			<skeleton>{EA9B45FE-7131-EE47-8511-90C7F94011C3}</skeleton>
-			<poseController type="traktor.animation.RetargetPoseControllerData" version="2">
-				<animationSkeleton>{5900E120-54F3-4B46-9D0A-D05364ED05BE}</animationSkeleton>
-				<poseController type="traktor.animation.AnimationGraphPoseControllerData" version="3">
-					<animationGraph>{D6821DC7-B395-E641-BEB8-0DEE2DEEFEE2}</animationGraph>
-					<randomTimeOffset>
-						<min>0</min>
-						<max>0</max>
-					</randomTimeOffset>
-					<transformTime type="traktor.animation.TimeFromLocomotionData">
-					</transformTime>
-				</poseController>
-			</poseController>
+			<poseController/>
 		</item>
 		<item type="traktor.animation.AnimatedMeshComponentData" version="3">
 			<mesh>{E7493E10-F1D8-774F-B117-A28E412CFC6F}</mesh>

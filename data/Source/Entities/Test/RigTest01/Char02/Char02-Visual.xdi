@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.mesh.MeshAsset" version="21">
+<object type="traktor.mesh.MeshAsset" version="24">
 	<fileName>Meshes/Test/RigTest01/Char02/Char02.blend</fileName>
 	<importFilter/>
 	<meshType>MtSkinned</meshType>
-	<materialTemplates/>
-	<materialShaders>
-		<item>
-			<first>Ch44_Body</first>
-			<second>{45C57845-1CBA-D24A-9501-3A8EECA57C4B}</second>
-		</item>
-		<item>
-			<first>Ch44_body1</first>
-			<second>{45C57845-1CBA-D24A-9501-3A8EECA57C4B}</second>
-		</item>
-	</materialShaders>
+	<materialShaders/>
 	<materialTextures/>
-	<textureSet>{00000000-0000-0000-0000-000000000000}</textureSet>
 	<scaleFactor>1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
 	<renormalize>false</renormalize>
 	<center>false</center>
 	<grounded>false</grounded>
-	<lodSteps>8</lodSteps>
-	<lodMaxDistance>100</lodMaxDistance>
-	<lodCullDistance>200</lodCullDistance>
+	<decalResponse>true</decalResponse>
+	<reduce>1</reduce>
 	<previewAngle>0</previewAngle>
 </object>
