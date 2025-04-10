@@ -3,7 +3,12 @@
 	<fileName>Meshes/Buildings/Type Space/Corridor End.blend</fileName>
 	<importFilter/>
 	<meshType>MtStatic</meshType>
-	<materialShaders/>
+	<materialShaders>
+		<item>
+			<first>m_white</first>
+			<second>{7D4DB920-1445-F84C-843E-CEBABD9F63CD}</second>
+		</item>
+	</materialShaders>
 	<materialTextures/>
 	<scaleFactor>1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
