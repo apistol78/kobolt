@@ -106,8 +106,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>109.757553, -380.850342, -456.19043, 0</translation>
-								<rotation>0.169227, 0.435958, -0.083844, 0.879928</rotation>
+								<translation>61.665127, -380.703827, -475.700531, 0</translation>
+								<rotation>0.028073, -0.352117, 0.010566, 0.935475</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.CameraComponentData">
@@ -125,7 +125,7 @@
 							<id>{99543D9C-4ED6-D54D-810E-039F1102B034}</id>
 							<name>Fog</name>
 							<state>
-								<visible>false</visible>
+								<visible>true</visible>
 								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
@@ -202,30 +202,6 @@
 									<flickerAmount>0</flickerAmount>
 									<flickerFilter>0</flickerFilter>
 									<bakeMode>LbmIndirect</bakeMode>
-								</item>
-							</components>
-						</item>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{F8AD7078-9290-964A-B6CD-63D0FFEA8374}</id>
-							<name>Camera</name>
-							<state>
-								<visible>true</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>109.757553, -380.850342, -456.19043, 0</translation>
-								<rotation>0.169227, 0.435958, -0.083844, 0.879928</rotation>
-							</transform>
-							<components>
-								<item type="traktor.world.CameraComponentData">
-									<projection>Perspective</projection>
-									<fov>1.221731</fov>
-									<width>1</width>
-									<height>1</height>
-								</item>
-								<item type="traktor.world.PersistentIdComponentData">
-									<id>{7529B732-4E46-9F4E-B7DF-9A9689E68EAE}</id>
 								</item>
 							</components>
 						</item>
@@ -844,7 +820,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>54.455833, -382.881043, -467.534515, 0</translation>
+								<translation>54.455833, -382.881012, -467.534515, 0</translation>
 								<rotation>0, 0.266731, 0, 0.963771</rotation>
 							</transform>
 							<components/>
@@ -889,8 +865,8 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>54.455833, -380.450226, -465.834106, 0</translation>
-								<rotation>0, -0.434966, 0, 0.900447</rotation>
+								<translation>57.576515, -382.881012, -466.718384, 0</translation>
+								<rotation>0, -0.19867, 0, 0.980066</rotation>
 							</transform>
 							<components/>
 							<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>

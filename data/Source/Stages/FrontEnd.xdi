@@ -6,7 +6,7 @@
 		<item type="traktor.runtime.WorldLayerData">
 			<name>world</name>
 			<permitTransition>false</permitTransition>
-			<scene>{4A4E4046-27DF-FB4A-8045-D33724EB2F26}</scene>
+			<scene>{24A7B72D-9EB5-C24B-9ED2-FD8EAFAE11B8}</scene>
 		</item>
 		<item type="traktor.spark.SparkLayerData" version="1">
 			<name>spark</name>
