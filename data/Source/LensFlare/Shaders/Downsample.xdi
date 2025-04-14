@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
 	<nodes>
-		<item type="traktor.render.PixelOutput" version="9,traktor.render.Node:1">
+		<item type="traktor.render.PixelOutput" version="10,traktor.render.Node:1">
 			<id>{D94DBD1F-FA1D-D243-A672-1670E8876E31}</id>
 			<comment/>
 			<position>
@@ -46,7 +46,6 @@
 			<stencilFunction>CfAlways</stencilFunction>
 			<stencilReference>0</stencilReference>
 			<stencilMask>2147483648</stencilMask>
-			<registerCount>0</registerCount>
 			<precisionHint>Low</precisionHint>
 		</item>
 		<item type="traktor.render.MulAdd" version="traktor.render.Node:1">
@@ -57,36 +56,37 @@
 				<second>481</second>
 			</position>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{15D046BA-9237-0143-A950-E05977A085E5}</id>
 			<comment/>
 			<position>
 				<first>508</first>
 				<second>373</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdClamp</addressU>
-			<addressV>AdClamp</addressV>
-			<addressW>AdClamp</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Clamp</addressU>
+			<addressV>Clamp</addressV>
+			<addressW>Clamp</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>true</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
 		</item>
-		<item type="traktor.render.Uniform" version="3,traktor.render.Node:1">
+		<item type="traktor.render.Uniform" version="4,traktor.render.Node:1">
 			<id>{287E6221-A63D-F041-B28F-A7D44742ED10}</id>
 			<comment/>
 			<position>
 				<first>306</first>
 				<second>337</second>
 			</position>
+			<declaration>{00000000-0000-0000-0000-000000000000}</declaration>
 			<parameterName>Source</parameterName>
 			<type>Texture2D</type>
 			<frequency>Frame</frequency>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{D3C3796A-A62E-5B41-82BB-075D4B5815D1}</id>
 			<comment/>
 			<position>
@@ -105,7 +105,6 @@
 					<name>TexCoord</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{AA03234A-1430-ED4E-B006-CC50B7BEB55B}</id>
@@ -114,7 +113,7 @@
 				<first>773</first>
 				<second>536</second>
 			</position>
-			<value>1.6</value>
+			<value>1.15</value>
 		</item>
 		<item type="traktor.render.Scalar" version="traktor.render.Node:1">
 			<id>{5FB326A9-BBAD-7444-AF00-DBACA2968136}</id>
@@ -123,7 +122,7 @@
 				<first>771</first>
 				<second>583</second>
 			</position>
-			<value>-0.85</value>
+			<value>-0.9</value>
 		</item>
 		<item type="traktor.render.Max" version="traktor.render.Node:1">
 			<id>{FD656ED0-D3C2-D14C-84C3-40D7D8E9E56D}</id>

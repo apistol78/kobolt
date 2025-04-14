@@ -125,7 +125,7 @@
 							<id>{99543D9C-4ED6-D54D-810E-039F1102B034}</id>
 							<name>Fog</name>
 							<state>
-								<visible>true</visible>
+								<visible>false</visible>
 								<dynamic>false</dynamic>
 								<locked>false</locked>
 							</state>
@@ -167,44 +167,6 @@
 			<components>
 				<item type="traktor.world.GroupComponentData">
 					<entityData>
-						<item type="traktor.world.EntityData" version="2">
-							<id>{24517762-D110-294B-9C6C-B90D6D0F1DE7}</id>
-							<name>Sky</name>
-							<state>
-								<visible>false</visible>
-								<dynamic>false</dynamic>
-								<locked>false</locked>
-							</state>
-							<transform>
-								<translation>-0.086419, 2.639621, 0.002373, 0</translation>
-								<rotation>0.360289, -0.220746, 0.088169, 0.902047</rotation>
-							</transform>
-							<components>
-								<item type="traktor.weather.SkyComponentData" version="8">
-									<shader>{4CF929EB-3A8B-C340-AA0A-0C5C80625BF1}</shader>
-									<texture>{A96BBB29-13EC-4B4B-9D3D-4B26E88E3A6B}</texture>
-									<intensity>1</intensity>
-									<saturation>0.25</saturation>
-									<skyOverHorizon>0.2, 0.5, 0.85, 1</skyOverHorizon>
-									<skyUnderHorizon>0.1, 0.1, 0.12, 1</skyUnderHorizon>
-									<clouds>true</clouds>
-									<cloudAmbientTop>0.99, 0.98, 1.18, 1</cloudAmbientTop>
-									<cloudAmbientBottom>0.23, 0.39, 0.51, 1</cloudAmbientBottom>
-								</item>
-								<item type="traktor.world.LightComponentData" version="12">
-									<lightType>Directional</lightType>
-									<color>1, 1, 1, 1</color>
-									<intensity>5</intensity>
-									<castShadow>true</castShadow>
-									<nearRange>0</nearRange>
-									<farRange>100</farRange>
-									<radius>1.570796</radius>
-									<flickerAmount>0</flickerAmount>
-									<flickerFilter>0</flickerFilter>
-									<bakeMode>LbmIndirect</bakeMode>
-								</item>
-							</components>
-						</item>
 						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 							<id>{33535F9B-B48E-6547-98C7-7394FF1FDE7D}</id>
 							<name>Corridor 1</name>
@@ -870,6 +832,51 @@
 							</transform>
 							<components/>
 							<entityData>{0096BA05-3B47-364B-9210-6CD2425634C4}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{7BEE32A7-21C8-2647-8FDE-2E7476CBD645}</id>
+							<name>Barrel</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>55.825523, -384.00473, -469.231903, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{B2495263-FEBC-EF41-AFE0-6F29687E9A87}</id>
+							<name>Barrel</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>56.817757, -384.00473, -468.922607, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{596A2436-177C-C745-9C70-C20B30872E37}</id>
+							<name>Barrel</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>53.448456, -384.00473, -469.233673, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{DA4DCE2F-74E9-4048-91D1-656C6C4B10E5}</entityData>
 						</item>
 					</entityData>
 				</item>
