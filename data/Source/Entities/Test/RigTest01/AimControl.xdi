@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
+	<text><![CDATA[
+	
 import(traktor)
 
 AimControl = AimControl or class("AimControl", world.ScriptComponent)
@@ -12,6 +12,7 @@ function AimControl:new()
 end
 
 function AimControl:update(contextObject, totalTime, deltaTime)
+--[[
 	local skeleton = self.owner:getComponent(animation.SkeletonComponent)
 
 	local headAngle < const > = self._aimAngles[1] + math.abs(-self._aimAngles[2] * 0.2)
@@ -57,6 +58,7 @@ function AimControl:update(contextObject, totalTime, deltaTime)
 		),
 		true
 	) 
+]]
 end
 
 function AimControl:setAimAngles(aimAngles)
@@ -68,6 +70,6 @@ function AimControl:setWalkOffset(walkOffset)
 end
 
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>

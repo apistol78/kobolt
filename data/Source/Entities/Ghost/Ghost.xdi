@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.world.EntityData" version="1">
+<object type="traktor.world.EntityData" version="2">
 	<id>{1E97DC43-2004-244B-AC66-F3AFB5D7CED6}</id>
 	<name>Ghost</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
 	<transform>
 		<translation>0, 0, 0, 0</translation>
 		<rotation>0, 0, 0, 1</rotation>
@@ -52,12 +57,17 @@
 		</item>
 		<item type="traktor.world.GroupComponentData">
 			<entityData>
-				<item type="traktor.world.EntityData" version="1">
+				<item type="traktor.world.EntityData" version="2">
 					<id>{99D7939C-DC4B-5A4B-B423-252C19B3991C}</id>
 					<name>Camera</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
 					<transform>
-						<translation>0.421176, 1.809221, -0.990977, 0</translation>
-						<rotation>0, -0.049979, 0, 0.99875</rotation>
+						<translation>0, 1.669712, 0.047822, 0</translation>
+						<rotation>0, 0, 0, 1</rotation>
 					</transform>
 					<components>
 						<item type="traktor.world.CameraComponentData">
@@ -68,25 +78,20 @@
 						</item>
 					</components>
 				</item>
-				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
+				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
 					<id>{F5BD1911-88C3-CA46-96BE-5B789546C728}</id>
 					<name>Skin</name>
+					<state>
+						<visible>true</visible>
+						<dynamic>false</dynamic>
+						<locked>false</locked>
+					</state>
 					<transform>
 						<translation>0, -0.041536, 0, 0</translation>
 						<rotation>0, -1, 0, 0</rotation>
 					</transform>
 					<components/>
 					<entityData>{1BA32468-AA3B-9446-9DDB-C1009C8A14C1}</entityData>
-				</item>
-				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:1">
-					<id>{92891AA3-2BCA-2540-8FCA-7BF064F89A7A}</id>
-					<name>Weapon</name>
-					<transform>
-						<translation>0.123555, 1.417326, 0.165461, 0</translation>
-						<rotation>0, -0.079915, 0, 0.996802</rotation>
-					</transform>
-					<components/>
-					<entityData>{37FB16F7-194F-408C-818D-04C92BCB1E51}</entityData>
 				</item>
 			</entityData>
 		</item>

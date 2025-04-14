@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.script.Script" version="2">
-	<text>
-	<![CDATA[
-#using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
+	<text><![CDATA[#using \{720C0A68-B608-2F40-8EBA-F7E42EB27F61}
 #using \{FC4400A2-BDB6-BA45-9A22-12B9676E71FA}
-#using \{F266FE75-7BF7-BC4C-9616-06D2B5F5F6E8}
-#using \{A90BA121-008F-42FC-82B9-2595B8A933A2}
 
 #using \{1DC37C6A-0C0C-A546-825E-B8F6E6088209}
 #using \{21076EFA-565B-E044-8E13-BC01DB4BA31E}
@@ -23,16 +19,10 @@ function Game:new(params, environment)
 
 	self._environment = environment
 	self._inputMapping = environment.input.inputMapping
-	self._lobbyManager = params
 
-	self._projectileManager = ProjectileManager(
-		self.world,
-		environment.physics.physicsManager
-	)
-
-	local Tspawn = self:getSpawnLocation()
-	local playerEntity = self.world.world:getEntity("Player")
-	playerEntity.transform = Tspawn
+--	local Tspawn = self:getSpawnLocation()
+--	local playerEntity = self.world.world:getEntity("Player")
+--	playerEntity.transform = Tspawn
 
 	-- Initialize UiKit.
 	Widget.initialize(
@@ -96,11 +86,11 @@ end
 function Game:update(info)
 
 	-- Update systems.
-	self._lobbyManager:update()
+	-- self._lobbyManager:update()
 
 	-- Use network time.
-	local t = self._lobbyManager._time
-	self.world.alternateTime = t
+	-- local t = self._lobbyManager._time
+	-- self.world.alternateTime = t
 
 	-- Update state.
 	self:_updateFn(info)
@@ -154,11 +144,7 @@ function Game:updatePlaying(info)
 	if jump then
 		playerScript:jump()
 	end
-
-	if fire then
-		playerScript:fire()
-	end
-
+--[[
 	if self._lobbyManager._replicator ~= nil then
 		local replicator = self._lobbyManager._replicator
 
@@ -225,6 +211,7 @@ function Game:updatePlaying(info)
 	end
 
 	self._projectileManager:update(info)
+]]
 end
 
 function Game:updateMenu()
@@ -241,6 +228,6 @@ function Game:exitPlay()
 	self:gotoStage(nxt)
 end
 
-	]]>
-	</text>
+	
+	]]></text>
 </object>
