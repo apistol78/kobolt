@@ -66,7 +66,7 @@
 						<locked>false</locked>
 					</state>
 					<transform>
-						<translation>0, 1.669712, 0.047822, 0</translation>
+						<translation>0.119193, 1.503034, 0.239594, 0</translation>
 						<rotation>0, 0, 0, 1</rotation>
 					</transform>
 					<components>
@@ -83,7 +83,7 @@
 					<name>Skin</name>
 					<state>
 						<visible>true</visible>
-						<dynamic>false</dynamic>
+						<dynamic>true</dynamic>
 						<locked>false</locked>
 					</state>
 					<transform>

@@ -63,6 +63,7 @@ function Character:update(contextObject, totalTime, deltaTime)
 		aim:setWalkOffset(offset)
 	end
 
+--[[
 	-- Expose conditions in state pose controller.
 	local skeletonComponent = skin:getComponent(animation.SkeletonComponent)
 	if skeletonComponent ~= nil and skeletonComponent.poseController ~= nil then
@@ -105,7 +106,7 @@ function Character:update(contextObject, totalTime, deltaTime)
 		local anchor = anchorEntity.transform
 		weapon.transform = anchor
 	end
-
+]]
 	self._lastTransform = T 
 	self._jumped = false
 end

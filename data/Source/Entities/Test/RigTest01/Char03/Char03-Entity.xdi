@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.world.EntityData" version="1">
+<object type="traktor.world.EntityData" version="2">
 	<id>{54D7E4B5-48C4-564F-8B71-9127887F232A}</id>
 	<name>Char03</name>
+	<state>
+		<visible>true</visible>
+		<dynamic>false</dynamic>
+		<locked>false</locked>
+	</state>
 	<transform>
 		<translation>0, 0, 0, 0</translation>
 		<rotation>0, 0, 0, 1</rotation>
@@ -9,7 +14,13 @@
 	<components>
 		<item type="traktor.animation.SkeletonComponentData">
 			<skeleton>{EA9B45FE-7131-EE47-8511-90C7F94011C3}</skeleton>
-			<poseController/>
+			<poseController type="traktor.animation.RetargetPoseControllerData" version="2">
+				<animationSkeleton>{5900E120-54F3-4B46-9D0A-D05364ED05BE}</animationSkeleton>
+				<poseController type="traktor.animation.SimpleAnimationControllerData" version="2">
+					<animation>{5E138240-A908-6A49-9660-BC19FE4C10B4}</animation>
+					<transformTime/>
+				</poseController>
+			</poseController>
 		</item>
 		<item type="traktor.animation.AnimatedMeshComponentData" version="3">
 			<mesh>{E7493E10-F1D8-774F-B117-A28E412CFC6F}</mesh>
@@ -23,12 +34,17 @@
 			<bindings>
 				<item>
 					<jointName>RightHand</jointName>
-					<entityData type="traktor.world.EntityData" version="1">
+					<entityData type="traktor.world.EntityData" version="2">
 						<id>{47A8AB58-BB04-EE40-885B-F057B0237281}</id>
 						<name>WeaponAnchor</name>
+						<state>
+							<visible>true</visible>
+							<dynamic>false</dynamic>
+							<locked>false</locked>
+						</state>
 						<transform>
 							<translation>-0.132655, 1.415504, -0.118476, 0</translation>
-							<rotation>-0, 0.997495, -0, 0.070738</rotation>
+							<rotation>0, 0.997495, 0, 0.070738</rotation>
 						</transform>
 						<components/>
 					</entityData>

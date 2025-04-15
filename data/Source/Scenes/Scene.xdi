@@ -295,7 +295,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>76, -380, -365, 0</translation>
+								<translation>73.5, -380, -367.5, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -310,7 +310,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>84, -380, -365, 0</translation>
+								<translation>81.5, -380, -367.5, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -325,7 +325,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>92, -380, -365, 0</translation>
+								<translation>89.5, -380, -367.5, 0</translation>
 								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components/>
@@ -460,18 +460,18 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>54.095856, -376.426392, -471, 0</translation>
-								<rotation>0, 0, 0.119712, 0.992809</rotation>
+								<translation>57.995934, -375.237061, -470.642609, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
 							</transform>
 							<components>
 								<item type="traktor.world.LightComponentData" version="12">
 									<lightType>Spot</lightType>
 									<color>1, 1, 1, 0</color>
-									<intensity>6</intensity>
+									<intensity>2.1</intensity>
 									<castShadow>true</castShadow>
 									<nearRange>0</nearRange>
 									<farRange>20</farRange>
-									<radius>1.570796</radius>
+									<radius>2.370796</radius>
 									<flickerAmount>0</flickerAmount>
 									<flickerFilter>0.8</flickerFilter>
 									<bakeMode>LbmIndirect</bakeMode>
@@ -568,7 +568,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>66.388306, -378.986084, -365, 0</translation>
+								<translation>78, -378, -367, 0</translation>
 								<rotation>0, 0, 0.119712, 0.992809</rotation>
 							</transform>
 							<components>
@@ -781,7 +781,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>63.252651, -378.229462, -359.503326, 0</translation>
+								<translation>74.5, -378.229462, -364, 0</translation>
 								<rotation>-0.007728, 0.064093, -0.119463, 0.990738</rotation>
 							</transform>
 							<components/>
@@ -796,7 +796,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>53.836285, -377.418579, -470.950348, 0</translation>
+								<translation>53.644905, -378.562439, -471.172211, 0</translation>
 								<rotation>0, -0.707107, 0, 0.707107</rotation>
 							</transform>
 							<components/>
