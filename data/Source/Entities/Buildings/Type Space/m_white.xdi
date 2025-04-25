@@ -342,7 +342,7 @@
 				<first>302</first>
 				<second>408</second>
 			</position>
-			<swizzle>x</swizzle>
+			<swizzle>xxx</swizzle>
 		</item>
 		<item type="traktor.render.Mul" version="traktor.render.Node:1">
 			<id>{FD461DDD-9139-3446-93B7-DB54CB4369FA}</id>
@@ -420,16 +420,6 @@ else
 			<destination>
 				<node ref="/object/nodes/item[1]"/>
 				<id>{731844D4-AFDC-4EAA-8B41-C4BA2455898F}</id>
-			</destination>
-		</item>
-		<item type="traktor.render.Edge" version="1">
-			<source>
-				<node ref="/object/nodes/item[3]"/>
-				<id>{1E6639B6-8B58-4694-99E7-C058E3583522}</id>
-			</source>
-			<destination>
-				<node ref="/object/nodes/item[2]"/>
-				<id>{AAB0F959-D4F8-42B4-95ED-08AE1EABD898}</id>
 			</destination>
 		</item>
 		<item type="traktor.render.Edge" version="1">
@@ -670,6 +660,16 @@ else
 			<destination>
 				<node ref="/object/nodes/item[23]"/>
 				<id>{69997292-C813-490C-910C-620B9AD3A2BB}</id>
+			</destination>
+		</item>
+		<item type="traktor.render.Edge" version="1">
+			<source>
+				<node ref="/object/nodes/item[22]"/>
+				<id>{ADB4FC1D-3726-4CC5-B4D5-1E2468274325}</id>
+			</source>
+			<destination>
+				<node ref="/object/nodes/item[2]"/>
+				<id>{AAB0F959-D4F8-42B4-95ED-08AE1EABD898}</id>
 			</destination>
 		</item>
 	</edges>

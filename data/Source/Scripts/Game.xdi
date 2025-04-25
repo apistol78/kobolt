@@ -10,7 +10,6 @@
 import(traktor)
 
 local GhostEntityId = Guid("\{0176DFB1-8604-4648-ACBD-A46B1DE4472C}")
-local BulletEntityId = Guid("\{8B5EE76D-1800-4587-A4D8-3223FAC05AAF}")
 
 Game = Game or class("Game", Stage)
 
@@ -112,7 +111,7 @@ function Game:updatePlaying(info)
 	local escape = self._inputMapping:isStatePressed("STATE_ESCAPE")
 	local deltaHead = self._inputMapping:getStateValue("STATE_HEAD")
 	local pitch = self._inputMapping:getStateValue("STATE_PITCH")
-	local moveZ = self._inputMapping:getStateValue("MOVE_Z") * 0.6
+	local moveZ = self._inputMapping:getStateValue("MOVE_Z") * 0.8
 	local moveX = self._inputMapping:getStateValue("MOVE_X") * 0.4
 	local jump = self._inputMapping:isStatePressed("STATE_JUMP")
 	local fire = self._inputMapping:isStatePressed("STATE_FIRE")
@@ -127,23 +126,29 @@ function Game:updatePlaying(info)
 
 	-- Get relevant entities.
 	local playerEntity = self.world.world:getEntity("Player")
-	local cameraEntity = self.world.world:getEntity("Camera0")
+	-- local cameraEntity = self.world.world:getEntity("Camera0")
 
 	-- Get player's character controller.
-	local playerCharacter = playerEntity:getComponent(physics.CharacterComponent)
+	-- local playerCharacter = playerEntity:getComponent(physics.CharacterComponent)
 	local playerScript = playerEntity:getComponent(world.ScriptComponent)
 
 	-- Issue movement of player character.
+	playerScript:move(moveX, moveZ)
+	playerScript:rotate(deltaHead, pitch)
+
+--[[
 	local Qhead = Quaternion.fromEulerAngles(playerCharacter.headAngle, 0, 0)
 	local Vmove = Qhead:transform(Vector4(moveX, 0, moveZ, 0))
 
 	playerCharacter.headAngle = playerCharacter.headAngle + deltaHead * 0.01
 	playerCharacter:move(Vmove, false)
 	playerScript._pitch = pitch
+]]
 
 	if jump then
 		playerScript:jump()
 	end
+
 --[[
 	if self._lobbyManager._replicator ~= nil then
 		local replicator = self._lobbyManager._replicator
@@ -224,8 +229,8 @@ function Game:resumePlay()
 end
 
 function Game:exitPlay()
-	local nxt = self:loadStage("LOADING", { next = "FRONTEND", lobbyManager = self._lobbyManager })
-	self:gotoStage(nxt)
+	--local nxt = self:loadStage("LOADING", { next = "FRONTEND", lobbyManager = self._lobbyManager })
+	--self:gotoStage(nxt)
 end
 
 	
