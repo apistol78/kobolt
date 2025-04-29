@@ -195,6 +195,66 @@
 								</item>
 							</components>
 						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{2679034B-531C-7841-BF0B-0E705A183B28}</id>
+							<name>NPC</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>56.808365, -379.943207, -408.914581, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{385F554B-0CAA-3F4A-B877-28DABCC45891}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{B5382E4E-AC33-9146-8B0F-B4FFF6D67158}</id>
+							<name>NPC</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>57.995167, -379.943207, -407.81842, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{385F554B-0CAA-3F4A-B877-28DABCC45891}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{57214141-E9DF-8A4B-A813-232725A7A4DB}</id>
+							<name>NPC</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>56.841545, -379.943207, -406.880249, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{385F554B-0CAA-3F4A-B877-28DABCC45891}</entityData>
+						</item>
+						<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
+							<id>{3514C3A8-B14F-D546-A130-3D11B785EC41}</id>
+							<name>NPC</name>
+							<state>
+								<visible>true</visible>
+								<dynamic>false</dynamic>
+								<locked>false</locked>
+							</state>
+							<transform>
+								<translation>58.016605, -379.943207, -405.885132, 0</translation>
+								<rotation>0, 0, 0, 1</rotation>
+							</transform>
+							<components/>
+							<entityData>{385F554B-0CAA-3F4A-B877-28DABCC45891}</entityData>
+						</item>
 					</entityData>
 				</item>
 			</components>

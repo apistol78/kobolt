@@ -19,10 +19,6 @@ function Game:new(params, environment)
 	self._environment = environment
 	self._inputMapping = environment.input.inputMapping
 
---	local Tspawn = self:getSpawnLocation()
---	local playerEntity = self.world.world:getEntity("Player")
---	playerEntity.transform = Tspawn
-
 	-- Initialize UiKit.
 	Widget.initialize(
 		environment.resource.resourceManager,
@@ -126,25 +122,12 @@ function Game:updatePlaying(info)
 
 	-- Get relevant entities.
 	local playerEntity = self.world.world:getEntity("Player")
-	-- local cameraEntity = self.world.world:getEntity("Camera0")
-
-	-- Get player's character controller.
-	-- local playerCharacter = playerEntity:getComponent(physics.CharacterComponent)
-	local playerScript = playerEntity:getComponent(world.ScriptComponent)
+	local npcEntities = self.world.world:getEntities("NPC")
 
 	-- Issue movement of player character.
+	local playerScript = playerEntity:getComponent(world.ScriptComponent)
 	playerScript:move(moveX, moveZ)
 	playerScript:rotate(deltaHead, pitch)
-
---[[
-	local Qhead = Quaternion.fromEulerAngles(playerCharacter.headAngle, 0, 0)
-	local Vmove = Qhead:transform(Vector4(moveX, 0, moveZ, 0))
-
-	playerCharacter.headAngle = playerCharacter.headAngle + deltaHead * 0.01
-	playerCharacter:move(Vmove, false)
-	playerScript._pitch = pitch
-]]
-
 	if jump then
 		playerScript:jump()
 	end

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.world.EntityData" version="2">
-	<id>{1E97DC43-2004-244B-AC66-F3AFB5D7CED6}</id>
-	<name>Ghost</name>
+	<id>{B150D2D4-6F06-A541-87F2-B006A808BAE5}</id>
+	<name>NPC</name>
 	<state>
 		<visible>true</visible>
 		<dynamic>false</dynamic>
@@ -31,9 +31,6 @@
 			<maxVelocity>5</maxVelocity>
 			<velocityDamping>0.2</velocityDamping>
 		</item>
-		<item type="traktor.world.PersistentIdComponentData">
-			<id>{66AC783B-1823-1B47-A599-E88A49E4FB76}</id>
-		</item>
 		<item type="traktor.world.ScriptComponentData" version="2">
 			<class>{14B0C3A4-58EE-0B4A-A0B8-896D1C11E515}</class>
 			<properties/>
@@ -57,29 +54,8 @@
 		</item>
 		<item type="traktor.world.GroupComponentData">
 			<entityData>
-				<item type="traktor.world.EntityData" version="2">
-					<id>{99D7939C-DC4B-5A4B-B423-252C19B3991C}</id>
-					<name>Camera</name>
-					<state>
-						<visible>true</visible>
-						<dynamic>false</dynamic>
-						<locked>false</locked>
-					</state>
-					<transform>
-						<translation>0.119193, 1.503034, 0.239594, 0</translation>
-						<rotation>0, 0, 0, 1</rotation>
-					</transform>
-					<components>
-						<item type="traktor.world.CameraComponentData">
-							<projection>Perspective</projection>
-							<fov>1.221731</fov>
-							<width>1</width>
-							<height>1</height>
-						</item>
-					</components>
-				</item>
 				<item type="traktor.world.ExternalEntityData" version="1,traktor.world.EntityData:2">
-					<id>{F5BD1911-88C3-CA46-96BE-5B789546C728}</id>
+					<id>{961057D4-45C9-0F41-8975-1F6F68819787}</id>
 					<name>Skin</name>
 					<state>
 						<visible>true</visible>
