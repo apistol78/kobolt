@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<object type="traktor.mesh.MeshAsset" version="24">
+<object type="traktor.mesh.MeshAsset" version="25">
 	<fileName>Meshes/Buildings/Type Space/Corridor 1.blend</fileName>
 	<importFilter/>
 	<meshType>MtStatic</meshType>
-	<materialShaders>
-		<item>
-			<first>m_white</first>
-			<second>{7D4DB920-1445-F84C-843E-CEBABD9F63CD}</second>
-		</item>
-	</materialShaders>
+	<materialShaders/>
 	<materialTextures/>
-	<scaleFactor>1</scaleFactor>
+	<scaleFactor>1, 1, 1, 1</scaleFactor>
 	<offset>0, 0, 0, 0</offset>
 	<renormalize>false</renormalize>
 	<center>false</center>

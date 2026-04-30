@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
 	<nodes>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{1675DCED-D38D-DF49-B399-9B53E2D1C7C1}</id>
 			<comment/>
 			<position>
@@ -9,10 +9,7 @@
 				<second>-326</second>
 			</position>
 			<name>VertexAttributes</name>
-			<connectable>true</connectable>
 			<optional>false</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
 		<item type="traktor.render.OutputPort" version="traktor.render.Node:1">
 			<id>{AE0A42D1-CD15-424C-A79C-DA1C6EF9A405}</id>
@@ -23,7 +20,7 @@
 			</position>
 			<name>SurfaceAttributes</name>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{89EF65E9-382C-6C43-8D6D-EC5C25C3D946}</id>
 			<comment/>
 			<position>
@@ -44,7 +41,6 @@
 					<name>SurfaceAttributes</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
 		<item type="traktor.render.BundleSplit" version="traktor.render.Node:1">
 			<id>{6ECD7B28-4580-5E4C-8221-0A83D370D33D}</id>
@@ -89,7 +85,7 @@
 			</position>
 			<name>K</name>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{0383F198-3FB4-9A44-BBC0-A07583D25813}</id>
 			<comment/>
 			<position>
@@ -120,9 +116,8 @@
 					<name>Output</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{4787A1E8-12EB-CE4C-8B31-C2876BDA5F0E}</id>
 			<comment/>
 			<position>
@@ -143,9 +138,8 @@
 					<name>SurfaceAttributes</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{E3CAD7FF-31B1-BC48-968D-BC4BC8F4156B}</id>
 			<comment/>
 			<position>
@@ -166,7 +160,6 @@
 					<name>SurfaceAttributes</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
 	</nodes>
 	<edges>

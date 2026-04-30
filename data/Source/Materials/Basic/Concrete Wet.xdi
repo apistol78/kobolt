@@ -53,7 +53,7 @@
 				<item>Alpha</item>
 			</names>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{D11BABE1-87C7-C64E-976C-A30F2A320072}</id>
 			<comment/>
 			<position>
@@ -84,7 +84,6 @@
 					<name>SurfaceAttributes</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
 		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
 			<id>{A4281B51-843E-6943-8E74-09E50BDC822B}</id>
@@ -106,7 +105,7 @@
 			<external>{CD3259A4-8679-4DFE-B90F-037E3741097C}</external>
 			<type>Texture2D</type>
 		</item>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{6680AF92-D6B5-784E-A735-F1538F4216A0}</id>
 			<comment/>
 			<position>
@@ -114,10 +113,7 @@
 				<second>1644</second>
 			</position>
 			<name>VertexAttributes</name>
-			<connectable>true</connectable>
 			<optional>false</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
 		<item type="traktor.render.BundleSplit" version="traktor.render.Node:1">
 			<id>{430DA5E8-16D1-C74A-B5DD-CD7E2909FD8A}</id>

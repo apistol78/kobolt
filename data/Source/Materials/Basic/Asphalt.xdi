@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
 	<nodes>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{5A25E4AC-0E4F-E146-902A-E05406181D42}</id>
 			<comment/>
 			<position>
@@ -9,10 +9,7 @@
 				<second>1439</second>
 			</position>
 			<name>VertexAttributes</name>
-			<connectable>true</connectable>
 			<optional>false</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
 		<item type="traktor.render.OutputPort" version="traktor.render.Node:1">
 			<id>{E7557279-835A-EB49-8DEB-544CCCF83FC1}</id>
@@ -23,7 +20,7 @@
 			</position>
 			<name>SurfaceAttributes</name>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{4FE63549-1AA4-794C-A7CF-92E66590F453}</id>
 			<comment/>
 			<position>
@@ -64,12 +61,6 @@
 					<name>SurfaceAttributes</name>
 				</item>
 			</outputPins>
-			<values>
-				<item>
-					<first>Tiling</first>
-					<second>0.7</second>
-				</item>
-			</values>
 		</item>
 		<item type="traktor.render.Texture" version="1,traktor.render.Node:1">
 			<id>{3256CA89-2AA2-D64B-A131-FC717E4BB5DC}</id>

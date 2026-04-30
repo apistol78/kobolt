@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
 	<nodes>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{00C78DDC-7660-B549-9E0B-5E0847A3DEA5}</id>
 			<comment/>
 			<position>
@@ -9,10 +9,7 @@
 				<second>663</second>
 			</position>
 			<name>VertexAttributes</name>
-			<connectable>true</connectable>
 			<optional>false</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
 		<item type="traktor.render.OutputPort" version="traktor.render.Node:1">
 			<id>{A5132EC0-3F15-C048-9A63-A4C050044DC7}</id>
@@ -67,7 +64,7 @@
 			</position>
 			<swizzle>zx</swizzle>
 		</item>
-		<item type="traktor.render.Script" version="6,traktor.render.Node:1">
+		<item type="traktor.render.Script" version="8,traktor.render.Node:1">
 			<id>{9FF88520-5456-1B44-B34A-11CE13CDCB5B}</id>
 			<comment/>
 			<position>
@@ -76,11 +73,13 @@
 			</position>
 			<name>Major</name>
 			<technique/>
+			<domain>Undefined</domain>
 			<localSize>
 				<X>1</X>
 				<Y>1</Y>
 				<Z>1</Z>
 			</localSize>
+			<useRayTracing>false</useRayTracing>
 			<include/>
 			<inputPins>
 				<item>
@@ -95,16 +94,16 @@
 					<type>Scalar</type>
 				</item>
 			</outputPins>
-			<script>
-			<![CDATA[
+			<script><![CDATA[
+			
 if ($Input.x > $Input.y && $Input.x > $Input.z)
 	$Output = 0;
 else if ($Input.y > $Input.x && $Input.y > $Input.z)
 	$Output = 1;
 else
 	$Output = 2;
-			]]>
-			</script>
+			
+			]]></script>
 		</item>
 		<item type="traktor.render.Abs" version="traktor.render.Node:1">
 			<id>{A45C7A69-0242-FC41-A3EE-FAB718A7689E}</id>
@@ -147,20 +146,20 @@ else
 			</position>
 			<swizzle>zy</swizzle>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{6ED6422D-F433-494A-9074-B9BEE2BB2BBF}</id>
 			<comment/>
 			<position>
 				<first>632</first>
 				<second>54</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdWrap</addressU>
-			<addressV>AdWrap</addressV>
-			<addressW>AdWrap</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Wrap</addressU>
+			<addressV>Wrap</addressV>
+			<addressW>Wrap</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>false</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
@@ -173,25 +172,25 @@ else
 				<second>-236</second>
 			</position>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{E425BCE8-9648-FC44-9F77-CEE2E4A0B9EE}</id>
 			<comment/>
 			<position>
 				<first>-2720</first>
 				<second>1176</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdWrap</addressU>
-			<addressV>AdWrap</addressV>
-			<addressW>AdWrap</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Wrap</addressU>
+			<addressV>Wrap</addressV>
+			<addressW>Wrap</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>false</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{B6D03E00-6E5B-D542-B02C-1E7EBB9DBD2A}</id>
 			<comment/>
 			<position>
@@ -212,9 +211,8 @@ else
 					<name>Output</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{1E06F1FE-4ABB-BE42-9ACF-583B1F790703}</id>
 			<comment/>
 			<position>
@@ -250,7 +248,6 @@ else
 					<name>Output</name>
 				</item>
 			</outputPins>
-			<values/>
 		</item>
 		<item type="traktor.render.PreviewOutput" version="traktor.render.Node:1">
 			<id>{1DD20AE5-13CF-5C4C-8D31-A0874370AA63}</id>
@@ -346,7 +343,7 @@ else
 				<second>1034</second>
 			</position>
 		</item>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{4904E794-697E-B047-90D3-AA17F52722CB}</id>
 			<comment/>
 			<position>
@@ -354,12 +351,9 @@ else
 				<second>48</second>
 			</position>
 			<name>Albedo</name>
-			<connectable>true</connectable>
 			<optional>false</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{B91FBB1C-B9A6-8A4B-B1E2-77D81A49164D}</id>
 			<comment/>
 			<position>
@@ -367,10 +361,7 @@ else
 				<second>1174</second>
 			</position>
 			<name>Normal</name>
-			<connectable>true</connectable>
 			<optional>false</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
 		<item type="traktor.render.BundleSplit" version="traktor.render.Node:1">
 			<id>{724EAE9F-3A49-1846-BEAB-4DE8EC697DF9}</id>
@@ -522,7 +513,7 @@ else
 				<second>1141</second>
 			</position>
 		</item>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{6319343C-D7F6-6B42-944B-B3DAD264DB43}</id>
 			<comment/>
 			<position>
@@ -530,12 +521,9 @@ else
 				<second>-238</second>
 			</position>
 			<name>Tiling</name>
-			<connectable>true</connectable>
 			<optional>true</optional>
-			<haveDefaultValue>true</haveDefaultValue>
-			<defaultValue>0.6</defaultValue>
 		</item>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{8F83D239-8699-1748-B709-90AFD434FAA2}</id>
 			<comment/>
 			<position>
@@ -543,10 +531,7 @@ else
 				<second>-371</second>
 			</position>
 			<name>Roughness</name>
-			<connectable>true</connectable>
 			<optional>true</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
 		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{006517A1-01BA-D843-98E6-813FDE1DA7F1}</id>
@@ -557,20 +542,20 @@ else
 			</position>
 			<name>Roughness</name>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{B4040E17-795C-DD4B-99C5-331D6923D6D2}</id>
 			<comment/>
 			<position>
 				<first>379</first>
 				<second>-335</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdWrap</addressU>
-			<addressV>AdWrap</addressV>
-			<addressW>AdWrap</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Wrap</addressU>
+			<addressV>Wrap</addressV>
+			<addressW>Wrap</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>false</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
@@ -646,7 +631,7 @@ else
 			</position>
 			<name>PrlxTexCoord</name>
 		</item>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{DC5B27C2-D809-184C-AB95-B6B1B2BEF4F5}</id>
 			<comment/>
 			<position>
@@ -654,10 +639,7 @@ else
 				<second>-660</second>
 			</position>
 			<name>Height</name>
-			<connectable>true</connectable>
 			<optional>true</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
 		<item type="traktor.render.Vector" version="traktor.render.Node:1">
 			<id>{97E85F60-FD60-4563-90F7-D20824358E87}</id>

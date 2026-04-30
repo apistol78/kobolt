@@ -142,7 +142,7 @@
 				<item>Alpha</item>
 			</names>
 		</item>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{44B11DCA-663B-C448-86C0-D2D5ACBA89A1}</id>
 			<comment/>
 			<position>
@@ -150,12 +150,9 @@
 				<second>173</second>
 			</position>
 			<name>MaterialA</name>
-			<connectable>true</connectable>
 			<optional>false</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{3E1DEDE4-159E-8A45-96A6-58A78E1F1B79}</id>
 			<comment/>
 			<position>
@@ -163,12 +160,9 @@
 				<second>335</second>
 			</position>
 			<name>MaterialB</name>
-			<connectable>true</connectable>
 			<optional>false</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
-		<item type="traktor.render.InputPort" version="2,traktor.render.Node:1">
+		<item type="traktor.render.InputPort" version="3,traktor.render.Node:1">
 			<id>{E04E9F0B-0674-E341-B829-83EF67D08B57}</id>
 			<comment/>
 			<position>
@@ -176,10 +170,7 @@
 				<second>-42</second>
 			</position>
 			<name>Alpha</name>
-			<connectable>true</connectable>
 			<optional>false</optional>
-			<haveDefaultValue>false</haveDefaultValue>
-			<defaultValue>0</defaultValue>
 		</item>
 		<item type="traktor.render.Variable" version="2,traktor.render.Node:1">
 			<id>{4B365C40-4EBE-8D45-BFF3-1847ECDD7BF5}</id>
