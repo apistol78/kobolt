@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object type="traktor.render.ShaderGraph" version="traktor.render.Graph:1">
 	<nodes>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{1A8357D2-4CC1-DC41-8AB4-8E9986FBD453}</id>
 			<comment/>
 			<position>
@@ -22,7 +22,6 @@
 				</item>
 			</inputPins>
 			<outputPins/>
-			<values/>
 		</item>
 		<item type="traktor.render.PixelState" version="9,traktor.render.Node:1">
 			<id>{D70EC79C-1E9A-8047-B4DF-AE11C9F5A02A}</id>
@@ -80,25 +79,25 @@
 			<external>{2863BDE9-26FB-3643-80DC-BEEE9379F01B}</external>
 			<type>Texture2D</type>
 		</item>
-		<item type="traktor.render.Sampler" version="5,traktor.render.Node:1">
+		<item type="traktor.render.Sampler" version="6,traktor.render.Node:1">
 			<id>{8C33DAC8-F0CE-0F4E-AEA7-D34C84A595F7}</id>
 			<comment/>
 			<position>
 				<first>203</first>
 				<second>101</second>
 			</position>
-			<minFilter>FtLinear</minFilter>
-			<mipFilter>FtLinear</mipFilter>
-			<magFilter>FtLinear</magFilter>
-			<addressU>AdWrap</addressU>
-			<addressV>AdWrap</addressV>
-			<addressW>AdWrap</addressW>
-			<compare>CfNone</compare>
+			<minFilter>Linear</minFilter>
+			<mipFilter>Linear</mipFilter>
+			<magFilter>Linear</magFilter>
+			<addressU>Wrap</addressU>
+			<addressV>Wrap</addressV>
+			<addressW>Wrap</addressW>
+			<compare>None</compare>
 			<mipBias>0</mipBias>
 			<ignoreMips>false</ignoreMips>
 			<useAnisotropic>false</useAnisotropic>
 		</item>
-		<item type="traktor.render.External" version="2,traktor.render.Node:1">
+		<item type="traktor.render.External" version="3,traktor.render.Node:1">
 			<id>{3AB0D6C9-1494-5F4E-9028-BEA2B46FE580}</id>
 			<comment/>
 			<position>
@@ -153,20 +152,6 @@
 					<name>ViewPosition</name>
 				</item>
 			</outputPins>
-			<values>
-				<item>
-					<first>DepthFade</first>
-					<second>0.1</second>
-				</item>
-				<item>
-					<first>Offset</first>
-					<second>0</second>
-				</item>
-				<item>
-					<first>Scale</first>
-					<second>1</second>
-				</item>
-			</values>
 		</item>
 		<item type="traktor.render.Swizzle" version="traktor.render.Node:1">
 			<id>{0C35D61A-5801-2644-88BF-CDACB802B047}</id>

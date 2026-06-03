@@ -41,7 +41,7 @@
 			<ultra>
 				<farZ>70</farZ>
 				<resolution>4096</resolution>
-				<bias>0.001</bias>
+				<bias>0.01</bias>
 				<cascadingSlices>4</cascadingSlices>
 				<cascadingLambda>1.9</cascadingLambda>
 				<quantizeProjection>false</quantizeProjection>
@@ -870,7 +870,7 @@
 								<locked>false</locked>
 							</state>
 							<transform>
-								<translation>58.825142, -378.771179, -473.054535, 0</translation>
+								<translation>59.264793, -378.772919, -473.054535, 0</translation>
 								<rotation>0, 0.644217, 0, 0.764842</rotation>
 							</transform>
 							<components/>
@@ -967,9 +967,9 @@
 	</layers>
 	<operationData>
 		<item type="traktor.shape.BakeConfiguration" version="33">
-			<enableLightmaps>false</enableLightmaps>
+			<enableLightmaps>true</enableLightmaps>
 			<primarySampleCount>35</primarySampleCount>
-			<secondarySampleCount>40</secondarySampleCount>
+			<secondarySampleCount>11</secondarySampleCount>
 			<shadowSampleCount>20</shadowSampleCount>
 			<maxPathDistance>80</maxPathDistance>
 			<pointLightShadowRadius>0.1</pointLightShadowRadius>
